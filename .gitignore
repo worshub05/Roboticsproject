@@ -1,0 +1,45 @@
+# ROS 2
+install/
+build/
+log/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Models & Data
+models/*.pt
+training_data/*.png
+*.weights
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# System
+.DS_Store
+.directory
+*~
+*.bak
+*.backup
+
+# Gazebo
+.gazebo/
+.ignition/
+
+# ROS temp files
+*.rviz
+.rosinstall_marker_file
