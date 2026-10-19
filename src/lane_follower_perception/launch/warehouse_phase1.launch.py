@@ -24,7 +24,7 @@ def generate_launch_description():
         package='lane_follower_perception',
         executable='cnn_inference_node.py',
         output='screen',
-        parameters=[{'steering_topic': '/cmd_vel_desired'}]
+        parameters=[{'steering_topic': '/cmd_vel_desired', 'model_path': '/home/shub_2605/ros2_ws/models/lane_cnn_v2.pt'}]
     )
 
     obstacle_node = Node(
