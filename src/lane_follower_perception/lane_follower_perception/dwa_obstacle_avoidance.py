@@ -6,6 +6,7 @@ Samples (v, w) pairs, simulates all candidate arcs at once with numpy,
 rejects arcs that come too close to any LiDAR return, and publishes the
 lowest-cost safe command on /cmd_vel.
 """
+import math
 import time
 import numpy as np
 import rclpy
@@ -13,6 +14,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Bool
+from nav_msgs.msg import Odometry
 
 
 class DWAObstacleAvoidance(Node):
@@ -27,12 +29,18 @@ class DWAObstacleAvoidance(Node):
         self.declare_parameter('predict_time', 2.5)
         self.declare_parameter('dt', 0.1)
         self.declare_parameter('robot_radius', 0.15)
-        self.declare_parameter('safety_radius', 0.8)
+        self.declare_parameter('safety_radius', 0.6)
         self.declare_parameter('warning_radius', 1.0)
         self.declare_parameter('scan_range', 3.0)
-        self.declare_parameter('weight_heading', 0.5)
+        self.declare_parameter('weight_heading', 1.5)
+        self.declare_parameter('weight_heading_blocked', 0.3)
+        self.declare_parameter('shape_time', 4.0)
+        self.declare_parameter('weight_smooth', 0.3)
+        self.declare_parameter('recovery_gain_lateral', 1.0)
+        self.declare_parameter('recovery_gain_heading', 1.5)
+        self.declare_parameter('avoid_trigger', 0.2)
         self.declare_parameter('weight_velocity', 1.0)
-        self.declare_parameter('weight_obstacle', 2.0)
+        self.declare_parameter('weight_obstacle', 4.0)
         self.declare_parameter('stop_penalty', 2.0)
         self.declare_parameter('reverse_penalty', 1.0)
         self.declare_parameter('weight_progress', 1.0)
@@ -50,6 +58,15 @@ class DWAObstacleAvoidance(Node):
         self.warning = g('warning_radius').value
         self.scan_range = g('scan_range').value
         self.w_heading = g('weight_heading').value
+        self.w_heading_blocked = g('weight_heading_blocked').value
+        self.w_smooth = g('weight_smooth').value
+        self.shape_times = np.arange(1, int(round(g('shape_time').value / self.dt)) + 1) * self.dt
+        self.prev_w = 0.0
+        self.k_lat = g('recovery_gain_lateral').value
+        self.k_head = g('recovery_gain_heading').value
+        self.avoid_trigger = g('avoid_trigger').value
+        self.pose = None   # (x, y, yaw) from odometry
+        self.ref = None    # lane line recorded when avoidance starts
         self.w_velocity = g('weight_velocity').value
         self.w_obstacle = g('weight_obstacle').value
         self.stop_penalty = g('stop_penalty').value
@@ -69,6 +86,15 @@ class DWAObstacleAvoidance(Node):
         self.times = np.arange(1, self.steps + 1) * self.dt
         self.heading = self.cand_w[:, None] * self.times[None, :]
 
+        # Path *shape* of each arc at full speed, so the obstacle cost depends on where
+        # an arc goes, not on how slowly it gets there (slowing down must not look safer).
+        fwd = self.cand_v > 0.05
+        v_shape = np.where(fwd, self.max_v, self.cand_v)
+        w_shape = np.where(fwd, self.cand_w * self.max_v / np.maximum(self.cand_v, 1e-6), self.cand_w)
+        h = w_shape[:, None] * self.shape_times[None, :]
+        self.shape_P = np.stack([np.cumsum(v_shape[:, None] * np.cos(h) * self.dt, axis=1),
+                                 np.cumsum(v_shape[:, None] * np.sin(h) * self.dt, axis=1)], axis=2)
+
         self.desired = Twist()
         self.scan = None
         self.plan_count = 0
@@ -76,6 +102,7 @@ class DWAObstacleAvoidance(Node):
 
         self.create_subscription(Twist, '/cmd_vel_desired', self.desired_callback, 10)
         self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
+        self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.active_pub = self.create_publisher(Bool, '/dwa/active', 10)
 
@@ -83,6 +110,31 @@ class DWAObstacleAvoidance(Node):
 
     def scan_callback(self, msg):
         self.scan = msg
+
+    def odom_callback(self, msg):
+        q = msg.pose.pose.orientation
+        yaw = math.atan2(2.0 * (q.w * q.z + q.x * q.y), 1.0 - 2.0 * (q.y * q.y + q.z * q.z))
+        self.pose = (msg.pose.pose.position.x, msg.pose.pose.position.y, yaw)
+
+    def recovery_target(self, w_cnn, blocked):
+        """While avoiding, steer back to the lane line recorded when avoidance began,
+        because the CNN loses sight of the lane once the robot swerves away from it."""
+        if self.pose is None:
+            return w_cnn
+        x, y, yaw = self.pose
+        if self.ref is None:
+            if blocked > self.avoid_trigger:
+                self.ref = (x, y, yaw)
+                self.get_logger().info('DWA: obstacle ahead, recording lane line for recovery')
+            return w_cnn
+        x0, y0, yaw0 = self.ref
+        e_lat = -math.sin(yaw0) * (x - x0) + math.cos(yaw0) * (y - y0)
+        e_head = math.atan2(math.sin(yaw - yaw0), math.cos(yaw - yaw0))
+        if abs(e_lat) < 0.15 and abs(e_head) < 0.2 and blocked == 0.0:
+            self.ref = None
+            self.get_logger().info('DWA: back on lane line, handing steering back to the CNN')
+            return w_cnn
+        return float(np.clip(-self.k_lat * e_lat - self.k_head * e_head, -1.2, 1.2))
 
     def desired_callback(self, msg):
         self.desired = msg
@@ -107,13 +159,22 @@ class DWAObstacleAvoidance(Node):
         return np.stack([x, y], axis=2)
 
     def clearance(self, obs, P):
-        """Closest approach of each arc: within the collision horizon, and over the full arc."""
-        d = np.hypot(P[:, :, None, 0] - obs[None, None, :, 0],
-                     P[:, :, None, 1] - obs[None, None, :, 1]).min(axis=2)  # (N, S)
+        """Returns (hard clearance of the real arc over the collision horizon,
+        fraction of each full-speed path shape that is free before it enters the safety zone)."""
+        def step_dist(traj):
+            return np.hypot(traj[:, :, None, 0] - obs[None, None, :, 0],
+                            traj[:, :, None, 1] - obs[None, None, :, 1]).min(axis=2)  # (N, S)
         origin_clear = np.hypot(obs[:, 0], obs[:, 1]).min()
-        near = np.minimum(d[:, :self.collision_steps].min(axis=1), origin_clear)
-        full = np.minimum(d.min(axis=1), origin_clear)
-        return near, full
+        near = np.minimum(step_dist(P[:, :self.collision_steps]).min(axis=1), origin_clear)
+
+        # When already inside the safety zone (e.g. passing beside an obstacle),
+        # only arcs that get closer than we are now count as entering danger.
+        thresh = min(self.safety, 0.9 * origin_clear)
+        inside = step_dist(self.shape_P) < thresh
+        n = inside.shape[1]
+        first = np.where(inside.any(axis=1), inside.argmax(axis=1), n)
+        free = first / n
+        return near, free
 
     def plan(self):
         t0 = time.perf_counter()
@@ -128,14 +189,22 @@ class DWAObstacleAvoidance(Node):
             clear, clear_full = self.clearance(obs, P)
         else:
             clear = np.full(len(self.cand_v), np.inf)
-            clear_full = clear
+            clear_full = np.ones(len(self.cand_v))
 
-        cost = (self.w_heading * np.abs(self.cand_w - w_des)
+        # Lane-keeping strength: full when the CNN's own path is clear,
+        # relaxed when that path is blocked so the robot is free to swerve.
+        i_des = int(np.argmin(np.abs(self.cand_v - v_des) + np.abs(self.cand_w - w_des)))
+        blocked = 1.0 - float(clear_full[i_des])
+        w_des = self.recovery_target(w_des, blocked)
+        w_heading = self.w_heading * (1.0 - blocked) + self.w_heading_blocked * blocked
+
+        cost = (w_heading * np.abs(self.cand_w - w_des)
                 + self.w_velocity * np.abs(self.cand_v - v_des)
-                + self.w_obstacle * np.maximum(0.0, self.safety - clear_full) / self.safety
+                + self.w_obstacle * (1.0 - clear_full)
                 + self.stop_penalty * (np.abs(self.cand_v) < 0.05)
                 + self.reverse_penalty * (self.cand_v < 0.0)
-                - self.w_progress * progress)
+                - self.w_progress * progress
+                + self.w_smooth * np.abs(self.cand_w - self.prev_w))
         cost[clear < self.robot_radius] = np.inf
         # only speeds the robot can still brake from before reaching the obstacle
         v_allowed = np.sqrt(2.0 * self.max_decel * np.maximum(0.0, clear - self.robot_radius))
@@ -149,6 +218,7 @@ class DWAObstacleAvoidance(Node):
             v = -self.max_rev
             w = 0.5 * self.max_w * (1.0 if w_des >= 0.0 else -1.0)
 
+        self.prev_w = w
         cmd = Twist()
         cmd.linear.x = v
         cmd.angular.z = w

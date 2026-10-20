@@ -88,20 +88,20 @@
     </model>
     <model name="lane_left">
       <static>true</static>
-      <pose>10 0.25 0.003 0 0 0</pose>
+      <pose>20 0.25 0.003 0 0 0</pose>
       <link name="link">
         <visual name="visual">
-          <geometry><box><size>20 0.05 0.001</size></box></geometry>
+          <geometry><box><size>40 0.05 0.001</size></box></geometry>
           <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
         </visual>
       </link>
     </model>
     <model name="lane_right">
       <static>true</static>
-      <pose>10 -0.25 0.003 0 0 0</pose>
+      <pose>20 -0.25 0.003 0 0 0</pose>
       <link name="link">
         <visual name="visual">
-          <geometry><box><size>20 0.05 0.001</size></box></geometry>
+          <geometry><box><size>40 0.05 0.001</size></box></geometry>
           <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
         </visual>
       </link>
