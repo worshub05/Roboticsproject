@@ -44,6 +44,25 @@ The work is split the way most autonomous-driving stacks are:
 
 ## Repository layout
 
+```
+src/lane_follower_perception/
+  lane_follower_perception/
+    cnn_inference_node.py       CNN lane keeping (lateral control)
+    lane_cnn_model.py           CNN architecture, preprocessing, inference
+    road_driver.py              adaptive cruise control and stopping (longitudinal control)
+    dwa_obstacle_avoidance.py   DWA obstacle avoidance with lane recovery
+    lidar_obstacle_detector.py  obstacle distance and threat level topics
+    traffic_manager.py          moves the other cars in the road world
+  launch/road_phase1.launch.py  road with traffic (main demo)
+  worlds/road_with_traffic.world  two-lane road, junction, four cars
+  robots/warehouse_robot_with_lidar.urdf  robot: camera, 2D LiDAR, differential drive
+
+generate_training_data.py   synthetic lane images for CNN training
+retrain_cnn.py              trains the CNN on those images
+dwa_offline_test.py         closed-loop test of the DWA planner without Gazebo
+legacy/                     earlier prototypes, kept for reference
+```
+
 ## Running it
 
 Requirements: Ubuntu 22.04, ROS 2 Humble, Gazebo 11 with `gazebo_ros_pkgs`, PyTorch and OpenCV.
