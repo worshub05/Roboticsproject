@@ -38,7 +38,7 @@ class RoadDriver(Node):
         self.declare_parameter('stop_distance', 0.3)        # m, hard stop if anything is closer
         self.declare_parameter('max_accel', 0.4)            # m/s^2
         self.declare_parameter('max_decel', 1.5)            # m/s^2
-        self.declare_parameter('speed_filter', 0.3)         # 0..1, smoothing of the lead-speed estimate
+        self.declare_parameter('speed_filter', 0.15)         # 0..1, smoothing of the lead-speed estimate
 
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.max_speed = g('max_speed')
@@ -124,9 +124,13 @@ class RoadDriver(Node):
             lead = 0.0 if self.lead_speed is None else max(0.0, self.lead_speed)
             desired_gap = self.d0 + self.h * v_ego
             v_target = float(np.clip(lead + self.k_gap * (gap - desired_gap), 0.0, v_set))
-            state = 'FOLLOW' if v_target < v_set - 0.02 else 'CRUISE'
-            if v_target < 0.02:
-                state = 'STOP'
+            if self.state == 'FOLLOW':
+                state = 'FOLLOW' if v_target < v_set - 0.01 else 'CRUISE'
+            else:
+                state = 'FOLLOW' if v_target < v_set - 0.05 else 'CRUISE'
+            # hold a real stop (no creeping) until the way ahead clearly opens up
+            if v_target < (0.08 if self.state == 'STOP' else 0.03):
+                v_target, state = 0.0, 'STOP'
 
         # Comfort and actuator limits.
         if dt > 0.0:

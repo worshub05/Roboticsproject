@@ -1,247 +1,91 @@
-# CNN Lane Following System for Warehouse Robots
+# Autonomous Driving for a Small-Scale Vehicle
 
-A complete autonomous lane-following system for warehouse robot navigation using Convolutional Neural Networks (CNN), ROS 2 Humble, and Gazebo simulation.
+**CNN lane keeping, LiDAR adaptive cruise control and obstacle avoidance in ROS 2 and Gazebo**
 
-## Project Overview
+A small differential-drive robot acts as an autonomous car on a 1:10-scale road. A convolutional neural network (CNN) keeps it in its lane from the camera image. A 2D LiDAR controls its speed around other traffic and lets it steer around obstacles and back into its lane. Everything runs in ROS 2 Humble with Gazebo 11.
 
-This project implements an end-to-end CNN-based perception and control system for warehouse robots:
-- **CNN Model**: 5-block convolutional neural network with 553,021 parameters
-- **ROS 2 Integration**: Humble distribution with proper node architecture
-- **Gazebo Simulation**: Warehouse environment with sensors (camera, LiDAR, IMU)
-- **Training Pipeline**: Synthetic data generation and model retraining
+> **Status (October 2026):** lane following, adaptive cruise control (following a slower car), stopping for a crossing car and ignoring oncoming traffic are all validated in Gazebo. Obstacle avoidance with DWA was validated in an earlier test world.
 
-## System Architecture
+---
 
-```
-Camera → Preprocessing → CNN Model → Steering Prediction
-                           ↓
-                    Differential Drive Controller
-                           ↓
-                      Robot Motion (ROS 2)
-                           ↓
-                      Gazebo Simulation
+## System overview
+
+```mermaid
+flowchart LR
+    CAM[Camera 160x100] --> CNN[CNN lane keeping<br/>cnn_inference_node]
+    CNN -- /cmd_vel_desired --> RD[Road driver<br/>adaptive cruise + stop]
+    LIDAR[2D LiDAR 720 rays] --> RD
+    ODOM[Odometry] --> RD
+    RD -- /cmd_vel --> DRIVE[Differential drive]
+    TM[Traffic manager] -- set_entity_state --> GZ[(Gazebo road world)]
 ```
 
-## Features
+The work is split the way most autonomous-driving stacks are:
 
-✅ CNN-based steering prediction ([-1.2, 1.2] radians)  
-✅ ROS 2 Humble node architecture  
-✅ Gazebo 11 physics simulation  
-✅ Sensor integration (camera 30Hz, LiDAR 10Hz, IMU 50Hz)  
-✅ Differential drive kinematics  
-✅ Synthetic training data generation  
-✅ Model training and retraining pipeline  
-✅ Warehouse environment with obstacles  
+| Layer | Node | What it does |
+|---|---|---|
+| Lateral control | `cnn_inference_node.py` | Predicts a steering rate from the camera image to stay between the lane lines |
+| Longitudinal control | `road_driver.py` | Watches a corridor straight ahead in its own lane. Cruises when clear, follows a slower car at a constant time gap (gap = 0.5 m + 1.0 s × speed), and stops for anything crossing in front. Oncoming traffic in the other lane is ignored |
+| Obstacle avoidance | `dwa_obstacle_avoidance.py` | Dynamic Window Approach: samples 217 speed/turn-rate arcs, rejects any that would hit an obstacle, and picks the best one. Uses odometry to return to the lane line after a swerve |
+| Traffic | `traffic_manager.py` | Moves the other cars: oncoming, a slower car ahead, and a car crossing at a junction |
 
-## Directory Structure
+## Results so far
 
-```
-cnn-lane-following/
-├── src/
-│   └── lane_follower_perception/
-│       ├── lane_follower_perception/
-│       │   ├── __init__.py
-│       │   ├── lane_cnn_model.py          # CNN model class
-│       │   └── cnn_inference_node.py      # ROS 2 inference node
-│       ├── launch/
-│       │   └── warehouse.launch.py        # Gazebo + nodes launch
-│       └── setup.py
-├── worlds/
-│   └── warehouse.world                    # Gazebo SDF world
-├── models/
-│   └── lane_cnn_retrained.pt              # Trained model weights
-├── training_data/
-│   └── (500 synthetic training images)
-├── create_model.py                        # Initialize model
-├── generate_training_data.py              # Synthetic data generator
-├── retrain_cnn.py                         # Training pipeline
-├── differential_drive_controller.py       # Steering → wheel commands
-├── debug_movement.py                      # Movement debugger
-└── test_manual_movement.py                # Manual movement test
-```
+| Test | Environment | Result |
+|---|---|---|
+| Lane following | Gazebo | 18.75 m driven, ending 1.8 cm from the lane centre |
+| CNN retraining | Offline | 2,000 synthetic images, 40 epochs, final MSE loss 0.0003 |
+| Obstacle avoidance (5 layouts) | Offline closed-loop test | All passed; minimum clearance 0.46 to 0.58 m; about 7 ms planning time per cycle |
+| Obstacle avoidance | Gazebo (earlier test world) | Passed a 1.5 m obstacle at 0.5 m/s with at least 0.52 m clearance, returned to the lane about 26 s after detection |
+| Slower car ahead | Gazebo | Followed at a 0.74 to 0.83 m gap (target 0.75 m), matching the lead car's 0.25 m/s; returned to 0.5 m/s cruise when it left |
+| Crossing car | Gazebo | Stopped 0.54 to 0.55 m from the crossing car, waited, then accelerated back to 0.5 m/s once it had passed |
+| Oncoming cars | Gazebo | Held 0.5 m/s for the whole run and never reacted to traffic in the other lane |
+| Sensor-noise robustness | Offline, 1 cm LiDAR noise | State switching while following cut from 30 to 9 per run, and while waiting at a crossing from 40 to 6, after adding hysteresis and a stop hold |
 
-## Installation & Setup
+## Repository layout
 
-### Prerequisites
-- Ubuntu 22.04 (or WSL on Windows)
-- ROS 2 Humble
-- Gazebo 11
-- Python 3.10+
-- PyTorch
+## Running it
 
-### Quick Start
+Requirements: Ubuntu 22.04, ROS 2 Humble, Gazebo 11 with `gazebo_ros_pkgs`, PyTorch and OpenCV.
 
 ```bash
-# Clone and setup
-git clone https://github.com/yourusername/cnn-lane-following.git
-cd cnn-lane-following
-colcon build
-
-# Source the workspace
+# build
+mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
+git clone https://github.com/worshub05/Roboticsproject.git
+cp -r Roboticsproject/src/lane_follower_perception .
+cd ~/ros2_ws && colcon build --symlink-install
 source install/setup.bash
 
-# Create initial model
-python3 create_model.py
+# train the CNN (writes ~/ros2_ws/models/lane_cnn_v2.pt)
+python3 Roboticsproject/generate_training_data.py
+python3 Roboticsproject/retrain_cnn.py
 
-# Generate training data
-python3 generate_training_data.py
-
-# Train the model
-python3 retrain_cnn.py
-
-# Launch the system
-ros2 launch lane_follower_perception warehouse.launch.py
+# road demo with all traffic
+ros2 launch lane_follower_perception road_phase1.launch.py
+# or one situation at a time
+ros2 launch lane_follower_perception road_phase1.launch.py scenario:=follow   # oncoming | follow | crossing
 ```
 
-## CNN Model Architecture
+Useful topics while it runs: `/road/state` (CRUISE, FOLLOW or STOP), `/road/gap`, `/road/lead_speed`, `/cmd_vel`.
 
-```
-Input: 160×100×3 (RGB image)
-    ↓
-Conv Block 1: 32 filters, 3×3 kernel, BatchNorm
-    ↓
-Conv Block 2: 64 filters, BatchNorm
-    ↓
-Conv Block 3: 128 filters, BatchNorm
-    ↓
-Conv Block 4: 256 filters, BatchNorm
-    ↓
-Conv Block 5: 512 filters, BatchNorm + Adaptive AvgPool
-    ↓
-FC Layer 1: 512 → 256
-    ↓
-FC Layer 2: 256 → 1
-    ↓
-Output: Steering Angle [-1.2, 1.2] radians
-```
+The trained model file (`lane_cnn_v2.pt`, about 17 MB) is not stored in the repository; it is produced by `retrain_cnn.py`.
 
-**Total Parameters**: 553,021  
-**Training Loss**: 0.5971 → 0.0132 (10 epochs)
+## Roadmap
 
-## Key Components
+- Curved roads and a dashed centre line; retrain the CNN on images collected in Gazebo
+- Overtaking a slow or parked car after checking for oncoming traffic
+- Junction rules: traffic light or stop sign detected by the camera
+- LiDAR object tracking with speed estimates, so crossing cars are predicted before they reach the lane
+- Safety layer: emergency braking by time-to-collision, sensor-failure handling
+- Scenario test suite and repeated-run evaluation
+- Design study: how the ROS 2 stack would map onto a real electric vehicle (drive-by-wire, CAN bus, onboard computer)
 
-### 1. CNN Inference Node (`cnn_inference_node.py`)
-- Subscribes to `/camera/image_raw` at 30 Hz
-- Publishes steering predictions to `/cmd_vel`
-- Automatically uses GPU if available
-- Configurable inference rate and linear speed
+## Limitations
 
-### 2. Differential Drive Controller (`differential_drive_controller.py`)
-- Converts steering angle to differential wheel velocities
-- Wheel separation: 0.3m
-- Subscribes to `/cmd_vel`, publishes to `/robot/cmd_vel`
-- Implements kinematic equations for smooth motion
-
-### 3. Gazebo Environment
-- 100m × 100m warehouse space
-- Warehouse shelving with 12 shelves in 3 aisles
-- Dynamic human obstacles
-- Physics: ODE engine, 0.001s timestep
-
-### 4. Sensor Suite
-- **Camera**: 30 Hz, 640×480, RGB
-- **LiDAR**: 10 Hz, 360° scan
-- **IMU**: 50 Hz, 6-axis
-- **Odometry**: 30 Hz position/velocity feedback
-
-## Training & Data
-
-### Synthetic Data Generation
-```bash
-python3 generate_training_data.py
-```
-Generates 500 training images with:
-- Procedural lane visualization
-- Gaussian noise (σ=10)
-- Steering angles: [-1.2, 1.2] radians
-
-### Model Training
-```bash
-python3 retrain_cnn.py
-```
-- Batch size: 32
-- Optimizer: Adam (lr=0.001)
-- Loss: MSELoss
-- Epochs: 10
-
-## Debugging
-
-### Monitor Movement
-```bash
-python3 debug_movement.py
-```
-Monitors `/cmd_vel`, `/robot/cmd_vel`, and `/robot/odom` topics.
-
-### Manual Movement Test
-```bash
-python3 test_manual_movement.py
-```
-Sends direct commands to robot to verify differential drive plugin response.
-
-## ROS 2 Topics
-
-| Topic | Type | Direction | Description |
-|-------|------|-----------|-------------|
-| `/camera/image_raw` | sensor_msgs/Image | IN | Camera images at 30 Hz |
-| `/cmd_vel` | geometry_msgs/Twist | OUT | CNN steering predictions |
-| `/robot/cmd_vel` | geometry_msgs/Twist | IN | Wheel velocity commands |
-| `/robot/odom` | nav_msgs/Odometry | OUT | Robot position/velocity |
-| `/lidar` | sensor_msgs/LaserScan | OUT | LiDAR distance scan |
-| `/imu` | sensor_msgs/Imu | OUT | IMU acceleration/rotation |
-
-## Performance Metrics
-
-- **Inference Rate**: 30 Hz
-- **Steering Range**: [-1.2, 1.2] radians
-- **Max Linear Speed**: 0.5 m/s
-- **Model Size**: 16.64 MB
-- **Training Time**: ~2 minutes (10 epochs, 500 images)
-
-## Troubleshooting
-
-### Robot Not Moving
-1. Check `/robot/cmd_vel` topic: `ros2 topic echo /robot/cmd_vel`
-2. Verify differential drive controller is running
-3. Check Gazebo physics: inspect `warehouse.world` physics tag
-
-### Steering Predictions Stuck
-1. Verify camera publishing: `ros2 topic echo /camera/image_raw`
-2. Check CNN model loading: look for "[MODEL]" log messages
-3. Run `debug_movement.py` to monitor steering angle values
-
-### Gazebo Crashes
-1. Reduce physics time step if needed (currently 0.001s)
-2. Check world file syntax: `gz sdf <path>/warehouse.world`
-3. Verify all plugins are properly compiled
-
-## Future Improvements
-
-- [ ] Add real camera dataset for transfer learning
-- [ ] Implement multi-camera perception (front + sides)
-- [ ] Add SLAM for global localization
-- [ ] Implement obstacle avoidance with LiDAR
-- [ ] Deploy on real robot hardware
-- [ ] Add reinforcement learning fine-tuning
-
-## Author & Citation
-
-**Diksha** - MSc Robotics, University of Birmingham
-
-For academic use, please cite:
-```
-@thesis{diksha2026cnnlane,
-  title={CNN-Based Lane Following for Warehouse Robot Autonomy},
-  author={Diksha},
-  year={2026},
-  school={University of Birmingham}
-}
-```
+- The CNN is trained on synthetic images of straight lane lines, so curved roads and real camera images need further training.
+- The speed controller's corridor assumes a straight lane.
+- This is a 1:10-scale simulation for research and teaching. It is not a road-legal or safety-certified driving system.
 
 ## License
 
-MIT License - See LICENSE file for details
-
-## Contact
-
-GitHub: [@dikshajangam26](https://github.com/dikshajangam26)  
-Email: dikshajangam26@gmail.com
+See [LICENSE](LICENSE).

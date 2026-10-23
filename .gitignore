@@ -43,3 +43,5 @@ training_data/*.png
 # ROS temp files
 *.rviz
 .rosinstall_marker_file
+*.pt
+training_data/
