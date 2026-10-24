@@ -28,6 +28,7 @@ setup(
             'dwa_obstacle_avoidance.py = lane_follower_perception.dwa_obstacle_avoidance:main',
             'road_driver.py = lane_follower_perception.road_driver:main',
             'traffic_manager.py = lane_follower_perception.traffic_manager:main',
+            'collect_track_data.py = lane_follower_perception.collect_track_data:main',
         ],
     },
 )
