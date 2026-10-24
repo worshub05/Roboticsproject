@@ -12,6 +12,13 @@ Parameters:
               'other' = clockwise in the other lane (right bends)
   count       images to save, then stop the robot
   out_dir     where images go: img_<index>_<steering>.png (same format as retrain_cnn.py)
+
+Every saved image also gets a row in <out_dir>/labels.csv with the extra labels the
+multi-task CNN learns:
+  steer       expert steering rate (rad/s)
+  e_lat       offset from the lane centre (m, + = left of centre)
+  e_head      heading error to the lane (rad, + = pointing left of the lane)
+  kappa       road curvature 0.5 to 2.5 m ahead (1/m, + = left bend)
 """
 import math
 import os
@@ -54,7 +61,7 @@ class TrackDataCollector(Node):
         super().__init__('collect_track_data')
         self.declare_parameter('lane', 'ours')
         self.declare_parameter('count', 3000)
-        self.declare_parameter('out_dir', os.path.expanduser('~/ros2_ws/track_data'))
+        self.declare_parameter('out_dir', os.path.expanduser('~/ros2_ws/track_data_mt'))
         self.declare_parameter('speed', 0.5)
         self.declare_parameter('save_every', 2)            # save every Nth camera frame
         self.declare_parameter('noise_std', 0.35)          # rad/s, size of the random nudge
@@ -86,6 +93,12 @@ class TrackDataCollector(Node):
         dth = np.array([wrap(b - a) for a, b in zip(self.pth, np.roll(self.pth, -1))])
         ds = np.hypot(np.diff(self.px, append=self.px[0]), np.diff(self.py, append=self.py[0]))
         self.kappa = dth / np.maximum(ds, 1e-6)
+        # Curvature of the road ahead (mean over 0.5 to 2.5 m in front), used to bend the ACC corridor.
+        k = np.concatenate([self.kappa, self.kappa])
+        a, b = int(0.5 / 0.02), int(2.5 / 0.02)
+        c = np.cumsum(np.concatenate([[0.0], k]))
+        n = len(self.kappa)
+        self.kappa_ahead = np.array([(c[i + b] - c[i + a]) / (b - a) for i in range(n)])
 
         self.pose = None
         self.noise = 0.0
@@ -94,6 +107,10 @@ class TrackDataCollector(Node):
         self.saved = len([f for f in os.listdir(self.out_dir) if f.endswith('.png')])
         self.start_index = self.saved
         self.done = False
+        self.csv_path = os.path.join(self.out_dir, 'labels.csv')
+        if not os.path.exists(self.csv_path):
+            with open(self.csv_path, 'w') as f:
+                f.write('file,steer,e_lat,e_head,kappa\n')
 
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.create_subscription(Image, '/camera/image_raw', self.image_callback, 10)
@@ -107,13 +124,14 @@ class TrackDataCollector(Node):
         self.pose = (msg.pose.pose.position.x, msg.pose.pose.position.y, yaw)
 
     def expert(self):
-        """Clean expert steering and the robot's lateral offset from the lane centre."""
+        """Clean expert steering, offset from the lane centre, heading error and curvature ahead."""
         x, y, yaw = self.pose
         i = int(np.argmin((self.px - x) ** 2 + (self.py - y) ** 2))
         th = self.pth[i]
         e_lat = -math.sin(th) * (x - self.px[i]) + math.cos(th) * (y - self.py[i])   # + = left of centre
         e_head = wrap(yaw - th)
         w = self.v * self.kappa[i] - self.k_lat * e_lat - self.k_head * e_head
+        self.last_labels = (e_lat, e_head, float(self.kappa_ahead[i]))
         return float(np.clip(w, -1.2, 1.2)), e_lat
 
     def image_callback(self, msg):
@@ -142,7 +160,11 @@ class TrackDataCollector(Node):
         img = np.frombuffer(bytes(msg.data), dtype=np.uint8).reshape(msg.height, msg.width, -1)[:, :, :3]
         if msg.encoding == 'rgb8':
             img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)     # retrain_cnn.py reads with cv2 (BGR)
-        cv2.imwrite(os.path.join(self.out_dir, f'img_{self.saved:06d}_{w_label:.3f}.png'), img)
+        name = f'img_{self.saved:06d}_{w_label:.3f}.png'
+        cv2.imwrite(os.path.join(self.out_dir, name), img)
+        e_lat_s, e_head_s, kappa_s = self.last_labels
+        with open(self.csv_path, 'a') as f:
+            f.write(f'{name},{w_label:.4f},{e_lat_s:.4f},{e_head_s:.4f},{kappa_s:.4f}\n')
         self.saved += 1
 
         n = self.saved - self.start_index
@@ -161,12 +183,12 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    try:
+    try:                       # Ctrl+C may already have shut ROS down
         node.cmd_pub.publish(Twist())
         node.destroy_node()
         rclpy.shutdown()
     except Exception:
-        pass  # ROS already shut down by Ctrl+C
+        pass
 
 
 if __name__ == '__main__':
