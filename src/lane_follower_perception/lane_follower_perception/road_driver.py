@@ -3,7 +3,11 @@
 Road driver: lane keeping from the CNN plus LiDAR-based speed control.
 
 Lateral:      steering comes from the CNN (/cmd_vel_desired).
-Longitudinal: the LiDAR is checked inside a corridor straight ahead in our own lane.
+Longitudinal: the LiDAR is checked inside a corridor that follows our own lane ahead.
+              With the multi-task CNN running, the corridor bends with the predicted road
+              curvature (/lane/curvature) and is shifted by the predicted lane offset and
+              heading error (/lane/offset, /lane/heading), so a car ahead on a bend stays
+              inside it. Without those topics it falls back to a straight corridor.
               - nothing in the corridor  -> cruise at the CNN's set speed
               - a car ahead              -> adaptive cruise control: follow it at a
                                             constant time gap (gap = d0 + h * v)
@@ -39,6 +43,9 @@ class RoadDriver(Node):
         self.declare_parameter('max_accel', 0.4)            # m/s^2
         self.declare_parameter('max_decel', 1.5)            # m/s^2
         self.declare_parameter('speed_filter', 0.15)         # 0..1, smoothing of the lead-speed estimate
+        self.declare_parameter('curved_corridor', True)     # False = always straight (for comparison)
+        self.declare_parameter('lane_timeout', 0.5)         # s, lane topics older than this are ignored
+        self.declare_parameter('lane_filter', 0.3)          # 0..1, smoothing of curvature / offset / heading
 
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.max_speed = g('max_speed')
@@ -52,6 +59,11 @@ class RoadDriver(Node):
         self.max_accel = g('max_accel')
         self.max_decel = g('max_decel')
         self.alpha = g('speed_filter')
+        self.curved = bool(g('curved_corridor'))
+        self.lane_timeout = g('lane_timeout')
+        self.lane_alpha = g('lane_filter')
+        self.lane = {'curvature': 0.0, 'offset': 0.0, 'heading': 0.0}
+        self.lane_t = None
 
         self.desired = Twist()
         self.scan = None
@@ -66,12 +78,15 @@ class RoadDriver(Node):
         self.create_subscription(Twist, '/cmd_vel_desired', self.desired_callback, 10)
         self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
+        for name in self.lane:
+            self.create_subscription(Float32, '/lane/' + name, lambda m, n=name: self.lane_callback(n, m), 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.gap_pub = self.create_publisher(Float32, '/road/gap', 10)
         self.lead_pub = self.create_publisher(Float32, '/road/lead_speed', 10)
         self.state_pub = self.create_publisher(String, '/road/state', 10)
 
-        self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control')
+        self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control '
+                               f'({"curved" if self.curved else "straight"} corridor)')
 
     # ------------------------------------------------------------------ inputs
     def scan_callback(self, msg):
@@ -80,14 +95,30 @@ class RoadDriver(Node):
     def odom_callback(self, msg):
         self.v_ego = msg.twist.twist.linear.x
 
+    def lane_callback(self, name, msg):
+        a = self.lane_alpha
+        self.lane[name] = (1 - a) * self.lane[name] + a * float(msg.data)
+        if name == 'curvature':
+            self.lane_t = self.get_clock().now().nanoseconds * 1e-9
+
+    def lane_shape(self, now):
+        """(curvature, offset, heading) of our lane, or zeros if not known / switched off."""
+        if not self.curved or self.lane_t is None or now - self.lane_t > self.lane_timeout:
+            return 0.0, 0.0, 0.0
+        return self.lane['curvature'], self.lane['offset'], self.lane['heading']
+
     def desired_callback(self, msg):
         self.desired = msg
         now = self.get_clock().now().nanoseconds * 1e-9
         self.control(now)
 
     # ------------------------------------------------------------- perception
-    def gap_ahead(self):
-        """Distance from our front bumper to the nearest LiDAR return inside our lane corridor."""
+    def gap_ahead(self, kappa=0.0, e_lat=0.0, e_head=0.0):
+        """
+        Distance along our lane from the front bumper to the nearest LiDAR return inside the lane
+        corridor. The corridor is the lane centre ahead (a circular arc of curvature kappa, or a
+        straight line) +/- corridor_half_width; e_lat / e_head place the robot relative to it.
+        """
         if self.scan is None:
             return math.inf
         r = np.asarray(self.scan.ranges, dtype=float)
@@ -95,10 +126,21 @@ class RoadDriver(Node):
         ok = np.isfinite(r) & (r > self.scan.range_min)
         x = r[ok] * np.cos(angles[ok])
         y = r[ok] * np.sin(angles[ok])
-        ahead = (x > 0.0) & (x < self.lookahead + self.front_offset) & (np.abs(y) < self.half_width)
+        # points in the lane frame: origin on the lane centre beside us, X along the lane, Y to the left
+        c, s_ = math.cos(e_head), math.sin(e_head)
+        X = x * c - y * s_
+        Y = e_lat + x * s_ + y * c
+        if abs(kappa) < 0.02:                      # (almost) straight
+            along, lateral = X, Y
+        else:                                      # arc: centre of the bend at (0, 1/kappa)
+            Rc = 1.0 / kappa
+            ang = np.arctan2(X, abs(Rc) - np.sign(Rc) * Y)   # angle swept around the bend
+            along = abs(Rc) * ang
+            lateral = np.sign(Rc) * (abs(Rc) - np.hypot(X, Y - Rc))
+        ahead = (along > 0.0) & (along < self.lookahead + self.front_offset) & (np.abs(lateral) < self.half_width)
         if not ahead.any():
             return math.inf
-        return max(0.0, float(x[ahead].min()) - self.front_offset)
+        return max(0.0, float(along[ahead].min()) - self.front_offset)
 
     # ----------------------------------------------------------------- control
     def control(self, now):
@@ -106,7 +148,8 @@ class RoadDriver(Node):
         self.prev_t = now
         v_set = min(self.max_speed, max(0.0, self.desired.linear.x))
         v_ego = self.v_cmd if self.v_ego is None else self.v_ego
-        gap = self.gap_ahead()
+        kappa, e_lat, e_head = self.lane_shape(now)
+        gap = self.gap_ahead(kappa, e_lat, e_head)
 
         # Lead-vehicle speed = our speed + rate the gap is changing (smoothed).
         if math.isfinite(gap) and self.prev_gap is not None and math.isfinite(self.prev_gap) and dt > 1e-3:
@@ -114,6 +157,8 @@ class RoadDriver(Node):
             self.lead_speed = raw if self.lead_speed is None else (1 - self.alpha) * self.lead_speed + self.alpha * raw
         elif not math.isfinite(gap):
             self.lead_speed = None
+        if math.isfinite(gap) and (self.prev_gap is None or not math.isfinite(self.prev_gap)):
+            self.get_logger().info(f'ROAD: target detected {gap:.2f} m ahead (corridor curvature {kappa:+.3f} 1/m)')
         self.prev_gap = gap
 
         if not math.isfinite(gap):
@@ -158,7 +203,8 @@ class RoadDriver(Node):
         if self.count % 60 == 0:
             lead = 'none' if self.lead_speed is None else f'{self.lead_speed:.2f}'
             self.get_logger().info(
-                f'ROAD: {state} v={self.v_cmd:.2f} m/s gap={gap:.2f} m lead_speed={lead} m/s')
+                f'ROAD: {state} v={self.v_cmd:.2f} m/s gap={gap:.2f} m lead_speed={lead} m/s '
+                f'corridor curvature={kappa:+.3f} 1/m')
 
 
 def main(args=None):

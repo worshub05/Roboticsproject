@@ -27,6 +27,7 @@ setup(
             'lidar_obstacle_detector.py = lane_follower_perception.lidar_obstacle_detector:main',
             'dwa_obstacle_avoidance.py = lane_follower_perception.dwa_obstacle_avoidance:main',
             'multitask_inference_node.py = lane_follower_perception.multitask_inference_node:main',
+            'track_traffic.py = lane_follower_perception.track_traffic:main',
             'road_driver.py = lane_follower_perception.road_driver:main',
             'traffic_manager.py = lane_follower_perception.traffic_manager:main',
             'collect_track_data.py = lane_follower_perception.collect_track_data:main',
