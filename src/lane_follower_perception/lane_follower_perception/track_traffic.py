@@ -18,7 +18,7 @@ import rclpy
 from rclpy.node import Node
 from gazebo_msgs.srv import SetEntityState, SpawnEntity
 from nav_msgs.msg import Odometry
-from std_msgs.msg import Float32
+from std_msgs.msg import Float32, Float32MultiArray
 
 from .collect_track_data import L, R, track_path
 
@@ -83,6 +83,7 @@ class TrackTraffic(Node):
         self.state_client = self.create_client(SetEntityState, '/gazebo/set_entity_state')
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.gap_pub = self.create_publisher(Float32, '/traffic/true_gap', 10)
+        self.cars_pub = self.create_publisher(Float32MultiArray, '/traffic/cars', 10)   # x, y, yaw per car
         self.create_timer(1.0 / g('rate'), self.tick)
         self.get_logger().info(f'Track traffic: scenario "{self.scenario}", cars ' +
                                ', '.join(f'{c[0]} (s={c[2]:.1f}, {c[3]:+.2f} m/s)' for c in self.cars))
@@ -131,9 +132,12 @@ class TrackTraffic(Node):
         now = self.get_clock().now().nanoseconds * 1e-9
         dt = 0.0 if self.t_prev is None else now - self.t_prev
         self.t_prev = now
+        truth = []
         for car in self.cars:
             car[2] = (car[2] + car[3] * dt) % PER
             self.move(car)
+            truth += [float(v) for v in self.pose_of(car)]
+        self.cars_pub.publish(Float32MultiArray(data=truth))
         if self.robot is None:
             return
 
