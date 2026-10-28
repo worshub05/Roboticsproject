@@ -21,6 +21,16 @@ point hidden behind the slow car counts as not clear. The distance needed is
     D = (v_pass + v_oncoming_max) * T_overtake + margin,
 so an oncoming car outside the check zone cannot reach us before we are back.
 
+With the LiDAR tracker running (/tracks), the decision also uses what is MEASURED about the
+oncoming cars, not only the worst-case assumption:
+  - a visible oncoming car is acceptable if, at its measured speed (plus a safety margin), it
+    cannot reach us before the overtake is finished; cars do not overtake in the oncoming lane,
+    so nothing hidden behind that car can arrive first, and the lane only has to be checked up
+    to it
+  - during the lane change, the measured speeds are re-checked every cycle and the overtake is
+    aborted if any oncoming car would now arrive too soon (e.g. it is faster than assumed)
+Without /tracks it falls back to the LiDAR-only check above.
+
 While overtaking, steering comes from a path tracker that uses odometry and the known track
 layout (a map), because the CNN was only trained in our own lane.
 """
@@ -32,7 +42,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from sensor_msgs.msg import LaserScan
-from std_msgs.msg import Float32, String
+from std_msgs.msg import Float32, Float32MultiArray, String
 
 from .collect_track_data import L, R, track_path
 
@@ -100,11 +110,18 @@ class OvertakePlanner(Node):
         p('car_length', 0.5)
         p('gain_lateral', 1.5)
         p('gain_heading', 2.0)
+        p('use_tracker', True)          # use measured speeds from /tracks when they are available
+        p('speed_factor', 1.2)          # measured oncoming speed is multiplied by this ...
+        p('speed_margin', 0.05)         # ... and this is added (m/s), to allow for tracking error
+        p('tracks_timeout', 0.5)        # s, /tracks older than this are ignored
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.c = {n: g(n) for n in ('cruise_speed', 'pass_speed', 'oncoming_max_speed', 'lane_width',
                                     'peek_offset', 'change_length', 'peek_length', 'peek_gap', 'trigger_gap', 'slow_ratio',
                                     'trigger_time', 'clear_time', 'return_gap', 'margin', 'max_check',
-                                    'robot_length', 'car_length', 'gain_lateral', 'gain_heading')}
+                                    'robot_length', 'car_length', 'gain_lateral', 'gain_heading',
+                                    'use_tracker', 'speed_factor', 'speed_margin', 'tracks_timeout')}
+        self.tracks, self.tracks_t = [], None     # (x, y, vx, vy, young) of every confirmed car
+        self.first_seen = {}
 
         self.state = 'LANE_KEEP'
         self.pose = None                 # x, y, yaw, v
@@ -129,11 +146,13 @@ class OvertakePlanner(Node):
         self.create_subscription(LaserScan, '/scan', self.scan_cb, 10)
         self.create_subscription(Float32, '/road/gap', lambda m: setattr(self, 'road_gap', m.data if m.data >= 0 else math.inf), 10)
         self.create_subscription(Float32, '/road/lead_speed', lambda m: setattr(self, 'lead_speed', None if m.data < 0 else m.data), 10)
+        self.create_subscription(Float32MultiArray, '/tracks', self.tracks_cb, 10)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel_desired', 10)
         self.lane_pubs = {n: self.create_publisher(Float32, '/lane/' + n, 10) for n in self.cnn_lane}
         self.state_pub = self.create_publisher(String, '/behaviour/state', 10)
         self.create_timer(0.05, self.tick)
-        self.get_logger().info('Overtake planner ready (two-way road, occlusion-aware gap check)')
+        self.get_logger().info('Overtake planner ready (two-way road, occlusion-aware gap check'
+                               + (', measured oncoming speeds from /tracks)' if self.c['use_tracker'] else ')'))
 
     # ------------------------------------------------------------------ inputs
     def cnn_cmd_cb(self, msg):
@@ -141,6 +160,17 @@ class OvertakePlanner(Node):
 
     def scan_cb(self, msg):
         self.scan = msg
+
+    def tracks_cb(self, msg):
+        d = list(msg.data)
+        now = self.get_clock().now().nanoseconds * 1e-9
+        self.tracks = []
+        for i in range(0, len(d) - 7, 8):
+            tid = int(d[i])
+            self.first_seen.setdefault(tid, now)
+            # a car first seen less than 1 s ago has no reliable speed yet: assume the worst
+            self.tracks.append(tuple(d[i + 1:i + 5]) + (now - self.first_seen[tid] < 1.0,))
+        self.tracks_t = now
 
     def odom_cb(self, msg):
         p, q = msg.pose.pose.position, msg.pose.pose.orientation
@@ -171,9 +201,10 @@ class OvertakePlanner(Node):
         rel = (s - self.fr[0] + PER / 2) % PER - PER / 2
         return bool(np.any((d > d_lo) & (d < d_hi) & (rel > -s_back) & (rel < s_fwd)))
 
-    def other_lane_clear(self, dist):
+    def other_lane_clear(self, dist, known=()):
         """
         Occlusion-aware check of the other lane's centre line from just behind us to 'dist' ahead.
+        Points on a car in 'known' (x, y list, already judged safe by its measured speed) are skipped.
         Returns (clear, reason).
         """
         if dist > self.c['max_check']:
@@ -188,7 +219,7 @@ class OvertakePlanner(Node):
             px, py, _ = track_path(s0 + k, w)
             dx, dy = px - x0, py - y0
             rng = math.hypot(dx, dy)
-            if rng < 0.3:
+            if rng < 0.3 or any(math.hypot(px - kx, py - ky) < 0.45 for kx, ky in known):
                 continue
             i = int(round((wrap(math.atan2(dy, dx) - yaw) - sc.angle_min) / sc.angle_increment)) % n
             beams = r[[(i - 1) % n, i, (i + 1) % n]]
@@ -199,15 +230,76 @@ class OvertakePlanner(Node):
                 return False, f'cannot see the other lane {k:.1f} m ahead (hidden behind the slow car)'
         return True, f'other lane seen clear for {dist:.1f} m'
 
-    def needed_distance(self):
-        """How far ahead the other lane must be clear for the whole overtake."""
+    def needed_time(self):
+        """How long we will be using the other lane for this overtake (s)."""
         c = self.c
         v_lead = 0.0 if self.lead_speed is None else max(0.0, self.lead_speed)
         v_rel = max(0.15, c['pass_speed'] - v_lead)
         gap = self.road_gap if math.isfinite(self.road_gap) else c['trigger_gap']
         to_pass = gap + c['car_length'] + c['robot_length'] + c['return_gap']
-        t = to_pass / v_rel + 2 * c['change_length'] / c['pass_speed']
-        return (c['pass_speed'] + c['oncoming_max_speed']) * t + c['margin']
+        return to_pass / v_rel + 2 * c['change_length'] / c['pass_speed']
+
+    def needed_distance(self):
+        """How far ahead the other lane must be clear if an unseen car could come at the speed limit."""
+        c = self.c
+        return (c['pass_speed'] + c['oncoming_max_speed']) * self.needed_time() + c['margin']
+
+    # ------------------------------------------------ decisions with the tracker
+    def tracked_cars(self, now):
+        """Fresh tracks in track coordinates: s_rel (m ahead of us), d, signed speed along our lane."""
+        if not self.c['use_tracker'] or self.tracks_t is None or now - self.tracks_t > self.c['tracks_timeout']:
+            return None
+        out = []
+        for x, y, vx, vy, young in self.tracks:
+            s, d = to_frenet([x], [y])
+            s, d = float(s[0]), float(d[0])
+            th = track_path(s, d)[2]
+            out.append(dict(x=x, y=y, s_rel=(s - self.fr[0] + PER / 2) % PER - PER / 2, d=d,
+                            v=vx * math.cos(th) + vy * math.sin(th), young=young))
+        return out
+
+    def oncoming_threat(self, cars, t_need):
+        """
+        The first car in the other lane that could reach us within t_need seconds at its measured
+        speed (inflated by the safety factor), or None. Cars driving our way in the other lane
+        count too if we would catch them.
+        """
+        c = self.c
+        w = c['lane_width']
+        for car in sorted(cars, key=lambda k: k['s_rel']):
+            if abs(car['d'] - w) > 0.35 or car['s_rel'] < -1.0:
+                continue
+            v_toward = max(0.0, -car['v']) * c['speed_factor'] + c['speed_margin']   # its speed towards us
+            if car['young']:
+                v_toward = max(v_toward, c['oncoming_max_speed'])      # speed not known yet: assume the limit
+            closing = c['pass_speed'] + v_toward if car['v'] <= 0.03 else max(0.0, c['pass_speed'] - car['v'])
+            if car['s_rel'] < closing * t_need + c['margin']:
+                speed = -car['v']
+                return car, (f'oncoming car {car["s_rel"]:.1f} m ahead at {speed:.2f} m/s would meet us in '
+                             f'{car["s_rel"] / max(closing, 1e-3):.1f} s (we need {t_need:.1f} s)')
+        return None, ''
+
+    def tracker_lane_clear(self, cars):
+        """Gap acceptance with measured speeds. Returns (clear, reason, t_need)."""
+        c = self.c
+        t_need = self.needed_time()
+        car, why = self.oncoming_threat(cars, t_need)
+        if car is not None:
+            return False, why, t_need
+        # The lane only has to be SEEN empty up to the nearest car in it (nothing can pass that car),
+        # or, if there is none, far enough for an unseen car at the speed limit.
+        w = c['lane_width']
+        in_lane = [k for k in cars if abs(k['d'] - w) <= 0.35 and k['s_rel'] > -1.0]
+        dist = self.needed_distance()
+        bounded = ''
+        if in_lane:
+            nearest = min(k['s_rel'] for k in in_lane)
+            if nearest - 0.6 < dist:
+                dist, bounded = max(0.0, nearest - 0.6), f' up to the tracked car {nearest:.1f} m ahead'
+        ok, why = self.other_lane_clear(dist, known=[(k['x'], k['y']) for k in in_lane])
+        if ok:
+            why = f'other lane seen clear for {dist:.1f} m{bounded}; measured oncoming traffic cannot reach us in {t_need:.1f} s'
+        return ok, why, t_need
 
     # ----------------------------------------------------------------- control
     def d_reference(self):
@@ -254,13 +346,17 @@ class OvertakePlanner(Node):
                 self.start_change(0.0)
                 self.set_state('CHANGE_RIGHT', 'slow car no longer ahead')
             else:
-                need = self.needed_distance()
-                ok, why = self.other_lane_clear(need)
+                need, t_need = self.needed_distance(), self.needed_time()
+                cars = self.tracked_cars(now)
+                if cars is not None:
+                    ok, why, t_need = self.tracker_lane_clear(cars)
+                else:
+                    ok, why = self.other_lane_clear(need)
                 if ok:
                     self.clear_since = now if self.clear_since is None else self.clear_since
                     if now - self.clear_since > c['clear_time']:
                         self.start_change(c['lane_width'])
-                        self.go = (now, need)
+                        self.go = (now, need, t_need)
                         self.set_state('CHANGE_LEFT', why)
                 else:
                     self.clear_since = None
@@ -275,7 +371,15 @@ class OvertakePlanner(Node):
             # to the assumed speed limit, so only the part of that distance still needed is re-checked.
             # A car inside it means it is faster than assumed: go back while we still can.
             remaining = self.go[1] - (c['pass_speed'] + c['oncoming_max_speed']) * (now - self.go[0])
-            if not committed and remaining > 0.5:
+            cars = self.tracked_cars(now)
+            if not committed and cars is not None:
+                # re-check every cycle with the measured speeds and the time we still need
+                car, why = self.oncoming_threat(cars, max(0.5, self.go[2] - (now - self.go[0])))
+                if car is not None:
+                    self.start_change(0.0)
+                    self.set_state('ABORT', why)
+                    return self.publish(now)
+            elif not committed and remaining > 0.5:
                 ok, why = self.other_lane_clear(remaining)
                 if not ok and 'oncoming' in why:
                     self.start_change(0.0)
@@ -295,7 +399,7 @@ class OvertakePlanner(Node):
                 ok, why = self.other_lane_clear(need)
                 if ok:
                     self.start_change(c['lane_width'])
-                    self.go, self.stopped_since = (now, need), None
+                    self.go, self.stopped_since = (now, need, self.needed_time()), None
                     self.set_state('CHANGE_LEFT', 'retry: ' + why)
         elif st in ('CHANGE_RIGHT', 'ABORT'):
             self.stopped_since = None
