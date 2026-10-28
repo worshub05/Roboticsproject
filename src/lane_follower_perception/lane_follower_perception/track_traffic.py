@@ -73,6 +73,7 @@ class TrackTraffic(Node):
         self.path = np.array([track_path(si, 0.0) for si in ss])
         self.robot = None            # x, y, s, speed
         self.spawned = False
+        self.spawn_futures = []
         self.t_prev = None
         self.min_gap = math.inf      # true gap to the car ahead in our lane
         self.min_clear = math.inf    # closest approach to any car
@@ -84,6 +85,8 @@ class TrackTraffic(Node):
         self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
         self.gap_pub = self.create_publisher(Float32, '/traffic/true_gap', 10)
         self.cars_pub = self.create_publisher(Float32MultiArray, '/traffic/cars', 10)   # x, y, yaw per car
+        self.cars_v_pub = self.create_publisher(Float32MultiArray, '/traffic/cars_v', 10)  # x, y, yaw, vx, vy
+        self.prev_xy = {}
         self.create_timer(1.0 / g('rate'), self.tick)
         self.get_logger().info(f'Track traffic: scenario "{self.scenario}", cars ' +
                                ', '.join(f'{c[0]} (s={c[2]:.1f}, {c[3]:+.2f} m/s)' for c in self.cars))
@@ -109,7 +112,7 @@ class TrackTraffic(Node):
             req.initial_pose.position.x, req.initial_pose.position.y = float(x), float(y)
             req.initial_pose.orientation.z, req.initial_pose.orientation.w = math.sin(th / 2), math.cos(th / 2)
             req.reference_frame = 'world'
-            self.spawn_client.call_async(req)
+            self.spawn_futures.append(self.spawn_client.call_async(req))
         self.spawned = True
         self.get_logger().info(f'Track traffic: {len(self.cars)} cars spawned')
 
@@ -127,8 +130,8 @@ class TrackTraffic(Node):
             if self.spawn_client.service_is_ready():
                 self.spawn()
             return
-        if not self.state_client.service_is_ready():
-            return
+        if not self.state_client.service_is_ready() or not all(f.done() for f in self.spawn_futures):
+            return              # wait until Gazebo has really created every car
         now = self.get_clock().now().nanoseconds * 1e-9
         dt = 0.0 if self.t_prev is None else now - self.t_prev
         self.t_prev = now
@@ -138,6 +141,15 @@ class TrackTraffic(Node):
             self.move(car)
             truth += [float(v) for v in self.pose_of(car)]
         self.cars_pub.publish(Float32MultiArray(data=truth))
+        truth_v = []
+        for car in self.cars:
+            x, y, th = self.pose_of(car)
+            # exact velocity: speed along the lane (a lane offset to the inside is slower on a bend)
+            sm = car[2] % PER
+            bend = L <= sm < L + math.pi * R or sm >= 2 * L + math.pi * R
+            speed = abs(car[3]) * ((R - car[1]) / R if bend else 1.0)
+            truth_v += [float(x), float(y), float(th), speed * math.cos(th), speed * math.sin(th)]
+        self.cars_v_pub.publish(Float32MultiArray(data=truth_v))
         if self.robot is None:
             return
 

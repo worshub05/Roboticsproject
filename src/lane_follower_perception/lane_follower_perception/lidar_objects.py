@@ -89,7 +89,8 @@ def detect_objects(scan, max_size=1.0):
     Clusters bigger than max_size in either direction (walls etc.) are dropped.
     """
     out = []
-    for pts in cluster_scan(scan.ranges, scan.angle_min, scan.angle_increment, scan.range_min):
+    range_max = getattr(scan, 'range_max', 10.0) - 0.02     # keep returns right up to the LiDAR's limit
+    for pts in cluster_scan(scan.ranges, scan.angle_min, scan.angle_increment, scan.range_min, range_max):
         cx, cy, th, l, w = fit_box(pts)
         if l > max_size or w > max_size:
             continue
