@@ -11,6 +11,8 @@ Every scan:
 Publishes (std_msgs/Float32MultiArray):
   /objects  6 numbers per detection:     x, y, yaw, length, width, points
   /tracks   8 numbers per confirmed car: id, x, y, vx, vy, yaw, length, width
+  /predictions 9 numbers per confirmed car: id, lane (0 ours, 1 other, -1 off road),
+               direction (+1 our way, -1 oncoming), then x, y after 1, 2 and 3 s (lane following)
 """
 import math
 
@@ -22,6 +24,7 @@ from std_msgs.msg import Float32MultiArray
 
 from .lidar_objects import detect_objects
 from .mot import MultiObjectTracker
+from .predict import predict_lane
 
 
 class LidarTracker(Node):
@@ -37,6 +40,7 @@ class LidarTracker(Node):
         self.create_subscription(LaserScan, '/scan', self.scan_callback, 10)
         self.obj_pub = self.create_publisher(Float32MultiArray, '/objects', 10)
         self.trk_pub = self.create_publisher(Float32MultiArray, '/tracks', 10)
+        self.pred_pub = self.create_publisher(Float32MultiArray, '/predictions', 10)
         self.get_logger().info('LiDAR tracker ready (box fitting + Kalman filter tracking)')
 
     def odom_callback(self, msg):
@@ -63,11 +67,24 @@ class LidarTracker(Node):
         for tr in tracks:
             out += [float(tr.id), tr.x[0], tr.x[1], tr.x[2], tr.x[3], tr.yaw, tr.length, tr.width]
         self.trk_pub.publish(Float32MultiArray(data=[float(v) for v in out]))
+        pred = []
+        for tr in tracks:
+            pts, lane, direction = predict_lane(*tr.x)
+            pred += [float(tr.id), float(lane), float(direction)] + [float(v) for xy in pts for v in xy]
+        self.pred_pub.publish(Float32MultiArray(data=pred))
 
         self.count += 1
         if self.count % 90 == 0:
-            desc = ', '.join(f'#{tr.id} {math.hypot(tr.x[0] - x0, tr.x[1] - y0):.1f} m away at {tr.speed:.2f} m/s'
-                             for tr in tracks) or 'none'
+            names = {(0, 1): 'ahead in our lane', (0, -1): 'in our lane (coming back?)', (1, -1): 'oncoming',
+                     (1, 1): 'other lane, our way', (0, 0): 'our lane', (1, 0): 'other lane'}
+            desc = []
+            for tr in tracks:
+                _, lane, direction = predict_lane(*tr.x)
+                if tr.speed < 0.03:
+                    direction = 0                      # stopped: no direction
+                desc.append(f'#{tr.id} {math.hypot(tr.x[0] - x0, tr.x[1] - y0):.1f} m away at {tr.speed:.2f} m/s '
+                            f'({names.get((lane, direction), "off road")})')
+            desc = ', '.join(desc) or 'none'
             self.get_logger().info(f'TRACKER: {len(tracks)} cars tracked: {desc}')
 
 
