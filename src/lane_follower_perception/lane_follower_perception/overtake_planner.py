@@ -137,6 +137,7 @@ class OvertakePlanner(Node):
         self.last_log = 0.0
         self.go = None                   # (time, clear distance) when the overtake was started
         self.stopped_since = None
+        self.lost_since = None           # when the slow car ahead stopped being seen (PEEK)
         self.overtakes = 0
 
         self.create_subscription(Twist, '/cnn/cmd_vel', self.cnn_cmd_cb, 10)
@@ -332,7 +333,12 @@ class OvertakePlanner(Node):
         lead_slow = self.lead_speed is not None and self.lead_speed < c['slow_ratio'] * c['cruise_speed']
 
         if st == 'LANE_KEEP':
-            if lead_close and lead_slow:
+            # with the tracker running, only react to a real, confirmed car ahead in our lane
+            # (one stray LiDAR return in the ACC corridor no longer starts a peek)
+            cars = self.tracked_cars(now)
+            seen = cars is None or any(abs(k['d']) < 0.3 and 0.0 < k['s_rel'] < c['trigger_gap'] + 0.6
+                                       and not k['young'] for k in cars)
+            if lead_close and lead_slow and seen:
                 self.slow_since = now if self.slow_since is None else self.slow_since
                 if now - self.slow_since > c['trigger_time']:
                     self.start_change(c['peek_offset'], c['peek_length'])
@@ -342,10 +348,12 @@ class OvertakePlanner(Node):
                 self.slow_since = None
 
         elif st == 'PEEK':
-            if not (math.isfinite(self.road_gap) and self.road_gap < c['trigger_gap'] + 1.0):
+            gone = not (math.isfinite(self.road_gap) and self.road_gap < c['trigger_gap'] + 1.0)
+            self.lost_since = (now if self.lost_since is None else self.lost_since) if gone else None
+            if gone and now - self.lost_since > 1.0:       # ignore short dropouts
                 self.start_change(0.0)
                 self.set_state('CHANGE_RIGHT', 'slow car no longer ahead')
-            else:
+            elif not gone:
                 need, t_need = self.needed_distance(), self.needed_time()
                 cars = self.tracked_cars(now)
                 if cars is not None:
