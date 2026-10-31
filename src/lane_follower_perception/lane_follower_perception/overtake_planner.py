@@ -45,6 +45,7 @@ from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32, Float32MultiArray, String
 
 from .collect_track_data import L, R, track_path
+from .lateral_control import ManoeuvreStats, MPCSteering
 
 PER = 2 * L + 2 * math.pi * R
 
@@ -114,12 +115,14 @@ class OvertakePlanner(Node):
         p('speed_factor', 1.2)          # measured oncoming speed is multiplied by this ...
         p('speed_margin', 0.05)         # ... and this is added (m/s), to allow for tracking error
         p('tracks_timeout', 0.5)        # s, /tracks older than this are ignored
+        p('controller', 'tracker')      # steering during manoeuvres: tracker | mpc
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.c = {n: g(n) for n in ('cruise_speed', 'pass_speed', 'oncoming_max_speed', 'lane_width',
                                     'peek_offset', 'change_length', 'peek_length', 'peek_gap', 'trigger_gap', 'slow_ratio',
                                     'trigger_time', 'clear_time', 'return_gap', 'margin', 'max_check',
                                     'robot_length', 'car_length', 'gain_lateral', 'gain_heading',
-                                    'use_tracker', 'speed_factor', 'speed_margin', 'tracks_timeout')}
+                                    'use_tracker', 'speed_factor', 'speed_margin', 'tracks_timeout',
+                                    'controller')}
         self.tracks, self.tracks_t = [], None     # (x, y, vx, vy, young) of every confirmed car
         self.first_seen = {}
 
@@ -139,6 +142,8 @@ class OvertakePlanner(Node):
         self.stopped_since = None
         self.lost_since = None           # when the slow car ahead stopped being seen (PEEK)
         self.overtakes = 0
+        self.mpc = MPCSteering()
+        self.stats = ManoeuvreStats()
 
         self.create_subscription(Twist, '/cnn/cmd_vel', self.cnn_cmd_cb, 10)
         for n in self.cnn_lane:
@@ -312,6 +317,14 @@ class OvertakePlanner(Node):
         f, df = smoothstep(u)
         return d_from + (d_to - d_from) * f, (d_to - d_from) * df / length
 
+    def ref_at(self, sq):
+        """Planned lateral position and slope at any track position sq (used by the MPC preview)."""
+        if self.change is None:
+            return self.d_hold, 0.0
+        s_start, d_from, d_to, length = self.change
+        f, df = smoothstep(ahead(s_start, sq) / length if ahead(s_start, sq) < PER / 2 else 0.0)
+        return d_from + (d_to - d_from) * f, (d_to - d_from) * df / length
+
     def start_change(self, d_to, length=None):
         self.change = (self.fr[0], self.fr[1], d_to, length or self.c['change_length'])
         self.d_hold = d_to
@@ -342,6 +355,7 @@ class OvertakePlanner(Node):
                 self.slow_since = now if self.slow_since is None else self.slow_since
                 if now - self.slow_since > c['trigger_time']:
                     self.start_change(c['peek_offset'], c['peek_length'])
+                    self.stats.reset()
                     self.clear_since = None
                     self.set_state('PEEK', f'slow car {self.road_gap:.1f} m ahead at {self.lead_speed:.2f} m/s')
             else:
@@ -414,7 +428,8 @@ class OvertakePlanner(Node):
             if ahead(self.change[0], s) >= self.change[3] and abs(d) < 0.06 and abs(e_head) < 0.12:
                 if st == 'CHANGE_RIGHT' and self.d_hold == 0.0 and self.change[1] > 0.3:
                     self.overtakes += 1
-                    self.get_logger().info(f'BEHAVIOUR: ✅ overtake {self.overtakes} complete')
+                    self.get_logger().info(f'BEHAVIOUR: ✅ overtake {self.overtakes} complete '
+                                           f'[{c["controller"]}: {self.stats.summary(0.05)}]')
                 self.change = None
                 self.slow_since = None
                 self.set_state('LANE_KEEP', 'back in our lane, CNN driving')
@@ -446,7 +461,12 @@ class OvertakePlanner(Node):
             # a car can only move sideways by driving forward: creep until the peek position is reached
             if abs(d - c['peek_offset']) > 0.03 and self.road_gap > 0.75:
                 v = max(v, 0.08)
-        w = v * k_path - c['gain_lateral'] * (d - d_ref) - c['gain_heading'] * (e_head - math.atan(slope))
+        if c['controller'] == 'mpc':
+            w, ms = self.mpc.steer(s, d, e_head, self.pose[3], v, self.ref_at, lane_curvature)
+        else:
+            w = v * k_path - c['gain_lateral'] * (d - d_ref) - c['gain_heading'] * (e_head - math.atan(slope))
+            ms = None
+        self.stats.add(d - d_ref, float(np.clip(w, -1.5, 1.5)), ms)
         cmd = Twist()
         cmd.linear.x = v
         cmd.angular.z = float(np.clip(w, -1.5, 1.5))
