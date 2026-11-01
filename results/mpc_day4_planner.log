@@ -1,0 +1,61 @@
+[INFO] [1793542760.640443055] [overtake_planner]: Overtake planner ready (two-way road, occlusion-aware gap check, measured oncoming speeds from /tracks)
+[INFO] [1793542779.695787756] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 3.2 m ahead at 0.10 m/s)
+[INFO] [1793542779.712718935] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 12.8 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1793542782.180836850] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 9.3 m ahead at 0.30 m/s would meet us in 8.4 s (we need 10.0 s)
+[INFO] [1793542784.571178749] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 7.6 m ahead at 0.28 m/s would meet us in 7.0 s (we need 8.6 s)
+[INFO] [1793542786.946095551] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 6.5 m ahead at 0.28 m/s would meet us in 6.0 s (we need 7.9 s)
+[INFO] [1793542789.438494470] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 5.6 m ahead at 0.27 m/s would meet us in 5.2 s (we need 7.5 s)
+[INFO] [1793542791.818148879] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 4.7 m ahead at 0.25 m/s would meet us in 4.5 s (we need 7.5 s)
+[INFO] [1793542794.181023289] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.9 m ahead at 0.23 m/s would meet us in 3.8 s (we need 7.7 s)
+[INFO] [1793542796.575977404] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.0 m ahead at 0.38 m/s would meet us in 2.5 s (we need 7.5 s)
+[INFO] [1793542798.940778176] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 2.2 m ahead at 0.22 m/s would meet us in 2.2 s (we need 7.6 s)
+[INFO] [1793542801.316362165] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 1.4 m ahead at 0.30 m/s would meet us in 1.2 s (we need 7.6 s)
+[INFO] [1793542803.624510950] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 0.5 m ahead at 0.30 m/s would meet us in 0.5 s (we need 7.5 s)
+[INFO] [1793542805.962306998] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.3 m ahead at 0.30 m/s would meet us in -0.3 s (we need 7.6 s)
+[INFO] [1793542808.277271543] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.8 m ahead in the other lane
+[INFO] [1793542809.252890647] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.0 m; measured oncoming traffic cannot reach us in 7.6 s)
+[INFO] [1793542812.693536487] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1793542815.616800334] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+[INFO] [1793542818.745140254] [overtake_planner]: BEHAVIOUR: ✅ overtake 1 complete [mpc: path error RMS 0.7 cm, max 3.3 cm, steering change RMS 0.61 rad/s2, MPC solve median 7.8 ms, max 30.8 ms, budget hits 0, fallbacks 0]
+[INFO] [1793542818.745818856] [overtake_planner]: BEHAVIOUR: CHANGE_RIGHT -> LANE_KEEP (back in our lane, CNN driving)
+[INFO] [1793542884.201697331] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 0.7 m ahead at 0.01 m/s)
+[INFO] [1793542884.215829438] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 0.8 m ahead at 0.30 m/s would meet us in 0.7 s (we need 6.6 s)
+[INFO] [1793542886.543606918] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.5 m ahead at 0.30 m/s would meet us in -0.5 s (we need 9.0 s)
+[INFO] [1793542888.800142342] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.3 m; measured oncoming traffic cannot reach us in 7.9 s)
+[INFO] [1793542891.930600701] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1793542894.300512035] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+[INFO] [1793542897.341815772] [overtake_planner]: BEHAVIOUR: ✅ overtake 2 complete [mpc: path error RMS 1.0 cm, max 2.4 cm, steering change RMS 1.23 rad/s2, MPC solve median 8.0 ms, max 23.7 ms, budget hits 0, fallbacks 0]
+[INFO] [1793542897.342549951] [overtake_planner]: BEHAVIOUR: CHANGE_RIGHT -> LANE_KEEP (back in our lane, CNN driving)
+[INFO] [1793543027.265159830] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 3.0 m ahead at 0.20 m/s)
+[INFO] [1793543027.290839342] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 14.0 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1793543029.795199665] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 11.5 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1793543032.466212318] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 9.7 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1793543034.342875676] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.1 m; measured oncoming traffic cannot reach us in 7.7 s)
+[INFO] [1793543037.862429378] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1793543040.886693833] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/overtake_planner.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'overtake_planner.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/overtake_planner.py", line 487, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+    result = coro.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 396, in _execute_timer
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+    return callback(*args)
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/overtake_planner.py", line 436, in tick
+    self.publish(now)
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/overtake_planner.py", line 473, in publish
+    self.cmd_pub.publish(cmd)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

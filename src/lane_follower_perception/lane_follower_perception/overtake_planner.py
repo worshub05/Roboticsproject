@@ -143,7 +143,7 @@ class OvertakePlanner(Node):
         self.lost_since = None           # when the slow car ahead stopped being seen (PEEK)
         self.overtakes = 0
         self.mpc = MPCSteering()
-        self.stats = ManoeuvreStats()
+        self.stats = ManoeuvreStats(self.mpc)
 
         self.create_subscription(Twist, '/cnn/cmd_vel', self.cnn_cmd_cb, 10)
         for n in self.cnn_lane:
