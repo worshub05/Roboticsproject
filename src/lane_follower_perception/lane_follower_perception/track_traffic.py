@@ -65,6 +65,9 @@ class TrackTraffic(Node):
                          ['parked_car', 0.0, g('parked_s'), 0.0, BLUE]]
             for k, s0 in enumerate(g('oncoming_start_s')):
                 self.cars.append([f'oncoming_car_{k + 1}', 0.5, float(s0), -g('oncoming_speed'), RED])
+        elif self.scenario == 'cutin':
+            # one car for sudden events, parked 3 m off the road between events
+            self.cars = [['cutin_car', -3.0, 0.0, 0.0, RED]]
         else:
             self.cars = [['track_lead_car', 0.0, g('lead_start_s'), g('lead_speed'), BLUE]]
 
@@ -79,6 +82,13 @@ class TrackTraffic(Node):
         self.min_clear = math.inf    # closest approach to any car
         self.collided = set()
         self.count = 0
+        # cut-in scenario: alternating events every 20 s (cut-in from the other lane / car popping up)
+        self.declare_parameter('event_period', 20.0)
+        self.declare_parameter('popup_gap', 0.4)        # m, bumper gap at which a hidden car appears
+        self.declare_parameter('cutin_gap', 0.45)       # m, bumper gap at which the other car cuts in
+        self.event = dict(phase='IDLE', n=0, t=None, t_next=None, min_clear=math.inf, kind='', info='')
+        self.car_clear = {}
+        self.event_results = []
 
         self.spawn_client = self.create_client(SpawnEntity, '/spawn_entity')
         self.state_client = self.create_client(SetEntityState, '/gazebo/set_entity_state')
@@ -135,6 +145,8 @@ class TrackTraffic(Node):
         now = self.get_clock().now().nanoseconds * 1e-9
         dt = 0.0 if self.t_prev is None else now - self.t_prev
         self.t_prev = now
+        if self.scenario == 'cutin' and self.robot is not None:
+            self.cutin_update(now, dt)
         truth = []
         for car in self.cars:
             car[2] = (car[2] + car[3] * dt) % PER
@@ -161,6 +173,7 @@ class TrackTraffic(Node):
             lx, ly = (rx - x) * c - (ry - y) * s, (rx - x) * s + (ry - y) * c   # robot in the car's frame
             cl = max(abs(lx) - CAR_HALF_LENGTH - ROBOT_RADIUS, abs(ly) - CAR_HALF_WIDTH - ROBOT_RADIUS)
             clear = min(clear, cl)
+            self.car_clear[car[0]] = cl
             if cl < 0.0 and car[0] not in self.collided:
                 self.collided.add(car[0])
                 self.get_logger().info(f'TRAFFIC: ❌ COLLISION with {car[0]}')
@@ -175,6 +188,52 @@ class TrackTraffic(Node):
         if self.count % 80 == 0:
             self.get_logger().info(f'TRAFFIC: robot at s={rs:.1f} m, {rv:.2f} m/s, true gap to car ahead in our lane '
                                    f'{gap:.2f} m, closest approach to any car so far {self.min_clear:.2f} m')
+
+
+def _cutin_update(self, now, dt):
+    """Sudden events for the emergency braking test (scenario 'cutin')."""
+    ev, car = self.event, self.cars[0]
+    rx, ry, rs, rv, rd = self.robot
+    gap = (car[2] - rs) % PER - CAR_HALF_LENGTH - ROBOT_FRONT        # bumper gap along our lane
+    if ev['phase'] == 'IDLE':
+        car[1], car[2], car[3] = -3.0, rs, 0.0                        # wait off the road, beside us
+        if ev['t_next'] is None:
+            ev['t_next'] = now + 15.0
+        if now >= ev['t_next'] and rv > 0.3 and abs(rd) < 0.1:
+            ev['n'] += 1
+            ev['min_clear'] = math.inf
+            ev['t'] = now
+            if ev['n'] % 2 == 1:                                      # cut-in from the other lane
+                ev['kind'], ev['phase'] = 'cut-in', 'APPROACH'
+                car[1], car[2], car[3] = 0.5, (rs + 1.2 + CAR_HALF_LENGTH + ROBOT_FRONT) % PER, 0.2
+            else:                                                     # hidden stopped car pops up
+                g = self.get_parameter('popup_gap').value
+                ev['kind'], ev['phase'] = 'pop-up', 'STOPPED'
+                car[1], car[2], car[3] = 0.0, (rs + g + CAR_HALF_LENGTH + ROBOT_FRONT) % PER, 0.0
+                ev['info'] = f'stopped car appeared {g:.2f} m ahead while we drove {rv:.2f} m/s'
+    elif ev['phase'] == 'APPROACH':                                   # in the other lane, we close in
+        if gap < self.get_parameter('cutin_gap').value or now - ev['t'] > 8.0:
+            ev['phase'], ev['t_cut'] = 'CUT', now
+            ev['info'] = f'car cut in {gap:.2f} m ahead while we drove {rv:.2f} m/s, then braked hard'
+    elif ev['phase'] == 'CUT':                                        # 0.5 m sideways in 0.5 s
+        car[1] = max(0.0, car[1] - 1.0 * dt)
+        if car[1] <= 0.15:
+            car[3] = max(0.0, car[3] - 1.5 * dt)                     # brakes hard once in our lane
+        if car[1] == 0.0 and car[3] == 0.0:
+            ev['phase'], ev['t'] = 'STOPPED', now
+    if ev['phase'] in ('CUT', 'STOPPED'):
+        ev['min_clear'] = min(ev['min_clear'], self.car_clear.get(car[0], math.inf))
+        if ev['phase'] == 'STOPPED' and now - ev['t'] > 4.0:
+            ok = ev['min_clear'] > 0.0
+            self.event_results.append(ok)
+            self.get_logger().info(f'TRAFFIC: {ev["kind"]} {ev["n"]}: {ev["info"]}; closest approach '
+                                   f'{max(0.0, ev["min_clear"]):.2f} m, {"✅ no collision" if ok else "❌ collision"} '
+                                   f'(events so far {len(self.event_results)}, collisions '
+                                   f'{self.event_results.count(False)})')
+            ev['phase'], ev['t_next'] = 'IDLE', now + self.get_parameter('event_period').value
+
+
+TrackTraffic.cutin_update = _cutin_update
 
 
 def main(args=None):

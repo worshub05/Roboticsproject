@@ -1,0 +1,24 @@
+Safety 2: time-to-collision emergency braking (AEB) - results so far (1 Nov 2026)
+
+Offline (tools/aeb_offline_test.py, ACC broken, 5 seeds):
+  cut-in 0.25 m ahead + hard brake: none 5/5 collisions, RSS only 5/5, AEB 0/5, RSS+AEB 0/5
+  hidden stopped car 0.4 m ahead:   none 5/5, RSS only 5/5, AEB 0/5, RSS+AEB 0/5
+  tailgating, lead brakes hard:     none 5/5, RSS only 0/5, AEB 0/5, RSS+AEB 0/5
+  normal ACC following:             0 AEB brakes (no false alarms)
+  closest a sudden obstacle can appear and still be avoided:
+    cut-in:      RSS only 0.30 m, AEB 0.15 m
+    hidden car:  RSS only 0.45 m, AEB 0.25 m
+
+Gazebo, scenario cutin (ACC fault), events every 20 s, 0 collisions in every run:
+  pop-up 0.40 m ahead at 0.50 m/s, closest approach:
+    no safety (D)        0.08 m (1 event)
+    RSS only (E, H)      0.18-0.19 m (3 events)
+    RSS + AEB (F, I)     0.27 m (2 events)
+  cut-in 0.42-0.44 m ahead: 0.08 m without safety, 0.17-0.18 m with RSS, with or without AEB
+  (RSS already tracks the cut-in car in the other lane before it cuts in)
+
+Normal overtaking (G): 2 overtakes, 0 collisions, 0 RSS dangers, but 5 unnecessary AEB full
+brakes: the predicted arc swings across the slow car while pulling out (distance jumps look like
+>1.5 m/s closing), and creeping at 0.08 m/s escalated a partial brake to a standstill.
+Fix: closing speed capped at our speed + 0.4 m/s, standstill only when the object is < 0.3 m.
+Offline results unchanged after the fix. Still to do: rerun G (G2) and the 0.25 m pop-up (J, K).

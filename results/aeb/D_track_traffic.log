@@ -1,0 +1,18 @@
+[INFO] [1793547517.399072022] [track_traffic]: Track traffic: scenario "cutin", cars cutin_car (s=0.0, +0.00 m/s)
+[INFO] [1793547517.413113225] [track_traffic]: Track traffic: 1 cars spawned
+[INFO] [1793547522.001006231] [track_traffic]: TRAFFIC: robot at s=0.0 m, 0.00 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.71 m
+[INFO] [1793547526.613622701] [track_traffic]: TRAFFIC: robot at s=1.2 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.71 m
+[INFO] [1793547531.167358250] [track_traffic]: TRAFFIC: robot at s=3.2 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.71 m
+[INFO] [1793547535.618088660] [track_traffic]: TRAFFIC: robot at s=5.2 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.93 m
+[INFO] [1793547540.247764531] [track_traffic]: TRAFFIC: robot at s=6.4 m, 0.06 m/s, true gap to car ahead in our lane 0.17 m, closest approach to any car so far 0.14 m
+[INFO] [1793547543.019265091] [track_traffic]: TRAFFIC: cut-in 1: car cut in 0.42 m ahead while we drove 0.50 m/s, then braked hard; closest approach 0.08 m, ✅ no collision (events so far 1, collisions 0)
+[INFO] [1793547544.740756566] [track_traffic]: TRAFFIC: robot at s=6.8 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547549.318758103] [track_traffic]: TRAFFIC: robot at s=8.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547553.844146208] [track_traffic]: TRAFFIC: robot at s=10.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547558.397411772] [track_traffic]: TRAFFIC: robot at s=12.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547563.010909546] [track_traffic]: TRAFFIC: robot at s=14.8 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547568.903444628] [track_traffic]: TRAFFIC: robot at s=16.3 m, 0.06 m/s, true gap to car ahead in our lane 0.16 m, closest approach to any car so far 0.08 m
+[INFO] [1793547572.071457662] [track_traffic]: TRAFFIC: pop-up 2: stopped car appeared 0.40 m ahead while we drove 0.50 m/s; closest approach 0.08 m, ✅ no collision (events so far 2, collisions 0)
+[INFO] [1793547573.661763809] [track_traffic]: TRAFFIC: robot at s=16.8 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+[INFO] [1793547578.350694256] [track_traffic]: TRAFFIC: robot at s=18.8 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+TRAFFIC SUMMARY: closest approach to any car 0.08 m, smallest gap to a car ahead 0.10 m, collisions: none

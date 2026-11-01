@@ -7,6 +7,7 @@
 #     use_tracker     true (default) | false  = overtake planner with / without measured speeds
 #     controller      tracker (default) | mpc  = steering during peek / lane change / pass / return
 #     rss             on (default) | off  = RSS speed limit enforced, or only monitored
+#     aeb             on (default) | off  = 7th: emergency braking enforced, or only monitored
 #     acc             normal (default) | fault  = fault injection: ACC keeps almost no gap (no overtaking)
 #
 # First, in another terminal:  ros2 launch lane_follower_perception track_phase2.launch.py drive:=false
@@ -17,6 +18,8 @@ TRK=${3:-true}
 CTRL=${4:-tracker}
 RSS=${5:-on}
 ACC=${6:-normal}
+AEB=${7:-on}
+AENF=true; [ "$AEB" = "off" ] && AENF=false
 ENF=true; [ "$RSS" = "off" ] && ENF=false
 ROADP="-p max_speed:=0.7"
 PLANP=""
@@ -24,32 +27,36 @@ if [ "$ACC" = "fault" ]; then
     ROADP="$ROADP -p standstill_gap:=0.05 -p time_gap:=0.0 -p stop_distance:=0.05"
     PLANP="-p trigger_gap:=0.0"     # no overtaking: a pure car-following test
 fi
+[ "$SCEN" = "cutin" ] && PLANP="-p trigger_gap:=0.0"     # sudden-event test: no overtaking
 LOG=~/ros2_ws/logs
 mkdir -p "$LOG"
 source ~/ros2_ws/install/setup.bash
-for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor; do pkill -f "$n"; done
+for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node; do pkill -f "$n"; done
 sleep 1
 P="--ros-args -p use_sim_time:=true"
 ros2 run lane_follower_perception multitask_inference_node.py $P -p steering_topic:=/cnn/cmd_vel \
     -r /lane/curvature:=/cnn/lane/curvature -r /lane/offset:=/cnn/lane/offset -r /lane/heading:=/cnn/lane/heading \
     > "$LOG/multitask_inference.log" 2>&1 &
-ros2 run lane_follower_perception track_traffic.py $P -p scenario:=$SCEN -p oncoming_speed:=$ONC > "$LOG/track_traffic.log" 2>&1 &
+ros2 run lane_follower_perception track_traffic.py $P -p scenario:=$SCEN -p oncoming_speed:=$ONC -p popup_gap:=${POPUP:-0.4} > "$LOG/track_traffic.log" 2>&1 &
 ros2 run lane_follower_perception road_driver.py $P $ROADP > "$LOG/road_driver.log" 2>&1 &
 ros2 run lane_follower_perception lidar_tracker.py $P > "$LOG/lidar_tracker.log" 2>&1 &
+ros2 run lane_follower_perception aeb_node.py $P -p enforce:=$AENF > "$LOG/aeb.log" 2>&1 &
 ros2 run lane_follower_perception rss_monitor.py $P -p enforce:=$ENF > "$LOG/rss_monitor.log" 2>&1 &
 ros2 run lane_follower_perception overtake_planner.py $P -p use_tracker:=$TRK -p controller:=$CTRL $PLANP > "$LOG/overtake_planner.log" 2>&1 &
 stop() {
     echo; echo "stopping..."
     kill $(jobs -p) 2>/dev/null
     timeout 5 ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist "{}" > /dev/null 2>&1
-    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor; do pkill -f "$n"; done
+    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node; do pkill -f "$n"; done
     echo "overtakes completed: $(grep -c 'complete' "$LOG/overtake_planner.log")"
     echo "collisions: $(grep -c 'COLLISION' "$LOG/track_traffic.log")"
     grep 'TRAFFIC: robot' "$LOG/track_traffic.log" | tail -1 | sed 's/.*TRAFFIC: //'
     grep 'RSS STATS' "$LOG/rss_monitor.log" | tail -1 | sed 's/.*RSS STATS: /RSS: /'
+    grep 'AEB STATS' "$LOG/aeb.log" | tail -1 | sed 's/.*AEB STATS: /AEB: /'
+    grep -E 'TRAFFIC: (cut-in|pop-up)' "$LOG/track_traffic.log" | sed 's/.*TRAFFIC: //'
     exit 0
 }
 trap stop INT TERM
-echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL, rss=$RSS, acc=$ACC. Logs in $LOG. Ctrl+C to stop."
+echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL, rss=$RSS, acc=$ACC, aeb=$AEB. Logs in $LOG. Ctrl+C to stop."
 sleep 2
-tail -n +1 -f "$LOG/overtake_planner.log" "$LOG/rss_monitor.log" "$LOG/road_driver.log" | grep --line-buffered -E "BEHAVIOUR|complete|RSS:|RSS_LIMIT|Traceback|Error"
+tail -n +1 -f "$LOG/overtake_planner.log" "$LOG/rss_monitor.log" "$LOG/road_driver.log" "$LOG/aeb.log" "$LOG/track_traffic.log" | grep --line-buffered -E "BEHAVIOUR|complete|RSS:|AEB:|cut-in [0-9]|pop-up [0-9]|COLLISION|Traceback|Error"

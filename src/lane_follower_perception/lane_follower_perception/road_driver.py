@@ -87,6 +87,9 @@ class RoadDriver(Node):
         # RSS safety layer (rss_monitor): never drive faster than its speed limit
         self.rss_limit, self.rss_t = None, None
         self.create_subscription(Float32, '/safety/speed_limit', self.rss_callback, 10)
+        # emergency braking (aeb node): speed limit, 0 = full brake with a harder deceleration
+        self.aeb_limit, self.aeb_t, self.aeb_decel = None, None, 3.0
+        self.create_subscription(Float32, '/safety/aeb_limit', self.aeb_callback, 10)
 
         self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control '
                                f'({"curved" if self.curved else "straight"} corridor)')
@@ -97,6 +100,10 @@ class RoadDriver(Node):
 
     def odom_callback(self, msg):
         self.v_ego = msg.twist.twist.linear.x
+
+    def aeb_callback(self, msg):
+        self.aeb_limit = None if msg.data < 0 else float(msg.data)
+        self.aeb_t = self.get_clock().now().nanoseconds * 1e-9
 
     def rss_callback(self, msg):
         self.rss_limit = None if msg.data < 0 else float(msg.data)
@@ -190,9 +197,16 @@ class RoadDriver(Node):
             if state != 'STOP':
                 state = 'RSS_LIMIT'
 
+        # AEB: time-to-collision emergency braking overrides everything above
+        emergency = False
+        if self.aeb_limit is not None and now - self.aeb_t < 0.3 and v_target > self.aeb_limit - 1e-6:
+            v_target = min(v_target, self.aeb_limit)
+            emergency = self.aeb_limit == 0.0
+            state = 'AEB_BRAKE'
+
         # Comfort and actuator limits.
         if dt > 0.0:
-            dv = float(np.clip(v_target - self.v_cmd, -self.max_decel * dt, self.max_accel * dt))
+            dv = float(np.clip(v_target - self.v_cmd, -(self.aeb_decel if emergency else self.max_decel) * dt, self.max_accel * dt))
             self.v_cmd = max(0.0, self.v_cmd + dv)
         if state == 'STOP' and gap < self.stop_distance:
             self.v_cmd = 0.0  # emergency: do not wait for the decel limit
