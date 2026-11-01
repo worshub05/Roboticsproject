@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'cnn_inference_node.py = lane_follower_perception.cnn_inference_node:main',
+                        'rss_monitor.py = lane_follower_perception.rss_monitor:main',
+'cnn_inference_node.py = lane_follower_perception.cnn_inference_node:main',
             'lidar_obstacle_detector.py = lane_follower_perception.lidar_obstacle_detector:main',
             'dwa_obstacle_avoidance.py = lane_follower_perception.dwa_obstacle_avoidance:main',
             'multitask_inference_node.py = lane_follower_perception.multitask_inference_node:main',

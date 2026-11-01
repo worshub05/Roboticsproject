@@ -1,0 +1,17 @@
+RSS safety layer - Gazebo results (1 Nov 2026)
+
+Run A: overtake scenario, MPC, RSS on, normal ACC (2 overtakes)
+  collisions 0, closest approach 0.10 m, dangerous situations 0 in 121 s,
+  speed limited by RSS 0.0 s, smallest margin to a safe distance +0.25 m
+
+Run B: follow scenario, ACC fault (standstill gap 0.05 m, time gap 0), RSS monitoring only
+  collisions 0, closest approach 0.08 m, true gap at end 0.11 m,
+  dangerous situations 1 lasting 79.9 s (52.8% of 151 s), smallest margin -0.26 m
+
+Run C: follow scenario, ACC fault, RSS enforced
+  collisions 0, closest approach 0.26 m, true gap at end 0.29 m,
+  dangerous situations 0 in 117 s, speed limited by RSS 22.8 s, smallest margin +0.03 m
+
+Offline (tools/rss_offline_test.py): 7/7 formula checks pass; broken ACC against a parked car,
+a slow car, a hard-braking car and a wrong-way car: collision in all 4 without RSS,
+none with RSS (smallest gap 0.16-0.22 m).

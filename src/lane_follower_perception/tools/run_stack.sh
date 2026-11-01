@@ -6,6 +6,8 @@
 #     oncoming_speed  m/s of the oncoming cars, default 0.3
 #     use_tracker     true (default) | false  = overtake planner with / without measured speeds
 #     controller      tracker (default) | mpc  = steering during peek / lane change / pass / return
+#     rss             on (default) | off  = RSS speed limit enforced, or only monitored
+#     acc             normal (default) | fault  = fault injection: ACC keeps almost no gap (no overtaking)
 #
 # First, in another terminal:  ros2 launch lane_follower_perception track_phase2.launch.py drive:=false
 # Logs of every node go to ~/ros2_ws/logs/. Ctrl+C stops all nodes started here.
@@ -13,28 +15,41 @@ SCEN=${1:-overtake}
 ONC=${2:-0.3}
 TRK=${3:-true}
 CTRL=${4:-tracker}
+RSS=${5:-on}
+ACC=${6:-normal}
+ENF=true; [ "$RSS" = "off" ] && ENF=false
+ROADP="-p max_speed:=0.7"
+PLANP=""
+if [ "$ACC" = "fault" ]; then
+    ROADP="$ROADP -p standstill_gap:=0.05 -p time_gap:=0.0 -p stop_distance:=0.05"
+    PLANP="-p trigger_gap:=0.0"     # no overtaking: a pure car-following test
+fi
 LOG=~/ros2_ws/logs
 mkdir -p "$LOG"
 source ~/ros2_ws/install/setup.bash
-for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker; do pkill -f "$n"; done
+for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor; do pkill -f "$n"; done
 sleep 1
 P="--ros-args -p use_sim_time:=true"
 ros2 run lane_follower_perception multitask_inference_node.py $P -p steering_topic:=/cnn/cmd_vel \
     -r /lane/curvature:=/cnn/lane/curvature -r /lane/offset:=/cnn/lane/offset -r /lane/heading:=/cnn/lane/heading \
     > "$LOG/multitask_inference.log" 2>&1 &
 ros2 run lane_follower_perception track_traffic.py $P -p scenario:=$SCEN -p oncoming_speed:=$ONC > "$LOG/track_traffic.log" 2>&1 &
-ros2 run lane_follower_perception road_driver.py $P -p max_speed:=0.7 > "$LOG/road_driver.log" 2>&1 &
+ros2 run lane_follower_perception road_driver.py $P $ROADP > "$LOG/road_driver.log" 2>&1 &
 ros2 run lane_follower_perception lidar_tracker.py $P > "$LOG/lidar_tracker.log" 2>&1 &
-ros2 run lane_follower_perception overtake_planner.py $P -p use_tracker:=$TRK -p controller:=$CTRL > "$LOG/overtake_planner.log" 2>&1 &
+ros2 run lane_follower_perception rss_monitor.py $P -p enforce:=$ENF > "$LOG/rss_monitor.log" 2>&1 &
+ros2 run lane_follower_perception overtake_planner.py $P -p use_tracker:=$TRK -p controller:=$CTRL $PLANP > "$LOG/overtake_planner.log" 2>&1 &
 stop() {
     echo; echo "stopping..."
     kill $(jobs -p) 2>/dev/null
-    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker; do pkill -f "$n"; done
+    timeout 5 ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist "{}" > /dev/null 2>&1
+    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor; do pkill -f "$n"; done
     echo "overtakes completed: $(grep -c 'complete' "$LOG/overtake_planner.log")"
     echo "collisions: $(grep -c 'COLLISION' "$LOG/track_traffic.log")"
+    grep 'TRAFFIC: robot' "$LOG/track_traffic.log" | tail -1 | sed 's/.*TRAFFIC: //'
+    grep 'RSS STATS' "$LOG/rss_monitor.log" | tail -1 | sed 's/.*RSS STATS: /RSS: /'
     exit 0
 }
 trap stop INT TERM
-echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL. Logs in $LOG. Ctrl+C to stop."
+echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL, rss=$RSS, acc=$ACC. Logs in $LOG. Ctrl+C to stop."
 sleep 2
-tail -n +1 -f "$LOG/overtake_planner.log" | grep --line-buffered -E "\->|complete|Traceback|Error"
+tail -n +1 -f "$LOG/overtake_planner.log" "$LOG/rss_monitor.log" "$LOG/road_driver.log" | grep --line-buffered -E "BEHAVIOUR|complete|RSS:|RSS_LIMIT|Traceback|Error"

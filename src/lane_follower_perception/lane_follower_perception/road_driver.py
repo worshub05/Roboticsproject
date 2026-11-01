@@ -84,6 +84,9 @@ class RoadDriver(Node):
         self.gap_pub = self.create_publisher(Float32, '/road/gap', 10)
         self.lead_pub = self.create_publisher(Float32, '/road/lead_speed', 10)
         self.state_pub = self.create_publisher(String, '/road/state', 10)
+        # RSS safety layer (rss_monitor): never drive faster than its speed limit
+        self.rss_limit, self.rss_t = None, None
+        self.create_subscription(Float32, '/safety/speed_limit', self.rss_callback, 10)
 
         self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control '
                                f'({"curved" if self.curved else "straight"} corridor)')
@@ -94,6 +97,10 @@ class RoadDriver(Node):
 
     def odom_callback(self, msg):
         self.v_ego = msg.twist.twist.linear.x
+
+    def rss_callback(self, msg):
+        self.rss_limit = None if msg.data < 0 else float(msg.data)
+        self.rss_t = self.get_clock().now().nanoseconds * 1e-9
 
     def lane_callback(self, name, msg):
         a = self.lane_alpha
@@ -176,6 +183,12 @@ class RoadDriver(Node):
             # hold a real stop (no creeping) until the way ahead clearly opens up
             if v_target < (0.08 if self.state == 'STOP' else 0.03):
                 v_target, state = 0.0, 'STOP'
+
+        # RSS proper response: cap the speed so every RSS safe distance is kept
+        if self.rss_limit is not None and now - self.rss_t < 0.5 and v_target > self.rss_limit:
+            v_target = self.rss_limit
+            if state != 'STOP':
+                state = 'RSS_LIMIT'
 
         # Comfort and actuator limits.
         if dt > 0.0:
