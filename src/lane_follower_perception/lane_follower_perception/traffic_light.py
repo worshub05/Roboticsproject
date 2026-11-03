@@ -77,6 +77,7 @@ class TrafficLights(Node):
         self.prev_front = None
         self.stopped = {}                        # light id -> (time we stopped, gap)
         self.st = dict(green=0, amber=0, red=0, stops=0, gaps=[], waits=[])
+        self.vf, self.e_brake, self.cross_v = None, 0.0, []   # smoothed speed, braking energy, speed at the line
         self.count = 0
         self.pub = self.create_publisher(String, '/v2i/spat', 10)
         self.spawn_client = self.create_client(SpawnEntity, '/spawn_entity')
@@ -127,6 +128,12 @@ class TrafficLights(Node):
         x, y = msg.pose.pose.position.x, msg.pose.pose.position.y
         s, d = to_frenet(x, y)
         self.robot = (float(s[0]) + ROBOT_FRONT, float(d[0]), msg.twist.twist.linear.x)
+        # kinetic energy per kg thrown away by braking (from a smoothed speed, so noise does not count)
+        v = msg.twist.twist.linear.x
+        vf = v if self.vf is None else 0.8 * self.vf + 0.2 * v
+        if self.vf is not None:
+            self.e_brake += max(0.0, 0.5 * (self.vf ** 2 - vf ** 2))
+        self.vf = vf
 
     def referee(self, t):
         if self.robot is None:
@@ -139,6 +146,7 @@ class TrafficLights(Node):
                 before = ahead(stop_s, self.prev_front)
                 if before > 0.0 >= gap and before - gap < 1.0:           # the front bumper crossed the line
                     self.st[state.lower()] += 1
+                    self.cross_v.append(v)
                     if state == 'RED':
                         self.get_logger().info(f'LIGHT: ❌ RED LIGHT VIOLATION at light {lid} ({since:.1f} s into red, '
                                                f'{v:.2f} m/s)')
@@ -193,7 +201,9 @@ class TrafficLights(Node):
             waits = f'{sum(s["waits"]) / len(s["waits"]):.1f} s' if s['waits'] else 'n/a'
             self.get_logger().info(
                 f'V2I STATS: crossings green {s["green"]}, amber {s["amber"]}, RED {s["red"]}; stops {s["stops"]}, '
-                f'gap to the line {gaps}, mean wait {waits}; messages sent {self.sent}, lost {self.dropped}')
+                f'gap to the line {gaps}, mean wait {waits}; messages sent {self.sent}, lost {self.dropped}; '
+                f'speed at the line {sum(self.cross_v) / max(1, len(self.cross_v)):.2f} m/s, braking energy '
+                f'{self.e_brake * 1000:.0f} mJ/kg ({self.e_brake * 1000 / max(1, len(self.cross_v)):.0f} per light)')
 
 
 def main(args=None):

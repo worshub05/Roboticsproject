@@ -30,6 +30,8 @@ fi
 [ "$SCEN" = "cutin" ] && PLANP="-p trigger_gap:=0.0"     # sudden-event test: no overtaking
 # traffic lights (scenario lights). Options in front of the command: V2I=off, LOSS=0.3, DELAY=0.3, BLACKOUT=60
 V2I=${V2I:-on}
+GLOSA=${GLOSA:-on}
+GLOSAP=true; [ "$GLOSA" = "off" ] && GLOSAP=false
 LIGHTP="-p loss:=${LOSS:-0.0} -p delay:=${DELAY:-0.0} -p blackout:=${BLACKOUT:--1.0}"
 LOG=~/ros2_ws/logs
 mkdir -p "$LOG"
@@ -46,7 +48,7 @@ ros2 run lane_follower_perception road_driver.py $P $ROADP > "$LOG/road_driver.l
 ros2 run lane_follower_perception lidar_tracker.py $P > "$LOG/lidar_tracker.log" 2>&1 &
 if [ "$SCEN" = "lights" ]; then
     ros2 run lane_follower_perception traffic_light.py $P $LIGHTP > "$LOG/traffic_light.log" 2>&1 &
-    [ "$V2I" = "on" ] && ros2 run lane_follower_perception v2i_controller.py $P > "$LOG/v2i.log" 2>&1 &
+    [ "$V2I" = "on" ] && ros2 run lane_follower_perception v2i_controller.py $P -p glosa:=$GLOSAP > "$LOG/v2i.log" 2>&1 &
 fi
 ros2 run lane_follower_perception aeb_node.py $P -p enforce:=$AENF > "$LOG/aeb.log" 2>&1 &
 ros2 run lane_follower_perception rss_monitor.py $P -p enforce:=$ENF > "$LOG/rss_monitor.log" 2>&1 &
@@ -66,6 +68,6 @@ stop() {
     exit 0
 }
 trap stop INT TERM
-echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL, rss=$RSS, acc=$ACC, aeb=$AEB, v2i=$V2I. Logs in $LOG. Ctrl+C to stop."
+echo "✅ stack running: scenario=$SCEN, oncoming=$ONC m/s, tracker=$TRK, controller=$CTRL, rss=$RSS, acc=$ACC, aeb=$AEB, v2i=$V2I, glosa=$GLOSA. Logs in $LOG. Ctrl+C to stop."
 sleep 2
 tail -n +1 -f "$LOG/overtake_planner.log" "$LOG/rss_monitor.log" "$LOG/road_driver.log" "$LOG/aeb.log" "$LOG/track_traffic.log" "$LOG/traffic_light.log" "$LOG/v2i.log" | grep --line-buffered -E "BEHAVIOUR|complete|RSS:|AEB:|cut-in [0-9]|pop-up [0-9]|COLLISION|LIGHT:|V2I:|Traceback|Error"

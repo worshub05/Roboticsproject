@@ -1,0 +1,21 @@
+[INFO] [1793721778.978232523] [v2i_controller]: V2I controller ready: comfortable braking 0.5 m/s2, at most 1.0 m/s2 for amber, stop 0.1 m before the line, fail-safe after 1.0 s without messages; GLOSA on
+[INFO] [1793721779.429560564] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1793721779.481811544] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1793721779.482492350] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.46 m/s to arrive just after it turns green (11.85 m ahead)
+[INFO] [1793721782.118468314] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 11.85 m ahead)
+[INFO] [1793721795.796086033] [v2i_controller]: V2I: light 1 RED 6.00 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793721807.261616150] [v2i_controller]: V2I: light 1 GREEN 0.84 m ahead -> go
+[INFO] [1793721878.463069654] [v2i_controller]: V2I: light 2 RED 5.97 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793721884.159650999] [v2i_controller]: V2I: light 2 GREEN 3.47 m ahead -> go
+[INFO] [1793721951.645741944] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.37 m/s to arrive just after it turns green (9.68 m ahead)
+[INFO] [1793721962.890242777] [v2i_controller]: V2I: light 1 AMBER 5.93 m ahead at 0.37 m/s -> stop (braking 0.01 m/s2)
+[INFO] [1793721980.016383789] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 0.34 m ahead)
+[INFO] [1793721980.017313069] [v2i_controller]: V2I: light 1 GREEN 0.34 m ahead -> go
+[INFO] [1793722049.155470493] [v2i_controller]: V2I: light 2 RED 6.00 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793722055.785262442] [v2i_controller]: V2I: light 2 GREEN 3.05 m ahead -> go
+[INFO] [1793722123.797727132] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.36 m/s to arrive just after it turns green (9.25 m ahead)
+[INFO] [1793722134.915112518] [v2i_controller]: V2I: light 1 AMBER 5.66 m ahead at 0.36 m/s -> stop (braking 0.01 m/s2)
+[INFO] [1793722151.919457964] [v2i_controller]: V2I: GLOSA light 1: advice ended (RED, 0.35 m ahead)
+[INFO] [1793722151.921861392] [v2i_controller]: V2I: light 1 GREEN 0.35 m ahead -> go
+[INFO] [1793722220.649078739] [v2i_controller]: V2I: light 2 RED 5.98 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793722227.255889928] [v2i_controller]: V2I: light 2 GREEN 3.03 m ahead -> go
