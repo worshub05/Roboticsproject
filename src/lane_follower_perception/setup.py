@@ -23,7 +23,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                                    'aeb_node.py = lane_follower_perception.aeb_node:main',
+                                                'traffic_light.py = lane_follower_perception.traffic_light:main',
+            'v2i_controller.py = lane_follower_perception.v2i_controller:main',
+'aeb_node.py = lane_follower_perception.aeb_node:main',
 'rss_monitor.py = lane_follower_perception.rss_monitor:main',
 'cnn_inference_node.py = lane_follower_perception.cnn_inference_node:main',
             'lidar_obstacle_detector.py = lane_follower_perception.lidar_obstacle_detector:main',

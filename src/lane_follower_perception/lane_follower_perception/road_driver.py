@@ -90,6 +90,9 @@ class RoadDriver(Node):
         # emergency braking (aeb node): speed limit, 0 = full brake with a harder deceleration
         self.aeb_limit, self.aeb_t, self.aeb_decel = None, None, 3.0
         self.create_subscription(Float32, '/safety/aeb_limit', self.aeb_callback, 10)
+        # V2I (v2i_controller): speed limit for stopping at red traffic lights
+        self.v2i_limit, self.v2i_t = None, None
+        self.create_subscription(Float32, '/v2i/speed_limit', self.v2i_callback, 10)
 
         self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control '
                                f'({"curved" if self.curved else "straight"} corridor)')
@@ -100,6 +103,10 @@ class RoadDriver(Node):
 
     def odom_callback(self, msg):
         self.v_ego = msg.twist.twist.linear.x
+
+    def v2i_callback(self, msg):
+        self.v2i_limit = None if msg.data < 0 else float(msg.data)
+        self.v2i_t = self.get_clock().now().nanoseconds * 1e-9
 
     def aeb_callback(self, msg):
         self.aeb_limit = None if msg.data < 0 else float(msg.data)
@@ -196,6 +203,12 @@ class RoadDriver(Node):
             v_target = self.rss_limit
             if state != 'STOP':
                 state = 'RSS_LIMIT'
+
+        # V2I: stop at red traffic lights
+        if self.v2i_limit is not None and now - self.v2i_t < 0.5 and v_target > self.v2i_limit:
+            v_target = self.v2i_limit
+            if state != 'STOP':
+                state = 'V2I_STOP'
 
         # AEB: time-to-collision emergency braking overrides everything above
         emergency = False

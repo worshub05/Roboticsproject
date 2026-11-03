@@ -1,0 +1,13 @@
+[INFO] [1793718711.090499532] [v2i_controller]: V2I controller ready: comfortable braking 0.5 m/s2, at most 1.0 m/s2 for amber, stop 0.1 m before the line, fail-safe after 1.0 s without messages
+[INFO] [1793718711.096219030] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1793718711.098293464] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1793718730.419309703] [v2i_controller]: V2I: light 1 RED 6.00 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793718738.904725690] [v2i_controller]: V2I: light 1 GREEN 2.24 m ahead -> go
+[INFO] [1793718811.998870403] [v2i_controller]: V2I: light 2 RED 5.97 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793718814.476061749] [v2i_controller]: V2I: light 2 GREEN 4.87 m ahead -> go
+[INFO] [1793718893.743434474] [v2i_controller]: V2I: light 1 AMBER 5.98 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793718910.600626319] [v2i_controller]: V2I: light 1 GREEN 0.07 m ahead -> go
+[INFO] [1793718979.240662845] [v2i_controller]: V2I: light 2 RED 5.95 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1793718985.674525677] [v2i_controller]: V2I: light 2 GREEN 3.10 m ahead -> go
+[INFO] [1793719064.701286624] [v2i_controller]: V2I: light 1 AMBER 4.30 m ahead at 0.50 m/s -> stop (braking 0.03 m/s2)
+[INFO] [1793719082.241983702] [v2i_controller]: V2I: light 1 GREEN 0.07 m ahead -> go

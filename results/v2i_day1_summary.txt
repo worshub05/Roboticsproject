@@ -1,0 +1,20 @@
+V2I 1: traffic lights with a V2I broadcast (3 Nov 2026)
+
+Setup: 2 fixed-time lights on our lane (s = 12.0 m and 47.7 m; green 10 s, amber 3 s, red 12 s),
+SPaT/MAP-style JSON broadcast on /v2i/spat at 10 Hz; car-side v2i_controller: red -> stop 10 cm
+before the line braking 0.5 m/s2, amber -> stop if <= 1.0 m/s2 is enough else go (decision kept),
+no message for 1 s -> fail-safe (treat as red). Referee in traffic_light.py uses Gazebo ground truth.
+
+Offline (tools/v2i_offline_test.py, 50 arrivals across the whole cycle):
+  no V2I: 24 red-light violations, 6 amber crossings
+  V2I: 0 violations, 29 stops, gap to the line 8.6 cm (7.4-8.6)
+  V2I, 30% lost + 0.3 s delay: 0 violations, 1 amber crossing, 29 stops
+  V2I, blackout 5 m before: 0 violations, 50 stops (fail-safe, waits at the line)
+
+Gazebo:
+  L1 no V2I:            crossings green 2, amber 1, RED 3 (3 violations in 6 crossings)
+  L2 V2I:               crossings green 5, RED 0; 2 stops, 7.1-7.2 cm before the line, mean wait 4.8 s
+                        (4 planned stops released early because the light turned green on the approach)
+  L3 30% lost + 0.3 s:  906 of 3050 messages lost; crossings green 4, RED 0; 1 stop 7.9 cm before the line
+  L4 blackout at 40 s:  fail-safe after 1 s without messages; stopped 8.2 cm before light 2 and waited
+Note: BLACKOUT must be given as a decimal (40.0), ROS refuses an integer for a double parameter.

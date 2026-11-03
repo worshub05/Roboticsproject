@@ -1,0 +1,84 @@
+[INFO] [1793719187.818855836] [traffic_light]: Traffic lights at s = 12.0 m, 47.7 m (green 10.0 s, amber 3.0 s, red 12.0 s); V2I link: loss 30%, delay 0.3 s
+[INFO] [1793719193.255227078] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 50, lost 18
+[INFO] [1793719198.967741969] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 100, lost 27
+[INFO] [1793719204.658918345] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 150, lost 46
+[INFO] [1793719210.258578170] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 200, lost 62
+[INFO] [1793719215.924357775] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 250, lost 77
+[INFO] [1793719218.607006357] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+[INFO] [1793719221.745937828] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 300, lost 97
+[INFO] [1793719227.531364354] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 350, lost 114
+[INFO] [1793719233.694685995] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 400, lost 128
+[INFO] [1793719239.956854473] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 450, lost 140
+[INFO] [1793719246.244978433] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 500, lost 157
+[INFO] [1793719252.446137730] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 550, lost 163
+[INFO] [1793719258.645110132] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 600, lost 176
+[INFO] [1793719264.802440043] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 650, lost 191
+[INFO] [1793719270.987588246] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 700, lost 208
+[INFO] [1793719277.212359367] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 750, lost 222
+[INFO] [1793719283.219792408] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 800, lost 231
+[INFO] [1793719289.378102236] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 850, lost 245
+[INFO] [1793719295.564098467] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 900, lost 253
+[INFO] [1793719301.579436880] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 950, lost 265
+[INFO] [1793719306.181727195] [traffic_light]: LIGHT: ✅ crossed light 2 on green at 0.50 m/s
+[INFO] [1793719307.821179974] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1000, lost 280
+[INFO] [1793719314.079601120] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1050, lost 298
+[INFO] [1793719320.412937255] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1100, lost 313
+[INFO] [1793719326.730054958] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1150, lost 324
+[INFO] [1793719333.023724386] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1200, lost 339
+[INFO] [1793719339.323642294] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1250, lost 352
+[INFO] [1793719345.711921519] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1300, lost 363
+[INFO] [1793719352.011601312] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1350, lost 382
+[INFO] [1793719358.153585247] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1400, lost 399
+[INFO] [1793719364.257283229] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1450, lost 408
+[INFO] [1793719370.279785018] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1500, lost 426
+[INFO] [1793719376.372576437] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1550, lost 446
+[INFO] [1793719382.445478876] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1600, lost 456
+[INFO] [1793719388.611046479] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1650, lost 470
+[INFO] [1793719394.843857954] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 1700, lost 491
+[INFO] [1793719395.235265780] [traffic_light]: LIGHT: 🛑 stopped 7.9 cm before light 1 (RED)
+[INFO] [1793719401.093469203] [traffic_light]: V2I STATS: crossings green 2, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait n/a; messages sent 1750, lost 513
+[INFO] [1793719402.125735963] [traffic_light]: LIGHT: light 1 green: drove off after waiting 5.5 s
+[INFO] [1793719402.737412800] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.28 m/s
+[INFO] [1793719407.382616913] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 1800, lost 527
+[INFO] [1793719413.568443453] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 1850, lost 544
+[INFO] [1793719419.791529005] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 1900, lost 559
+[INFO] [1793719426.052960104] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 1950, lost 568
+[INFO] [1793719432.347642690] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2000, lost 584
+[INFO] [1793719438.571429966] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2050, lost 601
+[INFO] [1793719444.837354891] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2100, lost 611
+[INFO] [1793719451.108132140] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2150, lost 628
+[INFO] [1793719457.144804055] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2200, lost 642
+[INFO] [1793719463.197501631] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2250, lost 656
+[INFO] [1793719469.188190239] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2300, lost 667
+[INFO] [1793719475.182424445] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2350, lost 686
+[INFO] [1793719481.210165167] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2400, lost 696
+[INFO] [1793719487.447837038] [traffic_light]: V2I STATS: crossings green 3, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2450, lost 712
+[INFO] [1793719490.968506027] [traffic_light]: LIGHT: ✅ crossed light 2 on green at 0.50 m/s
+[INFO] [1793719493.731825208] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2500, lost 729
+[INFO] [1793719499.931401822] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2550, lost 755
+[INFO] [1793719506.112223536] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2600, lost 775
+[INFO] [1793719512.264385822] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2650, lost 782
+[INFO] [1793719518.440663235] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2700, lost 799
+[INFO] [1793719524.727515731] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2750, lost 815
+[INFO] [1793719530.997129174] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2800, lost 832
+[INFO] [1793719537.315908622] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2850, lost 845
+[INFO] [1793719543.435925480] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2900, lost 853
+[INFO] [1793719549.546642623] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 2950, lost 872
+[INFO] [1793719555.660030451] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 3000, lost 892
+[INFO] [1793719561.800753625] [traffic_light]: V2I STATS: crossings green 4, amber 0, RED 0; stops 1, gap to the line 7.9 cm (range 7.9-7.9), mean wait 5.5 s; messages sent 3050, lost 906
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/traffic_light.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'traffic_light.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/traffic_light.py", line 203, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
