@@ -1,0 +1,19 @@
+CACC 1: 3-car platoon with V2V (4 Nov 2026) - code + offline results (Gazebo runs P1-P3 to follow)
+
+Platoon in Gazebo: leader (blue, cruises 0.45 m/s, brakes to 0.15 m/s at 0.8 m/s2 every 25 s),
+car 1 (green, simulated, same law as the robot), our robot (real Gazebo car).
+Modes: acc (0.5 m + 1.0 s gap), acc_short (0.4 m + 0.3 s, LiDAR only), cacc (0.4 m + 0.3 s, LiDAR + V2V).
+CACC law: a = 0.8 * a_front + 0.6 * gap_error + 2.0 * (v_front - v), speed command = integral of a;
+falls back to the road driver's ACC (1.0 s gap) if V2V stops for 0.5 s.
+
+Offline (tools/cacc_offline_test.py, 2 braking events, 3 seeds):
+  leader + 2 followers:
+    ACC h=1.0   gap 0.95 m, dips 0.30 0.30 0.28, amplification 0.93 (stable), gap error RMS 3.6 cm
+    ACC h=0.3   gap 0.54 m, dips 0.30 0.35 0.36, amplification 1.21 (UNSTABLE), RMS 2.4 cm
+    CACC h=0.3  gap 0.54 m, dips 0.30 0.30 0.29, amplification 0.98 (stable), RMS 0.8 cm
+  leader + 6 followers:
+    ACC h=1.0   amplification 0.65; ACC h=0.3 amplification 1.31 (dips grow 0.30 -> 0.39);
+    CACC h=0.3  amplification 0.95, RMS 0.6 cm
+  CACC with worse V2V (6 followers): 30% loss -> 1.03, 0.3 s delay -> 1.19, 50% loss + 0.3 s -> 1.46
+  (to be studied on CACC day 2)
+No collisions in any offline run.

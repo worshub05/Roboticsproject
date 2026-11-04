@@ -23,7 +23,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                                                'traffic_light.py = lane_follower_perception.traffic_light:main',
+                                                            'platoon.py = lane_follower_perception.platoon:main',
+            'cacc_controller.py = lane_follower_perception.cacc_controller:main',
+'traffic_light.py = lane_follower_perception.traffic_light:main',
             'v2i_controller.py = lane_follower_perception.v2i_controller:main',
 'aeb_node.py = lane_follower_perception.aeb_node:main',
 'rss_monitor.py = lane_follower_perception.rss_monitor:main',

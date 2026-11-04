@@ -68,7 +68,7 @@ class TrackTraffic(Node):
         elif self.scenario == 'cutin':
             # one car for sudden events, parked 3 m off the road between events
             self.cars = [['cutin_car', -3.0, 0.0, 0.0, RED]]
-        elif self.scenario == 'lights':
+        elif self.scenario in ('lights', 'platoon'):
             self.cars = []                     # traffic light test: no other cars
         else:
             self.cars = [['track_lead_car', 0.0, g('lead_start_s'), g('lead_speed'), BLUE]]

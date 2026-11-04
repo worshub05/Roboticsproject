@@ -93,6 +93,9 @@ class RoadDriver(Node):
         # V2I (v2i_controller): speed limit for stopping at red traffic lights
         self.v2i_limit, self.v2i_t = None, None
         self.create_subscription(Float32, '/v2i/speed_limit', self.v2i_callback, 10)
+        # CACC (cacc_controller): with V2V the car follows at a short time gap instead of the ACC law
+        self.cacc_cmd, self.cacc_t = None, None
+        self.create_subscription(Float32, '/cacc/speed_cmd', self.cacc_callback, 10)
 
         self.get_logger().info('Road driver ready: CNN steering + LiDAR adaptive cruise control '
                                f'({"curved" if self.curved else "straight"} corridor)')
@@ -103,6 +106,10 @@ class RoadDriver(Node):
 
     def odom_callback(self, msg):
         self.v_ego = msg.twist.twist.linear.x
+
+    def cacc_callback(self, msg):
+        self.cacc_cmd = None if msg.data < 0 else float(msg.data)
+        self.cacc_t = self.get_clock().now().nanoseconds * 1e-9
 
     def v2i_callback(self, msg):
         self.v2i_limit = None if msg.data < 0 else float(msg.data)
@@ -197,6 +204,10 @@ class RoadDriver(Node):
             # hold a real stop (no creeping) until the way ahead clearly opens up
             if v_target < (0.08 if self.state == 'STOP' else 0.03):
                 v_target, state = 0.0, 'STOP'
+
+        # CACC replaces the ACC law while it is active (the safety layers below still apply)
+        if self.cacc_cmd is not None and now - self.cacc_t < 0.3 and state != 'STOP':
+            v_target, state = min(v_set, self.cacc_cmd), 'CACC'
 
         # RSS proper response: cap the speed so every RSS safe distance is kept
         if self.rss_limit is not None and now - self.rss_t < 0.5 and v_target > self.rss_limit:
