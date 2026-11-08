@@ -1,0 +1,130 @@
+[INFO] [1794175953.987890317] [aeb]: AEB ready (enforcing): warning TTC < 1.5 s, partial brake < 1.0 s, full brake < 0.6 s or closer than 0.08 m
+[INFO] [1794175955.785919297] [aeb]: AEB STATS: checked 2 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a
+[INFO] [1794175957.714320024] [aeb]: AEB STATS: checked 3 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a
+[INFO] [1794175958.577251166] [aeb]: AEB: ⚠ WARNING: object 0.59 m ahead in our path, TTC 1.28 s, our speed 0.06 m/s
+[INFO] [1794175958.614745067] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.59 m)
+[INFO] [1794175959.696215642] [aeb]: AEB STATS: checked 5 s, warnings 1, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175961.650081529] [aeb]: AEB STATS: checked 7 s, warnings 1, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175963.621760280] [aeb]: AEB STATS: checked 9 s, warnings 1, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175965.604423065] [aeb]: AEB: ⚠ WARNING: object 0.57 m ahead in our path, TTC 1.49 s, our speed 0.50 m/s
+[INFO] [1794175965.640381638] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.57 m)
+[INFO] [1794175965.641236515] [aeb]: AEB STATS: checked 10 s, warnings 2, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175966.045348794] [aeb]: AEB: ⚠ WARNING: object 0.55 m ahead in our path, TTC 1.36 s, our speed 0.50 m/s
+[INFO] [1794175966.102545080] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.55 m)
+[INFO] [1794175967.683389437] [aeb]: AEB STATS: checked 12 s, warnings 3, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175968.508539340] [aeb]: AEB: ⚠ WARNING: object 0.53 m ahead in our path, TTC 1.48 s, our speed 0.46 m/s
+[INFO] [1794175968.550109945] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.53 m)
+[INFO] [1794175969.667452614] [aeb]: AEB STATS: checked 14 s, warnings 4, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175971.614688164] [aeb]: AEB STATS: checked 15 s, warnings 4, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175973.596884685] [aeb]: AEB STATS: checked 17 s, warnings 4, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.28 s
+[INFO] [1794175974.760013418] [aeb]: AEB: ⚠ PARTIAL: object 0.48 m ahead in our path, TTC 0.79 s, our speed 0.26 m/s
+[INFO] [1794175975.151107733] [aeb]: AEB: ✅ released after 0.3 s (worst: PARTIAL, TTC 0.79 s, closest 0.48 m)
+[INFO] [1794175975.613949156] [aeb]: AEB STATS: checked 19 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175977.638143911] [aeb]: AEB STATS: checked 21 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175979.591821734] [aeb]: AEB STATS: checked 22 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175981.603686323] [aeb]: AEB STATS: checked 24 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175983.710596049] [aeb]: AEB STATS: checked 26 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175985.762695792] [aeb]: AEB STATS: checked 27 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175987.785476894] [aeb]: AEB STATS: checked 29 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175989.790736061] [aeb]: AEB STATS: checked 31 s, warnings 4, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175991.473188247] [aeb]: AEB: ⚠ WARNING: object 0.54 m ahead in our path, TTC 1.35 s, our speed 0.45 m/s
+[INFO] [1794175991.509790439] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.54 m)
+[INFO] [1794175991.858284823] [aeb]: AEB STATS: checked 33 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175993.945993763] [aeb]: AEB STATS: checked 34 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175995.964792256] [aeb]: AEB STATS: checked 36 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175997.944782582] [aeb]: AEB STATS: checked 38 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794175999.948775399] [aeb]: AEB STATS: checked 40 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794176002.024281143] [aeb]: AEB STATS: checked 41 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794176004.127944341] [aeb]: AEB STATS: checked 43 s, warnings 5, partial brakes 1, full brakes 0, braking 0.3 s, smallest TTC 0.79 s
+[INFO] [1794176004.369303325] [aeb]: AEB: ⚠ PARTIAL: object 0.48 m ahead in our path, TTC 0.99 s, our speed 0.17 m/s
+[INFO] [1794176004.982799301] [aeb]: AEB: ✅ released after 0.5 s (worst: PARTIAL, TTC 0.99 s, closest 0.47 m)
+[INFO] [1794176006.163999857] [aeb]: AEB STATS: checked 45 s, warnings 5, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176008.233875973] [aeb]: AEB STATS: checked 46 s, warnings 5, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176010.311122761] [aeb]: AEB STATS: checked 48 s, warnings 5, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176012.378307818] [aeb]: AEB STATS: checked 50 s, warnings 5, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176013.664644097] [aeb]: AEB: ⚠ WARNING: object 0.54 m ahead in our path, TTC 1.32 s, our speed 0.44 m/s
+[INFO] [1794176013.702651262] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.54 m)
+[INFO] [1794176014.384893594] [aeb]: AEB STATS: checked 52 s, warnings 6, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176016.406971907] [aeb]: AEB STATS: checked 53 s, warnings 6, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176018.484601664] [aeb]: AEB STATS: checked 55 s, warnings 6, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176018.963858348] [aeb]: AEB: ⚠ WARNING: object 0.51 m ahead in our path, TTC 1.48 s, our speed 0.45 m/s
+[INFO] [1794176019.003292589] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.51 m)
+[INFO] [1794176020.521463395] [aeb]: AEB STATS: checked 57 s, warnings 7, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176022.544139338] [aeb]: AEB: ⚠ WARNING: object 0.50 m ahead in our path, TTC 1.45 s, our speed 0.44 m/s
+[INFO] [1794176022.588684771] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.50 m)
+[INFO] [1794176022.592562357] [aeb]: AEB STATS: checked 58 s, warnings 8, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176023.966079125] [aeb]: AEB: ⚠ WARNING: object 0.50 m ahead in our path, TTC 1.41 s, our speed 0.44 m/s
+[INFO] [1794176024.007000311] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.50 m)
+[INFO] [1794176024.653914908] [aeb]: AEB STATS: checked 60 s, warnings 9, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176026.686698449] [aeb]: AEB STATS: checked 62 s, warnings 9, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176028.718199275] [aeb]: AEB STATS: checked 64 s, warnings 9, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176029.878067151] [aeb]: AEB: ⚠ WARNING: object 0.49 m ahead in our path, TTC 1.49 s, our speed 0.44 m/s
+[INFO] [1794176029.926447890] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.49 m)
+[INFO] [1794176030.694591515] [aeb]: AEB STATS: checked 65 s, warnings 10, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176032.790959698] [aeb]: AEB STATS: checked 67 s, warnings 10, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176034.830309876] [aeb]: AEB STATS: checked 69 s, warnings 10, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176036.866799906] [aeb]: AEB STATS: checked 71 s, warnings 10, partial brakes 2, full brakes 0, braking 0.9 s, smallest TTC 0.79 s
+[INFO] [1794176037.289119553] [aeb]: AEB: ⚠ PARTIAL: object 0.39 m ahead in our path, TTC 0.79 s, our speed 0.10 m/s
+[INFO] [1794176037.686778383] [aeb]: AEB: ✅ released after 0.3 s (worst: PARTIAL, TTC 0.79 s, closest 0.39 m)
+[INFO] [1794176038.959061961] [aeb]: AEB STATS: checked 72 s, warnings 10, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176041.003072267] [aeb]: AEB STATS: checked 74 s, warnings 10, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176043.028588986] [aeb]: AEB STATS: checked 76 s, warnings 10, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176045.089660696] [aeb]: AEB STATS: checked 77 s, warnings 10, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176046.580569183] [aeb]: AEB: ⚠ WARNING: object 0.52 m ahead in our path, TTC 1.47 s, our speed 0.45 m/s
+[INFO] [1794176046.617752441] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.47 s, closest 0.52 m)
+[INFO] [1794176047.126101374] [aeb]: AEB STATS: checked 79 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176049.138584345] [aeb]: AEB STATS: checked 81 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176051.242229139] [aeb]: AEB STATS: checked 83 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176053.221024454] [aeb]: AEB STATS: checked 84 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176055.277376789] [aeb]: AEB STATS: checked 86 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176057.294640976] [aeb]: AEB STATS: checked 88 s, warnings 11, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176058.262772823] [aeb]: AEB: ⚠ WARNING: object 0.49 m ahead in our path, TTC 1.32 s, our speed 0.44 m/s
+[INFO] [1794176058.300568277] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.49 m)
+[INFO] [1794176058.662654306] [aeb]: AEB: ⚠ WARNING: object 0.48 m ahead in our path, TTC 1.48 s, our speed 0.44 m/s
+[INFO] [1794176058.722552589] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.48 m)
+[INFO] [1794176059.283979626] [aeb]: AEB STATS: checked 90 s, warnings 13, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176059.787011041] [aeb]: AEB: ⚠ WARNING: object 0.49 m ahead in our path, TTC 1.43 s, our speed 0.44 m/s
+[INFO] [1794176059.817133061] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.49 m)
+[INFO] [1794176061.260279922] [aeb]: AEB STATS: checked 91 s, warnings 14, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176062.232148731] [aeb]: AEB: ⚠ WARNING: object 0.50 m ahead in our path, TTC 1.45 s, our speed 0.44 m/s
+[INFO] [1794176062.277408992] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.50 m)
+[INFO] [1794176063.300247095] [aeb]: AEB STATS: checked 93 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176065.310944687] [aeb]: AEB STATS: checked 95 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176067.303096612] [aeb]: AEB STATS: checked 96 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176069.336805262] [aeb]: AEB STATS: checked 98 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176071.368595892] [aeb]: AEB STATS: checked 100 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176073.342397907] [aeb]: AEB STATS: checked 102 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176075.360248949] [aeb]: AEB STATS: checked 103 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176077.394174823] [aeb]: AEB STATS: checked 105 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176079.362506318] [aeb]: AEB STATS: checked 107 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176081.307237299] [aeb]: AEB STATS: checked 108 s, warnings 15, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176082.672496164] [aeb]: AEB: ⚠ WARNING: object 0.53 m ahead in our path, TTC 1.42 s, our speed 0.45 m/s
+[INFO] [1794176082.725161801] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.42 s, closest 0.53 m)
+[INFO] [1794176083.299422925] [aeb]: AEB STATS: checked 110 s, warnings 16, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176084.154834370] [aeb]: AEB: ⚠ WARNING: object 0.53 m ahead in our path, TTC 1.45 s, our speed 0.45 m/s
+[INFO] [1794176084.196932866] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.53 m)
+[INFO] [1794176085.276177055] [aeb]: AEB STATS: checked 112 s, warnings 17, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176087.285545910] [aeb]: AEB STATS: checked 114 s, warnings 17, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176089.316874645] [aeb]: AEB STATS: checked 115 s, warnings 17, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176089.506786997] [aeb]: AEB: ⚠ WARNING: object 0.55 m ahead in our path, TTC 1.43 s, our speed 0.45 m/s
+[INFO] [1794176089.543414842] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.55 m)
+[INFO] [1794176091.355279192] [aeb]: AEB STATS: checked 117 s, warnings 18, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176093.400355555] [aeb]: AEB STATS: checked 119 s, warnings 18, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176095.516055291] [aeb]: AEB STATS: checked 120 s, warnings 18, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+[INFO] [1794176097.541074183] [aeb]: AEB STATS: checked 122 s, warnings 18, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/aeb_node.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'aeb_node.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/aeb_node.py", line 101, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

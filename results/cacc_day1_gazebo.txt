@@ -1,0 +1,21 @@
+CACC 1 Gazebo results (08.11.2026)
+
+== P1: 
+
+== P2: mode acc_short
+braking event 1: speed dips leader 0.30, car 1 0.35, robot 0.26 m/s -> amplification 0.86 ✅; smallest gaps car 1 0.39 m, robot 0.57 m
+braking event 2: speed dips leader 0.30, car 1 0.35, robot 0.34 m/s -> amplification 1.14 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.39 m
+braking event 3: speed dips leader 0.30, car 1 0.36, robot 0.35 m/s -> amplification 1.15 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.41 m
+braking event 4: speed dips leader 0.30, car 1 0.33, robot 0.31 m/s -> amplification 1.05 ✅; smallest gaps car 1 0.41 m, robot 0.42 m
+mode acc_short, events 4, mean amplification 1.05, gap now car 1 0.53 m / robot 0.63 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.39 m, robot 0.39 m, collisions 0
+RSS: checked 116 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 2.1 s, smallest margin to a safe distance 0.03 m
+AEB: checked 116 s, warnings 16, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.27 s
+
+== P3: mode cacc
+braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.43 m/s -> amplification 1.44 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.52 m
+braking event 2: speed dips leader 0.30, car 1 0.29, robot 0.45 m/s -> amplification 1.48 ⚠ growing; smallest gaps car 1 0.48 m, robot 0.52 m
+braking event 3: speed dips leader 0.30, car 1 0.29, robot 0.45 m/s -> amplification 1.49 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.49 m
+braking event 4: speed dips leader 0.30, car 1 0.29, robot 0.31 m/s -> amplification 1.04 ✅; smallest gaps car 1 0.47 m, robot 0.50 m
+mode cacc, events 4, mean amplification 1.36, gap now car 1 0.48 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+RSS: checked 122 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 2.8 s, smallest margin to a safe distance 0.02 m
+AEB: checked 122 s, warnings 18, partial brakes 3, full brakes 0, braking 1.2 s, smallest TTC 0.79 s
