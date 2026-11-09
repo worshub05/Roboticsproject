@@ -1,0 +1,238 @@
+[INFO] [1794233331.964755246] [road_driver]: Road driver ready: CNN steering + LiDAR adaptive cruise control (curved corridor)
+[INFO] [1794233332.520291021] [road_driver]: ROAD: target detected 1.90 m ahead (corridor curvature +0.000 1/m)
+[INFO] [1794233332.520961816] [road_driver]: ROAD: CRUISE -> STOP (gap 1.90 m)
+[INFO] [1794233335.601526950] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.70 m lead_speed=-0.29 m/s corridor curvature=+0.000 1/m
+[INFO] [1794233338.879598297] [road_driver]: ROAD: STOP -> CACC (gap 1.29 m)
+[INFO] [1794233338.998120197] [road_driver]: ROAD: CACC v=0.04 m/s gap=1.34 m lead_speed=0.41 m/s corridor curvature=+0.012 1/m
+[INFO] [1794233342.394030445] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.68 m lead_speed=0.45 m/s corridor curvature=+0.011 1/m
+[INFO] [1794233345.860775318] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.58 m lead_speed=0.47 m/s corridor curvature=+0.017 1/m
+[INFO] [1794233349.415881084] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.44 m lead_speed=0.46 m/s corridor curvature=+0.018 1/m
+[INFO] [1794233351.236542303] [road_driver]: ROAD: CACC -> CRUISE (gap 1.26 m)
+[INFO] [1794233351.350874626] [road_driver]: ROAD: CRUISE -> CACC (gap 1.22 m)
+[INFO] [1794233352.797539276] [road_driver]: ROAD: CACC v=0.26 m/s gap=0.93 m lead_speed=0.16 m/s corridor curvature=+0.020 1/m
+[INFO] [1794233356.275895586] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.81 m lead_speed=0.40 m/s corridor curvature=+0.013 1/m
+[INFO] [1794233357.587217632] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.74 m)
+[INFO] [1794233357.797251416] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.73 m)
+[INFO] [1794233359.776325980] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.70 m lead_speed=0.45 m/s corridor curvature=-0.014 1/m
+[INFO] [1794233363.193684587] [road_driver]: ROAD: CACC v=0.48 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=-0.067 1/m
+[INFO] [1794233367.218987685] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.48 m/s corridor curvature=-0.110 1/m
+[INFO] [1794233370.594453887] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.52 m lead_speed=0.43 m/s corridor curvature=-0.124 1/m
+[INFO] [1794233373.063036750] [road_driver]: ROAD: CACC -> STOP (gap 0.53 m)
+[INFO] [1794233373.874365230] [road_driver]: ROAD: STOP -> CACC (gap 0.65 m)
+[INFO] [1794233374.101030027] [road_driver]: ROAD: CACC v=0.12 m/s gap=0.73 m lead_speed=0.06 m/s corridor curvature=-0.112 1/m
+[INFO] [1794233377.634198038] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.04 m lead_speed=0.46 m/s corridor curvature=+0.000 1/m
+[INFO] [1794233381.195966664] [road_driver]: ROAD: CACC v=0.37 m/s gap=0.70 m lead_speed=0.26 m/s corridor curvature=+0.001 1/m
+[INFO] [1794233384.744952057] [road_driver]: ROAD: CACC v=0.28 m/s gap=0.56 m lead_speed=0.22 m/s corridor curvature=-0.077 1/m
+[INFO] [1794233388.239839722] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.44 m/s corridor curvature=-0.073 1/m
+[INFO] [1794233391.778455756] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.44 m/s corridor curvature=+0.003 1/m
+[INFO] [1794233393.982985387] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.54 m)
+[INFO] [1794233394.572074657] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.54 m)
+[INFO] [1794233395.229168300] [road_driver]: ROAD: CACC v=0.49 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=+0.010 1/m
+[INFO] [1794233398.762718753] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.51 m lead_speed=0.47 m/s corridor curvature=+0.013 1/m
+[INFO] [1794233402.723218591] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.025 1/m
+[INFO] [1794233404.786950145] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.50 m)
+[INFO] [1794233404.979474069] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.51 m)
+[INFO] [1794233406.153950076] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.58 m lead_speed=0.49 m/s corridor curvature=-0.015 1/m
+[INFO] [1794233409.699465039] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.44 m/s corridor curvature=+0.005 1/m
+[INFO] [1794233410.247621753] [road_driver]: ROAD: CACC -> STOP (gap 0.47 m)
+[INFO] [1794233410.988855044] [road_driver]: ROAD: STOP -> CACC (gap 0.35 m)
+[INFO] [1794233411.909638176] [road_driver]: ROAD: CACC -> STOP (gap 0.40 m)
+[INFO] [1794233412.021670398] [road_driver]: ROAD: STOP -> CACC (gap 0.41 m)
+[INFO] [1794233412.855828940] [road_driver]: ROAD: CACC -> STOP (gap 0.47 m)
+[INFO] [1794233413.102339586] [road_driver]: ROAD: STOP -> CACC (gap 0.47 m)
+[INFO] [1794233413.204406425] [road_driver]: ROAD: CACC v=0.08 m/s gap=0.47 m lead_speed=0.16 m/s corridor curvature=-0.028 1/m
+[INFO] [1794233413.324314253] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.48 m)
+[INFO] [1794233413.454993278] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.48 m)
+[INFO] [1794233416.724822174] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.43 m/s corridor curvature=-0.012 1/m
+[INFO] [1794233420.288281253] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.52 m lead_speed=0.43 m/s corridor curvature=+0.006 1/m
+[INFO] [1794233423.792343147] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.52 m lead_speed=0.44 m/s corridor curvature=-0.011 1/m
+[INFO] [1794233427.277467188] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.028 1/m
+[INFO] [1794233430.707390012] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.030 1/m
+[INFO] [1794233434.534698860] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.47 m lead_speed=0.42 m/s corridor curvature=-0.100 1/m
+[INFO] [1794233438.035981465] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.49 m lead_speed=0.41 m/s corridor curvature=-0.159 1/m
+[INFO] [1794233441.400385677] [road_driver]: ROAD: CACC v=0.17 m/s gap=0.46 m lead_speed=0.16 m/s corridor curvature=-0.137 1/m
+[INFO] [1794233441.757896208] [road_driver]: ROAD: CACC -> STOP (gap 0.46 m)
+[INFO] [1794233441.979605683] [road_driver]: ROAD: STOP -> CACC (gap 0.45 m)
+[INFO] [1794233442.537382629] [road_driver]: ROAD: CACC -> STOP (gap 0.48 m)
+[INFO] [1794233442.636585920] [road_driver]: ROAD: STOP -> CACC (gap 0.48 m)
+[INFO] [1794233444.214523722] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.55 m)
+[INFO] [1794233444.799967063] [road_driver]: ROAD: RSS_LIMIT v=0.44 m/s gap=0.58 m lead_speed=0.41 m/s corridor curvature=-0.136 1/m
+[INFO] [1794233445.479250616] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.56 m)
+[INFO] [1794233447.758428116] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.53 m)
+[INFO] [1794233447.880315692] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.53 m)
+[INFO] [1794233448.221838202] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.47 m/s corridor curvature=-0.130 1/m
+[INFO] [1794233451.659565515] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=-0.127 1/m
+[INFO] [1794233455.082018568] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.44 m/s corridor curvature=-0.126 1/m
+[INFO] [1794233456.901491212] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.52 m)
+[INFO] [1794233457.022051171] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.53 m)
+[INFO] [1794233458.515607557] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.46 m/s corridor curvature=-0.126 1/m
+[INFO] [1794233461.963804389] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.46 m/s corridor curvature=-0.130 1/m
+[INFO] [1794233466.123527464] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.52 m lead_speed=0.44 m/s corridor curvature=-0.128 1/m
+[INFO] [1794233469.075858540] [road_driver]: ROAD: CACC -> STOP (gap 0.44 m)
+[INFO] [1794233469.668842006] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.30 m lead_speed=0.19 m/s corridor curvature=-0.173 1/m
+[INFO] [1794233469.785773561] [road_driver]: ROAD: STOP -> AEB_BRAKE (gap 0.31 m)
+[INFO] [1794233470.132470641] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.36 m)
+[INFO] [1794233470.232778950] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.37 m)
+[INFO] [1794233471.328430563] [road_driver]: ROAD: CACC -> STOP (gap 0.44 m)
+[INFO] [1794233471.437983364] [road_driver]: ROAD: STOP -> CACC (gap 0.44 m)
+[INFO] [1794233472.143752560] [road_driver]: ROAD: CACC -> STOP (gap 0.48 m)
+[INFO] [1794233472.651137433] [road_driver]: ROAD: STOP -> CACC (gap 0.49 m)
+[INFO] [1794233473.051027621] [road_driver]: ROAD: CACC v=0.20 m/s gap=0.57 m lead_speed=0.23 m/s corridor curvature=-0.139 1/m
+[INFO] [1794233476.551969534] [road_driver]: ROAD: CACC v=0.48 m/s gap=0.61 m lead_speed=0.48 m/s corridor curvature=-0.118 1/m
+[INFO] [1794233480.000713786] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.46 m/s corridor curvature=-0.124 1/m
+[INFO] [1794233483.414294012] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.55 m lead_speed=0.45 m/s corridor curvature=-0.128 1/m
+[INFO] [1794233486.993239254] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=-0.123 1/m
+[INFO] [1794233490.529557487] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.43 m/s corridor curvature=-0.098 1/m
+[INFO] [1794233494.092179711] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=+0.003 1/m
+[INFO] [1794233494.303446891] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.55 m)
+[INFO] [1794233494.865262392] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.55 m)
+[INFO] [1794233497.530090054] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.43 m/s corridor curvature=-0.042 1/m
+[INFO] [1794233498.740450562] [road_driver]: ROAD: CACC -> STOP (gap 0.39 m)
+[INFO] [1794233498.862478250] [road_driver]: ROAD: STOP -> CACC (gap 0.37 m)
+[INFO] [1794233499.196721371] [road_driver]: ROAD: CACC -> STOP (gap 0.36 m)
+[INFO] [1794233500.003846478] [road_driver]: ROAD: STOP -> CACC (gap 0.37 m)
+[INFO] [1794233500.474089460] [road_driver]: ROAD: CACC -> STOP (gap 0.39 m)
+[INFO] [1794233500.721052708] [road_driver]: ROAD: STOP -> CACC (gap 0.41 m)
+[INFO] [1794233501.512982915] [road_driver]: ROAD: CACC v=0.17 m/s gap=0.47 m lead_speed=0.16 m/s corridor curvature=+0.002 1/m
+[INFO] [1794233501.865499640] [road_driver]: ROAD: CACC -> STOP (gap 0.46 m)
+[INFO] [1794233501.979817490] [road_driver]: ROAD: STOP -> CACC (gap 0.47 m)
+[INFO] [1794233505.049339134] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.50 m lead_speed=0.42 m/s corridor curvature=-0.001 1/m
+[INFO] [1794233506.670665270] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.50 m)
+[INFO] [1794233506.914493193] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.52 m)
+[INFO] [1794233508.514276342] [road_driver]: ROAD: CACC v=0.39 m/s gap=0.63 m lead_speed=0.43 m/s corridor curvature=-0.009 1/m
+[INFO] [1794233512.118144611] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.45 m/s corridor curvature=-0.019 1/m
+[INFO] [1794233513.402502232] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.55 m)
+[INFO] [1794233513.536645142] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.55 m)
+[INFO] [1794233515.653844804] [road_driver]: ROAD: CACC v=0.47 m/s gap=0.57 m lead_speed=0.45 m/s corridor curvature=-0.010 1/m
+[INFO] [1794233519.147320660] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.52 m lead_speed=0.44 m/s corridor curvature=-0.037 1/m
+[INFO] [1794233522.676948892] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.45 m/s corridor curvature=-0.005 1/m
+[INFO] [1794233526.192428089] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.51 m lead_speed=0.45 m/s corridor curvature=-0.014 1/m
+[INFO] [1794233527.129769254] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.50 m)
+[INFO] [1794233527.231589300] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.50 m)
+[INFO] [1794233527.845025438] [road_driver]: ROAD: CACC -> STOP (gap 0.41 m)
+[INFO] [1794233528.189352983] [road_driver]: ROAD: STOP -> RSS_LIMIT (gap 0.34 m)
+[INFO] [1794233528.319673054] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.37 m)
+[INFO] [1794233529.129045932] [road_driver]: ROAD: CACC -> STOP (gap 0.42 m)
+[INFO] [1794233529.499537602] [road_driver]: ROAD: STOP -> CACC (gap 0.42 m)
+[INFO] [1794233529.738263412] [road_driver]: ROAD: CACC v=0.12 m/s gap=0.44 m lead_speed=0.16 m/s corridor curvature=-0.006 1/m
+[INFO] [1794233530.311826666] [road_driver]: ROAD: CACC -> STOP (gap 0.47 m)
+[INFO] [1794233530.531663463] [road_driver]: ROAD: STOP -> CACC (gap 0.47 m)
+[INFO] [1794233533.800901462] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.63 m lead_speed=0.39 m/s corridor curvature=+0.030 1/m
+[INFO] [1794233537.262554192] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.44 m/s corridor curvature=+0.013 1/m
+[INFO] [1794233540.747647718] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.48 m lead_speed=0.43 m/s corridor curvature=-0.126 1/m
+[INFO] [1794233541.743640257] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.51 m)
+[INFO] [1794233541.746442585] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.52 m)
+[INFO] [1794233544.223372114] [road_driver]: ROAD: CACC v=0.47 m/s gap=0.58 m lead_speed=0.45 m/s corridor curvature=-0.111 1/m
+[INFO] [1794233547.652737690] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.56 m lead_speed=0.45 m/s corridor curvature=-0.109 1/m
+[INFO] [1794233551.076797305] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.55 m lead_speed=0.47 m/s corridor curvature=-0.114 1/m
+[INFO] [1794233554.537018084] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.130 1/m
+[INFO] [1794233557.388616558] [road_driver]: ROAD: CACC -> STOP (gap 0.41 m)
+[INFO] [1794233557.983471492] [road_driver]: ROAD: STOP -> CACC (gap 0.36 m)
+[INFO] [1794233557.986880726] [road_driver]: ROAD: CACC v=0.04 m/s gap=0.36 m lead_speed=0.21 m/s corridor curvature=-0.165 1/m
+[INFO] [1794233559.196858158] [road_driver]: ROAD: CACC -> STOP (gap 0.43 m)
+[INFO] [1794233559.858402899] [road_driver]: ROAD: STOP -> CACC (gap 0.44 m)
+[INFO] [1794233561.395334094] [road_driver]: ROAD: CACC v=0.27 m/s gap=0.58 m lead_speed=0.24 m/s corridor curvature=-0.119 1/m
+[INFO] [1794233565.280333121] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.56 m lead_speed=0.43 m/s corridor curvature=-0.122 1/m
+[INFO] [1794233568.768847646] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.55 m lead_speed=0.45 m/s corridor curvature=-0.102 1/m
+[INFO] [1794233572.225763336] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.46 m/s corridor curvature=-0.125 1/m
+[INFO] [1794233575.703501053] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.115 1/m
+[INFO] [1794233579.144838874] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.124 1/m
+[INFO] [1794233580.660500548] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.53 m)
+[INFO] [1794233581.102650912] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.54 m)
+[INFO] [1794233582.595438876] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.46 m/s corridor curvature=-0.128 1/m
+[INFO] [1794233586.128358957] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.53 m lead_speed=0.43 m/s corridor curvature=-0.130 1/m
+[INFO] [1794233586.715949116] [road_driver]: ROAD: CACC -> STOP (gap 0.40 m)
+[INFO] [1794233586.943466008] [road_driver]: ROAD: STOP -> CACC (gap 0.38 m)
+[INFO] [1794233587.871725530] [road_driver]: ROAD: CACC -> STOP (gap 0.42 m)
+[INFO] [1794233588.489035092] [road_driver]: ROAD: STOP -> CACC (gap 0.43 m)
+[INFO] [1794233589.650633700] [road_driver]: ROAD: CACC v=0.12 m/s gap=0.56 m lead_speed=0.16 m/s corridor curvature=-0.137 1/m
+[INFO] [1794233593.126083076] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.66 m lead_speed=0.45 m/s corridor curvature=-0.101 1/m
+[INFO] [1794233597.237120813] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.57 m lead_speed=0.44 m/s corridor curvature=-0.097 1/m
+[INFO] [1794233600.535583163] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.55 m lead_speed=0.47 m/s corridor curvature=+0.011 1/m
+[INFO] [1794233600.983017386] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.54 m)
+[INFO] [1794233601.454449044] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.55 m)
+[INFO] [1794233603.994863163] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.48 m/s corridor curvature=+0.008 1/m
+[INFO] [1794233607.457515454] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=+0.020 1/m
+[INFO] [1794233610.958884227] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.007 1/m
+[INFO] [1794233614.469461759] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.51 m lead_speed=0.45 m/s corridor curvature=-0.006 1/m
+[INFO] [1794233616.184116560] [road_driver]: ROAD: CACC -> STOP (gap 0.39 m)
+[INFO] [1794233616.773592538] [road_driver]: ROAD: STOP -> CACC (gap 0.34 m)
+[INFO] [1794233617.111331747] [road_driver]: ROAD: CACC -> STOP (gap 0.36 m)
+[INFO] [1794233617.236510417] [road_driver]: ROAD: STOP -> CACC (gap 0.37 m)
+[INFO] [1794233617.874718477] [road_driver]: ROAD: CACC v=0.13 m/s gap=0.42 m lead_speed=0.16 m/s corridor curvature=-0.087 1/m
+[INFO] [1794233618.231987198] [road_driver]: ROAD: CACC -> STOP (gap 0.43 m)
+[INFO] [1794233618.368812276] [road_driver]: ROAD: STOP -> CACC (gap 0.44 m)
+[INFO] [1794233619.160253248] [road_driver]: ROAD: CACC -> STOP (gap 0.49 m)
+[INFO] [1794233619.372650229] [road_driver]: ROAD: STOP -> CACC (gap 0.49 m)
+[INFO] [1794233621.312607905] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.66 m lead_speed=0.39 m/s corridor curvature=+0.020 1/m
+[INFO] [1794233624.961866154] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.55 m lead_speed=0.44 m/s corridor curvature=-0.008 1/m
+[INFO] [1794233628.491907435] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.52 m lead_speed=0.41 m/s corridor curvature=-0.013 1/m
+[INFO] [1794233632.522616369] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.51 m lead_speed=0.45 m/s corridor curvature=-0.003 1/m
+[INFO] [1794233636.081058245] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.012 1/m
+[INFO] [1794233639.455732644] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.49 m lead_speed=0.45 m/s corridor curvature=-0.059 1/m
+[INFO] [1794233642.969893183] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.50 m lead_speed=0.45 m/s corridor curvature=-0.126 1/m
+[INFO] [1794233645.382786012] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.49 m)
+[INFO] [1794233645.611484824] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.44 m)
+[INFO] [1794233646.282851471] [road_driver]: ROAD: CACC -> STOP (gap 0.43 m)
+[INFO] [1794233646.407134837] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.43 m lead_speed=-1.03 m/s corridor curvature=-0.147 1/m
+[INFO] [1794233648.015007561] [road_driver]: ROAD: STOP -> CACC (gap 0.62 m)
+[INFO] [1794233649.805395426] [road_driver]: ROAD: CACC v=0.39 m/s gap=0.84 m lead_speed=0.23 m/s corridor curvature=-0.083 1/m
+[INFO] [1794233651.188004535] [road_driver]: ROAD: CACC -> CRUISE (gap 1.12 m)
+[INFO] [1794233651.389949548] [road_driver]: ROAD: CRUISE -> CACC (gap 1.11 m)
+[INFO] [1794233653.211570747] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.11 m lead_speed=0.43 m/s corridor curvature=+0.005 1/m
+[INFO] [1794233656.636900178] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.97 m lead_speed=0.45 m/s corridor curvature=+0.014 1/m
+[INFO] [1794233656.883797314] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.96 m)
+[INFO] [1794233657.107422681] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.96 m)
+[INFO] [1794233660.107491413] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.84 m lead_speed=0.44 m/s corridor curvature=+0.007 1/m
+[INFO] [1794233664.189854192] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.69 m lead_speed=0.43 m/s corridor curvature=-0.022 1/m
+[INFO] [1794233667.684774986] [road_driver]: ROAD: CACC v=0.49 m/s gap=0.53 m lead_speed=0.48 m/s corridor curvature=-0.084 1/m
+[INFO] [1794233671.170707070] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.51 m lead_speed=0.46 m/s corridor curvature=-0.129 1/m
+[INFO] [1794233674.658398064] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.44 m/s corridor curvature=-0.122 1/m
+[INFO] [1794233675.107008092] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.44 m)
+[INFO] [1794233675.228859372] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.41 m)
+[INFO] [1794233675.466431253] [road_driver]: ROAD: CACC -> STOP (gap 0.39 m)
+[INFO] [1794233676.253761072] [road_driver]: ROAD: STOP -> CACC (gap 0.35 m)
+[INFO] [1794233676.831016847] [road_driver]: ROAD: CACC -> STOP (gap 0.42 m)
+[INFO] [1794233676.939208353] [road_driver]: ROAD: STOP -> CACC (gap 0.43 m)
+[INFO] [1794233678.103086922] [road_driver]: ROAD: CACC v=0.17 m/s gap=0.46 m lead_speed=0.15 m/s corridor curvature=-0.142 1/m
+[INFO] [1794233678.207356871] [road_driver]: ROAD: CACC -> STOP (gap 0.46 m)
+[INFO] [1794233678.358320452] [road_driver]: ROAD: STOP -> CACC (gap 0.47 m)
+[INFO] [1794233681.526570334] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.53 m lead_speed=0.44 m/s corridor curvature=-0.121 1/m
+[INFO] [1794233683.855800230] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.53 m)
+[INFO] [1794233683.976995151] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.53 m)
+[INFO] [1794233685.014757279] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.47 m/s corridor curvature=-0.130 1/m
+[INFO] [1794233686.319269545] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.53 m)
+[INFO] [1794233686.440838349] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.52 m)
+[INFO] [1794233688.565217350] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.46 m/s corridor curvature=-0.133 1/m
+[INFO] [1794233691.341928125] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.52 m)
+[INFO] [1794233691.464404216] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.52 m)
+[INFO] [1794233692.174469670] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.126 1/m
+[INFO] [1794233696.085064454] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.53 m)
+[INFO] [1794233696.222000906] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.54 m)
+[INFO] [1794233696.222694446] [road_driver]: ROAD: CACC v=0.46 m/s gap=0.54 m lead_speed=0.47 m/s corridor curvature=-0.120 1/m
+[INFO] [1794233699.736526856] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.46 m/s corridor curvature=-0.075 1/m
+[INFO] [1794233703.202657763] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.45 m/s corridor curvature=+0.008 1/m
+[INFO] [1794233705.550348858] [road_driver]: ROAD: CACC -> STOP (gap 0.38 m)
+[INFO] [1794233705.799446911] [road_driver]: ROAD: STOP -> CACC (gap 0.39 m)
+[INFO] [1794233706.735373536] [road_driver]: ROAD: CACC v=0.09 m/s gap=0.48 m lead_speed=0.16 m/s corridor curvature=-0.029 1/m
+[INFO] [1794233710.197619255] [road_driver]: ROAD: CACC v=0.49 m/s gap=0.58 m lead_speed=0.41 m/s corridor curvature=-0.013 1/m
+[INFO] [1794233712.198603172] [road_driver]: ROAD: CACC -> FOLLOW (gap 0.53 m)
+[INFO] [1794233712.342910069] [road_driver]: ROAD: FOLLOW -> CACC (gap 0.53 m)
+[INFO] [1794233713.731101179] [road_driver]: ROAD: CACC v=0.50 m/s gap=0.67 m lead_speed=0.46 m/s corridor curvature=+0.025 1/m
+[INFO] [1794233717.515412432] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.55 m lead_speed=0.44 m/s corridor curvature=+0.006 1/m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/road_driver.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'road_driver.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/road_driver.py", line 265, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

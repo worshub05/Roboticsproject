@@ -61,11 +61,17 @@ class AEB:
         self.prev_d, self.prev_t, self.closing = None, None, None
         self.state = 'OFF'
 
-    def step(self, d, v_ego, t):
-        """d: path distance (inf = nothing), v_ego: our speed, t: time. Returns (state, limit, ttc)."""
+    def step(self, d, v_ego, t, closing=None):
+        """
+        d: path distance (inf = nothing), v_ego: our speed, t: time. Returns (state, limit, ttc).
+        closing: closing speed known from V2V (our speed - the speed the car in front reports), used
+        instead of differencing the LiDAR distance (cooperative AEB). None = LiDAR only.
+        """
         v_ego = max(0.0, v_ego)
         # closing speed from the change in distance (new object or big jump: assume it stands still)
-        if math.isfinite(d) and self.prev_d is not None and math.isfinite(self.prev_d) \
+        if closing is not None and math.isfinite(d):
+            self.closing = closing
+        elif math.isfinite(d) and self.prev_d is not None and math.isfinite(self.prev_d) \
                 and abs(d - self.prev_d) < self.jump and t > self.prev_t:
             raw = (self.prev_d - d) / (t - self.prev_t)
             self.closing = raw if self.closing is None else (1 - self.alpha) * self.closing + self.alpha * raw

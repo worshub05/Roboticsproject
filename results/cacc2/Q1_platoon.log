@@ -1,0 +1,51 @@
+[INFO] [1794232997.269377198] [platoon]: Platoon: mode cacc (standstill gap 0.4 m, time gap 0.3 s), leader cruise 0.45 m/s, braking to 0.15 m/s every 25 s; V2V loss 0%, delay 0.0 s
+[INFO] [1794233002.948958019] [platoon]: PLATOON: platoon drives off
+[INFO] [1794233005.019733539] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.61 m / robot 0.94 m (target at 0.45 m/s 0.54 m), smallest gap car 1 inf m, robot inf m, collisions 0
+[INFO] [1794233011.158391470] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.55 m / robot 0.74 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.55 m, robot 0.74 m, collisions 0
+[INFO] [1794233016.863468146] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.54 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.54 m, robot 0.56 m, collisions 0
+[INFO] [1794233022.566267893] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.49 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.48 m, robot 0.49 m, collisions 0
+[INFO] [1794233028.309454516] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.52 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.48 m, robot 0.49 m, collisions 0
+[INFO] [1794233034.018049733] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.48 m, robot 0.49 m, collisions 0
+[INFO] [1794233034.335765185] [platoon]: PLATOON: braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.29 m/s -> amplification 0.98 ✅; smallest gaps car 1 0.48 m, robot 0.49 m
+[INFO] [1794233040.131082428] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.98, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.48 m, robot 0.49 m, collisions 0
+[INFO] [1794233046.032831343] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.98, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.48 m, robot 0.49 m, collisions 0
+[INFO] [1794233051.729171264] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.98, gap now car 1 0.48 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233057.516068461] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.98, gap now car 1 0.52 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233063.433677748] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.98, gap now car 1 0.53 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233063.804502028] [platoon]: PLATOON: braking event 2: speed dips leader 0.30, car 1 0.29, robot 0.30 m/s -> amplification 0.99 ✅; smallest gaps car 1 0.47 m, robot 0.51 m
+[INFO] [1794233069.273075898] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.98, gap now car 1 0.54 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233075.616332461] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.98, gap now car 1 0.54 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233081.702448180] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.98, gap now car 1 0.48 m / robot 0.54 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233087.622807106] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.98, gap now car 1 0.52 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233093.494340957] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.98, gap now car 1 0.53 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233093.846132164] [platoon]: PLATOON: braking event 3: speed dips leader 0.30, car 1 0.29, robot 0.29 m/s -> amplification 0.96 ✅; smallest gaps car 1 0.47 m, robot 0.49 m
+[INFO] [1794233099.273727626] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.97, gap now car 1 0.53 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233105.375736182] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.97, gap now car 1 0.53 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233111.136455311] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.97, gap now car 1 0.48 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233116.796367801] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.97, gap now car 1 0.52 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233122.547518448] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.97, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233122.892586481] [platoon]: PLATOON: braking event 4: speed dips leader 0.30, car 1 0.29, robot 0.30 m/s -> amplification 0.99 ✅; smallest gaps car 1 0.47 m, robot 0.50 m
+[INFO] [1794233128.246248394] [platoon]: PLATOON STATS: mode cacc, events 4, mean amplification 0.98, gap now car 1 0.53 m / robot 0.60 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233133.940824565] [platoon]: PLATOON STATS: mode cacc, events 4, mean amplification 0.98, gap now car 1 0.53 m / robot 0.60 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233140.200937632] [platoon]: PLATOON STATS: mode cacc, events 4, mean amplification 0.98, gap now car 1 0.48 m / robot 0.65 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233145.995955500] [platoon]: PLATOON STATS: mode cacc, events 4, mean amplification 0.98, gap now car 1 0.52 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233151.768625126] [platoon]: PLATOON STATS: mode cacc, events 4, mean amplification 0.98, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233152.006279211] [platoon]: PLATOON: braking event 5: speed dips leader 0.30, car 1 0.29, robot 0.34 m/s -> amplification 1.14 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.51 m
+[INFO] [1794233157.566484556] [platoon]: PLATOON STATS: mode cacc, events 5, mean amplification 1.01, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+[INFO] [1794233163.487456031] [platoon]: PLATOON STATS: mode cacc, events 5, mean amplification 1.01, gap now car 1 0.53 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/platoon.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'platoon.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/platoon.py", line 233, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

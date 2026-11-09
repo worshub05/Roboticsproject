@@ -1,0 +1,12 @@
+[INFO] [1794233832.472515105] [cacc_controller]: CACC ready: gap = 0.4 m + 0.3 s x speed, gains k_a 0.8, k_p 0.6, k_d 2.0; following V2V car 1, falls back to ACC after 0.5 s without V2V
+[INFO] [1794233832.475785091] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+[INFO] [1794233833.516808028] [cacc_controller]: CACC: ✅ active (V2V + LiDAR gap)
+[INFO] [1794233838.167544324] [cacc_controller]: CACC: gap 0.68 m (want 0.51), speed 0.36 m/s, car in front 0.35 m/s
+[INFO] [1794233843.924217973] [cacc_controller]: CACC: gap 0.50 m (want 0.55), speed 0.49 m/s, car in front 0.46 m/s
+[INFO] [1794233849.748321601] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233855.434922706] [cacc_controller]: CACC: gap 0.49 m (want 0.50), speed 0.32 m/s, car in front 0.35 m/s
+[INFO] [1794233861.826296043] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1794233867.680062388] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233873.587111538] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233879.390442283] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233884.623373619] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over

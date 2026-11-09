@@ -41,7 +41,7 @@ class Platoon(Node):
     def __init__(self):
         super().__init__('platoon')
         for k, v in dict(mode='cacc', rate=20.0, loss=0.0, delay=0.0, seed=1, cruise=0.45, v_low=0.15,
-                         period=25.0, first=12.0).items():
+                         period=25.0, first=12.0, blackout=-1.0).items():
             self.declare_parameter(k, v)
         g = lambda n: self.get_parameter(n).value  # noqa: E731
         self.mode = g('mode')
@@ -51,6 +51,7 @@ class Platoon(Node):
                                      first=float(g('first')))
         self.law = CACCLaw(r=d0, h=h) if self.mode == 'cacc' else ACCLaw(d0=d0, h=h)
         self.loss, self.delay = float(g('loss')), float(g('delay'))
+        self.blackout, self.blackout_logged = float(g('blackout')), False   # s after drive-off, < 0 = never
         self.rnd = random.Random(int(g('seed')))
         self.dt = 1.0 / float(g('rate'))
         self.cars = None                 # [{'id', 's', 'v', 'a', 'v_cmd'}] once placed
@@ -134,7 +135,11 @@ class Platoon(Node):
             if ev != self.event:
                 self.start_event(ev, now)
         # V2V broadcast (with the simulated radio link)
-        if self.rnd.random() >= self.loss:
+        silent = self.blackout >= 0 and self.t_go is not None and now - self.t_go > self.blackout
+        if silent and not self.blackout_logged:
+            self.get_logger().info('PLATOON: ⚠ V2V blackout - no more messages')
+            self.blackout_logged = True
+        if not silent and self.rnd.random() >= self.loss:
             self.queue.append((now + self.delay, v2v_message(self.cars, now)))
         while self.queue and self.queue[0][0] <= now:
             msg = self.queue.pop(0)[1]

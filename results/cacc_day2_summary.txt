@@ -1,0 +1,23 @@
+CACC 2: cooperative AEB, V2V loss/delay, blackout fallback (9 Nov 2026)
+
+Change: AEB takes its closing speed from the V2V speed of the car in front when the LiDAR object
+is that car (V2V position agrees with the LiDAR gap within 0.25 m); otherwise LiDAR as before.
+Platoon node: V2V blackout option.
+
+Offline (tools/cacc_offline_test.py):
+  AEB at 0.54 m gaps, 50% late pose updates: LiDAR closing speed 13 AEB brakes, amplification 1.29;
+    V2V closing speed 0 brakes, 0.97
+  radio link, 7 cars: 0% lost/0.1 s 0.95; 30%/0.1 s 1.04; 50%/0.1 s 1.19; 0%/0.3 s 1.19; 50%/0.3 s 1.45
+    -> delay hurts more than loss
+  blackout at 30 s: with fallback to ACC smallest gap 0.45 m, gap opens to 0.92 m, 0 collisions;
+    without fallback 3/3 collisions
+
+Gazebo (robot amplification per braking event, 0 collisions in all runs):
+  Q1 CACC + cooperative AEB: 0.98 0.99 0.96 0.99 1.14 (mean 1.01), AEB 0 warnings / 0 brakes,
+     V2V closing speed in 98% of scans, smallest gap 0.49 m   [CACC 1 P3 with LiDAR AEB: mean 1.36]
+  Q2 50% lost + 0.2 s delay: 0.70 0.93 then 1.37-1.50 (mean 1.37); smallest gap 0.31 m;
+     RSS 5 dangerous situations; AEB 1 partial + 1 full brake.
+     Cause: CACC flaps off/on (~20 times) on the 0.5 s timeout; each switch hands over to ACC, which
+     wants 0.95 m at a 0.54 m gap and brakes hard. Needs graceful degradation (ramp the time gap).
+  Q3 blackout at 40 s: 0.94 before; 1.28 during the switch-over; then 0.57-0.63 at ~0.83 m gap;
+     smallest gap 0.50 m, 0 dangerous situations -> fallback is safe.

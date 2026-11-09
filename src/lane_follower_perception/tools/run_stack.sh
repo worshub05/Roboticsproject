@@ -57,7 +57,7 @@ if [ "$SCEN" = "lights" ]; then
     [ "$V2I" = "on" ] && ros2 run lane_follower_perception v2i_controller.py $P -p glosa:=$GLOSAP > "$LOG/v2i.log" 2>&1 &
 fi
 if [ "$SCEN" = "platoon" ]; then
-    ros2 run lane_follower_perception platoon.py $P -p mode:=$PLATOON -p loss:=${LOSS:-0.0} -p delay:=${DELAY:-0.0} > "$LOG/platoon.log" 2>&1 &
+    ros2 run lane_follower_perception platoon.py $P -p mode:=$PLATOON -p loss:=${LOSS:-0.0} -p delay:=${DELAY:-0.0} -p blackout:=${BLACKOUT:--1.0} > "$LOG/platoon.log" 2>&1 &
     [ "$PLATOON" = "cacc" ] && ros2 run lane_follower_perception cacc_controller.py $P > "$LOG/cacc.log" 2>&1 &
 fi
 ros2 run lane_follower_perception aeb_node.py $P -p enforce:=$AENF > "$LOG/aeb.log" 2>&1 &

@@ -1,0 +1,31 @@
+[INFO] [1794232996.840924301] [cacc_controller]: CACC ready: gap = 0.4 m + 0.3 s x speed, gains k_a 0.8, k_p 0.6, k_d 2.0; following V2V car 1, falls back to ACC after 0.5 s without V2V
+[INFO] [1794232996.844941697] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+[INFO] [1794233000.115260109] [cacc_controller]: CACC: ✅ active (V2V + LiDAR gap)
+[INFO] [1794233002.140052333] [cacc_controller]: CACC: gap 0.70 m (want 0.40), speed 0.00 m/s, car in front 0.00 m/s
+[INFO] [1794233008.216378489] [cacc_controller]: CACC: gap 0.80 m (want 0.55), speed 0.50 m/s, car in front 0.46 m/s
+[INFO] [1794233013.951411530] [cacc_controller]: CACC: gap 0.57 m (want 0.55), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1794233019.733354952] [cacc_controller]: CACC: gap 0.47 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1794233025.397407125] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.44 m/s, car in front 0.44 m/s
+[INFO] [1794233031.166113598] [cacc_controller]: CACC: gap 0.53 m (want 0.54), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233036.899236341] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233043.118026973] [cacc_controller]: CACC: gap 0.54 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233048.901945007] [cacc_controller]: CACC: gap 0.48 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1794233054.596270388] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.44 m/s, car in front 0.44 m/s
+[INFO] [1794233060.523936650] [cacc_controller]: CACC: gap 0.51 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233066.352102481] [cacc_controller]: CACC: gap 0.51 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1794233072.559620181] [cacc_controller]: CACC: gap 0.50 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1794233078.728533098] [cacc_controller]: CACC: gap 0.46 m (want 0.45), speed 0.17 m/s, car in front 0.17 m/s
+[INFO] [1794233084.662568579] [cacc_controller]: CACC: gap 0.48 m (want 0.53), speed 0.43 m/s, car in front 0.44 m/s
+[INFO] [1794233090.567822088] [cacc_controller]: CACC: gap 0.50 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1794233096.406552198] [cacc_controller]: CACC: gap 0.49 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1794233102.112040691] [cacc_controller]: CACC: gap 0.49 m (want 0.53), speed 0.43 m/s, car in front 0.45 m/s
+[INFO] [1794233108.247132012] [cacc_controller]: CACC: gap 0.48 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1794233113.924199282] [cacc_controller]: CACC: gap 0.50 m (want 0.53), speed 0.44 m/s, car in front 0.44 m/s
+[INFO] [1794233119.676457233] [cacc_controller]: CACC: gap 0.54 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233125.393804748] [cacc_controller]: CACC: gap 0.53 m (want 0.54), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233131.068955199] [cacc_controller]: CACC: gap 0.53 m (want 0.54), speed 0.46 m/s, car in front 0.45 m/s
+[INFO] [1794233136.811930260] [cacc_controller]: CACC: gap 0.49 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1794233143.080929759] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.44 m/s, car in front 0.44 m/s
+[INFO] [1794233148.876822366] [cacc_controller]: CACC: gap 0.53 m (want 0.54), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233154.671725959] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794233160.493679422] [cacc_controller]: CACC: gap 0.54 m (want 0.54), speed 0.45 m/s, car in front 0.45 m/s
