@@ -1,0 +1,28 @@
+Scenario suite: 22 scenarios
+
+| id | scenario                                         | result  | margin | key results |
+|----|--------------------------------------------------|---------|--------|-------------|
+| T1 | tracker: two cars pass, 20% missed detections    | ✅ PASS |  +0.75 | id_switches 0 (== 0), cars_tracked 2 (== 2), speed_error 0.0126 (<= 0.05) |
+| T2 | prediction: car on the bend, 3 s ahead           | ✅ PASS |  +0.80 | lane_error 0.0204 (<= 0.1), improvement 6.4 (>= 2) |
+| L1 | MPC lane change, straight, 0.5 m/s               | ✅ PASS |  +0.54 | rms_cm 1.38 (<= 3), max_cm 3.6 (<= 8) |
+| L2 | MPC lane change, bend, 0.7 m/s                   | ✅ PASS |  +0.37 | rms_cm 1.55 (<= 3), max_cm 5.02 (<= 8) |
+| S1 | RSS formula checks                               | ✅ PASS |  +1.00 | failed 0 (== 0) |
+| S2 | RSS: parked car, broken ACC                      | ✅ PASS |  +0.61 | collided 0 (== 0), min_gap 0.161 (>= 0.1) |
+| S3 | RSS: tailgating, car in front brakes hard        | ✅ PASS |  +0.62 | collided 0 (== 0), min_gap 0.162 (>= 0.1) |
+| S4 | RSS: wrong-way car in our lane                   | ✅ PASS |  +0.61 | collided 0 (== 0), min_gap 0.161 (>= 0.1) |
+| A1 | AEB: cut-in 0.25 m ahead + hard brake            | ✅ PASS |  +1.00 | collided 0 (== 0), min_gap 0.125 (>= 0.05) |
+| A2 | AEB: hidden stopped car 0.4 m ahead at 0.7 m/s   | ✅ PASS |  +1.00 | collided 0 (== 0), min_gap 0.184 (>= 0.05) |
+| A3 | AEB: normal ACC following (no false alarm)       | ✅ PASS |  +1.00 | aeb_brakes 0 (== 0), collided 0 (== 0) |
+| V1 | V2I stop: every arrival over the cycle           | ✅ PASS |  +1.00 | red_violations 0 (== 0) |
+| V2 | V2I + GLOSA: no red, no stops                    | ✅ PASS |  +0.23 | red_violations 0 (== 0), stops 0 (== 0), brake_mJ 38.4 (<= 50) |
+| V3 | V2I + GLOSA, 30% lost + 0.3 s delay              | ✅ PASS |  +1.00 | red_violations 0 (== 0) |
+| V4 | V2I blackout 5 m before the light (fail-safe)    | ✅ PASS |  +1.00 | red_violations 0 (== 0) |
+| C1 | CACC 3 cars: string stable at 0.54 m             | ✅ PASS |  +0.07 | amplification 0.98 (<= 1.05), collided 0 (== 0) |
+| C2 | CACC 7 cars: string stable                       | ✅ PASS |  +0.09 | amplification 0.958 (<= 1.05), collided 0 (== 0) |
+| C3 | CACC: V2V blackout -> ACC fallback               | ✅ PASS |  +0.52 | collided 0 (== 0), min_gap 0.455 (>= 0.3) |
+| C4 | CACC + cooperative AEB, late pose updates        | ✅ PASS |  +0.07 | aeb_brakes 0 (== 0), amplification 0.973 (<= 1.05) |
+| N1 | negative control: ACC 0.3 s gap is unstable      | ✅ PASS |  +0.22 | amplification 1.35 (>= 1.1) |
+| N2 | negative control: no V2I runs red lights         | ✅ PASS | +11.00 | red_violations 12 (>= 1) |
+| N3 | negative control: LiDAR-only AEB brakes platoon  | ✅ PASS |  +1.00 | aeb_brakes 2 (>= 1) |
+
+22/22 passed in 8 s
