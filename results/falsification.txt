@@ -1,0 +1,7 @@
+Falsification: 13 scenarios, 30 random + 20 refinement runs each
+
+| id | scenario                                       | runs | failing | nominal | worst  | worst parameters |
+|----|------------------------------------------------|------|---------|---------|--------|------------------|
+| T1 | tracker: two cars pass, 20% missed detections  |   51 | ✅ 0     |   +0.75 |  +0.06 | miss=0.282, noise=0.0595, speed=0.409, seed=747 |
+| T2 | prediction: car on the bend, 3 s ahead         |   59 | ❌ 43    |   +0.80 |  -2.79 | speed=0.375, horizon=2.39, offset=0.0657, vel_noise=0.08, seed=689 |
+| L1 | MPC lane change, straight, 0.5 m/s             |   51 | ✅ 0     |   +0.54 |  +0.32 | v=0.7, seed=622 |

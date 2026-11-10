@@ -1,0 +1,13 @@
+Falsification 1 (11 Nov 2026): random search + (1+1)-ES refinement + boundary bisection over the
+parameter ranges of 13 scenarios (~700 simulations, ~40 s).
+Robust over the whole range: T1 tracker (worst margin +0.06), L1/L2 MPC, S2-S4 RSS, V3 V2I, C3 blackout.
+Can be made to fail:
+  T2 prediction  - test flaw: with large speed noise the along-track error dominates and no predictor
+                   can beat it; the lane predictor's benefit is cross-track -> fix the check (day 5)
+  A1 AEB cut-in  - fails below ~0.175 m: physical limit (stop distance at 0.5 m/s, 3 m/s2, 0.2 s delay)
+  A2 AEB hidden  - fails below ~0.27 m at 0.7 m/s: physical limit -> operational design domain (ODD)
+  C1 CACC        - real weakness: V2V delay above ~0.13-0.16 s (with loss) -> amplification up to 1.35,
+                   no collision -> graceful degradation: time gap grows with V2V age / loss (day 5)
+  C4 coop. AEB   - with >73% stale object positions the LiDAR sees the car 6.7 cm away and the AEB
+                   distance rule brakes: deliberately conservative (LiDAR wins over V2V) -> document,
+                   limit range to realistic values

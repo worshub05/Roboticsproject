@@ -1,0 +1,296 @@
+[
+ {
+  "id": "T1",
+  "name": "tracker: two cars pass, 20% missed detections",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.7489578668227839,
+  "worst_margin": 0.05615224956948231,
+  "worst_params": {
+   "miss": 0.28244646355254227,
+   "noise": 0.059486419671541196,
+   "speed": 0.4090662957528158,
+   "seed": 747
+  },
+  "worst_metrics": {
+   "id_switches": 0,
+   "cars_tracked": 2,
+   "speed_error": 0.04719238752152589
+  },
+  "boundary": null
+ },
+ {
+  "id": "T2",
+  "name": "prediction: car on the bend, 3 s ahead",
+  "evaluations": 59,
+  "failing": 43,
+  "nominal_margin": 0.7956217339725338,
+  "worst_margin": -2.7941587149097944,
+  "worst_params": {
+   "speed": 0.37528572344934413,
+   "horizon": 2.389444917073825,
+   "offset": 0.06567277639985382,
+   "vel_noise": 0.08,
+   "seed": 689
+  },
+  "worst_metrics": {
+   "lane_error": 0.37941587149097944,
+   "cv_error": 0.3758180797129764,
+   "improvement": 0.990517550665804
+  },
+  "boundary": [
+   {
+    "speed": 0.3,
+    "horizon": 3.0,
+    "offset": 0.05,
+    "vel_noise": 0.02,
+    "seed": 689
+   },
+   {
+    "speed": 0.300294084857224,
+    "horizon": 2.99761501920732,
+    "offset": 0.05006122178281193,
+    "vel_noise": 0.020234375,
+    "seed": 689
+   }
+  ]
+ },
+ {
+  "id": "L1",
+  "name": "MPC lane change, straight, 0.5 m/s",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.5411729607207004,
+  "worst_margin": 0.32445967550649246,
+  "worst_params": {
+   "v": 0.7,
+   "seed": 622
+  },
+  "worst_metrics": {
+   "rms_cm": 1.6646391101769784,
+   "max_cm": 5.40432259594806,
+   "steer_change": 0.774244287798094
+  },
+  "boundary": null
+ },
+ {
+  "id": "L2",
+  "name": "MPC lane change, bend, 0.7 m/s",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.37245638658649594,
+  "worst_margin": 0.3643520913998891,
+  "worst_params": {
+   "v": 0.7,
+   "seed": 124
+  },
+  "worst_metrics": {
+   "rms_cm": 1.5507345577427776,
+   "max_cm": 5.085183268800887,
+   "steer_change": 0.8150093941909449
+  },
+  "boundary": null
+ },
+ {
+  "id": "S2",
+  "name": "RSS: parked car, broken ACC",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.6077846164071623,
+  "worst_margin": 0.6074932317257389,
+  "worst_params": {
+   "gap0": 1.6841142956191655,
+   "v_ego0": 0.675462073103288
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.1607493231725739
+  },
+  "boundary": null
+ },
+ {
+  "id": "S3",
+  "name": "RSS: tailgating, car in front brakes hard",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.6185723043067473,
+  "worst_margin": 0.4999999999999996,
+  "worst_params": {
+   "gap0": 0.15,
+   "v_ego0": 0.38826571776331303,
+   "car_decel": 1.036170052288741
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.14999999999999997
+  },
+  "boundary": null
+ },
+ {
+  "id": "S4",
+  "name": "RSS: wrong-way car in our lane",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.6088096362274245,
+  "worst_margin": 0.6087342165941303,
+  "worst_params": {
+   "gap0": 4.406419366783983
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.16087342165941304
+  },
+  "boundary": null
+ },
+ {
+  "id": "A1",
+  "name": "AEB: cut-in 0.25 m ahead + hard brake",
+  "evaluations": 59,
+  "failing": 27,
+  "nominal_margin": 1.0,
+  "worst_margin": -1.0,
+  "worst_params": {
+   "gap0": 0.11300722929252519,
+   "seed": 610
+  },
+  "worst_metrics": {
+   "collided": 1,
+   "min_gap": 0.0,
+   "aeb_brakes": 1
+  },
+  "boundary": [
+   {
+    "gap0": 0.17595843401169814,
+    "seed": 610
+   },
+   {
+    "gap0": 0.17503268100112207,
+    "seed": 610
+   }
+  ]
+ },
+ {
+  "id": "A2",
+  "name": "AEB: hidden stopped car 0.4 m ahead at 0.7 m/s",
+  "evaluations": 59,
+  "failing": 30,
+  "nominal_margin": 1.0,
+  "worst_margin": -1.0,
+  "worst_params": {
+   "gap0": 0.1642916870804102,
+   "seed": 642
+  },
+  "worst_metrics": {
+   "collided": 1,
+   "min_gap": 0.0,
+   "aeb_brakes": 1
+  },
+  "boundary": [
+   {
+    "gap0": 0.26745655660449275,
+    "seed": 642
+   },
+   {
+    "gap0": 0.2662428522571506,
+    "seed": 642
+   }
+  ]
+ },
+ {
+  "id": "V3",
+  "name": "V2I + GLOSA, 30% lost + 0.3 s delay",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 1.0,
+  "worst_margin": 1.0,
+  "worst_params": {
+   "loss": 0.3,
+   "delay": 0.3
+  },
+  "worst_metrics": {
+   "red_violations": 0,
+   "runs": 25,
+   "stops": 0,
+   "brake_mJ": 35.08053185628223
+  },
+  "boundary": null
+ },
+ {
+  "id": "C1",
+  "name": "CACC 3 cars: string stable at 0.54 m",
+  "evaluations": 59,
+  "failing": 41,
+  "nominal_margin": 0.0668847100221605,
+  "worst_margin": -0.2826380947627618,
+  "worst_params": {
+   "loss": 0.3084653917226311,
+   "delay": 0.2831918802747486,
+   "seed": 79
+  },
+  "worst_metrics": {
+   "amplification": 1.3467699995009,
+   "min_gap": 0.3470312397792874,
+   "collided": 0,
+   "aeb_brakes": 0
+  },
+  "boundary": [
+   {
+    "loss": 0.05542737507516028,
+    "delay": 0.13291729098686889,
+    "seed": 79
+   },
+   {
+    "loss": 0.05663231801157681,
+    "delay": 0.13363288426919212,
+    "seed": 79
+   }
+  ]
+ },
+ {
+  "id": "C3",
+  "name": "CACC: V2V blackout -> ACC fallback",
+  "evaluations": 51,
+  "failing": 0,
+  "nominal_margin": 0.5161101900369693,
+  "worst_margin": 0.49828453786154137,
+  "worst_params": {
+   "blackout_at": 39.63323716490196,
+   "seed": 81
+  },
+  "worst_metrics": {
+   "amplification": 1.472060228816617,
+   "min_gap": 0.4494853613584624,
+   "collided": 0,
+   "aeb_brakes": 0
+  },
+  "boundary": null
+ },
+ {
+  "id": "C4",
+  "name": "CACC + cooperative AEB, late pose updates",
+  "evaluations": 59,
+  "failing": 19,
+  "nominal_margin": 0.0733706546173321,
+  "worst_margin": -1.0,
+  "worst_params": {
+   "skip": 0.7564794720640666,
+   "seed": 494
+  },
+  "worst_metrics": {
+   "amplification": 1.4998563885278258,
+   "min_gap": 0.4928872189373106,
+   "collided": 0,
+   "aeb_brakes": 1
+  },
+  "boundary": [
+   {
+    "skip": 0.7324345215580603,
+    "seed": 494
+   },
+   {
+    "skip": 0.7334363944958107,
+    "seed": 494
+   }
+  ]
+ }
+]
