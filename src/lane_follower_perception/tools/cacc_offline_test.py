@@ -16,8 +16,11 @@ String stability: the speed dip (how far a car slows down) should not GROW from 
 amplification = speed dip of the last follower / speed dip of the leader (> 1 = unstable)
 
 Day 2 sections
-  2. CACC with a worse radio link: lost messages and delay
-  3. V2V blackout: the messages stop; CACC falls back to ACC with the long 1.0 s time gap
+  2. CACC with a worse radio link: lost messages and delay. CACC degrades gracefully (cacc.py): the
+     older the newest message, the longer the time gap and the less the V2V data is used.
+  3. V2V blackout: the messages stop. Graceful degradation takes the car to LiDAR only within
+     0.5 s; after 2 s without any message it hands over to ACC with the long 1.0 s time gap.
+     Compared with the day-1 CACC, which keeps using the last message.
   4. AEB at short gaps: AEB on the last car, with its closing speed from the LiDAR (differencing
      the distance) or from V2V (cooperative AEB). In Gazebo the other cars are moved at 20 Hz and
      some updates arrive late, so the LiDAR distance jumps by a few cm between scans.
@@ -39,7 +42,7 @@ CAR_LEN = 0.5
 
 
 def run(mode, n=2, T=70.0, seed=0, loss=0.0, delay=0.1, blackout_at=None, fallback=True,
-        aeb=None, skip=0.0):
+        aeb=None, skip=0.0, degrade=True, fallback_after=2.0):
     rnd = random.Random(seed)
     lead = LeaderProfile()
     h, d0 = (1.0, 0.5) if mode == 'ACC h=1.0' else (0.3, 0.4)
@@ -50,7 +53,8 @@ def run(mode, n=2, T=70.0, seed=0, loss=0.0, delay=0.1, blackout_at=None, fallba
     v = [cruise] * (n + 1)
     a = [0.0] * (n + 1)
     v_cmd = [cruise] * (n + 1)
-    laws = [None] + [ACCLaw(d0=d0, h=h) if mode.startswith('ACC') else CACCLaw(r=d0, h=h) for _ in range(n)]
+    laws = [None] + [ACCLaw(d0=d0, h=h) if mode.startswith('ACC') else CACCLaw(r=d0, h=h, degrade=degrade)
+                     for _ in range(n)]
     backup = [None] + [ACCLaw(d0=0.5, h=1.0) for _ in range(n)]      # fallback when V2V is lost
     meas_gap = [None] * (n + 1)
     v2v = [(cruise, 0.0, 0.0)] * (n + 1)       # what each car last heard from the car in front
@@ -91,13 +95,13 @@ def run(mode, n=2, T=70.0, seed=0, loss=0.0, delay=0.1, blackout_at=None, fallba
                 if mode.startswith('ACC'):
                     target = laws[i].step(meas_gap[i], v[i], 0.05)
                     a[i] = (target - v[i]) / 0.5            # what it is aiming for (not used by ACC)
-                elif fallback and t - v2v[i][2] > 0.5 + delay:         # V2V lost: ACC, 1.0 s gap
+                elif fallback and t - v2v[i][2] > fallback_after:       # V2V lost: ACC, 1.0 s gap
                     target = backup[i].step(meas_gap[i], v[i], 0.05)
                     laws[i].v_ref = None
                     fell_back = max(fell_back, i)
                 else:
                     vf, af, _ = v2v[i]
-                    target, a[i] = laws[i].step(meas_gap[i], v[i], vf, af, 0.05)
+                    target, a[i] = laws[i].step(meas_gap[i], v[i], vf, af, 0.05, age=t - v2v[i][2])
                     backup[i].step(meas_gap[i], v[i], 0.05)              # keep its speed estimate warm
                 if i == n and aeb_lim >= 0:
                     target = min(target, aeb_lim)
@@ -118,7 +122,8 @@ def run(mode, n=2, T=70.0, seed=0, loss=0.0, delay=0.1, blackout_at=None, fallba
     dips = [dip(tr, cruise) for tr in traces]
     return dict(dips=dips, amp=dips[-1] / dips[0], min_gap=min_gap, collided=collided,
                 gap_rms=float(np.sqrt(np.mean(np.square(gap_err)))), gap_cruise=gaps0,
-                aeb_brakes=aeb_brakes, end_gap=gaps[-1], fell_back=fell_back)
+                aeb_brakes=aeb_brakes, end_gap=gaps[-1], fell_back=fell_back,
+                mean_gap=float(np.mean(gap_err)) + gaps0)
 
 
 def main():
@@ -149,19 +154,21 @@ def day2():
     for loss in (0.0, 0.3, 0.5, 0.8):
         cells = []
         for delay in (0.1, 0.3, 0.5):
-            rs = [run('CACC h=0.3', n=6, seed=k, loss=loss, delay=delay, fallback=False) for k in range(3)]
+            rs = [run('CACC h=0.3', n=6, seed=k, loss=loss, delay=delay) for k in range(3)]
             amp = np.mean([x['amp'] for x in rs])
             cells.append(f'{amp:4.2f} {"✅" if amp <= 1.05 else "⚠"} {min(x["min_gap"] for x in rs):4.2f} m')
         print(f'| {loss:12.0%}  | ' + ' | '.join(f'{c:<17}' for c in cells) + ' |')
     print()
-    print('3. V2V blackout at t = 30 s (before the 2nd braking event), leader + 2 followers')
-    print('| fallback to ACC (1.0 s gap) | smallest gap | gap at the end | collisions |')
-    print('|-----------------------------|--------------|----------------|------------|')
-    for fb in (True, False):
-        rs = [run('CACC h=0.3', n=2, seed=k, blackout_at=30.0, fallback=fb) for k in range(3)]
-        coll = sum(x['collided'] for x in rs)
-        print(f'| {"yes" if fb else "no (keeps the last message)":<27} | {min(x["min_gap"] for x in rs):9.2f} m  | '
-              f'{np.mean([x["end_gap"] for x in rs]):11.2f} m  | {"❌ " + str(coll) if coll else "✅ 0":<10} |')
+    print('3. V2V blackout, leader + 2 followers: before the 2nd braking event (30 s) and during it (37 s)')
+    print('| blackout at | CACC                          | smallest gap | gap at the end | collisions |')
+    print('|-------------|-------------------------------|--------------|----------------|------------|')
+    for at in (30.0, 37.0):
+        for name, kw in (('graceful degradation', dict()),
+                         ('day 1: keeps the last message', dict(degrade=False, fallback=False))):
+            rs = [run('CACC h=0.3', n=2, seed=k, blackout_at=at, **kw) for k in range(3)]
+            coll = sum(x['collided'] for x in rs)
+            print(f'| {at:8.0f} s  | {name:<29} | {min(x["min_gap"] for x in rs):9.2f} m  | '
+                  f'{np.mean([x["end_gap"] for x in rs]):11.2f} m  | {"❌ " + str(coll) if coll else "✅ 0":<10} |')
     print()
     print('4. AEB on the last car at CACC gaps (0.54 m), leader + 2 followers, 5 seeds')
     print('| late pose updates | AEB closing speed from | AEB brakes (5 runs) | amplification | smallest gap |')

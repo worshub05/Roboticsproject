@@ -1,0 +1,47 @@
+[INFO] [1794399274.465387524] [cacc_controller]: CACC ready: gap = 0.4 m + 0.3 s x speed, gains k_a 0.8, k_p 0.6, k_d 2.0; following V2V car 1, falls back to ACC after 2.0 s without V2V
+[INFO] [1794399274.471142527] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+[INFO] [1794399275.934043967] [cacc_controller]: CACC: ✅ active (V2V + LiDAR gap)
+[INFO] [1794399279.965700212] [cacc_controller]: CACC: gap 0.80 m (want 0.40), speed 0.00 m/s, car in front 0.17 m/s
+[INFO] [1794399279.966809658] [cacc_controller]: CACC STATS: V2V message age 0.43 s, degradation now 94% (mean 91%), time gap now 0.96 s (largest 1.00 s)
+[INFO] [1794399287.669126983] [cacc_controller]: CACC: gap 1.14 m (want 0.87), speed 0.50 m/s, car in front 0.47 m/s
+[INFO] [1794399287.670460313] [cacc_controller]: CACC STATS: V2V message age 0.42 s, degradation now 90% (mean 95%), time gap now 0.94 s (largest 1.00 s)
+[INFO] [1794399293.860779223] [cacc_controller]: CACC: gap 0.95 m (want 0.90), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1794399293.865100906] [cacc_controller]: CACC STATS: V2V message age 0.48 s, degradation now 100% (mean 94%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399300.000002778] [cacc_controller]: CACC: gap 0.54 m (want 0.55), speed 0.15 m/s, car in front 0.16 m/s
+[INFO] [1794399300.000778525] [cacc_controller]: CACC STATS: V2V message age 0.45 s, degradation now 98% (mean 95%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399306.080424969] [cacc_controller]: CACC: gap 0.82 m (want 0.80), speed 0.43 m/s, car in front 0.45 m/s
+[INFO] [1794399306.080984213] [cacc_controller]: CACC STATS: V2V message age 0.42 s, degradation now 89% (mean 95%), time gap now 0.93 s (largest 1.00 s)
+[INFO] [1794399311.987966754] [cacc_controller]: CACC: gap 0.82 m (want 0.80), speed 0.45 m/s, car in front 0.46 m/s
+[INFO] [1794399311.988751768] [cacc_controller]: CACC STATS: V2V message age 0.39 s, degradation now 81% (mean 92%), time gap now 0.87 s (largest 1.00 s)
+[INFO] [1794399319.592658520] [cacc_controller]: CACC: gap 0.81 m (want 0.80), speed 0.46 m/s, car in front 0.45 m/s
+[INFO] [1794399319.602498757] [cacc_controller]: CACC STATS: V2V message age 0.39 s, degradation now 80% (mean 91%), time gap now 0.87 s (largest 1.00 s)
+[INFO] [1794399325.668703639] [cacc_controller]: CACC: gap 0.80 m (want 0.85), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794399325.669374427] [cacc_controller]: CACC STATS: V2V message age 0.54 s, degradation now 100% (mean 90%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399331.410985555] [cacc_controller]: CACC: gap 0.55 m (want 0.56), speed 0.16 m/s, car in front 0.17 m/s
+[INFO] [1794399331.412836133] [cacc_controller]: CACC STATS: V2V message age 0.45 s, degradation now 100% (mean 90%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399337.297400639] [cacc_controller]: CACC: gap 0.80 m (want 0.77), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794399337.297870073] [cacc_controller]: CACC STATS: V2V message age 0.38 s, degradation now 76% (mean 89%), time gap now 0.83 s (largest 1.00 s)
+[INFO] [1794399343.312555490] [cacc_controller]: CACC: gap 0.78 m (want 0.76), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1794399343.313265818] [cacc_controller]: CACC STATS: V2V message age 0.36 s, degradation now 70% (mean 88%), time gap now 0.79 s (largest 1.00 s)
+[INFO] [1794399350.739087100] [cacc_controller]: CACC: gap 0.76 m (want 0.81), speed 0.41 m/s, car in front 0.42 m/s
+[INFO] [1794399350.739595892] [cacc_controller]: CACC STATS: V2V message age 0.50 s, degradation now 100% (mean 88%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399356.718002602] [cacc_controller]: CACC: gap 0.83 m (want 0.82), speed 0.42 m/s, car in front 0.43 m/s
+[INFO] [1794399356.718628118] [cacc_controller]: CACC STATS: V2V message age 0.45 s, degradation now 99% (mean 89%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399362.572514167] [cacc_controller]: CACC: gap 0.55 m (want 0.56), speed 0.16 m/s, car in front 0.15 m/s
+[INFO] [1794399362.573456942] [cacc_controller]: CACC STATS: V2V message age 0.58 s, degradation now 100% (mean 89%), time gap now 1.00 s (largest 1.00 s)
+[INFO] [1794399368.529283952] [cacc_controller]: CACC: gap 0.83 m (want 0.82), speed 0.47 m/s, car in front 0.47 m/s
+[INFO] [1794399368.530376582] [cacc_controller]: CACC STATS: V2V message age 0.47 s, degradation now 100% (mean 89%), time gap now 0.90 s (largest 1.00 s)
+[INFO] [1794399374.352509246] [cacc_controller]: CACC: gap 0.80 m (want 0.79), speed 0.47 m/s, car in front 0.46 m/s
+[INFO] [1794399374.353955765] [cacc_controller]: CACC STATS: V2V message age 0.38 s, degradation now 77% (mean 89%), time gap now 0.84 s (largest 1.00 s)
+[INFO] [1794399380.069620422] [cacc_controller]: CACC: gap 0.76 m (want 0.81), speed 0.42 m/s, car in front 0.44 m/s
+[INFO] [1794399380.073073818] [cacc_controller]: CACC STATS: V2V message age 0.44 s, degradation now 97% (mean 88%), time gap now 0.98 s (largest 1.00 s)
+[INFO] [1794399385.946373930] [cacc_controller]: CACC: gap 0.78 m (want 0.75), speed 0.45 m/s, car in front 0.46 m/s
+[INFO] [1794399385.946926652] [cacc_controller]: CACC STATS: V2V message age 0.35 s, degradation now 68% (mean 88%), time gap now 0.78 s (largest 1.00 s)
+[INFO] [1794399391.678506668] [cacc_controller]: CACC: gap 0.52 m (want 0.54), speed 0.14 m/s, car in front 0.14 m/s
+[INFO] [1794399391.679544549] [cacc_controller]: CACC STATS: V2V message age 0.43 s, degradation now 94% (mean 88%), time gap now 0.97 s (largest 1.00 s)
+[INFO] [1794399397.380553110] [cacc_controller]: CACC: gap 0.81 m (want 0.80), speed 0.47 m/s, car in front 0.47 m/s
+[INFO] [1794399397.380993555] [cacc_controller]: CACC STATS: V2V message age 0.39 s, degradation now 79% (mean 87%), time gap now 0.86 s (largest 1.00 s)
+[INFO] [1794399403.270109169] [cacc_controller]: CACC: gap 0.81 m (want 0.79), speed 0.48 m/s, car in front 0.46 m/s
+[INFO] [1794399403.273504026] [cacc_controller]: CACC STATS: V2V message age 0.37 s, degradation now 74% (mean 87%), time gap now 0.82 s (largest 1.00 s)
+[INFO] [1794399410.749510194] [cacc_controller]: CACC: gap 0.80 m (want 0.80), speed 0.44 m/s, car in front 0.44 m/s
+[INFO] [1794399410.749933109] [cacc_controller]: CACC STATS: V2V message age 0.41 s, degradation now 86% (mean 87%), time gap now 0.91 s (largest 1.00 s)

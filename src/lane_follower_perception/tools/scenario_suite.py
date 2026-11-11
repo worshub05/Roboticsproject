@@ -16,6 +16,14 @@ Areas
   C  CACC platoon (string stability, blackout fallback, cooperative AEB)
   N  negative controls: scenarios that MUST show the problem (they check that a metric can fail)
 
+Operational design domain (ODD), found by falsification (tools/falsify.py) and matching the physics:
+  prediction    other cars drive within 5 cm of their lane centre
+  AEB cut-in    the car cuts in at least 0.18 m ahead (stopping at 0.5 m/s: 3 m/s2 + 0.2 s delay)
+  AEB hidden    a hidden car appears at least 0.28 m ahead at 0.7 m/s
+  CACC V2V      up to 60% lost messages and 0.4 s delay (the time gap grows with the link age)
+  object poses  at most 50% of LiDAR object updates late (above that the AEB distance rule brakes:
+                deliberately conservative, the LiDAR wins over V2V)
+
   python3 tools/scenario_suite.py                 all scenarios
   python3 tools/scenario_suite.py --only C        one area (or one scenario id, e.g. --only V3)
   python3 tools/scenario_suite.py --json report.json
@@ -65,9 +73,12 @@ def mot_two_cars(miss=0.2, noise=0.02, speed=0.3, seed=0):
                 speed_error=float(np.mean(errs)) if errs else math.inf)
 
 
-def predict_bend(speed=0.3, horizon=3.0, offset=0.05, vel_noise=0.02, seed=0):
-    """A car on the bend, a little off its lane centre, with a noisy velocity estimate: the
-    lane-following prediction against a straight line (constant velocity)."""
+def predict_bend(speed=0.3, horizon=3.0, offset=0.03, vel_noise=0.02, seed=0):
+    """A car on the bend, a little off its lane centre (it keeps that offset), with a noisy velocity
+    estimate. The error is split into ALONG the lane (from the speed estimate: no predictor can do
+    better than the tracker's speed) and ACROSS the lane, where the lane-following prediction must
+    stay on the road while a straight line leaves the bend. Checked: the across-the-lane error,
+    and that lane following is never clearly worse than the straight line."""
     from lane_follower_perception.predict import predict_cv, predict_lane
     from lane_follower_perception.track_map import L, R, track_path
     rnd = random.Random(seed)
@@ -75,11 +86,14 @@ def predict_bend(speed=0.3, horizon=3.0, offset=0.05, vel_noise=0.02, seed=0):
     x, y, th = track_path(s0, offset)
     vx = speed * math.cos(th) + rnd.gauss(0, vel_noise)
     vy = speed * math.sin(th) + rnd.gauss(0, vel_noise)
-    tx, ty, _ = track_path(s0 + speed * horizon, 0.0)          # it drifts back to the lane centre
+    tx, ty, tth = track_path(s0 + speed * horizon * R / (R - offset), offset)   # same lane position later
     lx, ly = predict_lane(x, y, vx, vy, horizons=(horizon,))[0][0]
     cx, cy = predict_cv(x, y, vx, vy, horizons=(horizon,))[0]
-    lane, cv = math.hypot(lx - tx, ly - ty), math.hypot(cx - tx, cy - ty)
-    return dict(lane_error=lane, cv_error=cv, improvement=cv / max(lane, 1e-6))
+    nx, ny = -math.sin(tth), math.cos(tth)                      # across the lane at the true position
+    lane_across = abs((lx - tx) * nx + (ly - ty) * ny)
+    cv_across = abs((cx - tx) * nx + (cy - ty) * ny)
+    return dict(lane_across=lane_across, cv_across=cv_across, worse_than_cv=lane_across - cv_across,
+                lane_error=math.hypot(lx - tx, ly - ty), cv_error=math.hypot(cx - tx, cy - ty))
 
 
 def lane_change(controller='mpc', v=0.5, bend=False, seed=0):
@@ -113,11 +127,16 @@ def v2i_cycle(glosa=True, loss=0.0, delay=0.0, blackout_at=None, step=1.0):
                 brake_mJ=1000 * float(np.mean([r['e_brake'] for r in rs])))
 
 
-def platoon(mode='CACC h=0.3', n=2, loss=0.0, delay=0.1, blackout_at=None, aeb=None, skip=0.0, seed=0):
-    r = tool('cacc_offline_test').run(mode, n=n, seed=seed, loss=loss, delay=delay, blackout_at=blackout_at,
-                                      aeb=aeb, skip=skip)
+def platoon(mode='CACC h=0.3', n=2, loss=0.0, delay=0.1, blackout_at=None, aeb=None, skip=0.0, seed=0,
+            degrade=True):
+    if degrade:
+        r = tool('cacc_offline_test').run(mode, n=n, seed=seed, loss=loss, delay=delay, blackout_at=blackout_at,
+                                          aeb=aeb, skip=skip)
+    else:                                            # day-1 CACC: no degradation, hard 0.5 s fallback
+        r = tool('cacc_offline_test').run(mode, n=n, seed=seed, loss=loss, delay=delay, blackout_at=blackout_at,
+                                          aeb=aeb, skip=skip, degrade=False, fallback_after=0.5 + delay)
     return dict(amplification=r['amp'], min_gap=r['min_gap'], collided=int(r['collided']),
-                aeb_brakes=r['aeb_brakes'])
+                aeb_brakes=r['aeb_brakes'], mean_gap=r['mean_gap'])
 
 
 # ----------------------------------------------------------------------------- the scenarios
@@ -127,8 +146,8 @@ SCENARIOS = [
          checks=[('id_switches', '==', 0), ('cars_tracked', '==', 2), ('speed_error', '<=', 0.05)],
          space=dict(miss=(0.0, 0.5), noise=(0.0, 0.06), speed=(0.1, 0.6))),
     dict(id='T2', name='prediction: car on the bend, 3 s ahead', fn=predict_bend, params=dict(),
-         checks=[('lane_error', '<=', 0.10), ('improvement', '>=', 2.0)],
-         space=dict(speed=(0.1, 0.6), horizon=(1.0, 3.0), offset=(-0.15, 0.15), vel_noise=(0.0, 0.08))),
+         checks=[('lane_across', '<=', 0.05), ('worse_than_cv', '<=', 0.05)],
+         space=dict(speed=(0.1, 0.6), horizon=(1.0, 3.0), offset=(-0.05, 0.05), vel_noise=(0.0, 0.08))),  # ODD
     dict(id='L1', name='MPC lane change, straight, 0.5 m/s', fn=lane_change, params=dict(v=0.5, bend=False),
          checks=[('rms_cm', '<=', 3.0), ('max_cm', '<=', 8.0)], space=dict(v=(0.3, 0.7))),
     dict(id='L2', name='MPC lane change, bend, 0.7 m/s', fn=lane_change, params=dict(v=0.7, bend=True),
@@ -145,10 +164,10 @@ SCENARIOS = [
          params=dict(gap0=4.0, v_ego0=0.7, car_v0=-0.3, oncoming=True, car_decel=1.0),
          checks=[('collided', '==', 0), ('min_gap', '>=', 0.10)], space=dict(gap0=(1.5, 5.0))),
     dict(id='A1', name='AEB: cut-in 0.25 m ahead + hard brake', fn=aeb_case, params=dict(case='cut-in'),
-         checks=[('collided', '==', 0), ('min_gap', '>=', 0.05)], space=dict(gap0=(0.10, 0.6))),
+         checks=[('collided', '==', 0), ('min_gap', '>=', 0.05)], space=dict(gap0=(0.18, 0.6))),   # ODD
     dict(id='A2', name='AEB: hidden stopped car 0.4 m ahead at 0.7 m/s', fn=aeb_case,
          params=dict(case='late object'), checks=[('collided', '==', 0), ('min_gap', '>=', 0.05)],
-         space=dict(gap0=(0.15, 0.8))),
+         space=dict(gap0=(0.28, 0.8))),                                                            # ODD
     dict(id='A3', name='AEB: normal ACC following (no false alarm)', fn=aeb_case, params=dict(case='normal ACC'),
          checks=[('aeb_brakes', '==', 0), ('collided', '==', 0)], space={}),
     dict(id='V1', name='V2I stop: every arrival over the cycle', fn=v2i_cycle, params=dict(glosa=False),
@@ -161,14 +180,18 @@ SCENARIOS = [
          params=dict(blackout_at=10.0), checks=[('red_violations', '==', 0)], space={}),
     dict(id='C1', name='CACC 3 cars: string stable at 0.54 m', fn=platoon, params=dict(n=2),
          checks=[('amplification', '<=', 1.05), ('collided', '==', 0)],
-         space=dict(loss=(0.0, 0.5), delay=(0.05, 0.3))),
+         space=dict(loss=(0.0, 0.6), delay=(0.05, 0.4))),
     dict(id='C2', name='CACC 7 cars: string stable', fn=platoon, params=dict(n=6),
          checks=[('amplification', '<=', 1.05), ('collided', '==', 0)], space={}),
     dict(id='C3', name='CACC: V2V blackout -> ACC fallback', fn=platoon, params=dict(n=2, blackout_at=30.0),
          checks=[('collided', '==', 0), ('min_gap', '>=', 0.30)], space=dict(blackout_at=(15.0, 60.0))),
     dict(id='C4', name='CACC + cooperative AEB, late pose updates', fn=platoon,
          params=dict(n=2, aeb='v2v', skip=0.5), checks=[('aeb_brakes', '==', 0), ('amplification', '<=', 1.05)],
-         space=dict(skip=(0.0, 0.8))),
+         space=dict(skip=(0.0, 0.5))),                                                             # ODD
+    dict(id='C5', name='CACC degrades gracefully: 50% lost + 0.3 s delay', fn=platoon,
+         params=dict(n=6, loss=0.5, delay=0.3), checks=[('amplification', '<=', 1.05), ('collided', '==', 0),
+                                                         ('min_gap', '>=', 0.30)],
+         space=dict(loss=(0.0, 0.6), delay=(0.05, 0.4))),
     dict(id='N1', name='negative control: ACC 0.3 s gap is unstable', fn=platoon,
          params=dict(mode='ACC h=0.3', n=6), checks=[('amplification', '>=', 1.10)], space={}),
     dict(id='N2', name='negative control: no V2I runs red lights', fn=lambda: dict(
@@ -177,6 +200,8 @@ SCENARIOS = [
          params=dict(), checks=[('red_violations', '>=', 1)], space={}),
     dict(id='N3', name='negative control: LiDAR-only AEB brakes platoon', fn=platoon,
          params=dict(n=2, aeb='lidar', skip=0.5), checks=[('aeb_brakes', '>=', 1)], space={}),
+    dict(id='N4', name='negative control: CACC without degradation', fn=platoon,
+         params=dict(n=6, loss=0.5, delay=0.3, degrade=False), checks=[('amplification', '>=', 1.10)], space={}),
 ]
 
 

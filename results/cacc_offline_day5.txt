@@ -1,0 +1,37 @@
+Platoon: leader + 2 followers  (as in Gazebo: leader, simulated car, our robot)
+| mode        | gap at 0.45 m/s | speed dip per car (leader first), m/s  | amplification | smallest gap | gap error RMS | collisions |
+|-------------|-----------------|----------------------------------------|---------------|--------------|---------------|------------|
+| ACC h=1.0   |         0.95 m  | 0.30 0.31 0.28                         |       0.92 ✅ |      0.72 m  |       3.6 cm  | ✅ 0        |
+| ACC h=0.3   |         0.54 m  | 0.30 0.36 0.36                         |       1.18 ⚠ |      0.43 m  |       2.4 cm  | ✅ 0        |
+| CACC h=0.3  |         0.54 m  | 0.30 0.30 0.30                         |       1.01 ✅ |      0.46 m  |       3.0 cm  | ✅ 0        |
+
+Platoon: leader + 6 followers
+| mode        | gap at 0.45 m/s | speed dip per car (leader first), m/s  | amplification | smallest gap | gap error RMS | collisions |
+|-------------|-----------------|----------------------------------------|---------------|--------------|---------------|------------|
+| ACC h=1.0   |         0.95 m  | 0.30 0.31 0.28 0.26 0.24 0.21 0.20     |       0.65 ✅ |      0.72 m  |       3.2 cm  | ✅ 0        |
+| ACC h=0.3   |         0.54 m  | 0.30 0.36 0.37 0.38 0.39 0.41 0.41     |       1.37 ⚠ |      0.41 m  |       2.4 cm  | ✅ 0        |
+| CACC h=0.3  |         0.54 m  | 0.30 0.30 0.30 0.30 0.30 0.30 0.30     |       1.01 ✅ |      0.45 m  |       2.9 cm  | ✅ 0        |
+
+2. CACC h=0.3 with a worse radio link (amplification, leader + 6 followers; smallest gap)
+| lost messages | delay 0.1 s       | delay 0.3 s       | delay 0.5 s       |
+|---------------|-------------------|-------------------|-------------------|
+|           0%  | 1.01 ✅ 0.45 m     | 0.92 ✅ 0.54 m     | 0.82 ✅ 0.54 m     |
+|          30%  | 0.93 ✅ 0.49 m     | 0.82 ✅ 0.54 m     | 0.82 ✅ 0.54 m     |
+|          50%  | 0.92 ✅ 0.50 m     | 0.82 ✅ 0.54 m     | 0.82 ✅ 0.54 m     |
+|          80%  | 0.81 ✅ 0.54 m     | 0.81 ✅ 0.55 m     | 0.83 ✅ 0.54 m     |
+
+3. V2V blackout, leader + 2 followers: before the 2nd braking event (30 s) and during it (37 s)
+| blackout at | CACC                          | smallest gap | gap at the end | collisions |
+|-------------|-------------------------------|--------------|----------------|------------|
+|       30 s  | graceful degradation          |      0.46 m  |        0.92 m  | ✅ 0        |
+|       30 s  | day 1: keeps the last message |     -0.18 m  |        0.14 m  | ❌ 3        |
+|       37 s  | graceful degradation          |      0.35 m  |        0.92 m  | ✅ 0        |
+|       37 s  | day 1: keeps the last message |     -0.18 m  |        0.13 m  | ❌ 3        |
+
+4. AEB on the last car at CACC gaps (0.54 m), leader + 2 followers, 5 seeds
+| late pose updates | AEB closing speed from | AEB brakes (5 runs) | amplification | smallest gap |
+|-------------------|------------------------|---------------------|---------------|--------------|
+|               0%  | LiDAR (differenced)    | 0                   |       1.01 ✅ |      0.45 m  |
+|               0%  | V2V (cooperative)      | 0                   |       1.01 ✅ |      0.45 m  |
+|              50%  | LiDAR (differenced)    | 11                  |       1.27 ⚠ |      0.47 m  |
+|              50%  | V2V (cooperative)      | 0                   |       0.99 ✅ |      0.47 m  |

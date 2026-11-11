@@ -1,0 +1,24 @@
+Falsification: 14 scenarios, 60 random + 40 refinement runs each
+
+| id | scenario                                       | runs | failing | nominal | worst  | worst parameters |
+|----|------------------------------------------------|------|---------|---------|--------|------------------|
+| T1 | tracker: two cars pass, 20% missed detections  |  101 | ✅ 0     |   +0.75 |  +0.04 | miss=0.372, noise=0.06, speed=0.181, seed=836 |
+| T2 | prediction: car on the bend, 3 s ahead         |  101 | ✅ 0     |   +0.48 |  +0.01 | speed=0.368, horizon=2.08, offset=-0.05, vel_noise=0.08, seed=922 |
+| L1 | MPC lane change, straight, 0.5 m/s             |  101 | ✅ 0     |   +0.54 |  +0.33 | v=0.7, seed=138 |
+| L2 | MPC lane change, bend, 0.7 m/s                 |  101 | ✅ 0     |   +0.37 |  +0.37 | v=0.7 |
+| S2 | RSS: parked car, broken ACC                    |  101 | ✅ 0     |   +0.61 |  +0.61 | gap0=2.67, v_ego0=0.333 |
+| S3 | RSS: tailgating, car in front brakes hard      |  101 | ✅ 0     |   +0.62 |  +0.04 | gap0=0.15, v_ego0=0.7, car_decel=0.643 |
+| S4 | RSS: wrong-way car in our lane                 |  101 | ✅ 0     |   +0.61 |  +0.61 | gap0=4.81 |
+| A1 | AEB: cut-in 0.25 m ahead + hard brake          |  101 | ✅ 0     |   +1.00 |  +0.10 | gap0=0.18, seed=63 |
+| A2 | AEB: hidden stopped car 0.4 m ahead at 0.7 m/s |  101 | ✅ 0     |   +1.00 |  +0.27 | gap0=0.28, seed=83 |
+| V3 | V2I + GLOSA, 30% lost + 0.3 s delay            |  101 | ✅ 0     |   +1.00 |  +1.00 | loss=0.3, delay=0.3 |
+| C1 | CACC 3 cars: string stable at 0.54 m           |  109 | ❌ 40    |   +0.04 |  -0.03 | loss=0.261, delay=0.0679, seed=449 |
+| C3 | CACC: V2V blackout -> ACC fallback             |  101 | ✅ 0     |   +0.54 |  +0.18 | blackout_at=37, seed=42 |
+| C4 | CACC + cooperative AEB, late pose updates      |  101 | ✅ 0     |   +0.06 |  +0.03 | skip=0.287, seed=132 |
+| C5 | CACC degrades gracefully: 50% lost + 0.3 s del |  101 | ✅ 0     |   +0.19 |  +0.07 | loss=0.0385, delay=0.0636, seed=354 |
+
+1 of 14 scenarios can be made to fail (267 s)
+  C1: still passes at  loss=0.238, delay=0.0708, seed=449
+      fails from about loss=0.239, delay=0.0707, seed=449
+      worst metrics: amplification 1.08, min_gap 0.481, collided 0, aeb_brakes 0, mean_gap 0.658
+report written to /home/shub_2605/ros2_ws/logs/falsification2.json

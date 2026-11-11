@@ -76,6 +76,7 @@ stop() {
     if [ "$SCEN" = "platoon" ]; then
         grep 'braking event' "$LOG/platoon.log" | sed 's/.*PLATOON: //'
         grep 'PLATOON STATS' "$LOG/platoon.log" | tail -1 | sed 's/.*PLATOON STATS: /PLATOON: /'
+        grep 'CACC STATS' "$LOG/cacc.log" | tail -1 | sed 's/.*CACC STATS: /CACC: /'
     fi
     [ "$SCEN" = "lights" ] && grep 'V2I STATS' "$LOG/traffic_light.log" | tail -1 | sed 's/.*V2I STATS: /LIGHTS: /'
     grep -E 'TRAFFIC: (cut-in|pop-up)' "$LOG/track_traffic.log" | sed 's/.*TRAFFIC: //'

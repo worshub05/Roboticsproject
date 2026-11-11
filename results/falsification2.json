@@ -1,0 +1,279 @@
+[
+ {
+  "id": "T1",
+  "name": "tracker: two cars pass, 20% missed detections",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.7489578668227839,
+  "worst_margin": 0.04276386776910321,
+  "worst_params": {
+   "miss": 0.3715928123479447,
+   "noise": 0.06,
+   "speed": 0.18089538689915496,
+   "seed": 836
+  },
+  "worst_metrics": {
+   "id_switches": 0,
+   "cars_tracked": 2,
+   "speed_error": 0.04786180661154484
+  },
+  "boundary": null
+ },
+ {
+  "id": "T2",
+  "name": "prediction: car on the bend, 3 s ahead",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.482423397686706,
+  "worst_margin": 0.010619107436075359,
+  "worst_params": {
+   "speed": 0.3680373246399015,
+   "horizon": 2.075037920765563,
+   "offset": -0.05,
+   "vel_noise": 0.08,
+   "seed": 922
+  },
+  "worst_metrics": {
+   "lane_across": 0.049469044628196235,
+   "cv_across": 0.278508163636422,
+   "worse_than_cv": -0.22903911900822577,
+   "lane_error": 0.3502313927458079,
+   "cv_error": 0.411535279983396
+  },
+  "boundary": null
+ },
+ {
+  "id": "L1",
+  "name": "MPC lane change, straight, 0.5 m/s",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.5411729607207004,
+  "worst_margin": 0.32584169209297675,
+  "worst_params": {
+   "v": 0.7,
+   "seed": 138
+  },
+  "worst_metrics": {
+   "rms_cm": 1.6545305164676494,
+   "max_cm": 5.393266463256186,
+   "steer_change": 0.7620576645145457
+  },
+  "boundary": null
+ },
+ {
+  "id": "L2",
+  "name": "MPC lane change, bend, 0.7 m/s",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.37245638658649594,
+  "worst_margin": 0.37245638658649594,
+  "worst_params": {
+   "v": 0.7
+  },
+  "worst_metrics": {
+   "rms_cm": 1.5483038155181805,
+   "max_cm": 5.0203489073080325,
+   "steer_change": 0.8290863560632563
+  },
+  "boundary": null
+ },
+ {
+  "id": "S2",
+  "name": "RSS: parked car, broken ACC",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.6077846164071623,
+  "worst_margin": 0.6074932913857847,
+  "worst_params": {
+   "gap0": 2.6748267367601253,
+   "v_ego0": 0.3331196250937265
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.16074932913857848
+  },
+  "boundary": null
+ },
+ {
+  "id": "S3",
+  "name": "RSS: tailgating, car in front brakes hard",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.6185723043067473,
+  "worst_margin": 0.038833961451900934,
+  "worst_params": {
+   "gap0": 0.15,
+   "v_ego0": 0.7,
+   "car_decel": 0.6432748582286806
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.1038833961451901
+  },
+  "boundary": null
+ },
+ {
+  "id": "S4",
+  "name": "RSS: wrong-way car in our lane",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.6088096362274245,
+  "worst_margin": 0.6086878759425387,
+  "worst_params": {
+   "gap0": 4.809257143102565
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.16086878759425388
+  },
+  "boundary": null
+ },
+ {
+  "id": "A1",
+  "name": "AEB: cut-in 0.25 m ahead + hard brake",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 1.0,
+  "worst_margin": 0.09825000000000167,
+  "worst_params": {
+   "gap0": 0.18,
+   "seed": 63
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.054912500000000086,
+   "aeb_brakes": 1
+  },
+  "boundary": null
+ },
+ {
+  "id": "A2",
+  "name": "AEB: hidden stopped car 0.4 m ahead at 0.7 m/s",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 1.0,
+  "worst_margin": 0.2715000000000034,
+  "worst_params": {
+   "gap0": 0.28,
+   "seed": 83
+  },
+  "worst_metrics": {
+   "collided": 0,
+   "min_gap": 0.06357500000000017,
+   "aeb_brakes": 1
+  },
+  "boundary": null
+ },
+ {
+  "id": "V3",
+  "name": "V2I + GLOSA, 30% lost + 0.3 s delay",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 1.0,
+  "worst_margin": 1.0,
+  "worst_params": {
+   "loss": 0.3,
+   "delay": 0.3
+  },
+  "worst_metrics": {
+   "red_violations": 0,
+   "runs": 25,
+   "stops": 0,
+   "brake_mJ": 35.08053185628223
+  },
+  "boundary": null
+ },
+ {
+  "id": "C1",
+  "name": "CACC 3 cars: string stable at 0.54 m",
+  "evaluations": 109,
+  "failing": 40,
+  "nominal_margin": 0.03831535161945237,
+  "worst_margin": -0.030452633516558646,
+  "worst_params": {
+   "loss": 0.2609537778109322,
+   "delay": 0.06791563319359277,
+   "seed": 449
+  },
+  "worst_metrics": {
+   "amplification": 1.0819752651923866,
+   "min_gap": 0.48125019764446586,
+   "collided": 0,
+   "aeb_brakes": 0,
+   "mean_gap": 0.6575413006558531
+  },
+  "boundary": [
+   {
+    "loss": 0.23750871183573127,
+    "delay": 0.07079821302385592,
+    "seed": 449
+   },
+   {
+    "loss": 0.23852806253030523,
+    "delay": 0.07067288346601838,
+    "seed": 449
+   }
+  ]
+ },
+ {
+  "id": "C3",
+  "name": "CACC: V2V blackout -> ACC fallback",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.5429406967735767,
+  "worst_margin": 0.1823728856873691,
+  "worst_params": {
+   "blackout_at": 36.95521972392029,
+   "seed": 42
+  },
+  "worst_metrics": {
+   "amplification": 1.4997595686892198,
+   "min_gap": 0.3547118657062107,
+   "collided": 0,
+   "aeb_brakes": 0,
+   "mean_gap": 0.7197670651275802
+  },
+  "boundary": null
+ },
+ {
+  "id": "C4",
+  "name": "CACC + cooperative AEB, late pose updates",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.06425576099261553,
+  "worst_margin": 0.028160346411019905,
+  "worst_params": {
+   "skip": 0.2874831198616912,
+   "seed": 132
+  },
+  "worst_metrics": {
+   "amplification": 1.0204316362684291,
+   "min_gap": 0.46354007600230673,
+   "collided": 0,
+   "aeb_brakes": 0,
+   "mean_gap": 0.566006120885542
+  },
+  "boundary": null
+ },
+ {
+  "id": "C5",
+  "name": "CACC degrades gracefully: 50% lost + 0.3 s delay",
+  "evaluations": 101,
+  "failing": 0,
+  "nominal_margin": 0.18758683197687892,
+  "worst_margin": 0.0748950434894956,
+  "worst_params": {
+   "loss": 0.03852206460732472,
+   "delay": 0.06361094102357233,
+   "seed": 354
+  },
+  "worst_metrics": {
+   "amplification": 0.9713602043360297,
+   "min_gap": 0.44614103589319853,
+   "collided": 0,
+   "aeb_brakes": 0,
+   "mean_gap": 0.5582884696908209
+  },
+  "boundary": null
+ }
+]

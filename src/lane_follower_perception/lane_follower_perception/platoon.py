@@ -27,7 +27,7 @@ from gazebo_msgs.srv import SetEntityState, SpawnEntity
 from nav_msgs.msg import Odometry
 from std_msgs.msg import String
 
-from .cacc import ACCLaw, CACCLaw, LeaderProfile, parse_v2v, slew, v2v_message
+from .cacc import ACCLaw, CACCLaw, LeaderProfile, parse_v2v, slew, v2v_message, v2v_stamp
 from .track_map import PER, to_frenet, track_path
 from .track_traffic import car_sdf
 
@@ -146,7 +146,7 @@ class Platoon(Node):
             self.pub.publish(String(data=msg))
             c0 = parse_v2v(msg).get(0)
             if c0 is not None:
-                self.heard = (c0['v'], c0['a'])
+                self.heard = (c0['v'], c0['a'], v2v_stamp(msg) or now)
         # car 1: same law as the robot
         gap1 = (lead['s'] - car1['s']) % PER - 2 * CAR_HALF
         if now >= self.next_scan:
@@ -154,7 +154,9 @@ class Platoon(Node):
             self.meas_gap = gap1 + self.rnd.gauss(0.0, 0.01)
         if self.t_go is not None and dt > 0:
             if self.mode == 'cacc':
-                target, car1['a'] = self.law.step(self.meas_gap, car1['v'], self.v2v_lead_v, self.v2v_lead_a, dt)
+                age = max(0.0, now - self.heard[2]) if self.heard else 0.0
+                target, car1['a'] = self.law.step(self.meas_gap, car1['v'], self.v2v_lead_v, self.v2v_lead_a, dt,
+                                                  age=age)
             else:
                 target = self.law.step(self.meas_gap, car1['v'], dt)
                 car1['a'] = 0.0

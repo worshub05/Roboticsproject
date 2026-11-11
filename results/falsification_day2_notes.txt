@@ -1,0 +1,36 @@
+Falsification 2 (12 Nov 2026): fix what falsification 1 found, then search again.
+
+Fixes
+  C1 CACC      graceful degradation: the older the newest V2V message (delay, lost messages), the
+               longer the time gap (0.3 -> 1.0 s), the less the reported acceleration is trusted and
+               the more the speed of the car in front is taken from the LiDAR. The sudden 0.5 s switch
+               to ACC (cause of the flapping) is gone; handover to ACC only after 2 s of silence.
+  T2 predict   the check now measures the error ACROSS the lane (what the predictor controls).
+  A1, A2, C4   physical limits written down as the operational design domain (ODD).
+  new          C5 (7 cars, 50% lost + 0.3 s delay stays stable), N4 (negative control: without
+               degradation amplification 1.45).
+The search also caught a mistake in the first version of the fix: with a plain 2 s timeout, a
+blackout during a braking event left the car on stale data (gap 0.11 m). Using the LiDAR speed as
+the link gets worse fixed it (gap 0.35 m).
+
+Results
+  scenario suite            24/24 pass
+  falsification             1 of 14 scenarios can fail (before: 5 of 13), ~1400 simulations
+  C1 worst amplification    1.35 -> 1.08 (limit 1.05), no collision, smallest gap 0.48 m
+  7 cars, loss 0-80%, delay 0.1-0.5 s    amplification 0.81-1.01 (all stable)
+  blackout during braking   day-1 CACC: 3 collisions; graceful degradation: 0, smallest gap 0.35 m
+  Gazebo, 50% lost + 0.2 s delay    amplification 1.37 -> 0.99 (4 events, 0.97-1.02), 0 AEB brakes,
+                                    0 collisions; degradation 87% on average, time gap about 0.9 s,
+                                    so the robot follows at about 0.8 m instead of 0.54 m
+
+Known limits
+  C1: 3 cars with about 10-45% lost messages: the last car can reach 1.06-1.08. It does not grow
+      down a 7-car platoon. The 1.05 limit was kept.
+  Cost of degradation: with a bad link the short gap is given up for stability.
+
+Operational design domain (ODD)
+  prediction    other cars within 5 cm of their lane centre
+  AEB cut-in    at least 0.18 m ahead at 0.5 m/s (3 m/s2 braking + 0.2 s delay)
+  AEB hidden    at least 0.28 m ahead at 0.7 m/s
+  CACC V2V      up to 60% lost messages and 0.4 s delay
+  object poses  at most 50% of LiDAR object updates late
