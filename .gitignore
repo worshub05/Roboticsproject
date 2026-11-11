@@ -45,3 +45,4 @@ training_data/*.png
 .rosinstall_marker_file
 *.pt
 training_data/
+ci_report/

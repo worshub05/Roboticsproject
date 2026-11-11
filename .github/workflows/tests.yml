@@ -1,0 +1,66 @@
+# Runs on every push: the offline scenario suite (24 scenarios, no ROS / Gazebo needed).
+# A failing scenario makes the run red. The same checks locally: src/lane_follower_perception/tools/ci.sh
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  suite:
+    name: scenario suite
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: src/lane_follower_perception
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: install numpy
+        run: pip install numpy
+      - name: syntax + scenario suite
+        run: bash tools/ci.sh
+      - name: summary
+        if: always()
+        run: |
+          echo "## Scenario suite" >> "$GITHUB_STEP_SUMMARY"
+          tail -n +3 ci_report/suite.txt >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: suite-report
+          path: src/lane_follower_perception/ci_report/
+
+  falsification:
+    name: falsification (report only)
+    needs: suite
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: src/lane_follower_perception
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: install numpy
+        run: pip install numpy
+      - name: short falsification search
+        run: |
+          mkdir -p ci_report
+          python3 tools/falsify.py --random 20 --refine 10 --json ci_report/falsification.json | tee ci_report/falsification.txt
+      - name: summary
+        if: always()
+        run: |
+          echo "## Falsification (20 random + 10 refinement runs per scenario)" >> "$GITHUB_STEP_SUMMARY"
+          tail -n +3 ci_report/falsification.txt >> "$GITHUB_STEP_SUMMARY" || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: falsification-report
+          path: src/lane_follower_perception/ci_report/

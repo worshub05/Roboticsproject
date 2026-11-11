@@ -1,5 +1,7 @@
 # Self-Monitoring Autonomous Driving for a 1:10-Scale Vehicle
 
+[![tests](https://github.com/worshub05/Roboticsproject/actions/workflows/tests.yml/badge.svg)](https://github.com/worshub05/Roboticsproject/actions/workflows/tests.yml)
+
 **ROS 2 Humble · Gazebo 11 · PyTorch** · project by Shubham
 
 A small differential-drive robot drives as an autonomous car on a two-lane oval road with traffic. It keeps its lane with a multi-task CNN, controls its speed around other cars with a LiDAR, tracks and predicts the surrounding cars, and overtakes slow or parked cars on a two-way road when it is safe. It also watches its own reliability: it detects camera faults and notices when the neural network is unsure, and slows down or stops.
