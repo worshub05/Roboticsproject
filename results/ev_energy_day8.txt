@@ -1,0 +1,47 @@
+1. Physics checks
+   ✅ cruise: J/m = (C_rr m g + drag) / eta_drive
+   ✅ lossless car: speeding up and back down costs nothing
+   ✅ lossless car: drive energy = kinetic energy 1/2 m v^2
+   ✅ no regen: braking energy all lost in friction brakes
+   ✅ regen saves energy in stop-and-go
+   ✅ regen never recovers more than eta_regen of the braking
+   ✅ air drag grows with v^2
+   ✅ odometry noise (2 cm/s) changes the energy by < 10%
+   ✅ standing still: only the computer uses energy
+   9/9 pass
+
+2. Driving styles, 60 s, cruise 0.5 m/s, a stop every 10 s (gentle: 0.2 / 0.3 m/s2, hard: 0.4 / 1.5 m/s2)
+   car 3.0 kg, C_rr 0.02, battery to wheel 60%, regen 50%
+| style                          | distance | traction  | per metre | recovered | friction brakes |
+|--------------------------------|----------|-----------|-----------|-----------|-----------------|
+| steady cruise                  |   30.0 m |   29.54 J | 0.985 J/m |    0.00 J |          0.00 J |
+| stop-and-go, gentle            |   19.7 m |   20.34 J | 1.031 J/m |    0.37 J |          0.03 J |
+| stop-and-go, gentle, no regen  |   19.7 m |   20.72 J | 1.050 J/m |    0.00 J |          0.78 J |
+| stop-and-go, hard              |   19.6 m |   21.65 J | 1.105 J/m |    0.92 J |          0.12 J |
+| stop-and-go, hard, no regen    |   19.6 m |   22.57 J | 1.151 J/m |    0.00 J |          1.95 J |
+
+3. Traffic light 15 m ahead, 50 arrivals over the cycle, energy over the same 16 m
+| setup                          | red-light violations | stops | traction | extra energy from the light |
+|--------------------------------|----------------------|-------|----------|-----------------------------|
+| no V2I                         | 24                   | 0     |  15.77 J | baseline (runs red lights)  |
+| V2I stop                       | 0                    | 28    |  15.92 J | +156 mJ                     |
+| V2I + GLOSA                    | 0                    | 0     |  15.83 J | +60 mJ                      |
+| V2I + GLOSA, 30% lost + 0.3 s  | 0                    | 0     |  15.83 J | +57 mJ                      |
+
+4. Platoon, battery energy per metre of every car (leader first), seed 0
+| mode        | J/m per car                                   | last car vs CACC |
+|-------------|-----------------------------------------------|------------------|
+| ACC h=1.0   | 1.011 1.057 1.059                             |           +5.4% |
+| ACC h=0.3   | 1.011 1.066 1.076                             |           +7.0% |
+| CACC h=0.3  | 1.011 1.007 1.005                             |           +0.0% |
+|             |                                               |                  |
+| ACC h=1.0   | 1.011 1.075 1.057 1.052 1.051 1.044 1.054     |           +5.4% |
+| ACC h=0.3   | 1.011 1.087 1.074 1.070 1.071 1.070 1.086     |           +8.6% |
+| CACC h=0.3  | 1.011 1.007 1.005 1.004 1.002 1.001 1.000     |           +0.0% |
+|             |                                               |                  |
+
+5. Scale: a full stop costs the kinetic energy; in metres of steady driving that is v^2 / (2 C_rr g)
+   our 1:10 car         0.5 m/s: one stop =     0.6 m of driving
+   real car, 50 km/h   13.9 m/s: one stop =   983.2 m of driving
+   real car, 100 km/h  27.8 m/s: one stop =  3932.7 m of driving
+   So the savings measured here are small in joules, but the same driving style saves far more on a real car.

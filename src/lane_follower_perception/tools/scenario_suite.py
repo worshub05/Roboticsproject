@@ -14,6 +14,7 @@ Areas
   A  emergency braking (AEB)
   V  V2I traffic lights (stop, GLOSA, bad radio, blackout)
   C  CACC platoon (string stability, blackout fallback, cooperative AEB)
+  E  EV energy model (physics checks, energy at traffic lights and in the platoon)
   N  negative controls: scenarios that MUST show the problem (they check that a metric can fail)
 
 Operational design domain (ODD), found by falsification (tools/falsify.py) and matching the physics:
@@ -139,6 +140,28 @@ def platoon(mode='CACC h=0.3', n=2, loss=0.0, delay=0.1, blackout_at=None, aeb=N
                 aeb_brakes=r['aeb_brakes'], mean_gap=r['mean_gap'])
 
 
+def ev_physics():
+    checks = tool('ev_energy_test').physics_checks()
+    return dict(failed=sum(1 for _, ok in checks if not ok), total=len(checks))
+
+
+def ev_light(step=1.0):
+    """Extra battery energy caused by a traffic light (vs driving through without stopping): GLOSA / stop."""
+    m = tool('ev_energy_test')
+    base = m.light_energy(dict(v2i=False), step)[0]
+    stop = m.light_energy(dict(glosa=False), step)[0] - base
+    glosa = m.light_energy(dict(), step)[0] - base
+    return dict(stop_extra_mJ=1000 * stop, glosa_extra_mJ=1000 * glosa, glosa_share=glosa / stop)
+
+
+def ev_platoon(n=2, loss=0.0, delay=0.1, seed=0):
+    """Battery energy per metre of the last car: CACC h=0.3 relative to ACC h=1.0."""
+    m = tool('ev_energy_test')
+    cacc = m.platoon_energy('CACC h=0.3', n=n, seed=seed, loss=loss, delay=delay)[-1]
+    acc = m.platoon_energy('ACC h=1.0', n=n, seed=seed)[-1]
+    return dict(cacc_J_per_m=cacc, acc_J_per_m=acc, energy_ratio=cacc / acc)
+
+
 # ----------------------------------------------------------------------------- the scenarios
 # checks: (metric, '<=' | '>=' | '==', threshold).  space: parameter ranges for falsification.
 SCENARIOS = [
@@ -192,6 +215,12 @@ SCENARIOS = [
          params=dict(n=6, loss=0.5, delay=0.3), checks=[('amplification', '<=', 1.05), ('collided', '==', 0),
                                                          ('min_gap', '>=', 0.30)],
          space=dict(loss=(0.0, 0.6), delay=(0.05, 0.4))),
+    dict(id='E1', name='EV energy model: physics checks', fn=ev_physics, params=dict(),
+         checks=[('failed', '==', 0)], space={}),
+    dict(id='E2', name='EV energy: GLOSA halves energy lost at a light', fn=ev_light, params=dict(),
+         checks=[('glosa_share', '<=', 0.6)], space={}),
+    dict(id='E3', name='EV energy: CACC platoon uses less than ACC', fn=ev_platoon, params=dict(n=2),
+         checks=[('energy_ratio', '<=', 0.98)], space=dict(loss=(0.0, 0.6), delay=(0.05, 0.4))),
     dict(id='N1', name='negative control: ACC 0.3 s gap is unstable', fn=platoon,
          params=dict(mode='ACC h=0.3', n=6), checks=[('amplification', '>=', 1.10)], space={}),
     dict(id='N2', name='negative control: no V2I runs red lights', fn=lambda: dict(

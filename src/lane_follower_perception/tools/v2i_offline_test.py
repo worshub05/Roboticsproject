@@ -32,7 +32,8 @@ from lane_follower_perception.v2i import LightSchedule, V2IPlanner, parse_spat, 
 START, STOP_S, CRUISE = 0.0, 15.0, 0.5
 
 
-def run(offset, v2i=True, glosa=True, loss=0.0, delay=0.0, blackout_at=None, seed=0):
+def run(offset, v2i=True, glosa=True, loss=0.0, delay=0.0, blackout_at=None, seed=0, meter=None):
+    """meter: optional ev_energy.EnergyMeter, fed the speed at 20 Hz (battery energy of the run)."""
     rnd = random.Random(seed)
     sched = LightSchedule(offset=offset)
     planner = V2IPlanner(glosa=glosa)
@@ -53,6 +54,8 @@ def run(offset, v2i=True, glosa=True, loss=0.0, delay=0.0, blackout_at=None, see
                 limit, _ = planner.update(s, v, t)
             target = CRUISE if limit < 0 else min(CRUISE, limit)
             v_cmd = max(0.0, v_cmd + float(np.clip(target - v_cmd, -1.5 * 0.05, 0.4 * 0.05)))
+            if meter is not None:
+                meter.step(v, t)
         v_new = v + (v_cmd - v) * dt / 0.1
         res['e_brake'] += max(0.0, 0.5 * (v * v - v_new * v_new))
         v = v_new

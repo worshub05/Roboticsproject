@@ -123,7 +123,7 @@ def run(mode, n=2, T=70.0, seed=0, loss=0.0, delay=0.1, blackout_at=None, fallba
     return dict(dips=dips, amp=dips[-1] / dips[0], min_gap=min_gap, collided=collided,
                 gap_rms=float(np.sqrt(np.mean(np.square(gap_err)))), gap_cruise=gaps0,
                 aeb_brakes=aeb_brakes, end_gap=gaps[-1], fell_back=fell_back,
-                mean_gap=float(np.mean(gap_err)) + gaps0)
+                mean_gap=float(np.mean(gap_err)) + gaps0, traces=traces, trace_dt=dt)
 
 
 def main():
