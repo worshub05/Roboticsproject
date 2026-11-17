@@ -41,9 +41,9 @@ fi
 LIGHTP="-p loss:=${LOSS:-0.0} -p delay:=${DELAY:-0.0} -p blackout:=${BLACKOUT:--1.0}"
 LOG=~/ros2_ws/logs
 mkdir -p "$LOG"
-rm -f "$LOG/traffic_light.log" "$LOG/v2i.log" "$LOG/platoon.log" "$LOG/cacc.log"; touch "$LOG/traffic_light.log" "$LOG/v2i.log" "$LOG/platoon.log" "$LOG/cacc.log"
+rm -f "$LOG/energy.log" "$LOG/traffic_light.log" "$LOG/v2i.log" "$LOG/platoon.log" "$LOG/cacc.log"; touch "$LOG/traffic_light.log" "$LOG/v2i.log" "$LOG/platoon.log" "$LOG/cacc.log"
 source ~/ros2_ws/install/setup.bash
-for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node traffic_light v2i_controller platoon.py cacc_controller; do pkill -f "$n"; done
+for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node traffic_light v2i_controller platoon.py cacc_controller energy_monitor; do pkill -f "$n"; done
 sleep 1
 P="--ros-args -p use_sim_time:=true"
 ros2 run lane_follower_perception multitask_inference_node.py $P -p steering_topic:=/cnn/cmd_vel \
@@ -61,18 +61,20 @@ if [ "$SCEN" = "platoon" ]; then
     [ "$PLATOON" = "cacc" ] && ros2 run lane_follower_perception cacc_controller.py $P > "$LOG/cacc.log" 2>&1 &
 fi
 ros2 run lane_follower_perception aeb_node.py $P -p enforce:=$AENF > "$LOG/aeb.log" 2>&1 &
+ros2 run lane_follower_perception energy_monitor.py $P -p regen:=${REGEN:-true} > "$LOG/energy.log" 2>&1 &
 ros2 run lane_follower_perception rss_monitor.py $P -p enforce:=$ENF > "$LOG/rss_monitor.log" 2>&1 &
 ros2 run lane_follower_perception overtake_planner.py $P -p use_tracker:=$TRK -p controller:=$CTRL $PLANP > "$LOG/overtake_planner.log" 2>&1 &
 stop() {
     echo; echo "stopping..."
     kill $(jobs -p) 2>/dev/null
     timeout 5 ros2 topic pub --once /cmd_vel geometry_msgs/msg/Twist "{}" > /dev/null 2>&1
-    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node traffic_light v2i_controller platoon.py cacc_controller; do pkill -f "$n"; done
+    for n in road_driver multitask_inference track_traffic overtake_planner lidar_tracker rss_monitor aeb_node traffic_light v2i_controller platoon.py cacc_controller energy_monitor; do pkill -f "$n"; done
     echo "overtakes completed: $(grep -c 'complete' "$LOG/overtake_planner.log")"
     echo "collisions: $(grep -c 'COLLISION' "$LOG/track_traffic.log")"
     grep 'TRAFFIC: robot' "$LOG/track_traffic.log" | tail -1 | sed 's/.*TRAFFIC: //'
     grep 'RSS STATS' "$LOG/rss_monitor.log" | tail -1 | sed 's/.*RSS STATS: /RSS: /'
     grep 'AEB STATS' "$LOG/aeb.log" | tail -1 | sed 's/.*AEB STATS: /AEB: /'
+    sleep 1; grep 'ENERGY STATS' "$LOG/energy.log" | tail -1 | sed 's/.*ENERGY STATS: /ENERGY: /'
     if [ "$SCEN" = "platoon" ]; then
         grep 'braking event' "$LOG/platoon.log" | sed 's/.*PLATOON: //'
         grep 'PLATOON STATS' "$LOG/platoon.log" | tail -1 | sed 's/.*PLATOON STATS: /PLATOON: /'
