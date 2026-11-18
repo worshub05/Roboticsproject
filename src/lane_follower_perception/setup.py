@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-                                                                        'energy_monitor.py = lane_follower_perception.energy_monitor:main',
+                                                                                    'dagger.py = lane_follower_perception.dagger:main',
+'energy_monitor.py = lane_follower_perception.energy_monitor:main',
 'platoon.py = lane_follower_perception.platoon:main',
             'cacc_controller.py = lane_follower_perception.cacc_controller:main',
 'traffic_light.py = lane_follower_perception.traffic_light:main',

@@ -1,0 +1,16 @@
+DAgger (19 Nov 2026), multi-task lane CNN, Gazebo oval track, 0.5 m/s, 150 s test drives (one lap).
+The network drives, the expert (track-geometry controller) labels every image; takeover above 25 cm.
+
+                    our lane   other lane   with steering pushes (RMS / max / takeovers)
+  v1 (original)     0.7 cm     0.95 cm      13.6 cm / 30.1 cm / 8
+  d1 (round 1)      2.0 cm     0.91 cm      13.5 cm / 29.4 cm / 8
+  d2 (round 2)      1.9 cm     0.93 cm      13.9 cm / 29.2 cm / 9
+  expert itself     -          -            14.1 cm / 30.2 cm / 8
+
+Rounds 1-2 (2000 images each, no pushes) changed nothing measurable: the network already drives
+within ~1-2 cm, so the new images look like the old ones. With pushes the network does as well as
+the expert itself, so the pushed result is the limit of the expert's steering gains, not a weakness
+of the network: there is nothing left for DAgger to fix. The original data collection already
+pushed the robot off-centre on purpose (collect_track_data.py), which gives most of DAgger's benefit.
+Round 3 (collection with pushes, model d3) still to finish.
+An earlier attempt ran two sessions at once; those results were removed (report_with_clash.jsonl kept locally).

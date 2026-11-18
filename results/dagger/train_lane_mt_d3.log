@@ -1,0 +1,11 @@
+  /home/shub_2605/ros2_ws/track_data_mt: 6000 images
+  /home/shub_2605/ros2_ws/dagger/round1: 2000 images
+  /home/shub_2605/ros2_ws/dagger/round2: 2000 images
+  /home/shub_2605/ros2_ws/dagger/round3: 1707 images
+11707 images in all (10307 train, 1400 validation)
+start model: val loss 0.0204, steering error 0.0184 rad/s
+epoch 1/4: train 0.0431 | val 0.0180 | steering error 0.0200 rad/s | 249 s  <- saved
+epoch 2/4: train 0.0317 | val 0.0218 | steering error 0.0156 rad/s | 66 s
+epoch 3/4: train 0.0284 | val 0.0176 | steering error 0.0177 rad/s | 70 s  <- saved
+epoch 4/4: train 0.0267 | val 0.0189 | steering error 0.0194 rad/s | 69 s
+✅ saved /home/shub_2605/ros2_ws/models/lane_mt_d3.pt.tmp (val loss 0.0204 -> 0.0176)

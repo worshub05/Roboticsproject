@@ -1,0 +1,103 @@
+13:40:21 DAgger session: evaluations of 150 s, 1000 images per lane per round, 4 epochs
+13:40:21 ▶ eval_v1_ours: evaluate 150 s, lane_mt_v1.pt, lane ours, beta 0.0, push 0.0
+13:43:47 ✔ eval_v1_ours: 150 s, 73.6 m, lane offset RMS 0.7 cm (max 3.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 0
+13:43:47 ▶ eval_v1_other: evaluate 150 s, lane_mt_v1.pt, lane other, beta 0.0, push 0.0
+13:47:12 ✔ eval_v1_other: 150 s, 73.5 m, lane offset RMS 0.9 cm (max 2.7 cm), interventions 0 (0.0 per 100 m), network vs expert 0.011 rad/s, images saved 0
+13:47:12 ▶ eval_v1_push: evaluate 150 s, lane_mt_v1.pt, lane ours, beta 0.0, push 0.3
+13:50:34 ✔ eval_v1_push: 150 s, 73.4 m, lane offset RMS 13.6 cm (max 30.1 cm), interventions 8 (10.9 per 100 m), network vs expert 0.018 rad/s, images saved 0
+13:50:34 ▶ round1_ours: collect 1000 images, lane_mt_v1.pt, lane ours, beta 0.5, push 0.0
+13:52:50 ✔ round1_ours: 89 s, 42.8 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 1000
+13:52:50 ▶ round1_other: collect 1000 images, lane_mt_v1.pt, lane other, beta 0.5, push 0.0
+13:55:15 ✔ round1_other: 94 s, 45.4 m, lane offset RMS 0.5 cm (max 1.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.009 rad/s, images saved 1000
+13:55:15 ▶ training lane_mt_d1.pt from lane_mt_v1.pt on: /home/shub_2605/ros2_ws/track_data_mt /home/shub_2605/ros2_ws/dagger/round1
+13:58:21 ✔ ✅ saved /home/shub_2605/ros2_ws/models/lane_mt_d1.pt.tmp (val loss 0.0268 -> 0.0256)
+13:58:21 ▶ round2_ours: collect 1000 images, lane_mt_d1.pt, lane ours, beta 0.0, push 0.0
+14:01:02 ✔ round2_ours: 94 s, 45.6 m, lane offset RMS 1.6 cm (max 2.9 cm), interventions 0 (0.0 per 100 m), network vs expert 0.012 rad/s, images saved 1000
+14:01:02 ▶ round2_other: collect 1000 images, lane_mt_d1.pt, lane other, beta 0.0, push 0.0
+14:03:23 ✔ round2_other: 90 s, 43.8 m, lane offset RMS 1.1 cm (max 3.6 cm), interventions 0 (0.0 per 100 m), network vs expert 0.011 rad/s, images saved 1000
+14:03:23 ▶ training lane_mt_d2.pt from lane_mt_d1.pt on: /home/shub_2605/ros2_ws/track_data_mt /home/shub_2605/ros2_ws/dagger/round1 /home/shub_2605/ros2_ws/dagger/round2
+14:07:07 ✔ ✅ saved /home/shub_2605/ros2_ws/models/lane_mt_d2.pt.tmp (val loss 0.0216 -> 0.0216)
+14:07:07 ▶ eval_d1_ours: evaluate 150 s, lane_mt_d1.pt, lane ours, beta 0.0, push 0.0
+14:10:30 ✔ eval_d1_ours: 150 s, 73.6 m, lane offset RMS 2.0 cm (max 4.2 cm), interventions 0 (0.0 per 100 m), network vs expert 0.014 rad/s, images saved 0
+14:10:30 ▶ eval_d1_other: evaluate 150 s, lane_mt_d1.pt, lane other, beta 0.0, push 0.0
+14:13:48 ✔ eval_d1_other: 150 s, 73.5 m, lane offset RMS 0.9 cm (max 3.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.012 rad/s, images saved 0
+14:13:48 ▶ eval_d1_push: evaluate 150 s, lane_mt_d1.pt, lane ours, beta 0.0, push 0.3
+14:15:29 DAgger round 3: collect with steering pushes (0.3 rad/s), train d3, evaluate
+14:15:29 ▶ round3_ours: collect 1000 images, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
+14:15:33 ⚠ eval_d1_push: no result (see logs/eval_d1_push.log)
+14:15:34 ▶ eval_d2_ours: evaluate 150 s, lane_mt_d2.pt, lane ours, beta 0.0, push 0.0
+14:18:31 ⚠ eval_d2_ours: no result (see logs/eval_d2_ours.log)
+14:18:31 ✔ round3_ours: 131 s, 63.3 m, lane offset RMS 14.6 cm (max 61.5 cm), interventions 4 (6.3 per 100 m), network vs expert 0.038 rad/s, images saved 1000
+14:18:31 ▶ round3_other: collect 1000 images, lane_mt_d2.pt, lane other, beta 0.0, push 0.3
+14:18:31 ▶ eval_d2_other: evaluate 150 s, lane_mt_d2.pt, lane other, beta 0.0, push 0.0
+14:21:56 ✔ eval_d2_other: 150 s, 72.5 m, lane offset RMS 13.7 cm (max 48.3 cm), interventions 6 (8.3 per 100 m), network vs expert 0.028 rad/s, images saved 0
+14:21:56 ⚠ round3_other: no result (see logs/round3_other.log)
+14:21:56 ▶ eval_d2_push: evaluate 150 s, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
+14:21:56 ▶ training lane_mt_d3.pt from lane_mt_d2.pt on: /home/shub_2605/ros2_ws/track_data_mt /home/shub_2605/ros2_ws/dagger/round1 /home/shub_2605/ros2_ws/dagger/round2 /home/shub_2605/ros2_ws/dagger/round3
+14:25:41 ✔ eval_d2_push: 150 s, 71.4 m, lane offset RMS 17.1 cm (max 71.9 cm), interventions 12 (16.8 per 100 m), network vs expert 0.060 rad/s, images saved 0
+14:25:42 🏁 DAgger finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md
+14:29:40 ✔ ✅ saved /home/shub_2605/ros2_ws/models/lane_mt_d3.pt.tmp (val loss 0.0204 -> 0.0176)
+14:29:40 ▶ eval_d3_ours: evaluate 150 s, lane_mt_d3.pt, lane ours, beta 0.0, push 0.0
+14:33:06 ✔ eval_d3_ours: 150 s, 73.6 m, lane offset RMS 1.4 cm (max 4.2 cm), interventions 0 (0.0 per 100 m), network vs expert 0.008 rad/s, images saved 0
+14:33:06 ▶ eval_d3_other: evaluate 150 s, lane_mt_d3.pt, lane other, beta 0.0, push 0.0
+14:36:23 ✔ eval_d3_other: 150 s, 73.5 m, lane offset RMS 0.6 cm (max 3.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.008 rad/s, images saved 0
+14:36:23 ▶ eval_d3_push: evaluate 150 s, lane_mt_d3.pt, lane ours, beta 0.0, push 0.3
+14:39:38 ✔ eval_d3_push: 150 s, 73.4 m, lane offset RMS 13.6 cm (max 29.8 cm), interventions 8 (10.9 per 100 m), network vs expert 0.021 rad/s, images saved 0
+14:39:35 🏁 DAgger round 3 finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md
+15:11:13 DAgger session: evaluations of 150 s, 1000 images per lane per round, 4 epochs
+15:11:13 skip eval_v1_ours (done)
+15:11:13 skip eval_v1_other (done)
+15:11:13 skip eval_v1_push (done)
+15:11:13 skip round1_ours (done)
+15:11:13 skip round1_other (done)
+15:11:13 skip training lane_mt_d1.pt (exists)
+15:11:13 skip round2_ours (done)
+15:11:13 skip round2_other (done)
+15:11:13 skip training lane_mt_d2.pt (exists)
+15:11:13 skip eval_d1_ours (done)
+15:11:13 skip eval_d1_other (done)
+15:11:13 ▶ eval_d1_push: evaluate 150 s, lane_mt_d1.pt, lane ours, beta 0.0, push 0.3
+15:14:40 ✔ eval_d1_push: 150 s, 73.4 m, lane offset RMS 13.5 cm (max 29.4 cm), interventions 8 (10.9 per 100 m), network vs expert 0.021 rad/s, images saved 0
+15:14:40 ▶ eval_d2_ours: evaluate 150 s, lane_mt_d2.pt, lane ours, beta 0.0, push 0.0
+15:18:13 ✔ eval_d2_ours: 150 s, 73.5 m, lane offset RMS 1.9 cm (max 4.1 cm), interventions 0 (0.0 per 100 m), network vs expert 0.014 rad/s, images saved 0
+15:18:13 skip eval_d2_other (done)
+15:18:13 skip eval_d2_push (done)
+15:18:14 🏁 DAgger finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md
+15:18:49 DAgger round 3: collect with steering pushes (0.3 rad/s), train d3, evaluate
+15:18:49 skip round3_ours (done)
+15:18:49 ▶ round3_other: collect 1000 images, lane_mt_d2.pt, lane other, beta 0.0, push 0.3
+15:18:58 interrupted
+15:19:01 interrupted
+15:19:21 DAgger round 3: collect with steering pushes (0.3 rad/s), train d3, evaluate
+15:19:21 skip round3_ours (done)
+15:19:21 ▶ round3_other: collect 1000 images, lane_mt_d2.pt, lane other, beta 0.0, push 0.3
+15:22:05 ✔ round3_other: 94 s, 45.6 m, lane offset RMS 13.6 cm (max 31.2 cm), interventions 4 (8.8 per 100 m), network vs expert 0.020 rad/s, images saved 1000
+15:22:05 skip training lane_mt_d3.pt (exists)
+15:22:05 skip eval_d3_ours (done)
+15:22:05 skip eval_d3_other (done)
+15:22:05 skip eval_d3_push (done)
+15:22:06 🏁 DAgger round 3 finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md
+15:25:09 DAgger session: evaluations of 150 s, 1000 images per lane per round, 4 epochs
+15:25:10 skip eval_v1_ours (done)
+15:25:10 skip eval_v1_other (done)
+15:25:10 skip eval_v1_push (done)
+15:25:10 skip round1_ours (done)
+15:25:10 skip round1_other (done)
+15:25:10 skip training lane_mt_d1.pt (exists)
+15:25:10 skip round2_ours (done)
+15:25:10 skip round2_other (done)
+15:25:10 skip training lane_mt_d2.pt (exists)
+15:25:10 skip eval_d1_ours (done)
+15:25:10 skip eval_d1_other (done)
+15:25:10 skip eval_d1_push (done)
+15:25:10 skip eval_d2_ours (done)
+15:25:10 ▶ eval_d2_other: evaluate 150 s, lane_mt_d2.pt, lane other, beta 0.0, push 0.0
+15:28:52 ✔ eval_d2_other: 150 s, 73.5 m, lane offset RMS 0.9 cm (max 3.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.011 rad/s, images saved 0
+15:28:52 ▶ eval_d2_push: evaluate 150 s, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
+15:32:21 ✔ eval_d2_push: 150 s, 73.4 m, lane offset RMS 13.9 cm (max 29.2 cm), interventions 9 (12.3 per 100 m), network vs expert 0.022 rad/s, images saved 0
+15:32:22 🏁 DAgger finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md
+15:32:38 DAgger round 3: collect with steering pushes (0.3 rad/s), train d3, evaluate
+15:32:38 ▶ eval_expert_push: evaluate 150 s, lane_mt_d2.pt, lane ours, beta 1.0, push 0.3
+15:36:18 ✔ eval_expert_push: 150 s, 73.4 m, lane offset RMS 14.1 cm (max 30.2 cm), interventions 8 (10.9 per 100 m), network vs expert 0.020 rad/s, images saved 0
+15:36:18 ▶ round3_ours: collect 1000 images, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
+15:37:47 interrupted

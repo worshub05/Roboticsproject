@@ -1,0 +1,26 @@
+[INFO] [1795038650.822881413] [dagger]: DAGGER: collect 1000 images, model lane_mt_v1.pt, lane ours, beta 0.5, noise 0.0 rad/s, takeover at 0.25 m
+[INFO] [1795038677.996351734] [dagger]: DAGGER STATS: 6 s, 1.7 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 50
+[INFO] [1795038683.948721596] [dagger]: DAGGER STATS: 12 s, 4.5 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 100
+[INFO] [1795038689.591736786] [dagger]: DAGGER STATS: 18 s, 7.3 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 150
+[INFO] [1795038694.707497473] [dagger]: DAGGER STATS: 22 s, 9.8 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 200
+[INFO] [1795038699.719924891] [dagger]: DAGGER: saved 250/1000 (offset -0.00 m, interventions 0)
+[INFO] [1795038699.721108907] [dagger]: DAGGER STATS: 27 s, 12.1 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 250
+[INFO] [1795038701.926725887] [dagger]: DAGGER STATS: 29 s, 13.2 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 300
+[INFO] [1795038706.527972523] [dagger]: DAGGER STATS: 34 s, 15.4 m, lane offset RMS 0.1 cm (max 0.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.004 rad/s, images saved 350
+[INFO] [1795038710.812246102] [dagger]: DAGGER STATS: 38 s, 17.4 m, lane offset RMS 0.2 cm (max 0.8 cm), interventions 0 (0.0 per 100 m), network vs expert 0.007 rad/s, images saved 400
+[INFO] [1795038715.040924237] [dagger]: DAGGER STATS: 42 s, 19.4 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.010 rad/s, images saved 450
+[INFO] [1795038719.198314911] [dagger]: DAGGER: saved 500/1000 (offset -0.00 m, interventions 0)
+[INFO] [1795038719.199635335] [dagger]: DAGGER STATS: 46 s, 21.4 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.011 rad/s, images saved 500
+[INFO] [1795038723.260916678] [dagger]: DAGGER STATS: 50 s, 23.3 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.011 rad/s, images saved 550
+[INFO] [1795038727.236882524] [dagger]: DAGGER STATS: 53 s, 25.2 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.012 rad/s, images saved 600
+[INFO] [1795038731.326709739] [dagger]: DAGGER STATS: 57 s, 27.1 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 650
+[INFO] [1795038735.064324586] [dagger]: DAGGER STATS: 59 s, 28.0 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 700
+[INFO] [1795038739.143875411] [dagger]: DAGGER: saved 750/1000 (offset -0.01 m, interventions 0)
+[INFO] [1795038739.145208991] [dagger]: DAGGER STATS: 63 s, 29.9 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 750
+[INFO] [1795038744.497376250] [dagger]: DAGGER STATS: 68 s, 32.4 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.014 rad/s, images saved 800
+[INFO] [1795038750.905301532] [dagger]: DAGGER STATS: 74 s, 35.5 m, lane offset RMS 0.5 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.015 rad/s, images saved 850
+[INFO] [1795038757.059781660] [dagger]: DAGGER STATS: 80 s, 38.5 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.014 rad/s, images saved 900
+[INFO] [1795038760.584387660] [dagger]: DAGGER STATS: 84 s, 40.8 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.014 rad/s, images saved 950
+[INFO] [1795038766.013234632] [dagger]: DAGGER: saved 1000/1000 (offset -0.00 m, interventions 0)
+[INFO] [1795038766.014233039] [dagger]: DAGGER STATS: 89 s, 42.8 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 1000
+[INFO] [1795038766.015559199] [dagger]: DAGGER RESULT: 89 s, 42.8 m, lane offset RMS 0.4 cm (max 1.5 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 1000
