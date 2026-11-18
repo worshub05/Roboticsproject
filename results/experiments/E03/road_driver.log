@@ -1,0 +1,225 @@
+[INFO] [1795035141.513521313] [road_driver]: Road driver ready: CNN steering + LiDAR adaptive cruise control (curved corridor)
+[INFO] [1795035145.027997861] [road_driver]: ROAD: CRUISE v=0.00 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.000 1/m
+[INFO] [1795035148.462605240] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.004 1/m
+[INFO] [1795035151.830450756] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.003 1/m
+[INFO] [1795035155.233653040] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.002 1/m
+[INFO] [1795035158.605090676] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.000 1/m
+[INFO] [1795035162.060844424] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.002 1/m
+[INFO] [1795035165.581331665] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.004 1/m
+[INFO] [1795035168.951785544] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.001 1/m
+[INFO] [1795035172.410206555] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.000 1/m
+[INFO] [1795035175.890212571] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.001 1/m
+[INFO] [1795035179.328963880] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.002 1/m
+[INFO] [1795035182.840795969] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.003 1/m
+[INFO] [1795035186.358997545] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.008 1/m
+[INFO] [1795035192.249471307] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.175 1/m
+[INFO] [1795035195.984069167] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.188 1/m
+[INFO] [1795035199.592683534] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.193 1/m
+[INFO] [1795035203.098304699] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.200 1/m
+[INFO] [1795035206.749160752] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.196 1/m
+[INFO] [1795035210.351213298] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.186 1/m
+[INFO] [1795035213.956840094] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.199 1/m
+[INFO] [1795035215.281553718] [road_driver]: ROAD: target detected 3.98 m ahead (corridor curvature +0.199 1/m)
+[INFO] [1795035217.594603553] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=3.32 m lead_speed=0.19 m/s corridor curvature=+0.210 1/m
+[INFO] [1795035221.136617000] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=2.30 m lead_speed=0.15 m/s corridor curvature=+0.186 1/m
+[INFO] [1795035224.675138314] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=1.25 m lead_speed=0.14 m/s corridor curvature=+0.146 1/m
+[INFO] [1795035227.218825970] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.50 m)
+[INFO] [1795035227.577481097] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.41 m)
+[INFO] [1795035228.189477522] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.41 m lead_speed=0.13 m/s corridor curvature=-0.059 1/m
+[INFO] [1795035228.309683446] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.43 m)
+[INFO] [1795035230.798816384] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035231.631647637] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.29 m lead_speed=0.14 m/s corridor curvature=+0.015 1/m
+[INFO] [1795035231.744884978] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035234.968227808] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.11 m)
+[INFO] [1795035235.092569722] [road_driver]: ROAD: AEB_BRAKE v=0.04 m/s gap=0.11 m lead_speed=0.13 m/s corridor curvature=-0.072 1/m
+[INFO] [1795035236.144382848] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.28 m)
+[INFO] [1795035237.269101684] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.24 m)
+[INFO] [1795035238.127844166] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035238.603376854] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.024 1/m
+[INFO] [1795035239.167552614] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.27 m)
+[INFO] [1795035239.747280657] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035241.488696957] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035242.099603162] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.26 m lead_speed=0.15 m/s corridor curvature=+0.033 1/m
+[INFO] [1795035242.444604027] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035244.343701081] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.20 m)
+[INFO] [1795035245.503855948] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035245.626055709] [road_driver]: ROAD: FOLLOW v=0.08 m/s gap=0.32 m lead_speed=0.15 m/s corridor curvature=+0.016 1/m
+[INFO] [1795035247.588700850] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.17 m)
+[INFO] [1795035248.688197988] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.29 m)
+[INFO] [1795035249.144747349] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.31 m lead_speed=0.15 m/s corridor curvature=+0.024 1/m
+[INFO] [1795035250.041396839] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035250.996835389] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035252.618255683] [road_driver]: ROAD: FOLLOW v=0.25 m/s gap=0.22 m lead_speed=0.15 m/s corridor curvature=+0.022 1/m
+[INFO] [1795035253.193887664] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.14 m)
+[INFO] [1795035254.478958764] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035256.110345326] [road_driver]: ROAD: FOLLOW v=0.24 m/s gap=0.21 m lead_speed=0.14 m/s corridor curvature=+0.041 1/m
+[INFO] [1795035256.448645609] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.18 m)
+[INFO] [1795035257.649936839] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035259.677085297] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.18 m)
+[INFO] [1795035259.685719208] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.19 m lead_speed=0.13 m/s corridor curvature=+0.015 1/m
+[INFO] [1795035260.689727447] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035263.025571794] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.15 m)
+[INFO] [1795035263.180315310] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.13 m lead_speed=0.11 m/s corridor curvature=-0.008 1/m
+[INFO] [1795035264.117548004] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.28 m)
+[INFO] [1795035265.362947946] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035266.200885849] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035266.668242812] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.33 m lead_speed=0.15 m/s corridor curvature=-0.023 1/m
+[INFO] [1795035267.954259657] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.20 m)
+[INFO] [1795035268.992811537] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035270.184789056] [road_driver]: ROAD: FOLLOW v=0.28 m/s gap=0.26 m lead_speed=0.16 m/s corridor curvature=-0.010 1/m
+[INFO] [1795035270.554029148] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035271.450468532] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035273.305254360] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.20 m)
+[INFO] [1795035273.685738235] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.19 m lead_speed=0.13 m/s corridor curvature=-0.010 1/m
+[INFO] [1795035274.344582864] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035275.763585536] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.24 m)
+[INFO] [1795035276.589198075] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035277.152118915] [road_driver]: ROAD: FOLLOW v=0.24 m/s gap=0.33 m lead_speed=0.15 m/s corridor curvature=-0.030 1/m
+[INFO] [1795035278.782914257] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.15 m)
+[INFO] [1795035282.341052846] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035283.042154915] [road_driver]: ROAD: FOLLOW v=0.28 m/s gap=0.31 m lead_speed=0.17 m/s corridor curvature=-0.029 1/m
+[INFO] [1795035283.769960656] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035284.713039611] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035286.351529181] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.21 m)
+[INFO] [1795035286.557863484] [road_driver]: ROAD: AEB_BRAKE v=0.06 m/s gap=0.20 m lead_speed=0.14 m/s corridor curvature=+0.013 1/m
+[INFO] [1795035287.471577836] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035288.752972107] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035289.557773445] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035290.056710601] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.34 m lead_speed=0.15 m/s corridor curvature=-0.030 1/m
+[INFO] [1795035291.772799846] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.16 m)
+[INFO] [1795035293.016156556] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035293.481464526] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.045 1/m
+[INFO] [1795035294.565366123] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.23 m)
+[INFO] [1795035295.481667268] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035297.013792992] [road_driver]: ROAD: FOLLOW v=0.27 m/s gap=0.22 m lead_speed=0.17 m/s corridor curvature=+0.026 1/m
+[INFO] [1795035297.450385682] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.18 m)
+[INFO] [1795035298.681783864] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035300.530689520] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.19 m)
+[INFO] [1795035300.534852273] [road_driver]: ROAD: AEB_BRAKE v=0.13 m/s gap=0.19 m lead_speed=0.16 m/s corridor curvature=+0.024 1/m
+[INFO] [1795035301.664939972] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035302.712300057] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.27 m)
+[INFO] [1795035303.278851582] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035303.943050356] [road_driver]: ROAD: FOLLOW v=0.28 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.045 1/m
+[INFO] [1795035304.656752810] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.23 m)
+[INFO] [1795035305.495606721] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035306.429587013] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.29 m)
+[INFO] [1795035306.847283576] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035307.442270263] [road_driver]: ROAD: FOLLOW v=0.24 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.042 1/m
+[INFO] [1795035308.010064806] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.26 m)
+[INFO] [1795035308.601741567] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035313.062861604] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.18 m)
+[INFO] [1795035313.418326029] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.17 m lead_speed=0.10 m/s corridor curvature=-0.047 1/m
+[INFO] [1795035314.245241539] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035315.206277679] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.30 m)
+[INFO] [1795035315.681969532] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035317.042904905] [road_driver]: ROAD: FOLLOW v=0.26 m/s gap=0.25 m lead_speed=0.15 m/s corridor curvature=+0.001 1/m
+[INFO] [1795035317.863071542] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.17 m)
+[INFO] [1795035318.990779374] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035320.329943614] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035320.533204351] [road_driver]: ROAD: AEB_BRAKE v=0.04 m/s gap=0.24 m lead_speed=0.14 m/s corridor curvature=+0.011 1/m
+[INFO] [1795035321.110686963] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035323.213793039] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.18 m)
+[INFO] [1795035324.079358986] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.25 m lead_speed=0.15 m/s corridor curvature=+0.030 1/m
+[INFO] [1795035324.429271455] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035325.364526650] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.29 m)
+[INFO] [1795035325.962037926] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035327.553635648] [road_driver]: ROAD: FOLLOW v=0.25 m/s gap=0.21 m lead_speed=0.15 m/s corridor curvature=+0.020 1/m
+[INFO] [1795035328.048345809] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.16 m)
+[INFO] [1795035329.211361989] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035330.385304044] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035331.098552406] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035331.102055813] [road_driver]: ROAD: FOLLOW v=0.04 m/s gap=0.30 m lead_speed=0.14 m/s corridor curvature=+0.022 1/m
+[INFO] [1795035333.318299993] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.16 m)
+[INFO] [1795035334.529410322] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.32 m)
+[INFO] [1795035334.638425528] [road_driver]: ROAD: FOLLOW v=0.08 m/s gap=0.31 m lead_speed=0.17 m/s corridor curvature=+0.015 1/m
+[INFO] [1795035336.752243992] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.14 m)
+[INFO] [1795035337.804162130] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.29 m)
+[INFO] [1795035338.159006543] [road_driver]: ROAD: FOLLOW v=0.16 m/s gap=0.31 m lead_speed=0.17 m/s corridor curvature=+0.003 1/m
+[INFO] [1795035341.279198012] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.26 m)
+[INFO] [1795035342.082219073] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035343.518678310] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.24 m)
+[INFO] [1795035344.226160767] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.29 m lead_speed=0.12 m/s corridor curvature=+0.006 1/m
+[INFO] [1795035344.331521621] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035345.758762998] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.23 m)
+[INFO] [1795035346.666653316] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035347.730046313] [road_driver]: ROAD: FOLLOW v=0.30 m/s gap=0.29 m lead_speed=0.16 m/s corridor curvature=-0.049 1/m
+[INFO] [1795035348.183923031] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035349.007219551] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035350.989198109] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.19 m)
+[INFO] [1795035351.238032543] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.17 m lead_speed=0.11 m/s corridor curvature=-0.018 1/m
+[INFO] [1795035352.054864505] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035354.037642666] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.17 m)
+[INFO] [1795035354.729929454] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.20 m lead_speed=0.11 m/s corridor curvature=-0.050 1/m
+[INFO] [1795035355.227820856] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035357.327658837] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.15 m)
+[INFO] [1795035358.305982725] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.28 m)
+[INFO] [1795035358.307426252] [road_driver]: ROAD: FOLLOW v=0.04 m/s gap=0.28 m lead_speed=0.16 m/s corridor curvature=+0.009 1/m
+[INFO] [1795035360.374366799] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.15 m)
+[INFO] [1795035361.590095432] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035361.835030961] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.33 m)
+[INFO] [1795035361.947459704] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.34 m lead_speed=0.16 m/s corridor curvature=-0.025 1/m
+[INFO] [1795035362.166354841] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.37 m)
+[INFO] [1795035364.539103090] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.19 m)
+[INFO] [1795035365.462987439] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.28 m lead_speed=0.15 m/s corridor curvature=-0.000 1/m
+[INFO] [1795035365.719245400] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035367.394164304] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.21 m)
+[INFO] [1795035368.446444250] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035369.027605804] [road_driver]: ROAD: FOLLOW v=0.24 m/s gap=0.32 m lead_speed=0.15 m/s corridor curvature=-0.063 1/m
+[INFO] [1795035370.196018467] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.21 m)
+[INFO] [1795035371.260540785] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035372.583262588] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035372.590042293] [road_driver]: ROAD: AEB_BRAKE v=0.15 m/s gap=0.25 m lead_speed=0.16 m/s corridor curvature=-0.009 1/m
+[INFO] [1795035373.366921787] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035374.920922127] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.23 m)
+[INFO] [1795035375.742570098] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035376.090948061] [road_driver]: ROAD: FOLLOW v=0.16 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.009 1/m
+[INFO] [1795035376.589503766] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.29 m)
+[INFO] [1795035377.177846733] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.34 m)
+[INFO] [1795035378.407793458] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.28 m)
+[INFO] [1795035378.982524166] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.32 m)
+[INFO] [1795035379.739777901] [road_driver]: ROAD: FOLLOW v=0.28 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=-0.055 1/m
+[INFO] [1795035380.939410600] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.20 m)
+[INFO] [1795035382.181993367] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035383.227794351] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.29 m)
+[INFO] [1795035383.369758120] [road_driver]: ROAD: AEB_BRAKE v=0.08 m/s gap=0.27 m lead_speed=0.16 m/s corridor curvature=-0.026 1/m
+[INFO] [1795035383.840683752] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035386.285577583] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.14 m)
+[INFO] [1795035387.011647454] [road_driver]: ROAD: AEB_BRAKE v=0.00 m/s gap=0.21 m lead_speed=0.13 m/s corridor curvature=-0.050 1/m
+[INFO] [1795035387.240131992] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.26 m)
+[INFO] [1795035387.488334513] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.30 m)
+[INFO] [1795035387.821568457] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.34 m)
+[INFO] [1795035388.775540821] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.32 m)
+[INFO] [1795035389.238458612] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.34 m)
+[INFO] [1795035390.538431171] [road_driver]: ROAD: FOLLOW v=0.31 m/s gap=0.29 m lead_speed=0.17 m/s corridor curvature=-0.027 1/m
+[INFO] [1795035391.165548441] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035392.267286998] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035393.235148795] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.28 m)
+[INFO] [1795035393.727037149] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.32 m)
+[INFO] [1795035394.208407522] [road_driver]: ROAD: FOLLOW v=0.22 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=+0.047 1/m
+[INFO] [1795035396.161549715] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.13 m)
+[INFO] [1795035397.363625996] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.29 m)
+[INFO] [1795035395.447301316] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.32 m lead_speed=0.16 m/s corridor curvature=+0.108 1/m
+[INFO] [1795035401.295332721] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.22 m)
+[INFO] [1795035402.711384188] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.31 m)
+[INFO] [1795035403.835276287] [road_driver]: ROAD: FOLLOW v=0.30 m/s gap=0.28 m lead_speed=0.17 m/s corridor curvature=+0.069 1/m
+[INFO] [1795035404.074285071] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035404.919867322] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035406.174078517] [road_driver]: ROAD: FOLLOW -> AEB_BRAKE (gap 0.25 m)
+[INFO] [1795035406.904298888] [road_driver]: ROAD: AEB_BRAKE -> FOLLOW (gap 0.30 m)
+[INFO] [1795035407.370952406] [road_driver]: ROAD: FOLLOW v=0.20 m/s gap=0.33 m lead_speed=0.16 m/s corridor curvature=+0.086 1/m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/road_driver.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'road_driver.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/road_driver.py", line 265, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

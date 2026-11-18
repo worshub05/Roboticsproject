@@ -1,0 +1,26 @@
+✅ stack running: scenario=lights, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=off, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795032160.329418346] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1795032160.330408826] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1795032175.853362623] [v2i_controller]: V2I: light 1 AMBER 6.00 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032191.948960193] [traffic_light]: LIGHT: 🛑 stopped 8.2 cm before light 1 (RED)
+[INFO] [1795032192.234038863] [v2i_controller]: V2I: light 1 GREEN 0.08 m ahead -> go
+[INFO] [1795032192.557115013] [traffic_light]: LIGHT: light 1 green: drove off after waiting 0.5 s
+[INFO] [1795032193.161903887] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.28 m/s
+[INFO] [1795032267.100061631] [v2i_controller]: V2I: light 2 RED 5.96 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032273.609409346] [v2i_controller]: V2I: light 2 GREEN 3.11 m ahead -> go
+[INFO] [1795032280.950390495] [traffic_light]: LIGHT: ✅ crossed light 2 on green at 0.50 m/s
+[INFO] [1795032357.414354244] [v2i_controller]: V2I: light 1 AMBER 4.36 m ahead at 0.50 m/s -> stop (braking 0.03 m/s2)
+[INFO] [1795032367.777716125] [traffic_light]: LIGHT: 🛑 stopped 7.3 cm before light 1 (RED)
+[INFO] [1795032377.256162434] [v2i_controller]: V2I: light 1 GREEN 0.07 m ahead -> go
+[INFO] [1795032377.629144614] [traffic_light]: LIGHT: light 1 green: drove off after waiting 6.5 s
+[INFO] [1795032378.109879608] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.24 m/s
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=31.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 218 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 217 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 103.1 m in 216 s, traction 102.9 J (1.00 J/m), recovered by regen 0.3 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 102.9 J (1.00 J/m)
+LIGHTS: crossings green 3, amber 0, RED 0; stops 2, gap to the line 7.7 cm (range 7.3-8.2), mean wait 3.5 s; messages sent 2150, lost 0; speed at the line 0.34 m/s, braking energy 778 mJ/kg (259 per light)

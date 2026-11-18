@@ -1,0 +1,47 @@
+[INFO] [1795034508.621139395] [rss_monitor]: RSS monitor ready (enforcing): rho 0.3 s, a_acc 0.4, b_min 1.0, b_max 1.5, b_correct 0.7 m/s2, lateral a 0.3 / b 0.6 m/s2, mu 0.05 m
+[INFO] [1795034510.941814774] [rss_monitor]: RSS STATS: checked 2 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.55 m
+[INFO] [1795034513.009207963] [rss_monitor]: RSS STATS: checked 3 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.45 m
+[INFO] [1795034515.151278966] [rss_monitor]: RSS STATS: checked 5 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.38 m
+[INFO] [1795034517.314115790] [rss_monitor]: RSS STATS: checked 7 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.32 m
+[INFO] [1795034519.375982490] [rss_monitor]: RSS STATS: checked 9 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.28 m
+[INFO] [1795034523.893495317] [rss_monitor]: RSS STATS: checked 10 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.20 m
+[INFO] [1795034526.007270914] [rss_monitor]: RSS STATS: checked 12 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+[INFO] [1795034528.099629699] [rss_monitor]: RSS STATS: checked 14 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+[INFO] [1795034530.182093375] [rss_monitor]: RSS STATS: checked 16 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+[INFO] [1795034532.422879727] [rss_monitor]: RSS STATS: checked 17 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+[INFO] [1795034534.507892836] [rss_monitor]: RSS STATS: checked 19 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+[INFO] [1795034536.681461287] [rss_monitor]: RSS STATS: checked 21 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034538.796315720] [rss_monitor]: RSS STATS: checked 22 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034540.906103657] [rss_monitor]: RSS STATS: checked 24 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034542.996596788] [rss_monitor]: RSS STATS: checked 26 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034545.248780836] [rss_monitor]: RSS STATS: checked 28 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034547.345386508] [rss_monitor]: RSS STATS: checked 29 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034549.520412324] [rss_monitor]: RSS STATS: checked 31 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034553.995542211] [rss_monitor]: RSS STATS: checked 33 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034556.184386937] [rss_monitor]: RSS STATS: checked 34 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034558.424575653] [rss_monitor]: RSS STATS: checked 36 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034560.493701056] [rss_monitor]: RSS STATS: checked 38 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034562.598951003] [rss_monitor]: RSS STATS: checked 40 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034564.653915123] [rss_monitor]: RSS STATS: checked 41 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034566.831258807] [rss_monitor]: RSS STATS: checked 43 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034569.015382050] [rss_monitor]: RSS STATS: checked 45 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034571.125862229] [rss_monitor]: RSS STATS: checked 47 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034573.286693492] [rss_monitor]: RSS STATS: checked 48 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034575.331624532] [rss_monitor]: RSS STATS: checked 50 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+[INFO] [1795034577.519502711] [rss_monitor]: RSS STATS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/rss_monitor.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'rss_monitor.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/rss_monitor.py", line 128, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

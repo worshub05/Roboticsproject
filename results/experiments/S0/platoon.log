@@ -1,0 +1,5 @@
+[INFO] [1795030626.317873319] [platoon]: Platoon: mode cacc (standstill gap 0.4 m, time gap 0.3 s), leader cruise 0.45 m/s, braking to 0.15 m/s every 25 s; V2V loss 0%, delay 0.0 s
+[INFO] [1795030631.758407096] [platoon]: PLATOON: platoon drives off
+[INFO] [1795030633.926363713] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.60 m / robot 0.71 m (target at 0.45 m/s 0.54 m), smallest gap car 1 inf m, robot inf m, collisions 0
+[INFO] [1795030640.226643291] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.55 m / robot 0.58 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.55 m, robot 0.57 m, collisions 0
+[INFO] [1795030646.431991513] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.54 m, robot 0.57 m, collisions 0

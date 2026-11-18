@@ -1,0 +1,52 @@
+11:36:08 smoke test (30 s) before the long session
+11:36:08 ▶ S0: Smoke test (30 s)
+11:37:40 ✔ S0 done
+11:37:40 ▶ E01: Overtaking with MPC steering (150 s)
+11:40:27 ✔ E01 done
+11:40:27 ▶ E02: Overtaking with the tracker controller (150 s)
+11:43:12 ✔ E02 done
+11:43:12 ▶ E03: Broken ACC, RSS off (100 s)
+11:45:11 ✔ E03 done
+11:45:11 ▶ E04: Broken ACC, RSS on (100 s)
+11:47:11 ✔ E04 done
+11:47:11 ▶ E05: Cut-in 0.40 m: no RSS, no AEB (100 s)
+11:49:10 ✔ E05 done
+11:49:10 ▶ E06: Cut-in 0.40 m: RSS only (100 s)
+11:51:11 ✔ E06 done
+11:51:11 ▶ E07: Cut-in 0.40 m: RSS + AEB (100 s)
+11:53:09 ✔ E07 done
+11:53:09 ▶ E08: Cut-in 0.25 m: RSS only (100 s)
+11:55:10 ✔ E08 done
+11:55:10 ▶ E09: Cut-in 0.25 m: RSS + AEB (100 s)
+11:57:11 ✔ E09 done
+11:57:11 ▶ E10: Traffic lights without V2I (300 s)
+12:02:16 ✔ E10 done
+12:02:16 ▶ E11: Traffic lights: V2I stop only (300 s)
+12:07:20 ✔ E11 done
+12:07:20 ▶ E12: Traffic lights: V2I + GLOSA (300 s)
+12:12:23 ✔ E12 done
+12:12:24 ▶ E13: V2I + GLOSA, 30% lost + 0.3 s delay (300 s)
+12:17:26 ✔ E13 done
+12:17:26 ▶ E14: V2I blackout (fail-safe) (300 s)
+12:22:29 ✔ E14 done
+12:22:29 ▶ E15: Platoon: ACC, 1.0 s time gap (130 s)
+12:24:55 ✔ E15 done
+12:24:55 ▶ E16: Platoon: ACC, 0.3 s time gap (130 s)
+12:27:18 ✔ E16 done
+12:27:18 ▶ E17: Platoon: CACC, 0.3 s time gap (130 s)
+12:29:41 ✔ E17 done
+12:29:41 ▶ E18: CACC, 50% lost + 0.2 s delay (130 s)
+12:32:04 ✔ E18 done
+12:32:04 ▶ E19: CACC, V2V blackout (130 s)
+12:34:29 ✔ E19 done
+12:34:29 ▶ V1: Overtaking with MPC steering (80 s)
+12:36:09 ✔ V1 done
+12:36:09 ▶ V2: RSS keeps a safe distance (broken ACC) (70 s)
+12:37:43 ✔ V2 done
+12:37:43 ▶ V3: Emergency braking for a cut-in car (70 s)
+12:39:16 ✔ V3 done
+12:39:16 ▶ V4: Traffic lights with V2I + GLOSA (110 s)
+12:41:26 ✔ V4 done
+12:41:26 ▶ V5: CACC platoon, 0.3 s time gap (80 s)
+12:43:06 ✔ V5 done
+12:43:06 🏁 all runs finished. Results in /home/shub_2605/ros2_ws/experiments/20261118_1136

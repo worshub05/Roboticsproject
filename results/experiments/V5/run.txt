@@ -1,0 +1,38 @@
+✅ stack running: scenario=platoon, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795034508.816927369] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+[INFO] [1795034509.673689985] [cacc_controller]: CACC: ✅ active (V2V + LiDAR gap)
+[INFO] [1795034509.692140753] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034513.304858269] [platoon]: PLATOON: platoon drives off
+[INFO] [1795034514.531530491] [cacc_controller]: CACC: gap 0.72 m (want 0.48), speed 0.20 m/s, car in front 0.33 m/s
+[INFO] [1795034520.687212183] [cacc_controller]: CACC: gap 0.64 m (want 0.55), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1795034529.125938203] [cacc_controller]: CACC: gap 0.52 m (want 0.54), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1795034535.335704800] [cacc_controller]: CACC: gap 0.48 m (want 0.49), speed 0.28 m/s, car in front 0.32 m/s
+[INFO] [1795034541.466271985] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.44 m/s, car in front 0.45 m/s
+[INFO] [1795034545.789564639] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795034545.829362843] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034545.867667051] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795034545.916477876] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034545.977937433] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795034546.118458765] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034546.421102413] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795034546.466831699] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034546.549698556] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795034546.586860250] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795034547.764121158] [cacc_controller]: CACC: gap 1.63 m (want 0.55), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1795034549.105506445] [platoon]: PLATOON: braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.45 m/s -> amplification 1.50 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.50 m
+[INFO] [1795034556.350652827] [cacc_controller]: CACC: gap 1.38 m (want 0.55), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1795034562.525461355] [cacc_controller]: CACC: gap 1.13 m (want 0.55), speed 0.50 m/s, car in front 0.45 m/s
+[INFO] [1795034568.677484952] [cacc_controller]: CACC: gap 0.62 m (want 0.50), speed 0.33 m/s, car in front 0.32 m/s
+[INFO] [1795034574.767946181] [cacc_controller]: CACC: gap 0.54 m (want 0.53), speed 0.45 m/s, car in front 0.44 m/s
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=19.4 m, 0.45 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+AEB: checked 52 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 98% of scans
+ENERGY: distance 17.8 m in 48 s, traction 18.8 J (1.06 J/m), recovered by regen 0.3 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 18.8 J (1.06 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.45 m/s -> amplification 1.50 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.50 m
+PLATOON: mode cacc, events 1, mean amplification 1.50, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+CACC: V2V message age 0.10 s, degradation now 0% (mean 1%), time gap now 0.30 s (largest 0.49 s)

@@ -1,0 +1,270 @@
+=== S0: Smoke test
+    PLATOON=cacc run_stack.sh platoon 0.3 true mpc   (30 s)
+overtakes completed: 0
+collisions: 0
+robot at s=5.6 m, 0.17 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 17 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.12 m
+AEB: checked 17 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 99% of scans
+ENERGY: distance 5.4 m in 15 s, traction 5.9 J (1.09 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 5.9 J (1.09 J/m)
+PLATOON: mode cacc, events 0, mean amplification n/a, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.54 m, robot 0.57 m, collisions 0
+CACC: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+
+=== E01: Overtaking with MPC steering
+     run_stack.sh overtake 0.3 true mpc   (150 s)
+overtakes completed: 1
+collisions: 0
+robot at s=37.9 m, 0.50 m/s, true gap to car ahead in our lane 7.74 m, closest approach to any car so far 0.10 m
+RSS: checked 98 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.27 m
+AEB: checked 98 s, warnings 5, partial brakes 1, full brakes 0, braking 0.7 s, smallest TTC 0.98 s, closing speed from V2V in 0% of scans
+ENERGY: distance 37.1 m in 95 s, traction 38.5 J (1.04 J/m), recovered by regen 0.6 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 38.5 J (1.04 J/m)
+
+=== E02: Overtaking with the tracker controller
+     run_stack.sh overtake 0.3 true tracker   (150 s)
+overtakes completed: 1
+collisions: 0
+robot at s=36.4 m, 0.50 m/s, true gap to car ahead in our lane 9.20 m, closest approach to any car so far 0.10 m
+RSS: checked 95 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.08 m
+AEB: checked 95 s, warnings 3, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.02 s, closing speed from V2V in 0% of scans
+ENERGY: distance 37.7 m in 95 s, traction 38.6 J (1.03 J/m), recovered by regen 0.4 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 38.6 J (1.03 J/m)
+
+=== E03: Broken ACC, RSS off
+     run_stack.sh follow 0.3 true mpc off fault   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=24.5 m, 0.50 m/s, true gap to car ahead in our lane 6.93 m, closest approach to any car so far 4.55 m
+RSS: checked 55 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 5.38 m
+AEB: checked 55 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 25.8 m in 55 s, traction 26.1 J (1.01 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 26.1 J (1.01 J/m)
+
+=== E04: Broken ACC, RSS on
+     run_stack.sh follow 0.3 true mpc on fault   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=26.4 m, 0.50 m/s, true gap to car ahead in our lane 5.57 m, closest approach to any car so far 4.23 m
+RSS: checked 59 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 4.15 m
+AEB: checked 59 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 25.8 m in 55 s, traction 26.1 J (1.01 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 26.1 J (1.01 J/m)
+
+=== E05: Cut-in 0.40 m: no RSS, no AEB
+     run_stack.sh cutin 0.3 true mpc off fault off   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=20.0 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.08 m
+RSS: checked 54 s, dangerous situations 4 (7.7 s, 14.3%), speed limited by RSS 9.0 s, smallest margin to a safe distance -0.36 m
+AEB: checked 54 s, warnings 4, partial brakes 3, full brakes 2, braking 7.4 s, smallest TTC 0.58 s, closing speed from V2V in 0% of scans
+ENERGY: distance 21.5 m in 55 s, traction 22.6 J (1.05 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 22.6 J (1.05 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.50 m/s, then braked hard; closest approach 0.08 m, ✅ no collision (events so far 1, collisions 0)
+pop-up 2: stopped car appeared 0.40 m ahead while we drove 0.50 m/s; closest approach 0.08 m, ✅ no collision (events so far 2, collisions 0)
+
+=== E06: Cut-in 0.40 m: RSS only
+     run_stack.sh cutin 0.3 true mpc on fault off   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=20.0 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.18 m
+RSS: checked 62 s, dangerous situations 1 (0.2 s, 0.3%), speed limited by RSS 7.4 s, smallest margin to a safe distance -0.14 m
+AEB: checked 62 s, warnings 2, partial brakes 2, full brakes 2, braking 8.6 s, smallest TTC 0.56 s, closing speed from V2V in 0% of scans
+ENERGY: distance 20.4 m in 61 s, traction 21.4 J (1.05 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 21.4 J (1.05 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.41 m/s, then braked hard; closest approach 0.18 m, ✅ no collision (events so far 1, collisions 0)
+pop-up 2: stopped car appeared 0.40 m ahead while we drove 0.50 m/s; closest approach 0.18 m, ✅ no collision (events so far 2, collisions 0)
+
+=== E07: Cut-in 0.40 m: RSS + AEB
+     run_stack.sh cutin 0.3 true mpc on fault on   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=27.5 m, -0.00 m/s, true gap to car ahead in our lane 0.23 m, closest approach to any car so far 0.18 m
+RSS: checked 72 s, dangerous situations 3 (0.5 s, 0.7%), speed limited by RSS 5.4 s, smallest margin to a safe distance -0.14 m
+AEB: checked 72 s, warnings 4, partial brakes 4, full brakes 2, braking 7.1 s, smallest TTC 0.66 s, closing speed from V2V in 0% of scans
+ENERGY: distance 27.2 m in 69 s, traction 28.3 J (1.04 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 28.3 J (1.04 J/m)
+cut-in 1: car cut in 0.42 m ahead while we drove 0.50 m/s, then braked hard; closest approach 0.18 m, ✅ no collision (events so far 1, collisions 0)
+pop-up 2: stopped car appeared 0.40 m ahead while we drove 0.51 m/s; closest approach 0.23 m, ✅ no collision (events so far 2, collisions 0)
+
+=== E08: Cut-in 0.25 m: RSS only
+    POPUP=0.25 run_stack.sh cutin 0.3 true mpc on fault off   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=27.8 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.10 m
+RSS: checked 72 s, dangerous situations 3 (5.3 s, 7.3%), speed limited by RSS 6.7 s, smallest margin to a safe distance -0.27 m
+AEB: checked 72 s, warnings 3, partial brakes 2, full brakes 1, braking 5.8 s, smallest TTC 0.37 s, closing speed from V2V in 0% of scans
+ENERGY: distance 26.9 m in 69 s, traction 28.0 J (1.04 J/m), recovered by regen 0.4 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 28.0 J (1.04 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.49 m/s, then braked hard; closest approach 0.18 m, ✅ no collision (events so far 1, collisions 0)
+pop-up 2: stopped car appeared 0.25 m ahead while we drove 0.50 m/s; closest approach 0.10 m, ✅ no collision (events so far 2, collisions 0)
+
+=== E09: Cut-in 0.25 m: RSS + AEB
+    POPUP=0.25 run_stack.sh cutin 0.3 true mpc on fault on   (100 s)
+overtakes completed: 0
+collisions: 0
+robot at s=25.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+RSS: checked 67 s, dangerous situations 1 (0.2 s, 0.3%), speed limited by RSS 5.8 s, smallest margin to a safe distance -0.30 m
+AEB: checked 67 s, warnings 5, partial brakes 2, full brakes 2, braking 7.4 s, smallest TTC 0.21 s, closing speed from V2V in 0% of scans
+ENERGY: distance 25.9 m in 69 s, traction 26.9 J (1.04 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 26.9 J (1.04 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.50 m/s, then braked hard; closest approach 0.20 m, ✅ no collision (events so far 1, collisions 0)
+pop-up 2: stopped car appeared 0.25 m ahead while we drove 0.50 m/s; closest approach 0.13 m, ✅ no collision (events so far 2, collisions 0)
+
+=== E10: Traffic lights without V2I
+    V2I=off run_stack.sh lights 0.3 true mpc   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=35.7 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 221 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 221 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 105.9 m in 217 s, traction 105.0 J (0.99 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 105.0 J (0.99 J/m)
+LIGHTS: crossings green 1, amber 1, RED 1; stops 0, gap to the line n/a, mean wait n/a; messages sent 2200, lost 0; speed at the line 0.50 m/s, braking energy 559 mJ/kg (186 per light)
+
+=== E11: Traffic lights: V2I stop only
+    GLOSA=off run_stack.sh lights 0.3 true mpc   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=31.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 218 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 217 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 103.1 m in 216 s, traction 102.9 J (1.00 J/m), recovered by regen 0.3 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 102.9 J (1.00 J/m)
+LIGHTS: crossings green 3, amber 0, RED 0; stops 2, gap to the line 7.7 cm (range 7.3-8.2), mean wait 3.5 s; messages sent 2150, lost 0; speed at the line 0.34 m/s, braking energy 778 mJ/kg (259 per light)
+
+=== E12: Traffic lights: V2I + GLOSA
+     run_stack.sh lights 0.3 true mpc   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=32.7 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 220 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 220 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 103.8 m in 217 s, traction 103.1 J (0.99 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 103.1 J (0.99 J/m)
+LIGHTS: crossings green 3, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 2200, lost 0; speed at the line 0.50 m/s, braking energy 606 mJ/kg (202 per light)
+
+=== E13: V2I + GLOSA, 30% lost + 0.3 s delay
+    LOSS=0.3 DELAY=0.3 run_stack.sh lights 0.3 true mpc   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=33.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 222 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 222 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 105.8 m in 221 s, traction 105.1 J (0.99 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 105.1 J (0.99 J/m)
+LIGHTS: crossings green 3, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 2200, lost 642; speed at the line 0.50 m/s, braking energy 643 mJ/kg (214 per light)
+
+=== E14: V2I blackout (fail-safe)
+    BLACKOUT=40.0 run_stack.sh lights 0.3 true mpc   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=47.5 m, 0.00 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 209 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 209 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 47.5 m in 210 s, traction 47.1 J (0.99 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 47.1 J (0.99 J/m)
+LIGHTS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+
+=== E15: Platoon: ACC, 1.0 s time gap
+    PLATOON=acc run_stack.sh platoon 0.3 true mpc   (130 s)
+overtakes completed: 0
+collisions: 0
+robot at s=31.5 m, 0.46 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 85 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.37 m
+AEB: checked 83 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 98% of scans
+ENERGY: distance 30.4 m in 82 s, traction 32.6 J (1.07 J/m), recovered by regen 0.9 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 32.6 J (1.07 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.32, robot 0.26 m/s -> amplification 0.88 ✅; smallest gaps car 1 0.71 m, robot 0.74 m
+braking event 2: speed dips leader 0.30, car 1 0.31, robot 0.27 m/s -> amplification 0.90 ✅; smallest gaps car 1 0.69 m, robot 0.74 m
+braking event 3: speed dips leader 0.30, car 1 0.31, robot 0.26 m/s -> amplification 0.86 ✅; smallest gaps car 1 0.70 m, robot 0.74 m
+PLATOON: mode acc, events 2, mean amplification 0.89, gap now car 1 0.94 m / robot 1.02 m (target at 0.45 m/s 0.95 m), smallest gap car 1 0.69 m, robot 0.74 m, collisions 0
+
+=== E16: Platoon: ACC, 0.3 s time gap
+    PLATOON=acc_short run_stack.sh platoon 0.3 true mpc   (130 s)
+overtakes completed: 0
+collisions: 0
+robot at s=33.0 m, 0.42 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 86 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 1.4 s, smallest margin to a safe distance 0.02 m
+AEB: checked 85 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 100% of scans
+ENERGY: distance 32.4 m in 84 s, traction 34.3 J (1.06 J/m), recovered by regen 0.8 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 34.3 J (1.06 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.36, robot 0.33 m/s -> amplification 1.10 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.41 m
+braking event 2: speed dips leader 0.30, car 1 0.34, robot 0.33 m/s -> amplification 1.09 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.40 m
+braking event 3: speed dips leader 0.30, car 1 0.35, robot 0.36 m/s -> amplification 1.19 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.37 m
+PLATOON: mode acc_short, events 3, mean amplification 1.13, gap now car 1 0.54 m / robot 0.62 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.39 m, robot 0.37 m, collisions 0
+
+=== E17: Platoon: CACC, 0.3 s time gap
+    PLATOON=cacc run_stack.sh platoon 0.3 true mpc   (130 s)
+overtakes completed: 0
+collisions: 0
+robot at s=33.7 m, 0.44 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 90 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.8 s, smallest margin to a safe distance 0.03 m
+AEB: checked 91 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 97% of scans
+ENERGY: distance 33.4 m in 88 s, traction 34.1 J (1.02 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 34.1 J (1.02 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.26 m/s -> amplification 0.85 ✅; smallest gaps car 1 0.48 m, robot 0.58 m
+braking event 2: speed dips leader 0.30, car 1 0.29, robot 0.28 m/s -> amplification 0.93 ✅; smallest gaps car 1 0.47 m, robot 0.50 m
+braking event 3: speed dips leader 0.30, car 1 0.29, robot 0.31 m/s -> amplification 1.03 ✅; smallest gaps car 1 0.47 m, robot 0.49 m
+PLATOON: mode cacc, events 3, mean amplification 0.94, gap now car 1 0.54 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.49 m, collisions 0
+CACC: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+
+=== E18: CACC, 50% lost + 0.2 s delay
+    PLATOON=cacc LOSS=0.5 DELAY=0.2 run_stack.sh platoon 0.3 true mpc   (130 s)
+overtakes completed: 0
+collisions: 0
+robot at s=32.5 m, 0.46 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 87 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.22 m
+AEB: checked 87 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 99% of scans
+ENERGY: distance 32.3 m in 84 s, traction 32.7 J (1.01 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 32.7 J (1.01 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.31, robot 0.31 m/s -> amplification 1.04 ✅; smallest gaps car 1 0.50 m, robot 0.56 m
+braking event 2: speed dips leader 0.30, car 1 0.30, robot 0.29 m/s -> amplification 0.96 ✅; smallest gaps car 1 0.54 m, robot 0.58 m
+braking event 3: speed dips leader 0.30, car 1 0.31, robot 0.31 m/s -> amplification 1.02 ✅; smallest gaps car 1 0.53 m, robot 0.58 m
+PLATOON: mode cacc, events 3, mean amplification 1.01, gap now car 1 0.74 m / robot 0.88 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.50 m, robot 0.56 m, collisions 0
+CACC: V2V message age 0.39 s, degradation now 79% (mean 94%), time gap now 0.86 s (largest 1.00 s)
+
+=== E19: CACC, V2V blackout
+    PLATOON=cacc BLACKOUT=40.0 run_stack.sh platoon 0.3 true mpc   (130 s)
+overtakes completed: 0
+collisions: 0
+robot at s=33.2 m, 0.44 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 88 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.4 s, smallest margin to a safe distance 0.03 m
+AEB: checked 88 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 49% of scans
+ENERGY: distance 33.0 m in 88 s, traction 34.6 J (1.05 J/m), recovered by regen 0.7 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 34.6 J (1.05 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.28 m/s -> amplification 0.93 ✅; smallest gaps car 1 0.47 m, robot 0.50 m
+braking event 2: speed dips leader 0.30, car 1 0.30, robot 0.29 m/s -> amplification 0.98 ✅; smallest gaps car 1 0.49 m, robot 0.50 m
+braking event 3: speed dips leader 0.30, car 1 0.30, robot 0.27 m/s -> amplification 0.90 ✅; smallest gaps car 1 0.56 m, robot 0.73 m
+PLATOON: mode cacc, events 3, mean amplification 0.94, gap now car 1 0.85 m / robot 0.99 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+CACC: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+
+=== V1: Overtaking with MPC steering
+     run_stack.sh overtake 0.3 true mpc   (80 s)
+overtakes completed: 1
+collisions: 0
+robot at s=15.8 m, 0.50 m/s, true gap to car ahead in our lane 29.80 m, closest approach to any car so far 0.10 m
+RSS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.18 m
+AEB: checked 54 s, warnings 4, partial brakes 1, full brakes 0, braking 0.8 s, smallest TTC 0.96 s, closing speed from V2V in 0% of scans
+ENERGY: distance 16.2 m in 53 s, traction 18.2 J (1.13 J/m), recovered by regen 0.7 J (4% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 18.2 J (1.13 J/m)
+
+=== V2: RSS keeps a safe distance (broken ACC)
+     run_stack.sh follow 0.3 true mpc on fault   (70 s)
+overtakes completed: 0
+collisions: 0
+robot at s=23.3 m, 0.50 m/s, true gap to car ahead in our lane 7.53 m, closest approach to any car so far 4.78 m
+RSS: checked 49 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 7.18 m
+AEB: checked 48 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 23.6 m in 49 s, traction 23.9 J (1.01 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 23.9 J (1.01 J/m)
+
+=== V3: Emergency braking for a cut-in car
+     run_stack.sh cutin 0.3 true mpc on fault on   (70 s)
+overtakes completed: 0
+collisions: 0
+robot at s=13.3 m, 0.00 m/s, true gap to car ahead in our lane 0.24 m, closest approach to any car so far 0.23 m
+RSS: checked 45 s, dangerous situations 2 (0.4 s, 0.9%), speed limited by RSS 1.3 s, smallest margin to a safe distance -0.13 m
+AEB: checked 45 s, warnings 5, partial brakes 2, full brakes 2, braking 6.5 s, smallest TTC 0.44 s, closing speed from V2V in 0% of scans
+ENERGY: distance 12.0 m in 41 s, traction 13.4 J (1.11 J/m), recovered by regen 0.3 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 13.4 J (1.11 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.39 m/s, then braked hard; closest approach 0.24 m, ✅ no collision (events so far 1, collisions 0)
+
+=== V4: Traffic lights with V2I + GLOSA
+     run_stack.sh lights 0.3 true mpc   (110 s)
+overtakes completed: 0
+collisions: 0
+robot at s=32.1 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 72 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 72 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 32.8 m in 74 s, traction 33.7 J (1.03 J/m), recovered by regen 0.3 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 33.7 J (1.03 J/m)
+LIGHTS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 700, lost 0; speed at the line 0.50 m/s, braking energy 411 mJ/kg (411 per light)
+
+=== V5: CACC platoon, 0.3 s time gap
+    PLATOON=cacc run_stack.sh platoon 0.3 true mpc   (80 s)
+overtakes completed: 0
+collisions: 0
+robot at s=19.4 m, 0.45 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.04 m
+AEB: checked 52 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 98% of scans
+ENERGY: distance 17.8 m in 48 s, traction 18.8 J (1.06 J/m), recovered by regen 0.3 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 18.8 J (1.06 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.45 m/s -> amplification 1.50 ⚠ growing; smallest gaps car 1 0.47 m, robot 0.50 m
+PLATOON: mode cacc, events 1, mean amplification 1.50, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+CACC: V2V message age 0.10 s, degradation now 0% (mean 1%), time gap now 0.30 s (largest 0.49 s)
+

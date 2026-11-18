@@ -1,0 +1,26 @@
+✅ stack running: scenario=lights, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795032767.178440704] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1795032767.287693944] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1795032767.288446458] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.46 m/s to arrive just after it turns green (11.85 m ahead)
+[INFO] [1795032769.900988739] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 11.85 m ahead)
+[INFO] [1795032784.204054986] [v2i_controller]: V2I: light 1 RED 5.99 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032798.848594364] [v2i_controller]: V2I: light 1 GREEN 0.79 m ahead -> go
+[INFO] [1795032800.820811059] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+[INFO] [1795032870.266996295] [v2i_controller]: V2I: light 2 RED 5.97 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032875.973394881] [v2i_controller]: V2I: light 2 GREEN 3.47 m ahead -> go
+[INFO] [1795032886.434162113] [traffic_light]: LIGHT: ✅ crossed light 2 on green at 0.50 m/s
+[INFO] [1795032948.834293518] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.37 m/s to arrive just after it turns green (9.68 m ahead)
+[INFO] [1795032960.345614173] [v2i_controller]: V2I: light 1 AMBER 5.90 m ahead at 0.37 m/s -> stop (braking 0.01 m/s2)
+[INFO] [1795032977.466779177] [v2i_controller]: V2I: GLOSA light 1: advice ended (RED, 0.34 m ahead)
+[INFO] [1795032977.601810717] [v2i_controller]: V2I: light 1 GREEN 0.30 m ahead -> go
+[INFO] [1795032978.451449489] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=33.9 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 222 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 222 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 105.8 m in 221 s, traction 105.1 J (0.99 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 105.1 J (0.99 J/m)
+LIGHTS: crossings green 3, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 2200, lost 642; speed at the line 0.50 m/s, braking energy 643 mJ/kg (214 per light)

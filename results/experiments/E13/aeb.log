@@ -1,0 +1,146 @@
+[INFO] [1795032766.987378442] [aeb]: AEB ready (enforcing): warning TTC < 1.5 s, partial brake < 1.0 s, full brake < 0.6 s or closer than 0.08 m
+[INFO] [1795032769.529039429] [aeb]: AEB STATS: checked 2 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032771.565111054] [aeb]: AEB STATS: checked 3 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032773.598397080] [aeb]: AEB STATS: checked 5 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032775.662044531] [aeb]: AEB STATS: checked 7 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032777.655999081] [aeb]: AEB STATS: checked 9 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032779.614845847] [aeb]: AEB STATS: checked 10 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032781.616579342] [aeb]: AEB STATS: checked 12 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032783.594301838] [aeb]: AEB STATS: checked 14 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032785.557774467] [aeb]: AEB STATS: checked 15 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032787.547051458] [aeb]: AEB STATS: checked 17 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032789.650892666] [aeb]: AEB STATS: checked 19 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032794.103780033] [aeb]: AEB STATS: checked 21 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032796.049860793] [aeb]: AEB STATS: checked 22 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032798.065153726] [aeb]: AEB STATS: checked 24 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032800.201035845] [aeb]: AEB STATS: checked 26 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032802.278862693] [aeb]: AEB STATS: checked 28 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032804.535559141] [aeb]: AEB STATS: checked 29 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032806.585419357] [aeb]: AEB STATS: checked 31 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032808.695267536] [aeb]: AEB STATS: checked 33 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032810.732281260] [aeb]: AEB STATS: checked 34 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032812.769720993] [aeb]: AEB STATS: checked 36 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032814.771621396] [aeb]: AEB STATS: checked 38 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032816.813367784] [aeb]: AEB STATS: checked 40 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032818.818280607] [aeb]: AEB STATS: checked 41 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032820.841323401] [aeb]: AEB STATS: checked 43 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032822.913098398] [aeb]: AEB STATS: checked 45 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032824.925002672] [aeb]: AEB STATS: checked 46 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032826.974425702] [aeb]: AEB STATS: checked 48 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032828.994618556] [aeb]: AEB STATS: checked 50 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032831.054770582] [aeb]: AEB STATS: checked 52 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032833.039579595] [aeb]: AEB STATS: checked 53 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032835.064926904] [aeb]: AEB STATS: checked 55 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032837.086249087] [aeb]: AEB STATS: checked 57 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032839.076440483] [aeb]: AEB STATS: checked 59 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032841.053105795] [aeb]: AEB STATS: checked 60 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032843.092060714] [aeb]: AEB STATS: checked 62 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032845.121882017] [aeb]: AEB STATS: checked 64 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032847.146316922] [aeb]: AEB STATS: checked 65 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032849.121096216] [aeb]: AEB STATS: checked 67 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032851.075900874] [aeb]: AEB STATS: checked 69 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032853.013885654] [aeb]: AEB STATS: checked 71 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032854.943211043] [aeb]: AEB STATS: checked 72 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032856.878575867] [aeb]: AEB STATS: checked 74 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032858.846027120] [aeb]: AEB STATS: checked 76 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032860.803935555] [aeb]: AEB STATS: checked 77 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032862.759988775] [aeb]: AEB STATS: checked 79 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032864.710973655] [aeb]: AEB STATS: checked 81 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032866.736267534] [aeb]: AEB STATS: checked 83 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032868.695172682] [aeb]: AEB STATS: checked 84 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032870.661599959] [aeb]: AEB STATS: checked 86 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032872.599106768] [aeb]: AEB STATS: checked 88 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032874.564266028] [aeb]: AEB STATS: checked 89 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032876.507998019] [aeb]: AEB STATS: checked 91 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032878.507286510] [aeb]: AEB STATS: checked 93 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032880.526507862] [aeb]: AEB STATS: checked 95 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032884.803093027] [aeb]: AEB STATS: checked 96 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032886.914736415] [aeb]: AEB STATS: checked 98 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032888.942131137] [aeb]: AEB STATS: checked 100 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032890.997099678] [aeb]: AEB STATS: checked 102 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032893.012987075] [aeb]: AEB STATS: checked 103 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032894.952502693] [aeb]: AEB STATS: checked 105 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032896.897298846] [aeb]: AEB STATS: checked 107 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032898.953980190] [aeb]: AEB STATS: checked 108 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032900.960351170] [aeb]: AEB STATS: checked 110 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032902.969891078] [aeb]: AEB STATS: checked 112 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032905.023198583] [aeb]: AEB STATS: checked 114 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032907.003123300] [aeb]: AEB STATS: checked 115 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032908.970557804] [aeb]: AEB STATS: checked 117 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032910.971034303] [aeb]: AEB STATS: checked 119 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032915.146321149] [aeb]: AEB STATS: checked 120 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032917.102255735] [aeb]: AEB STATS: checked 122 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032919.101374811] [aeb]: AEB STATS: checked 124 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032921.143382850] [aeb]: AEB STATS: checked 126 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032923.138456316] [aeb]: AEB STATS: checked 127 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032925.149003981] [aeb]: AEB STATS: checked 129 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032927.172788373] [aeb]: AEB STATS: checked 131 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032929.190924543] [aeb]: AEB STATS: checked 133 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032931.301302769] [aeb]: AEB STATS: checked 134 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032933.289432803] [aeb]: AEB STATS: checked 136 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032935.286462193] [aeb]: AEB STATS: checked 138 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032937.217208639] [aeb]: AEB STATS: checked 139 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032939.139871157] [aeb]: AEB STATS: checked 141 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032941.118344896] [aeb]: AEB STATS: checked 143 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032943.049179940] [aeb]: AEB STATS: checked 145 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032944.995604099] [aeb]: AEB STATS: checked 146 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032946.907697845] [aeb]: AEB STATS: checked 148 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032948.881245249] [aeb]: AEB STATS: checked 150 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032950.806880497] [aeb]: AEB STATS: checked 151 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032952.737900748] [aeb]: AEB STATS: checked 153 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032954.736677389] [aeb]: AEB STATS: checked 155 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032956.720735044] [aeb]: AEB STATS: checked 157 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032958.658308931] [aeb]: AEB STATS: checked 158 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032960.646014587] [aeb]: AEB STATS: checked 160 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032962.619890170] [aeb]: AEB STATS: checked 162 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032964.619322415] [aeb]: AEB STATS: checked 164 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032966.590845485] [aeb]: AEB STATS: checked 165 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032968.578312674] [aeb]: AEB STATS: checked 167 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032970.535341460] [aeb]: AEB STATS: checked 169 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032972.476547507] [aeb]: AEB STATS: checked 170 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032974.493039292] [aeb]: AEB STATS: checked 172 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032976.488855315] [aeb]: AEB STATS: checked 174 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032978.553832565] [aeb]: AEB STATS: checked 176 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032980.625888705] [aeb]: AEB STATS: checked 177 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032982.668510664] [aeb]: AEB STATS: checked 179 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032984.716846631] [aeb]: AEB STATS: checked 181 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032986.723838630] [aeb]: AEB STATS: checked 182 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032988.761687786] [aeb]: AEB STATS: checked 184 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032990.797997033] [aeb]: AEB STATS: checked 186 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032992.850077280] [aeb]: AEB STATS: checked 188 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032994.841913185] [aeb]: AEB STATS: checked 189 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032996.856325686] [aeb]: AEB STATS: checked 191 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795032998.879535426] [aeb]: AEB STATS: checked 193 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033001.252983755] [aeb]: AEB STATS: checked 195 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033005.222699993] [aeb]: AEB STATS: checked 196 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033007.236260438] [aeb]: AEB STATS: checked 198 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033009.417827332] [aeb]: AEB STATS: checked 200 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033011.528219973] [aeb]: AEB STATS: checked 201 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033013.664086114] [aeb]: AEB STATS: checked 203 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033015.790628511] [aeb]: AEB STATS: checked 205 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033017.818959955] [aeb]: AEB STATS: checked 207 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033019.817335913] [aeb]: AEB STATS: checked 208 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033021.831385399] [aeb]: AEB STATS: checked 210 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033023.876113717] [aeb]: AEB STATS: checked 212 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033025.883490201] [aeb]: AEB STATS: checked 214 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033027.925060726] [aeb]: AEB STATS: checked 215 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033029.901943550] [aeb]: AEB STATS: checked 217 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033031.868735971] [aeb]: AEB STATS: checked 219 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033033.775061767] [aeb]: AEB STATS: checked 220 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+[INFO] [1795033035.666741112] [aeb]: AEB STATS: checked 222 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/aeb_node.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'aeb_node.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/aeb_node.py", line 131, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

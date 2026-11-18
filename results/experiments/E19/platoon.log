@@ -1,0 +1,23 @@
+[INFO] [1795033949.522764887] [platoon]: Platoon: mode cacc (standstill gap 0.4 m, time gap 0.3 s), leader cruise 0.45 m/s, braking to 0.15 m/s every 25 s; V2V loss 0%, delay 0.0 s
+[INFO] [1795033958.204103054] [platoon]: PLATOON: platoon drives off
+[INFO] [1795033960.300544310] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.61 m / robot 0.76 m (target at 0.45 m/s 0.54 m), smallest gap car 1 inf m, robot inf m, collisions 0
+[INFO] [1795033966.228436023] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.55 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.55 m, robot 0.57 m, collisions 0
+[INFO] [1795033972.102779088] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.54 m, robot 0.57 m, collisions 0
+[INFO] [1795033978.011902985] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.48 m / robot 0.56 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795033983.986138769] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795033989.838569300] [platoon]: PLATOON STATS: mode cacc, events 0, mean amplification n/a, gap now car 1 0.53 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795033990.208909615] [platoon]: PLATOON: braking event 1: speed dips leader 0.30, car 1 0.29, robot 0.28 m/s -> amplification 0.93 ✅; smallest gaps car 1 0.47 m, robot 0.50 m
+[INFO] [1795033995.805832901] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.93, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034001.747605324] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.93, gap now car 1 0.54 m / robot 0.59 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034005.583415086] [platoon]: PLATOON: ⚠ V2V blackout - no more messages
+[INFO] [1795034007.705586041] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.93, gap now car 1 0.69 m / robot 0.57 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034013.672838664] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.93, gap now car 1 0.83 m / robot 0.96 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034022.014895798] [platoon]: PLATOON STATS: mode cacc, events 1, mean amplification 0.93, gap now car 1 0.84 m / robot 0.98 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034022.359528961] [platoon]: PLATOON: braking event 2: speed dips leader 0.30, car 1 0.30, robot 0.29 m/s -> amplification 0.98 ✅; smallest gaps car 1 0.49 m, robot 0.50 m
+[INFO] [1795034027.976281049] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.96, gap now car 1 0.85 m / robot 1.00 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034034.014255140] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.96, gap now car 1 0.85 m / robot 1.00 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034039.975250034] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.96, gap now car 1 0.76 m / robot 0.77 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034045.966117659] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.96, gap now car 1 0.85 m / robot 0.99 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034051.952940214] [platoon]: PLATOON STATS: mode cacc, events 2, mean amplification 0.96, gap now car 1 0.84 m / robot 0.98 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0
+[INFO] [1795034052.334550957] [platoon]: PLATOON: braking event 3: speed dips leader 0.30, car 1 0.30, robot 0.27 m/s -> amplification 0.90 ✅; smallest gaps car 1 0.56 m, robot 0.73 m
+[INFO] [1795034057.992577265] [platoon]: PLATOON STATS: mode cacc, events 3, mean amplification 0.94, gap now car 1 0.85 m / robot 0.99 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.47 m, robot 0.50 m, collisions 0

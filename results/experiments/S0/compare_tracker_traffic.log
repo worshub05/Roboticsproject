@@ -1,0 +1,96 @@
+[INFO] [1793468753.660957397] [track_traffic]: Track traffic: scenario "overtake", cars slow_car (s=8.0, +0.10 m/s), parked_car (s=46.0, +0.00 m/s), oncoming_car_1 (s=21.0, -0.30 m/s), oncoming_car_2 (s=3.5, -0.30 m/s)
+[INFO] [1793468756.234865413] [track_traffic]: Track traffic: 4 cars spawned
+[INFO] [1793468761.276294629] [track_traffic]: TRAFFIC: robot at s=1.4 m, 0.10 m/s, true gap to car ahead in our lane 6.55 m, closest approach to any car so far 0.48 m
+[INFO] [1793468765.754197214] [track_traffic]: TRAFFIC: robot at s=2.9 m, 0.50 m/s, true gap to car ahead in our lane 5.51 m, closest approach to any car so far 0.20 m
+[INFO] [1793468770.187746511] [track_traffic]: TRAFFIC: robot at s=4.9 m, 0.50 m/s, true gap to car ahead in our lane 3.91 m, closest approach to any car so far 0.20 m
+[INFO] [1793468774.744069530] [track_traffic]: TRAFFIC: robot at s=6.9 m, 0.50 m/s, true gap to car ahead in our lane 2.33 m, closest approach to any car so far 0.20 m
+[INFO] [1793468779.224237577] [track_traffic]: TRAFFIC: robot at s=8.4 m, 0.17 m/s, true gap to car ahead in our lane 1.23 m, closest approach to any car so far 0.20 m
+[INFO] [1793468783.669905684] [track_traffic]: TRAFFIC: robot at s=8.9 m, 0.11 m/s, true gap to car ahead in our lane 1.13 m, closest approach to any car so far 0.20 m
+[INFO] [1793468788.140676890] [track_traffic]: TRAFFIC: robot at s=9.3 m, 0.10 m/s, true gap to car ahead in our lane 1.11 m, closest approach to any car so far 0.20 m
+[INFO] [1793468792.601660245] [track_traffic]: TRAFFIC: robot at s=9.7 m, 0.10 m/s, true gap to car ahead in our lane 1.11 m, closest approach to any car so far 0.20 m
+[INFO] [1793468797.162084131] [track_traffic]: TRAFFIC: robot at s=10.1 m, 0.10 m/s, true gap to car ahead in our lane 1.11 m, closest approach to any car so far 0.10 m
+[INFO] [1793468801.604732046] [track_traffic]: TRAFFIC: robot at s=10.5 m, 0.10 m/s, true gap to car ahead in our lane 1.11 m, closest approach to any car so far 0.10 m
+[INFO] [1793468806.086404845] [track_traffic]: TRAFFIC: robot at s=12.3 m, 0.70 m/s, true gap to car ahead in our lane -0.29 m, closest approach to any car so far 0.10 m
+[INFO] [1793468810.605772024] [track_traffic]: TRAFFIC: robot at s=14.5 m, 0.50 m/s, true gap to car ahead in our lane 31.10 m, closest approach to any car so far 0.10 m
+[INFO] [1793468815.150071447] [track_traffic]: TRAFFIC: robot at s=16.5 m, 0.50 m/s, true gap to car ahead in our lane 29.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468819.619871891] [track_traffic]: TRAFFIC: robot at s=18.5 m, 0.50 m/s, true gap to car ahead in our lane 27.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468824.118690833] [track_traffic]: TRAFFIC: robot at s=20.5 m, 0.50 m/s, true gap to car ahead in our lane 25.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468828.553382603] [track_traffic]: TRAFFIC: robot at s=22.5 m, 0.50 m/s, true gap to car ahead in our lane 23.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468833.133083971] [track_traffic]: TRAFFIC: robot at s=24.5 m, 0.50 m/s, true gap to car ahead in our lane 21.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468837.695226346] [track_traffic]: TRAFFIC: robot at s=26.5 m, 0.50 m/s, true gap to car ahead in our lane 19.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468842.133335902] [track_traffic]: TRAFFIC: robot at s=28.5 m, 0.50 m/s, true gap to car ahead in our lane 17.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468846.533807523] [track_traffic]: TRAFFIC: robot at s=30.5 m, 0.50 m/s, true gap to car ahead in our lane 15.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468850.934987628] [track_traffic]: TRAFFIC: robot at s=32.5 m, 0.50 m/s, true gap to car ahead in our lane 13.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468855.240638901] [track_traffic]: TRAFFIC: robot at s=34.5 m, 0.50 m/s, true gap to car ahead in our lane 11.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468859.567465425] [track_traffic]: TRAFFIC: robot at s=36.5 m, 0.50 m/s, true gap to car ahead in our lane 9.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468863.983371671] [track_traffic]: TRAFFIC: robot at s=38.5 m, 0.50 m/s, true gap to car ahead in our lane 7.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793468868.405728505] [track_traffic]: TRAFFIC: robot at s=40.5 m, 0.50 m/s, true gap to car ahead in our lane 5.12 m, closest approach to any car so far 0.10 m
+[INFO] [1793468872.801709007] [track_traffic]: TRAFFIC: robot at s=42.4 m, 0.23 m/s, true gap to car ahead in our lane 3.22 m, closest approach to any car so far 0.10 m
+[INFO] [1793468877.233677481] [track_traffic]: TRAFFIC: robot at s=43.5 m, 0.49 m/s, true gap to car ahead in our lane 2.10 m, closest approach to any car so far 0.10 m
+[INFO] [1793468881.666639042] [track_traffic]: TRAFFIC: robot at s=45.2 m, 0.49 m/s, true gap to car ahead in our lane 0.36 m, closest approach to any car so far 0.10 m
+[INFO] [1793468886.112142893] [track_traffic]: TRAFFIC: robot at s=47.6 m, 0.50 m/s, true gap to car ahead in our lane 43.01 m, closest approach to any car so far 0.10 m
+[INFO] [1793468890.565077145] [track_traffic]: TRAFFIC: robot at s=49.5 m, 0.50 m/s, true gap to car ahead in our lane 41.53 m, closest approach to any car so far 0.10 m
+[INFO] [1793468895.027590310] [track_traffic]: TRAFFIC: robot at s=51.5 m, 0.50 m/s, true gap to car ahead in our lane 39.93 m, closest approach to any car so far 0.10 m
+[INFO] [1793468899.492645531] [track_traffic]: TRAFFIC: robot at s=53.1 m, 0.06 m/s, true gap to car ahead in our lane 38.73 m, closest approach to any car so far 0.10 m
+[INFO] [1793468904.039947827] [track_traffic]: TRAFFIC: robot at s=54.4 m, 0.50 m/s, true gap to car ahead in our lane 37.77 m, closest approach to any car so far 0.10 m
+[INFO] [1793468908.520874753] [track_traffic]: TRAFFIC: robot at s=56.4 m, 0.50 m/s, true gap to car ahead in our lane 36.17 m, closest approach to any car so far 0.10 m
+[INFO] [1793468913.046276668] [track_traffic]: TRAFFIC: robot at s=58.4 m, 0.50 m/s, true gap to car ahead in our lane 34.57 m, closest approach to any car so far 0.10 m
+[INFO] [1793468917.602545711] [track_traffic]: TRAFFIC: robot at s=60.4 m, 0.50 m/s, true gap to car ahead in our lane 32.97 m, closest approach to any car so far 0.10 m
+[INFO] [1793468922.030631760] [track_traffic]: TRAFFIC: robot at s=62.4 m, 0.50 m/s, true gap to car ahead in our lane 31.37 m, closest approach to any car so far 0.10 m
+[INFO] [1793468926.477067913] [track_traffic]: TRAFFIC: robot at s=64.4 m, 0.50 m/s, true gap to car ahead in our lane 29.77 m, closest approach to any car so far 0.10 m
+[INFO] [1793468930.887492181] [track_traffic]: TRAFFIC: robot at s=66.4 m, 0.50 m/s, true gap to car ahead in our lane 28.17 m, closest approach to any car so far 0.10 m
+[INFO] [1793468935.179708110] [track_traffic]: TRAFFIC: robot at s=68.4 m, 0.50 m/s, true gap to car ahead in our lane 26.57 m, closest approach to any car so far 0.10 m
+[INFO] [1793468939.496627765] [track_traffic]: TRAFFIC: robot at s=70.4 m, 0.50 m/s, true gap to car ahead in our lane 24.97 m, closest approach to any car so far 0.10 m
+[INFO] [1793468943.838467188] [track_traffic]: TRAFFIC: robot at s=1.0 m, 0.50 m/s, true gap to car ahead in our lane 23.37 m, closest approach to any car so far 0.10 m
+[INFO] [1793468948.233436839] [track_traffic]: TRAFFIC: robot at s=3.0 m, 0.50 m/s, true gap to car ahead in our lane 21.77 m, closest approach to any car so far 0.10 m
+[INFO] [1793468952.553161356] [track_traffic]: TRAFFIC: robot at s=5.0 m, 0.50 m/s, true gap to car ahead in our lane 20.17 m, closest approach to any car so far 0.10 m
+[INFO] [1793468956.899854018] [track_traffic]: TRAFFIC: robot at s=7.0 m, 0.50 m/s, true gap to car ahead in our lane 18.57 m, closest approach to any car so far 0.10 m
+[INFO] [1793468961.260878479] [track_traffic]: TRAFFIC: robot at s=9.0 m, 0.50 m/s, true gap to car ahead in our lane 16.97 m, closest approach to any car so far 0.10 m
+[INFO] [1793468965.697409294] [track_traffic]: TRAFFIC: robot at s=11.0 m, 0.50 m/s, true gap to car ahead in our lane 15.37 m, closest approach to any car so far 0.10 m
+[INFO] [1793468970.230898204] [track_traffic]: TRAFFIC: robot at s=13.0 m, 0.50 m/s, true gap to car ahead in our lane 13.77 m, closest approach to any car so far 0.10 m
+[INFO] [1793468974.739027099] [track_traffic]: TRAFFIC: robot at s=15.0 m, 0.35 m/s, true gap to car ahead in our lane 12.17 m, closest approach to any car so far 0.10 m
+[INFO] [1793468979.300477595] [track_traffic]: TRAFFIC: robot at s=16.3 m, 0.50 m/s, true gap to car ahead in our lane 11.25 m, closest approach to any car so far 0.10 m
+[INFO] [1793468983.845964845] [track_traffic]: TRAFFIC: robot at s=18.3 m, 0.50 m/s, true gap to car ahead in our lane 9.65 m, closest approach to any car so far 0.10 m
+[INFO] [1793468988.300651978] [track_traffic]: TRAFFIC: robot at s=20.3 m, 0.50 m/s, true gap to car ahead in our lane 8.05 m, closest approach to any car so far 0.10 m
+[INFO] [1793468992.714336982] [track_traffic]: TRAFFIC: robot at s=22.3 m, 0.50 m/s, true gap to car ahead in our lane 6.45 m, closest approach to any car so far 0.10 m
+[INFO] [1793468997.175522806] [track_traffic]: TRAFFIC: robot at s=24.3 m, 0.50 m/s, true gap to car ahead in our lane 4.85 m, closest approach to any car so far 0.10 m
+[INFO] [1793469001.570157205] [track_traffic]: TRAFFIC: robot at s=26.1 m, 0.33 m/s, true gap to car ahead in our lane 3.53 m, closest approach to any car so far 0.10 m
+[INFO] [1793469005.951901169] [track_traffic]: TRAFFIC: robot at s=28.0 m, 0.50 m/s, true gap to car ahead in our lane 1.95 m, closest approach to any car so far 0.10 m
+[INFO] [1793469010.326693785] [track_traffic]: TRAFFIC: robot at s=29.5 m, 0.48 m/s, true gap to car ahead in our lane 0.87 m, closest approach to any car so far 0.10 m
+[INFO] [1793469014.685955015] [track_traffic]: TRAFFIC: robot at s=32.1 m, 0.55 m/s, true gap to car ahead in our lane 13.48 m, closest approach to any car so far 0.10 m
+[INFO] [1793469019.039993656] [track_traffic]: TRAFFIC: robot at s=33.9 m, 0.50 m/s, true gap to car ahead in our lane 11.68 m, closest approach to any car so far 0.10 m
+[INFO] [1793469023.331736661] [track_traffic]: TRAFFIC: robot at s=35.9 m, 0.50 m/s, true gap to car ahead in our lane 9.68 m, closest approach to any car so far 0.10 m
+[INFO] [1793469027.646421462] [track_traffic]: TRAFFIC: robot at s=37.9 m, 0.50 m/s, true gap to car ahead in our lane 7.68 m, closest approach to any car so far 0.10 m
+[INFO] [1793469031.937451808] [track_traffic]: TRAFFIC: robot at s=39.9 m, 0.50 m/s, true gap to car ahead in our lane 5.68 m, closest approach to any car so far 0.10 m
+[INFO] [1793469036.195985473] [track_traffic]: TRAFFIC: robot at s=41.9 m, 0.50 m/s, true gap to car ahead in our lane 3.68 m, closest approach to any car so far 0.10 m
+[INFO] [1793469040.568667002] [track_traffic]: TRAFFIC: robot at s=43.9 m, 0.42 m/s, true gap to car ahead in our lane 1.70 m, closest approach to any car so far 0.10 m
+[INFO] [1793469044.878422997] [track_traffic]: TRAFFIC: robot at s=45.7 m, 0.70 m/s, true gap to car ahead in our lane -0.14 m, closest approach to any car so far 0.10 m
+[INFO] [1793469049.308987479] [track_traffic]: TRAFFIC: robot at s=47.9 m, 0.49 m/s, true gap to car ahead in our lane 57.49 m, closest approach to any car so far 0.10 m
+[INFO] [1793469053.579534156] [track_traffic]: TRAFFIC: robot at s=49.9 m, 0.50 m/s, true gap to car ahead in our lane 55.91 m, closest approach to any car so far 0.10 m
+[INFO] [1793469057.919572254] [track_traffic]: TRAFFIC: robot at s=51.9 m, 0.50 m/s, true gap to car ahead in our lane 54.31 m, closest approach to any car so far 0.10 m
+[INFO] [1793469062.295067969] [track_traffic]: TRAFFIC: robot at s=53.9 m, 0.50 m/s, true gap to car ahead in our lane 52.71 m, closest approach to any car so far 0.10 m
+[INFO] [1793469066.752795943] [track_traffic]: TRAFFIC: robot at s=55.9 m, 0.50 m/s, true gap to car ahead in our lane 51.11 m, closest approach to any car so far 0.10 m
+[INFO] [1793469071.165425940] [track_traffic]: TRAFFIC: robot at s=57.9 m, 0.50 m/s, true gap to car ahead in our lane 49.51 m, closest approach to any car so far 0.10 m
+[INFO] [1793469075.661205177] [track_traffic]: TRAFFIC: robot at s=59.3 m, 0.16 m/s, true gap to car ahead in our lane 48.49 m, closest approach to any car so far 0.10 m
+[INFO] [1793469080.246625730] [track_traffic]: TRAFFIC: robot at s=61.2 m, 0.50 m/s, true gap to car ahead in our lane 47.01 m, closest approach to any car so far 0.10 m
+[INFO] [1793469084.872034243] [track_traffic]: TRAFFIC: robot at s=63.2 m, 0.50 m/s, true gap to car ahead in our lane 45.41 m, closest approach to any car so far 0.10 m
+[INFO] [1793469089.302189419] [track_traffic]: TRAFFIC: robot at s=65.2 m, 0.50 m/s, true gap to car ahead in our lane 43.81 m, closest approach to any car so far 0.10 m
+[INFO] [1793469093.704184294] [track_traffic]: TRAFFIC: robot at s=67.2 m, 0.50 m/s, true gap to car ahead in our lane 42.19 m, closest approach to any car so far 0.10 m
+[INFO] [1793469098.139640339] [track_traffic]: TRAFFIC: robot at s=69.2 m, 0.50 m/s, true gap to car ahead in our lane 40.59 m, closest approach to any car so far 0.10 m
+[INFO] [1793469102.490425183] [track_traffic]: TRAFFIC: robot at s=71.1 m, 0.50 m/s, true gap to car ahead in our lane 39.11 m, closest approach to any car so far 0.10 m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/track_traffic.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'track_traffic.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/track_traffic.py", line 184, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

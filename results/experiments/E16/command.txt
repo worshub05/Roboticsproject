@@ -1,0 +1,1 @@
+PLATOON=acc_short run_stack.sh platoon 0.3 true mpc   (130 s)   Platoon: ACC, 0.3 s time gap

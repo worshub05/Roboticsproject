@@ -1,0 +1,58 @@
+[INFO] [1795033379.897570996] [road_driver]: Road driver ready: CNN steering + LiDAR adaptive cruise control (curved corridor)
+[INFO] [1795033381.891226236] [road_driver]: ROAD: target detected 2.10 m ahead (corridor curvature +0.000 1/m)
+[INFO] [1795033381.892481542] [road_driver]: ROAD: CRUISE -> STOP (gap 2.10 m)
+[INFO] [1795033382.988004959] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.80 m lead_speed=-1.73 m/s corridor curvature=+0.000 1/m
+[INFO] [1795033383.556042145] [road_driver]: ROAD: STOP -> FOLLOW (gap 0.80 m)
+[INFO] [1795033386.642851289] [road_driver]: ROAD: FOLLOW v=0.11 m/s gap=0.68 m lead_speed=0.06 m/s corridor curvature=-0.027 1/m
+[INFO] [1795033390.281520755] [road_driver]: ROAD: FOLLOW v=0.46 m/s gap=0.90 m lead_speed=0.48 m/s corridor curvature=+0.006 1/m
+[INFO] [1795033394.009257845] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.91 m lead_speed=0.45 m/s corridor curvature=+0.016 1/m
+[INFO] [1795033394.961773580] [road_driver]: ROAD: FOLLOW -> CRUISE (gap 0.95 m)
+[INFO] [1795033395.079578914] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.92 m)
+[INFO] [1795033397.568905905] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.93 m lead_speed=0.44 m/s corridor curvature=+0.021 1/m
+[INFO] [1795033401.144661773] [road_driver]: ROAD: FOLLOW v=0.41 m/s gap=0.91 m lead_speed=0.41 m/s corridor curvature=+0.013 1/m
+[INFO] [1795033404.776057346] [road_driver]: ROAD: FOLLOW v=0.19 m/s gap=0.72 m lead_speed=0.18 m/s corridor curvature=-0.009 1/m
+[INFO] [1795033408.387364059] [road_driver]: ROAD: FOLLOW v=0.43 m/s gap=0.88 m lead_speed=0.45 m/s corridor curvature=+0.015 1/m
+[INFO] [1795033412.112095337] [road_driver]: ROAD: FOLLOW v=0.43 m/s gap=0.91 m lead_speed=0.44 m/s corridor curvature=+0.010 1/m
+[INFO] [1795033415.756216078] [road_driver]: ROAD: FOLLOW v=0.47 m/s gap=0.93 m lead_speed=0.47 m/s corridor curvature=+0.015 1/m
+[INFO] [1795033421.531776760] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.92 m lead_speed=0.46 m/s corridor curvature=+0.014 1/m
+[INFO] [1795033424.723995740] [road_driver]: ROAD: FOLLOW -> CRUISE (gap 0.98 m)
+[INFO] [1795033424.867716126] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.95 m)
+[INFO] [1795033425.099057118] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.94 m lead_speed=0.44 m/s corridor curvature=+0.011 1/m
+[INFO] [1795033428.704103759] [road_driver]: ROAD: FOLLOW v=0.45 m/s gap=0.98 m lead_speed=0.43 m/s corridor curvature=+0.014 1/m
+[INFO] [1795033431.480315698] [road_driver]: ROAD: FOLLOW -> CRUISE (gap 1.01 m)
+[INFO] [1795033431.581287107] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.97 m)
+[INFO] [1795033432.308177803] [road_driver]: ROAD: FOLLOW v=0.43 m/s gap=0.96 m lead_speed=0.42 m/s corridor curvature=+0.017 1/m
+[INFO] [1795033435.872790397] [road_driver]: ROAD: FOLLOW v=0.22 m/s gap=0.76 m lead_speed=0.20 m/s corridor curvature=+0.004 1/m
+[INFO] [1795033439.487009844] [road_driver]: ROAD: FOLLOW v=0.37 m/s gap=0.84 m lead_speed=0.38 m/s corridor curvature=+0.015 1/m
+[INFO] [1795033443.111634670] [road_driver]: ROAD: FOLLOW v=0.42 m/s gap=0.90 m lead_speed=0.44 m/s corridor curvature=+0.026 1/m
+[INFO] [1795033446.778250205] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.92 m lead_speed=0.46 m/s corridor curvature=+0.126 1/m
+[INFO] [1795033450.413451920] [road_driver]: ROAD: FOLLOW v=0.40 m/s gap=0.94 m lead_speed=0.42 m/s corridor curvature=+0.140 1/m
+[INFO] [1795033454.064763032] [road_driver]: ROAD: FOLLOW v=0.45 m/s gap=0.95 m lead_speed=0.47 m/s corridor curvature=+0.139 1/m
+[INFO] [1795033457.623333332] [road_driver]: ROAD: FOLLOW v=0.47 m/s gap=0.95 m lead_speed=0.47 m/s corridor curvature=+0.141 1/m
+[INFO] [1795033461.322475035] [road_driver]: ROAD: FOLLOW v=0.43 m/s gap=0.93 m lead_speed=0.43 m/s corridor curvature=+0.134 1/m
+[INFO] [1795033464.863046114] [road_driver]: ROAD: FOLLOW v=0.28 m/s gap=0.81 m lead_speed=0.25 m/s corridor curvature=+0.110 1/m
+[INFO] [1795033468.456659415] [road_driver]: ROAD: FOLLOW v=0.25 m/s gap=0.74 m lead_speed=0.26 m/s corridor curvature=+0.065 1/m
+[INFO] [1795033472.060815095] [road_driver]: ROAD: FOLLOW v=0.41 m/s gap=0.89 m lead_speed=0.43 m/s corridor curvature=+0.102 1/m
+[INFO] [1795033475.174609531] [road_driver]: ROAD: FOLLOW -> CRUISE (gap 0.96 m)
+[INFO] [1795033475.291851475] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.93 m)
+[INFO] [1795033475.636308461] [road_driver]: ROAD: FOLLOW v=0.42 m/s gap=0.93 m lead_speed=0.41 m/s corridor curvature=+0.114 1/m
+[INFO] [1795033480.078177332] [road_driver]: ROAD: FOLLOW -> CRUISE (gap 0.99 m)
+[INFO] [1795033480.283424348] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 0.96 m)
+[INFO] [1795033481.501231882] [road_driver]: ROAD: FOLLOW v=0.44 m/s gap=0.96 m lead_speed=0.42 m/s corridor curvature=+0.135 1/m
+[INFO] [1795033485.115982989] [road_driver]: ROAD: FOLLOW v=0.46 m/s gap=0.95 m lead_speed=0.46 m/s corridor curvature=+0.126 1/m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/road_driver.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'road_driver.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/road_driver.py", line 265, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

@@ -1,0 +1,61 @@
+[INFO] [1795033069.309387125] [traffic_light]: Traffic lights at s = 12.0 m, 47.7 m (green 10.0 s, amber 3.0 s, red 12.0 s); V2I link: loss 0%, delay 0.0 s, blackout after 40.0 s
+[INFO] [1795033074.816609077] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 50, lost 0; speed at the line 0.00 m/s, braking energy 1 mJ/kg (1 per light)
+[INFO] [1795033080.563292397] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 100, lost 0; speed at the line 0.00 m/s, braking energy 19 mJ/kg (19 per light)
+[INFO] [1795033086.511782750] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 150, lost 0; speed at the line 0.00 m/s, braking energy 36 mJ/kg (36 per light)
+[INFO] [1795033094.460360329] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 200, lost 0; speed at the line 0.00 m/s, braking energy 51 mJ/kg (51 per light)
+[INFO] [1795033100.427840253] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 250, lost 0; speed at the line 0.00 m/s, braking energy 65 mJ/kg (65 per light)
+[INFO] [1795033103.748688703] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+[INFO] [1795033106.447113672] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 300, lost 0; speed at the line 0.50 m/s, braking energy 80 mJ/kg (80 per light)
+[INFO] [1795033112.380558232] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 350, lost 0; speed at the line 0.50 m/s, braking energy 92 mJ/kg (92 per light)
+[INFO] [1795033118.266230122] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 400, lost 0; speed at the line 0.50 m/s, braking energy 112 mJ/kg (112 per light)
+[INFO] [1795033126.446484124] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 126 mJ/kg (126 per light)
+[INFO] [1795033132.411563760] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 143 mJ/kg (143 per light)
+[INFO] [1795033138.314381284] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 162 mJ/kg (162 per light)
+[INFO] [1795033144.284948943] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 174 mJ/kg (174 per light)
+[INFO] [1795033150.152433582] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 182 mJ/kg (182 per light)
+[INFO] [1795033158.262349274] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 198 mJ/kg (198 per light)
+[INFO] [1795033163.952864879] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 215 mJ/kg (215 per light)
+[INFO] [1795033169.726495902] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 224 mJ/kg (224 per light)
+[INFO] [1795033175.527802964] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 237 mJ/kg (237 per light)
+[INFO] [1795033181.242952846] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 247 mJ/kg (247 per light)
+[INFO] [1795033186.963888299] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 257 mJ/kg (257 per light)
+[INFO] [1795033192.871889041] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033194.286684612] [traffic_light]: LIGHT: 🛑 stopped 8.1 cm before light 2 (AMBER)
+[INFO] [1795033198.881772963] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033204.806562125] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033213.052614068] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033218.993153658] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033225.262239129] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033231.666753811] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033237.947728650] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033246.784810209] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033253.139115155] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033259.668890890] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033266.213432064] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033275.075652248] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033281.416640798] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033287.811620133] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033294.176225328] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033300.721938710] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033307.102543287] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033313.528816895] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033319.925360223] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033326.347201035] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033332.751779011] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+[INFO] [1795033339.171264426] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/traffic_light.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'traffic_light.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/traffic_light.py", line 213, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

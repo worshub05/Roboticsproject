@@ -1,0 +1,55 @@
+[INFO] [1795030850.668921070] [lidar_tracker]: LiDAR tracker ready (box fitting + Kalman filter tracking)
+[INFO] [1795030868.640543532] [lidar_tracker]: TRACKER: 2 cars tracked: #1 8.2 m away at 0.12 m/s (ahead in our lane), #2 2.8 m away at 0.25 m/s (oncoming)
+[INFO] [1795030872.320264838] [lidar_tracker]: TRACKER: 2 cars tracked: #1 7.5 m away at 0.11 m/s (ahead in our lane), #2 1.0 m away at 0.30 m/s (oncoming)
+[INFO] [1795030875.890090115] [lidar_tracker]: TRACKER: 2 cars tracked: #1 6.7 m away at 0.10 m/s (ahead in our lane), #2 1.2 m away at 0.29 m/s (oncoming)
+[INFO] [1795030879.481293314] [lidar_tracker]: TRACKER: 2 cars tracked: #1 5.5 m away at 0.10 m/s (ahead in our lane), #2 3.6 m away at 0.27 m/s (oncoming)
+[INFO] [1795030884.673398690] [lidar_tracker]: TRACKER: 2 cars tracked: #1 4.2 m away at 0.10 m/s (ahead in our lane), #2 6.0 m away at 0.27 m/s (oncoming)
+[INFO] [1795030888.663996599] [lidar_tracker]: TRACKER: 3 cars tracked: #1 3.0 m away at 0.10 m/s (ahead in our lane), #2 8.4 m away at 0.30 m/s (oncoming), #3 8.9 m away at 0.31 m/s (oncoming)
+[INFO] [1795030892.343741317] [lidar_tracker]: TRACKER: 4 cars tracked: #1 1.8 m away at 0.10 m/s (ahead in our lane), #2 10.7 m away at 0.24 m/s (oncoming), #3 6.4 m away at 0.43 m/s (oncoming), #4 10.0 m away at 0.08 m/s (in our lane (coming back?))
+[INFO] [1795030896.040966568] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 4.9 m away at 0.32 m/s (oncoming), #4 9.9 m away at 0.01 m/s (our lane)
+[INFO] [1795030899.696574833] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 3.7 m away at 0.26 m/s (oncoming), #4 9.9 m away at 0.01 m/s (our lane)
+[INFO] [1795030903.418183170] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 2.4 m away at 0.34 m/s (oncoming), #4 9.9 m away at 0.02 m/s (our lane)
+[INFO] [1795030907.050175987] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 1.2 m away at 0.30 m/s (oncoming), #4 9.9 m away at 0.03 m/s (our lane)
+[INFO] [1795030910.763666458] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 0.4 m away at 0.29 m/s (oncoming), #4 9.9 m away at 0.03 m/s (our lane)
+[INFO] [1795030916.321602736] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.5 m away at 0.10 m/s (ahead in our lane), #3 1.4 m away at 0.30 m/s (oncoming), #5 9.9 m away at 0.02 m/s (our lane)
+[INFO] [1795030920.125674686] [lidar_tracker]: TRACKER: 3 cars tracked: #1 0.8 m away at 0.13 m/s (ahead in our lane), #3 3.3 m away at 0.36 m/s (oncoming), #5 9.7 m away at 0.03 m/s (our lane)
+[INFO] [1795030923.818702758] [lidar_tracker]: TRACKER: 3 cars tracked: #1 1.1 m away at 0.10 m/s (ahead in our lane), #3 6.3 m away at 0.30 m/s (oncoming), #5 10.3 m away at 0.15 m/s (in our lane (coming back?))
+[INFO] [1795030927.517679007] [lidar_tracker]: TRACKER: 2 cars tracked: #1 2.0 m away at 0.09 m/s (ahead in our lane), #3 8.6 m away at 0.30 m/s (oncoming)
+[INFO] [1795030931.224325173] [lidar_tracker]: TRACKER: 1 cars tracked: #1 3.3 m away at 0.10 m/s (ahead in our lane)
+[INFO] [1795030935.162430829] [lidar_tracker]: TRACKER: 1 cars tracked: #1 4.5 m away at 0.10 m/s (ahead in our lane)
+[INFO] [1795030938.865072368] [lidar_tracker]: TRACKER: 1 cars tracked: #1 5.8 m away at 0.10 m/s (ahead in our lane)
+[INFO] [1795030942.601564722] [lidar_tracker]: TRACKER: 1 cars tracked: #1 7.0 m away at 0.10 m/s (ahead in our lane)
+[INFO] [1795030946.174751046] [lidar_tracker]: TRACKER: 1 cars tracked: #1 8.1 m away at 0.12 m/s (ahead in our lane)
+[INFO] [1795030949.868326994] [lidar_tracker]: TRACKER: 1 cars tracked: #1 9.1 m away at 0.10 m/s (ahead in our lane)
+[INFO] [1795030953.506839631] [lidar_tracker]: TRACKER: 1 cars tracked: #1 9.9 m away at 0.13 m/s (ahead in our lane)
+[INFO] [1795030957.183278187] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030960.711897053] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030964.304255519] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030967.930091292] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030971.432002439] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030976.901076342] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795030980.420788375] [lidar_tracker]: TRACKER: 1 cars tracked: #6 9.3 m away at 0.03 m/s (our lane)
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/lidar_tracker.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'lidar_tracker.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/lidar_tracker.py", line 95, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+    result = coro.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+    await await_or_execute(sub.callback, msg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+    return callback(*args)
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/lidar_tracker.py", line 69, in scan_callback
+    self.trk_pub.publish(Float32MultiArray(data=[float(v) for v in out]))
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

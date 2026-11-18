@@ -1,0 +1,55 @@
+[INFO] [1795034285.708451577] [rss_monitor]: RSS monitor ready (enforcing): rho 0.3 s, a_acc 0.4, b_min 1.0, b_max 1.5, b_correct 0.7 m/s2, lateral a 0.3 / b 0.6 m/s2, mu 0.05 m
+[INFO] [1795034288.095867261] [rss_monitor]: RSS STATS: checked 2 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034290.148414757] [rss_monitor]: RSS STATS: checked 3 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034292.267130727] [rss_monitor]: RSS STATS: checked 5 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034294.272051459] [rss_monitor]: RSS STATS: checked 7 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034296.314454403] [rss_monitor]: RSS STATS: checked 9 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034298.364747041] [rss_monitor]: RSS STATS: checked 10 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034300.480096751] [rss_monitor]: RSS STATS: checked 12 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034302.600244563] [rss_monitor]: RSS STATS: checked 14 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034304.692115642] [rss_monitor]: RSS STATS: checked 16 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034306.802910112] [rss_monitor]: RSS STATS: checked 17 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795034307.915560894] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #2 (same direction): gap along the road 0.38 m < safe 0.38 m and sideways 0.13 m < 0.16 m; our speed 0.43 m/s, limited to 0.36 m/s
+[INFO] [1795034308.463750920] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795034308.873416776] [rss_monitor]: RSS STATS: checked 19 s, dangerous situations 1 (0.2 s, 1.1%), speed limited by RSS 0.5 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034310.974337985] [rss_monitor]: RSS STATS: checked 21 s, dangerous situations 1 (0.2 s, 1.0%), speed limited by RSS 0.5 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034315.460574022] [rss_monitor]: RSS STATS: checked 22 s, dangerous situations 1 (0.2 s, 0.9%), speed limited by RSS 0.5 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034317.509507839] [rss_monitor]: RSS STATS: checked 24 s, dangerous situations 1 (0.2 s, 0.8%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034319.700744952] [rss_monitor]: RSS STATS: checked 26 s, dangerous situations 1 (0.2 s, 0.8%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034321.830880631] [rss_monitor]: RSS STATS: checked 28 s, dangerous situations 1 (0.2 s, 0.7%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034323.989641562] [rss_monitor]: RSS STATS: checked 29 s, dangerous situations 1 (0.2 s, 0.7%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034326.128528369] [rss_monitor]: RSS STATS: checked 31 s, dangerous situations 1 (0.2 s, 0.6%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034328.266258726] [rss_monitor]: RSS STATS: checked 33 s, dangerous situations 1 (0.2 s, 0.6%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034330.338217376] [rss_monitor]: RSS STATS: checked 35 s, dangerous situations 1 (0.2 s, 0.6%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034332.428156624] [rss_monitor]: RSS STATS: checked 36 s, dangerous situations 1 (0.2 s, 0.6%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034334.540361494] [rss_monitor]: RSS STATS: checked 38 s, dangerous situations 1 (0.2 s, 0.5%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034336.725502155] [rss_monitor]: RSS STATS: checked 40 s, dangerous situations 1 (0.2 s, 0.5%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034338.876188113] [rss_monitor]: RSS STATS: checked 41 s, dangerous situations 1 (0.2 s, 0.5%), speed limited by RSS 1.1 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795034340.285044053] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #4 (same direction): gap along the road 0.33 m < safe 0.46 m and sideways -0.27 m < 0.09 m; our speed 0.50 m/s, limited to 0.28 m/s
+[INFO] [1795034340.924886945] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795034341.042479696] [rss_monitor]: RSS STATS: checked 43 s, dangerous situations 2 (0.4 s, 0.9%), speed limited by RSS 1.3 s, smallest margin to a safe distance -0.13 m
+[INFO] [1795034345.544855447] [rss_monitor]: RSS STATS: checked 45 s, dangerous situations 2 (0.4 s, 0.9%), speed limited by RSS 1.3 s, smallest margin to a safe distance -0.13 m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/rss_monitor.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'rss_monitor.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/rss_monitor.py", line 128, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+    result = coro.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 407, in _execute_subscription
+    await await_or_execute(sub.callback, msg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+    return callback(*args)
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/rss_monitor.py", line 111, in tracks_callback
+    self.limit_pub.publish(Float32(data=float(lim)))
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

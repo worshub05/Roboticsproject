@@ -1,0 +1,23 @@
+✅ stack running: scenario=platoon, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=acc_short. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795033517.812611487] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795033521.128426117] [platoon]: PLATOON: platoon drives off
+[INFO] [1795033555.365692804] [platoon]: PLATOON: braking event 1: speed dips leader 0.30, car 1 0.36, robot 0.33 m/s -> amplification 1.10 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.41 m
+[INFO] [1795033587.816286463] [platoon]: PLATOON: braking event 2: speed dips leader 0.30, car 1 0.34, robot 0.33 m/s -> amplification 1.09 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.40 m
+[INFO] [1795033600.836117787] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795033600.872091365] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795033613.305379122] [aeb]: AEB: closing speed from the LiDAR
+[INFO] [1795033613.353232274] [aeb]: AEB: closing speed from V2V (cooperative)
+[INFO] [1795033620.017355224] [platoon]: PLATOON: braking event 3: speed dips leader 0.30, car 1 0.35, robot 0.36 m/s -> amplification 1.19 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.37 m
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=33.0 m, 0.42 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 86 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 1.4 s, smallest margin to a safe distance 0.02 m
+AEB: checked 85 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 100% of scans
+ENERGY: distance 32.4 m in 84 s, traction 34.3 J (1.06 J/m), recovered by regen 0.8 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 34.3 J (1.06 J/m)
+braking event 1: speed dips leader 0.30, car 1 0.36, robot 0.33 m/s -> amplification 1.10 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.41 m
+braking event 2: speed dips leader 0.30, car 1 0.34, robot 0.33 m/s -> amplification 1.09 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.40 m
+braking event 3: speed dips leader 0.30, car 1 0.35, robot 0.36 m/s -> amplification 1.19 ⚠ growing; smallest gaps car 1 0.39 m, robot 0.37 m
+PLATOON: mode acc_short, events 3, mean amplification 1.13, gap now car 1 0.54 m / robot 0.62 m (target at 0.45 m/s 0.54 m), smallest gap car 1 0.39 m, robot 0.37 m, collisions 0

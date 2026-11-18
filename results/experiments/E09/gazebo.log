@@ -1,0 +1,29 @@
+[INFO] [launch]: All log files can be found below /home/shub_2605/.ros/log/2026-11-18-11-55-16-259544-LAPTOP-IGFE9KHC-11204
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [11207]
+[INFO] [gzclient-2]: process started with pid [11209]
+[gzserver-1] ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+[gzserver-1] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+[gzserver-1] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+[gzserver-1] ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+[gzserver-1] ALSA lib conf.c:5182:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+[gzserver-1] ALSA lib conf.c:5705:(snd_config_expand) Evaluate error: No such file or directory
+[gzserver-1] ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+[gzserver-1] AL lib: (EE) ALCplaybackAlsa_open: Could not open playback device 'default': No such file or directory
+[gzserver-1] [INFO] [1795031717.000985215] [gazebo.gazebo_ros_state]: Publishing states of gazebo models at [/gazebo/model_states]
+[gzserver-1] [INFO] [1795031717.002674116] [gazebo.gazebo_ros_state]: Publishing states of gazebo links at [/gazebo/link_states]
+[INFO] [spawn_entity.py-3]: process started with pid [11389]
+[spawn_entity.py-3] [INFO] [1795031722.641707269] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1795031722.642147767] [spawn_entity]: Loading entity XML from file /home/shub_2605/ros2_ws/install/lane_follower_perception/share/lane_follower_perception/robots/warehouse_robot_with_lidar.urdf
+[spawn_entity.py-3] [INFO] [1795031722.642841684] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1795031722.643188914] [spawn_entity]: Waiting for service /spawn_entity
+[spawn_entity.py-3] [INFO] [1795031722.647508006] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [INFO] [1795031723.554218420] [camera_plugin]: Publishing camera info to [/camera/camera_info]
+[spawn_entity.py-3] [INFO] [1795031723.565682433] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [warehouse_robot]
+[gzserver-1] [INFO] [1795031723.693922518] [differential_drive]: Wheel pair 1 separation set to [0.300000m]
+[gzserver-1] [INFO] [1795031723.694020562] [differential_drive]: Wheel pair 1 diameter set to [0.200000m]
+[gzserver-1] [INFO] [1795031723.695618893] [differential_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1795031723.699224444] [differential_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1795031723.705392279] [differential_drive]: Publishing odom transforms between [odom] and [base_link]
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 11389]

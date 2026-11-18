@@ -1,0 +1,1 @@
+LOSS=0.3 DELAY=0.3 run_stack.sh lights 0.3 true mpc   (300 s)   V2I + GLOSA, 30% lost + 0.3 s delay

@@ -1,0 +1,21 @@
+✅ stack running: scenario=lights, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795033069.407491775] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1795033069.408712187] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1795033069.881207840] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.47 m/s to arrive just after it turns green (11.85 m ahead)
+[INFO] [1795033072.113189689] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 11.85 m ahead)
+[INFO] [1795033087.452642435] [v2i_controller]: V2I: light 1 RED 6.00 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795033100.644026509] [v2i_controller]: V2I: light 1 GREEN 1.29 m ahead -> go
+[INFO] [1795033103.748688703] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+[INFO] [1795033119.537167413] [v2i_controller]: ⚠ V2I: no messages for over 1 s - fail-safe: treating lights as red
+[INFO] [1795033157.348173818] [v2i_controller]: V2I: light 2 no V2I message: fail-safe 14.98 m ahead at 0.50 m/s -> stop (braking 0.01 m/s2)
+[INFO] [1795033194.286684612] [traffic_light]: LIGHT: 🛑 stopped 8.1 cm before light 2 (AMBER)
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=47.5 m, 0.00 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far inf m
+RSS: checked 209 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+AEB: checked 209 s, warnings 0, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC n/a, closing speed from V2V in 0% of scans
+ENERGY: distance 47.5 m in 210 s, traction 47.1 J (0.99 J/m), recovered by regen 0.1 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 47.1 J (0.99 J/m)
+LIGHTS: crossings green 1, amber 0, RED 0; stops 1, gap to the line 8.1 cm (range 8.1-8.1), mean wait n/a; messages sent 401, lost 0; speed at the line 0.50 m/s, braking energy 390 mJ/kg (390 per light)

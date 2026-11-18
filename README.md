@@ -110,3 +110,15 @@ The trained models (`lane_cnn_v3.pt`, `lane_mt_v1.pt`) and the 6,000 training im
 ## License
 
 See [LICENSE](LICENSE).
+
+## Demo (Gazebo, chase camera)
+
+| Overtaking with MPC | RSS with a broken ACC | Emergency braking for a cut-in |
+|---|---|---|
+| ![overtaking](gifs/1_overtaking_mpc.gif) | ![rss](gifs/2_rss_broken_acc.gif) | ![aeb](gifs/3_aeb_cut_in.gif) |
+
+| Traffic lights with V2I + GLOSA | CACC platoon at a 0.3 s time gap |
+|---|---|
+| ![glosa](gifs/4_v2i_glosa_lights.gif) | ![cacc](gifs/5_cacc_platoon.gif) |
+
+Full results of the final experiments: [results/experiments_final.md](results/experiments_final.md)

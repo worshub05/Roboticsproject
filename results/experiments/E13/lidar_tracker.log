@@ -1,0 +1,89 @@
+[INFO] [1795032766.924230689] [lidar_tracker]: LiDAR tracker ready (box fitting + Kalman filter tracking)
+[INFO] [1795032770.459682708] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032774.156515321] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032777.805153379] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032781.346698667] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032784.932272165] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032788.597722698] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032794.643146561] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032798.265715552] [lidar_tracker]: TRACKER: 1 cars tracked: #1 1.5 m away at 0.01 m/s (off road)
+[INFO] [1795032802.045229815] [lidar_tracker]: TRACKER: 1 cars tracked: #1 0.9 m away at 0.19 m/s (off road)
+[INFO] [1795032805.919728075] [lidar_tracker]: TRACKER: 1 cars tracked: #1 2.2 m away at 0.00 m/s (off road)
+[INFO] [1795032809.649102076] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032813.344139053] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032816.964903016] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032820.628087815] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032824.295695813] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032827.949363324] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032831.616421671] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032835.243378142] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032838.828437545] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032842.463878487] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032846.097906260] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032849.669210088] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032853.176715041] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032856.667834047] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032860.188540177] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032863.690169385] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032867.293391144] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032870.824042935] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032874.340570139] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032877.879816977] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032883.318155964] [lidar_tracker]: TRACKER: 1 cars tracked: #2 1.6 m away at 0.00 m/s (off road)
+[INFO] [1795032887.473828541] [lidar_tracker]: TRACKER: 1 cars tracked: #2 0.8 m away at 0.22 m/s (off road)
+[INFO] [1795032891.160956980] [lidar_tracker]: TRACKER: 1 cars tracked: #2 2.2 m away at 0.00 m/s (off road)
+[INFO] [1795032894.704632193] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032898.300328230] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032901.916356682] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032905.565022717] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032909.142010173] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032914.914010192] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032918.446230143] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032922.089521602] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032925.713299872] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032929.380314846] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032933.052039626] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032936.599258068] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032940.081785347] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032943.573510692] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032947.063229535] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032950.595557586] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032954.075428522] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032957.706062449] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032961.192261291] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032964.761488377] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032968.318897330] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032971.876311192] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032975.457376915] [lidar_tracker]: TRACKER: 1 cars tracked: #3 1.5 m away at 0.00 m/s (off road)
+[INFO] [1795032979.105585242] [lidar_tracker]: TRACKER: 1 cars tracked: #3 0.8 m away at 0.27 m/s (off road)
+[INFO] [1795032982.842126052] [lidar_tracker]: TRACKER: 1 cars tracked: #3 2.0 m away at 0.01 m/s (off road)
+[INFO] [1795032986.468012091] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032990.134274421] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032993.798951855] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795032997.435647227] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033002.873995517] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033006.969125074] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033010.874471197] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033014.732982120] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033018.382679514] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033022.005341905] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033025.618636067] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033029.270794922] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033032.779795709] [lidar_tracker]: TRACKER: 0 cars tracked: none
+[INFO] [1795033036.211962223] [lidar_tracker]: TRACKER: 0 cars tracked: none
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/lidar_tracker.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'lidar_tracker.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/lidar_tracker.py", line 95, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

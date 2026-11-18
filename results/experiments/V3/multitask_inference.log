@@ -1,0 +1,46 @@
+[INFO] [1795034288.693351012] [multitask_inference_node]: Loaded multi-task CNN /home/shub_2605/ros2_ws/models/lane_mt_v1.pt (10 dropout passes)
+[INFO] [1795034291.416709734] [multitask_inference_node]: LANE: OK -> CAMERA_FAULT (no new images)
+[INFO] [1795034292.621595576] [multitask_inference_node]: LANE: CAMERA_FAULT offset -0.2 cm, heading +0.0 deg, curvature -0.003 1/m, uncertainty 0.028, brightness 0.39, contrast 0.264, noise 0.035, 90 ms/frame
+[INFO] [1795034293.935186188] [multitask_inference_node]: LANE: CAMERA_FAULT -> OK (uncertainty 0.032 rad/s)
+[INFO] [1795034296.048341047] [multitask_inference_node]: LANE: OK offset -1.3 cm, heading +0.5 deg, curvature +0.001 1/m, uncertainty 0.031, brightness 0.37, contrast 0.247, noise 0.026, 84 ms/frame
+[INFO] [1795034299.729117048] [multitask_inference_node]: LANE: OK offset -1.8 cm, heading -0.1 deg, curvature -0.003 1/m, uncertainty 0.031, brightness 0.39, contrast 0.263, noise 0.036, 91 ms/frame
+[INFO] [1795034303.345737609] [multitask_inference_node]: LANE: OK offset -2.0 cm, heading +1.1 deg, curvature -0.002 1/m, uncertainty 0.033, brightness 0.37, contrast 0.252, noise 0.027, 94 ms/frame
+[INFO] [1795034307.023439634] [multitask_inference_node]: LANE: OK offset +2.1 cm, heading -0.9 deg, curvature +0.072 1/m, uncertainty 0.032, brightness 0.32, contrast 0.239, noise 0.027, 92 ms/frame
+[INFO] [1795034310.713514232] [multitask_inference_node]: LANE: OK offset -4.2 cm, heading +11.3 deg, curvature -0.038 1/m, uncertainty 0.039, brightness 0.25, contrast 0.210, noise 0.008, 90 ms/frame
+[INFO] [1795034316.619758930] [multitask_inference_node]: LANE: OK offset +4.3 cm, heading +5.6 deg, curvature +0.007 1/m, uncertainty 0.033, brightness 0.36, contrast 0.234, noise 0.022, 83 ms/frame
+[INFO] [1795034317.551313508] [multitask_inference_node]: LANE: OK -> CAMERA_FAULT (no new images)
+[INFO] [1795034320.371933541] [multitask_inference_node]: LANE: CAMERA_FAULT offset +4.7 cm, heading +2.9 deg, curvature +0.001 1/m, uncertainty 0.028, brightness 0.36, contrast 0.235, noise 0.022, 98 ms/frame
+[INFO] [1795034322.470235575] [multitask_inference_node]: LANE: CAMERA_FAULT -> OK (uncertainty 0.031 rad/s)
+[INFO] [1795034324.000772483] [multitask_inference_node]: LANE: OK offset +5.0 cm, heading -0.1 deg, curvature -0.004 1/m, uncertainty 0.029, brightness 0.37, contrast 0.241, noise 0.026, 81 ms/frame
+[INFO] [1795034327.724351082] [multitask_inference_node]: LANE: OK offset +0.8 cm, heading +0.8 deg, curvature -0.000 1/m, uncertainty 0.029, brightness 0.38, contrast 0.259, noise 0.030, 81 ms/frame
+[INFO] [1795034331.395074251] [multitask_inference_node]: LANE: OK offset +0.6 cm, heading -1.4 deg, curvature +0.001 1/m, uncertainty 0.029, brightness 0.37, contrast 0.248, noise 0.024, 93 ms/frame
+[INFO] [1795034334.952979657] [multitask_inference_node]: LANE: OK offset -1.7 cm, heading +0.7 deg, curvature -0.006 1/m, uncertainty 0.031, brightness 0.38, contrast 0.259, noise 0.033, 82 ms/frame
+[INFO] [1795034338.731929915] [multitask_inference_node]: LANE: OK offset -0.5 cm, heading -0.3 deg, curvature -0.005 1/m, uncertainty 0.031, brightness 0.37, contrast 0.248, noise 0.028, 97 ms/frame
+[INFO] [1795034339.752257423] [multitask_inference_node]: LANE: OK -> CAMERA_FAULT (no new images)
+[INFO] [1795034343.720520415] [multitask_inference_node]: LANE: CAMERA_FAULT offset -7.2 cm, heading -0.7 deg, curvature +0.052 1/m, uncertainty 0.036, brightness 0.24, contrast 0.221, noise 0.011, 87 ms/frame
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/multitask_inference_node.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'multitask_inference_node.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/multitask_inference_node.py", line 234, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 809, in _spin_once_impl
+    raise handler.exception()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/task.py", line 309, in _execute_coroutine_step
+    result = coro.send(None)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 488, in handler
+    await call_coroutine(entity, arg)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 396, in _execute_timer
+    await await_or_execute(tmr.callback)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 110, in await_or_execute
+    return callback(*args)
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/multitask_inference_node.py", line 120, in timer_callback
+    self.step(self.image, self.image_t, self.now())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/multitask_inference_node.py", line 213, in step
+    self.cmd_pub.publish(cmd)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/publisher.py", line 70, in publish
+    self.__publisher.publish(msg)
+rclpy._rclpy_pybind11.RCLError: Failed to publish: publisher's context is invalid, at ./src/rcl/publisher.c:389

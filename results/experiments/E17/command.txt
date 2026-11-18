@@ -1,0 +1,1 @@
+PLATOON=cacc run_stack.sh platoon 0.3 true mpc   (130 s)   Platoon: CACC, 0.3 s time gap

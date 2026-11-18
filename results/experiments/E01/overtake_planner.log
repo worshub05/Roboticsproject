@@ -1,0 +1,19 @@
+[INFO] [1795030684.750996966] [overtake_planner]: Overtake planner ready (two-way road, occlusion-aware gap check, measured oncoming speeds from /tracks)
+[INFO] [1795030718.317168652] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 3.2 m ahead at 0.12 m/s)
+[INFO] [1795030718.343894395] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 13.1 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1795030720.888255690] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 8.6 m ahead at 0.29 m/s would meet us in 7.8 s (we need 10.2 s)
+[INFO] [1795030723.468530287] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 6.9 m ahead at 0.39 m/s would meet us in 5.7 s (we need 8.5 s)
+[INFO] [1795030725.992568972] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 5.7 m ahead at 0.40 m/s would meet us in 4.7 s (we need 7.9 s)
+[INFO] [1795030728.532139246] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 4.8 m ahead at 0.39 m/s would meet us in 4.0 s (we need 7.7 s)
+[INFO] [1795030731.048712888] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 4.0 m ahead at 0.24 m/s would meet us in 3.9 s (we need 7.5 s)
+[INFO] [1795030733.606273468] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.2 m ahead at 0.25 m/s would meet us in 3.0 s (we need 7.6 s)
+[INFO] [1795030736.091937862] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 2.2 m ahead at 0.36 m/s would meet us in 1.9 s (we need 7.5 s)
+[INFO] [1795030738.608322411] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 1.5 m ahead at 0.31 m/s would meet us in 1.4 s (we need 7.6 s)
+[INFO] [1795030741.106380404] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 0.7 m ahead at 0.30 m/s would meet us in 0.6 s (we need 7.6 s)
+[INFO] [1795030743.614605345] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.2 m ahead at 0.30 m/s would meet us in -0.1 s (we need 7.5 s)
+[INFO] [1795030746.069353674] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.8 m ahead in the other lane
+[INFO] [1795030749.429623460] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.0 m; measured oncoming traffic cannot reach us in 7.6 s)
+[INFO] [1795030754.473338911] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1795030757.845957919] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+[INFO] [1795030761.067359386] [overtake_planner]: BEHAVIOUR: ✅ overtake 1 complete [mpc: path error RMS 0.8 cm, max 3.4 cm, steering change RMS 0.70 rad/s2, MPC solve median 9.2 ms, max 33.4 ms, budget hits 0, fallbacks 0]
+[INFO] [1795030761.068238065] [overtake_planner]: BEHAVIOUR: CHANGE_RIGHT -> LANE_KEEP (back in our lane, CNN driving)

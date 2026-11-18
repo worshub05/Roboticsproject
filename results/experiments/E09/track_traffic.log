@@ -1,0 +1,37 @@
+[INFO] [1795031734.915657736] [track_traffic]: Track traffic: scenario "cutin", cars cutin_car (s=0.0, +0.00 m/s)
+[INFO] [1795031734.923846811] [track_traffic]: Track traffic: 1 cars spawned
+[INFO] [1795031739.294479662] [track_traffic]: TRAFFIC: robot at s=0.0 m, 0.00 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.71 m
+[INFO] [1795031743.926348726] [track_traffic]: TRAFFIC: robot at s=1.3 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.71 m
+[INFO] [1795031748.595361057] [track_traffic]: TRAFFIC: robot at s=3.3 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 2.70 m
+[INFO] [1795031755.283559418] [track_traffic]: TRAFFIC: robot at s=5.3 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.92 m
+[INFO] [1795031759.929310052] [track_traffic]: TRAFFIC: robot at s=6.4 m, 0.04 m/s, true gap to car ahead in our lane 0.23 m, closest approach to any car so far 0.21 m
+[INFO] [1795031762.746273251] [track_traffic]: TRAFFIC: cut-in 1: car cut in 0.44 m ahead while we drove 0.50 m/s, then braked hard; closest approach 0.20 m, ✅ no collision (events so far 1, collisions 0)
+[INFO] [1795031764.691746773] [track_traffic]: TRAFFIC: robot at s=6.5 m, 0.20 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.20 m
+[INFO] [1795031769.319970851] [track_traffic]: TRAFFIC: robot at s=8.4 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.20 m
+[INFO] [1795031774.090670577] [track_traffic]: TRAFFIC: robot at s=10.4 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.20 m
+[INFO] [1795031778.858640389] [track_traffic]: TRAFFIC: robot at s=12.4 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.20 m
+[INFO] [1795031783.470010844] [track_traffic]: TRAFFIC: robot at s=14.4 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.20 m
+[INFO] [1795031788.112779974] [track_traffic]: TRAFFIC: robot at s=15.7 m, 0.00 m/s, true gap to car ahead in our lane 0.15 m, closest approach to any car so far 0.13 m
+[INFO] [1795031791.049098821] [track_traffic]: TRAFFIC: pop-up 2: stopped car appeared 0.25 m ahead while we drove 0.50 m/s; closest approach 0.13 m, ✅ no collision (events so far 2, collisions 0)
+[INFO] [1795031792.849117603] [track_traffic]: TRAFFIC: robot at s=15.7 m, 0.16 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+[INFO] [1795031797.615724418] [track_traffic]: TRAFFIC: robot at s=17.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+[INFO] [1795031802.417775536] [track_traffic]: TRAFFIC: robot at s=19.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+[INFO] [1795031807.183078588] [track_traffic]: TRAFFIC: robot at s=21.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+[INFO] [1795031813.535669203] [track_traffic]: TRAFFIC: robot at s=23.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+[INFO] [1795031818.314015438] [track_traffic]: TRAFFIC: robot at s=25.6 m, 0.50 m/s, true gap to car ahead in our lane inf m, closest approach to any car so far 0.13 m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/track_traffic.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'track_traffic.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/track_traffic.py", line 245, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

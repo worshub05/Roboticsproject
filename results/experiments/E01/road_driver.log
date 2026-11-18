@@ -1,0 +1,59 @@
+[INFO] [1795030684.786644508] [road_driver]: Road driver ready: CNN steering + LiDAR adaptive cruise control (curved corridor)
+[INFO] [1795030702.481276623] [road_driver]: ROAD: CRUISE v=0.16 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.084 1/m
+[INFO] [1795030705.028673883] [road_driver]: ROAD: target detected 1.27 m ahead (corridor curvature +0.110 1/m)
+[INFO] [1795030705.033133519] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 1.27 m)
+[INFO] [1795030705.390957770] [road_driver]: ROAD: FOLLOW -> STOP (gap 0.74 m)
+[INFO] [1795030705.502242953] [road_driver]: ROAD: STOP -> FOLLOW (gap 0.70 m)
+[INFO] [1795030705.956949622] [road_driver]: ROAD: FOLLOW v=0.11 m/s gap=0.78 m lead_speed=-0.44 m/s corridor curvature=+0.074 1/m
+[INFO] [1795030706.669553509] [road_driver]: ROAD: FOLLOW -> CRUISE (gap inf m)
+[INFO] [1795030709.521417134] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.001 1/m
+[INFO] [1795030712.999484568] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.001 1/m
+[INFO] [1795030715.976260206] [road_driver]: ROAD: target detected 3.99 m ahead (corridor curvature +0.002 1/m)
+[INFO] [1795030716.455464331] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=3.82 m lead_speed=0.08 m/s corridor curvature=+0.005 1/m
+[INFO] [1795030720.146106870] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=2.63 m lead_speed=0.12 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030723.747899341] [road_driver]: ROAD: CRUISE v=0.34 m/s gap=1.48 m lead_speed=0.12 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030727.310476315] [road_driver]: ROAD: CRUISE v=0.13 m/s gap=1.17 m lead_speed=0.09 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030730.947619895] [road_driver]: ROAD: CRUISE v=0.09 m/s gap=1.13 m lead_speed=0.06 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030734.547799191] [road_driver]: ROAD: CRUISE v=0.10 m/s gap=1.14 m lead_speed=0.08 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030738.130109609] [road_driver]: ROAD: CRUISE v=0.12 m/s gap=1.14 m lead_speed=0.09 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030741.699514067] [road_driver]: ROAD: CRUISE v=0.10 m/s gap=1.13 m lead_speed=0.09 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030745.241183594] [road_driver]: ROAD: CRUISE v=0.11 m/s gap=1.13 m lead_speed=0.09 m/s corridor curvature=+0.000 1/m
+[INFO] [1795030749.452575315] [road_driver]: ROAD: CRUISE -> FOLLOW (gap 1.14 m)
+[INFO] [1795030749.854812104] [road_driver]: ROAD: FOLLOW -> CRUISE (gap inf m)
+[INFO] [1795030750.834746844] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.000 1/m
+[INFO] [1795030752.343024583] [road_driver]: ROAD: CRUISE -> AEB_BRAKE (gap inf m)
+[INFO] [1795030753.197428765] [road_driver]: ROAD: AEB_BRAKE -> CRUISE (gap inf m)
+[INFO] [1795030754.413572706] [road_driver]: ROAD: CRUISE v=0.45 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.000 1/m
+[INFO] [1795030758.003517061] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.000 1/m
+[INFO] [1795030761.538946953] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.002 1/m
+[INFO] [1795030765.163102090] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.004 1/m
+[INFO] [1795030768.702604583] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.020 1/m
+[INFO] [1795030772.273658073] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.187 1/m
+[INFO] [1795030775.889603506] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.191 1/m
+[INFO] [1795030781.430721746] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.188 1/m
+[INFO] [1795030784.983638051] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.199 1/m
+[INFO] [1795030788.559009976] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.193 1/m
+[INFO] [1795030792.057701885] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.198 1/m
+[INFO] [1795030795.536902128] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.187 1/m
+[INFO] [1795030799.054821621] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.202 1/m
+[INFO] [1795030802.474898714] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.192 1/m
+[INFO] [1795030805.868541198] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.190 1/m
+[INFO] [1795030809.239789133] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.034 1/m
+[INFO] [1795030812.624878833] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=-0.008 1/m
+[INFO] [1795030816.089059825] [road_driver]: ROAD: CRUISE v=0.50 m/s gap=inf m lead_speed=none m/s corridor curvature=+0.003 1/m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/road_driver.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'road_driver.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/road_driver.py", line 265, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 657, in _wait_for_ready_callbacks
+    wait_set = _rclpy.WaitSet(
+rclpy._rclpy_pybind11.RCLError: failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130

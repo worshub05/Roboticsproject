@@ -1,0 +1,36 @@
+[INFO] [1795030684.620722684] [energy_monitor]: ENERGY: model ready: 3.0 kg, C_rr 0.02, battery to wheel 60%, regen on, 50%, computer 0.0 W
+[INFO] [1795030704.565954418] [energy_monitor]: ENERGY STATS: distance 0.7 m in 5 s, traction 1.4 J (1.83 J/m), recovered by regen 0.0 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 1.4 J (1.83 J/m)
+[INFO] [1795030710.448245318] [energy_monitor]: ENERGY STATS: distance 2.6 m in 10 s, traction 3.6 J (1.38 J/m), recovered by regen 0.2 J (4% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 3.6 J (1.38 J/m)
+[INFO] [1795030716.201568739] [energy_monitor]: ENERGY STATS: distance 5.1 m in 15 s, traction 6.0 J (1.19 J/m), recovered by regen 0.2 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 6.0 J (1.19 J/m)
+[INFO] [1795030722.229275205] [energy_monitor]: ENERGY STATS: distance 7.6 m in 20 s, traction 8.5 J (1.12 J/m), recovered by regen 0.2 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 8.5 J (1.12 J/m)
+[INFO] [1795030728.270818960] [energy_monitor]: ENERGY STATS: distance 8.9 m in 25 s, traction 9.3 J (1.05 J/m), recovered by regen 0.2 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 9.3 J (1.05 J/m)
+[INFO] [1795030734.286604871] [energy_monitor]: ENERGY STATS: distance 9.4 m in 30 s, traction 9.8 J (1.05 J/m), recovered by regen 0.2 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 9.8 J (1.05 J/m)
+[INFO] [1795030740.270019868] [energy_monitor]: ENERGY STATS: distance 9.9 m in 35 s, traction 10.3 J (1.05 J/m), recovered by regen 0.2 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 10.3 J (1.05 J/m)
+[INFO] [1795030746.204996599] [energy_monitor]: ENERGY STATS: distance 10.4 m in 40 s, traction 10.8 J (1.05 J/m), recovered by regen 0.2 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 10.8 J (1.05 J/m)
+[INFO] [1795030754.137807572] [energy_monitor]: ENERGY STATS: distance 11.7 m in 45 s, traction 12.7 J (1.09 J/m), recovered by regen 0.4 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 12.7 J (1.09 J/m)
+[INFO] [1795030760.133614718] [energy_monitor]: ENERGY STATS: distance 14.6 m in 50 s, traction 16.3 J (1.12 J/m), recovered by regen 0.6 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 16.3 J (1.12 J/m)
+[INFO] [1795030766.093233479] [energy_monitor]: ENERGY STATS: distance 17.1 m in 55 s, traction 18.8 J (1.10 J/m), recovered by regen 0.6 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 18.8 J (1.10 J/m)
+[INFO] [1795030772.029781505] [energy_monitor]: ENERGY STATS: distance 19.6 m in 60 s, traction 21.3 J (1.09 J/m), recovered by regen 0.6 J (3% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 21.3 J (1.09 J/m)
+[INFO] [1795030779.927447669] [energy_monitor]: ENERGY STATS: distance 22.1 m in 65 s, traction 23.7 J (1.07 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 23.7 J (1.07 J/m)
+[INFO] [1795030785.926483779] [energy_monitor]: ENERGY STATS: distance 24.6 m in 70 s, traction 26.2 J (1.07 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 26.2 J (1.07 J/m)
+[INFO] [1795030791.834005921] [energy_monitor]: ENERGY STATS: distance 27.1 m in 75 s, traction 28.7 J (1.06 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 28.7 J (1.06 J/m)
+[INFO] [1795030797.619394098] [energy_monitor]: ENERGY STATS: distance 29.6 m in 80 s, traction 31.1 J (1.05 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 31.1 J (1.05 J/m)
+[INFO] [1795030803.388677813] [energy_monitor]: ENERGY STATS: distance 32.1 m in 85 s, traction 33.6 J (1.05 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 33.6 J (1.05 J/m)
+[INFO] [1795030809.009624033] [energy_monitor]: ENERGY STATS: distance 34.6 m in 90 s, traction 36.1 J (1.04 J/m), recovered by regen 0.6 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 36.1 J (1.04 J/m)
+[INFO] [1795030814.722681006] [energy_monitor]: ENERGY STATS: distance 37.1 m in 95 s, traction 38.5 J (1.04 J/m), recovered by regen 0.6 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 38.5 J (1.04 J/m)
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/energy_monitor.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'energy_monitor.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/energy_monitor.py", line 57, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

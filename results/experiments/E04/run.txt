@@ -1,0 +1,117 @@
+✅ stack running: scenario=follow, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=fault, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795035539.084989821] [aeb]: AEB: ⚠ WARNING: object 0.62 m ahead in our path, TTC 1.45 s, our speed 0.50 m/s
+[INFO] [1795035539.144488940] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.62 m)
+[INFO] [1795035539.237404608] [aeb]: AEB: ⚠ WARNING: object 0.58 m ahead in our path, TTC 1.31 s, our speed 0.50 m/s
+[INFO] [1795035539.277085592] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.58 m)
+[INFO] [1795035539.313726958] [aeb]: AEB: ⚠ WARNING: object 0.56 m ahead in our path, TTC 1.45 s, our speed 0.47 m/s
+[INFO] [1795035539.386067078] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.28 s, closest 0.55 m)
+[INFO] [1795035539.457958603] [aeb]: AEB: ⚠ WARNING: object 0.52 m ahead in our path, TTC 1.38 s, our speed 0.44 m/s
+[INFO] [1795035539.522505538] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.52 m)
+[INFO] [1795035539.599131077] [aeb]: AEB: ⚠ WARNING: object 0.49 m ahead in our path, TTC 1.36 s, our speed 0.42 m/s
+[INFO] [1795035539.630246670] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.49 m)
+[INFO] [1795035539.788424734] [aeb]: AEB: ⚠ WARNING: object 0.45 m ahead in our path, TTC 1.19 s, our speed 0.43 m/s
+[INFO] [1795035539.819130245] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.45 m)
+[INFO] [1795035539.858661721] [aeb]: AEB: ⚠ WARNING: object 0.42 m ahead in our path, TTC 1.02 s, our speed 0.41 m/s
+[INFO] [1795035539.932092399] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.41 m)
+[INFO] [1795035539.973111841] [aeb]: AEB: ⚠ WARNING: object 0.40 m ahead in our path, TTC 1.16 s, our speed 0.38 m/s
+[INFO] [1795035540.067309704] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.16 s, closest 0.39 m)
+[INFO] [1795035540.112146951] [aeb]: AEB: ⚠ WARNING: object 0.37 m ahead in our path, TTC 1.10 s, our speed 0.34 m/s
+[INFO] [1795035540.298288979] [aeb]: AEB: ✅ released after 0.2 s (worst: WARNING, TTC 1.01 s, closest 0.33 m)
+[INFO] [1795035540.373305058] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.39 s, our speed 0.30 m/s
+[INFO] [1795035540.428540533] [aeb]: AEB: ⚠ PARTIAL brake: object 0.31 m ahead, TTC 0.90 s, our speed 0.27 m/s
+[INFO] [1795035540.991148676] [aeb]: AEB: ✅ released after 0.5 s (worst: PARTIAL, TTC 0.90 s, closest 0.29 m)
+[INFO] [1795035541.404249662] [aeb]: AEB: ⚠ PARTIAL: object 0.34 m ahead in our path, TTC 1.00 s, our speed 0.13 m/s
+[INFO] [1795035541.853703686] [aeb]: AEB: ✅ released after 0.4 s (worst: PARTIAL, TTC 0.70 s, closest 0.32 m)
+[INFO] [1795035542.917489441] [aeb]: AEB: ⚠ WARNING: object 0.37 m ahead in our path, TTC 1.30 s, our speed 0.34 m/s
+[INFO] [1795035542.961463546] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.37 m)
+[INFO] [1795035543.026152557] [aeb]: AEB: ⚠ WARNING: object 0.35 m ahead in our path, TTC 1.34 s, our speed 0.32 m/s
+[INFO] [1795035543.067206180] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.35 m)
+[INFO] [1795035543.267180326] [aeb]: AEB: ⚠ WARNING: object 0.33 m ahead in our path, TTC 1.47 s, our speed 0.27 m/s
+[INFO] [1795035543.303042024] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.47 s, closest 0.33 m)
+[INFO] [1795035549.447156425] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.20 s, our speed 0.15 m/s
+[INFO] [1795035549.487250977] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.26 m)
+[INFO] [1795035549.566833789] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.48 s, our speed 0.15 m/s
+[INFO] [1795035549.625033342] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.26 m)
+[INFO] [1795035549.943967757] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.13 s, our speed 0.15 m/s
+[INFO] [1795035549.983155552] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.25 m)
+[INFO] [1795035555.055785440] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.14 s, our speed 0.15 m/s
+[INFO] [1795035555.094597917] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.25 m)
+[INFO] [1795035569.201754711] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.25 s, our speed 0.15 m/s
+[INFO] [1795035569.246824535] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.25 m)
+[INFO] [1795035569.784009510] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.32 s, our speed 0.15 m/s
+[INFO] [1795035569.816569334] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.25 m)
+[INFO] [1795035575.376039752] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.25 s, our speed 0.15 m/s
+[INFO] [1795035575.409040328] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.26 m)
+[INFO] [1795035590.901224822] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.49 s, our speed 0.15 m/s
+[INFO] [1795035590.957954079] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.26 m)
+[INFO] [1795035594.997274994] [aeb]: AEB: ⚠ PARTIAL: object 0.25 m ahead in our path, TTC 0.80 s, our speed 0.15 m/s
+[INFO] [1795035595.226037116] [aeb]: AEB: ⚠ FULL brake: object 0.28 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035595.397307392] [aeb]: AEB: ✅ released after 0.3 s (worst: FULL, TTC 0.80 s, closest 0.25 m)
+[INFO] [1795035596.135813007] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.10 s, our speed 0.24 m/s
+[INFO] [1795035596.161767313] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.30 m)
+[INFO] [1795035596.229405223] [aeb]: AEB: ⚠ PARTIAL: object 0.29 m ahead in our path, TTC 0.96 s, our speed 0.25 m/s
+[INFO] [1795035596.861571581] [aeb]: AEB: ✅ released after 0.6 s (worst: PARTIAL, TTC 0.96 s, closest 0.27 m)
+[INFO] [1795035597.589974400] [aeb]: AEB: ⚠ WARNING: object 0.36 m ahead in our path, TTC 1.30 s, our speed 0.20 m/s
+[INFO] [1795035597.633990959] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.36 m)
+[INFO] [1795035597.911594832] [aeb]: AEB: ⚠ WARNING: object 0.34 m ahead in our path, TTC 1.29 s, our speed 0.30 m/s
+[INFO] [1795035597.958779135] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.34 m)
+[INFO] [1795035598.067573700] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.07 s, our speed 0.28 m/s
+[INFO] [1795035598.107289191] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.32 m)
+[INFO] [1795035609.587106692] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.16 s, our speed 0.15 m/s
+[INFO] [1795035609.642524381] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.25 m)
+[INFO] [1795035615.482731584] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.33 s, our speed 0.15 m/s
+[INFO] [1795035615.533458278] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.25 m)
+[INFO] [1795035619.370076180] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.20 s, our speed 0.15 m/s
+[INFO] [1795035619.395732368] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.25 m)
+[INFO] [1795035620.989035997] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.11 s, our speed 0.15 m/s
+[INFO] [1795035621.031456743] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.25 m)
+[INFO] [1795035621.080214385] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.28 s, our speed 0.15 m/s
+[INFO] [1795035621.129816699] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.25 m)
+[INFO] [1795035643.910499805] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.47 s, our speed 0.16 m/s
+[INFO] [1795035643.971587962] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.47 s, closest 0.25 m)
+[INFO] [1795035646.853392967] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.33 s, our speed 0.15 m/s
+[INFO] [1795035646.896727958] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.25 m)
+[INFO] [1795035648.057800589] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.10 s, our speed 0.15 m/s
+[INFO] [1795035648.090900728] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.25 m)
+[INFO] [1795035655.359030134] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.29 s, our speed 0.15 m/s
+[INFO] [1795035655.397274724] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.25 m)
+[INFO] [1795035657.113195523] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.40 s, our speed 0.15 m/s
+[INFO] [1795035657.164353370] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.40 s, closest 0.25 m)
+[INFO] [1795035662.035226337] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.04 s, our speed 0.15 m/s
+[INFO] [1795035662.078425752] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.25 m)
+[INFO] [1795035662.838071900] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.04 s, our speed 0.15 m/s
+[INFO] [1795035662.879619322] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.25 m)
+[INFO] [1795035666.690616063] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.17 s, our speed 0.15 m/s
+[INFO] [1795035666.729274886] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.25 m)
+[INFO] [1795035671.654399709] [aeb]: AEB: ⚠ PARTIAL: object 0.25 m ahead in our path, TTC 0.97 s, our speed 0.15 m/s
+[INFO] [1795035671.793520540] [aeb]: AEB: ⚠ FULL brake: object 0.23 m ahead, TTC 0.55 s, our speed 0.11 m/s
+[INFO] [1795035672.217040629] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.55 s, closest 0.23 m)
+[INFO] [1795035672.933929547] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.31 s, our speed 0.24 m/s
+[INFO] [1795035672.967217508] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.30 m)
+[INFO] [1795035673.129610455] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.48 s, our speed 0.23 m/s
+[INFO] [1795035673.172904757] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.29 m)
+[INFO] [1795035682.267776007] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.28 s, our speed 0.15 m/s
+[INFO] [1795035682.308373092] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.25 m)
+[INFO] [1795035686.713309397] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.30 s, our speed 0.15 m/s
+[INFO] [1795035686.771677782] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.25 m)
+[INFO] [1795035696.892602171] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.45 s, our speed 0.15 m/s
+[INFO] [1795035696.931866111] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.25 m)
+[INFO] [1795035697.347083967] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.23 s, our speed 0.15 m/s
+[INFO] [1795035697.369820867] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.25 m)
+[INFO] [1795035697.593003495] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.46 s, our speed 0.15 m/s
+[INFO] [1795035697.629858858] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.46 s, closest 0.26 m)
+[INFO] [1795035702.841751147] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.14 s, our speed 0.15 m/s
+[INFO] [1795035702.885543846] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.25 m)
+[INFO] [1795035706.116833593] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.31 s, our speed 0.15 m/s
+[INFO] [1795035706.149939267] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.26 m)
+[INFO] [1795035707.336999544] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.20 s, our speed 0.15 m/s
+[INFO] [1795035707.394521813] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.25 m)
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=55.7 m, 0.15 m/s, true gap to car ahead in our lane 0.29 m, closest approach to any car so far 0.25 m
+RSS: checked 217 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 80.8 s, smallest margin to a safe distance 0.03 m
+AEB: checked 217 s, warnings 48, partial brakes 5, full brakes 2, braking 2.2 s, smallest TTC 0.55 s, closing speed from V2V in 0% of scans
+ENERGY: distance 55.0 m in 213 s, traction 54.7 J (0.99 J/m), recovered by regen 0.2 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 54.7 J (0.99 J/m)

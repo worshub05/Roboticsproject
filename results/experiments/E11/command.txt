@@ -1,0 +1,1 @@
+GLOSA=off run_stack.sh lights 0.3 true mpc   (300 s)   Traffic lights: V2I stop only

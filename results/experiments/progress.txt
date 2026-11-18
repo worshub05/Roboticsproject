@@ -1,0 +1,7 @@
+12:51:49 ▶ E03: Broken ACC, RSS off (300 s)
+12:56:59 ✔ E03 done
+12:56:59 ▶ E04: Broken ACC, RSS on (300 s)
+13:02:01 ✔ E04 done
+13:02:02 ▶ V2: RSS keeps a safe distance (broken ACC) (200 s)
+13:05:35 ✔ V2 done
+13:05:35 🏁 all runs finished. Results in /home/shub_2605/ros2_ws/experiments/20261118_1251

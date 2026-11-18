@@ -1,0 +1,145 @@
+[INFO] [1795031855.134650565] [rss_monitor]: RSS monitor ready (enforcing): rho 0.3 s, a_acc 0.4, b_min 1.0, b_max 1.5, b_correct 0.7 m/s2, lateral a 0.3 / b 0.6 m/s2, mu 0.05 m
+[INFO] [1795031857.109369357] [rss_monitor]: RSS STATS: checked 2 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031859.015339129] [rss_monitor]: RSS STATS: checked 3 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031860.925137467] [rss_monitor]: RSS STATS: checked 5 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031862.812134594] [rss_monitor]: RSS STATS: checked 7 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031864.818581759] [rss_monitor]: RSS STATS: checked 9 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031866.813600739] [rss_monitor]: RSS STATS: checked 10 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031868.704940073] [rss_monitor]: RSS STATS: checked 12 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031870.704549727] [rss_monitor]: RSS STATS: checked 14 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031872.655253452] [rss_monitor]: RSS STATS: checked 15 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031874.602083950] [rss_monitor]: RSS STATS: checked 17 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031876.588504936] [rss_monitor]: RSS STATS: checked 19 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031878.576757999] [rss_monitor]: RSS STATS: checked 21 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031880.584891672] [rss_monitor]: RSS STATS: checked 22 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031882.626589611] [rss_monitor]: RSS STATS: checked 24 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031884.799289444] [rss_monitor]: RSS STATS: checked 26 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031887.137979009] [rss_monitor]: RSS STATS: checked 28 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031889.470937803] [rss_monitor]: RSS STATS: checked 29 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031891.784065013] [rss_monitor]: RSS STATS: checked 31 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031894.022438274] [rss_monitor]: RSS STATS: checked 33 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031896.267781962] [rss_monitor]: RSS STATS: checked 34 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031898.460388332] [rss_monitor]: RSS STATS: checked 36 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031900.735530264] [rss_monitor]: RSS STATS: checked 38 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031902.963468179] [rss_monitor]: RSS STATS: checked 40 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031905.681587336] [rss_monitor]: RSS STATS: checked 42 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031908.403531219] [rss_monitor]: RSS STATS: checked 43 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031911.464124706] [rss_monitor]: RSS STATS: checked 45 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031914.027244620] [rss_monitor]: RSS STATS: checked 47 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031917.956871001] [rss_monitor]: RSS STATS: checked 48 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031920.397499657] [rss_monitor]: RSS STATS: checked 50 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031922.629233365] [rss_monitor]: RSS STATS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031924.926067243] [rss_monitor]: RSS STATS: checked 54 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031927.189031901] [rss_monitor]: RSS STATS: checked 56 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031929.313014774] [rss_monitor]: RSS STATS: checked 57 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031931.373030745] [rss_monitor]: RSS STATS: checked 59 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031933.378023934] [rss_monitor]: RSS STATS: checked 61 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031935.510244416] [rss_monitor]: RSS STATS: checked 62 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031937.621696384] [rss_monitor]: RSS STATS: checked 64 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031939.711396588] [rss_monitor]: RSS STATS: checked 66 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031941.753394444] [rss_monitor]: RSS STATS: checked 68 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031943.773742269] [rss_monitor]: RSS STATS: checked 69 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031945.763531364] [rss_monitor]: RSS STATS: checked 71 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031949.499597154] [rss_monitor]: RSS STATS: checked 73 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031951.550083884] [rss_monitor]: RSS STATS: checked 74 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031953.528616198] [rss_monitor]: RSS STATS: checked 76 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031955.499740128] [rss_monitor]: RSS STATS: checked 78 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031957.428362230] [rss_monitor]: RSS STATS: checked 80 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031959.473076155] [rss_monitor]: RSS STATS: checked 81 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031961.475340780] [rss_monitor]: RSS STATS: checked 83 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031963.504456513] [rss_monitor]: RSS STATS: checked 85 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031965.510104724] [rss_monitor]: RSS STATS: checked 87 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031967.512936877] [rss_monitor]: RSS STATS: checked 88 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031969.521957688] [rss_monitor]: RSS STATS: checked 90 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031971.558829162] [rss_monitor]: RSS STATS: checked 92 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031973.592789218] [rss_monitor]: RSS STATS: checked 94 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031975.591318199] [rss_monitor]: RSS STATS: checked 95 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031979.384565654] [rss_monitor]: RSS STATS: checked 97 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031981.429910129] [rss_monitor]: RSS STATS: checked 99 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031983.516920642] [rss_monitor]: RSS STATS: checked 100 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031985.522438896] [rss_monitor]: RSS STATS: checked 102 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031987.604451548] [rss_monitor]: RSS STATS: checked 104 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031989.672050522] [rss_monitor]: RSS STATS: checked 106 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031991.762126986] [rss_monitor]: RSS STATS: checked 107 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031993.799940158] [rss_monitor]: RSS STATS: checked 109 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031995.813458143] [rss_monitor]: RSS STATS: checked 111 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031997.828247303] [rss_monitor]: RSS STATS: checked 112 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795031999.828162711] [rss_monitor]: RSS STATS: checked 114 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032001.909689493] [rss_monitor]: RSS STATS: checked 116 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032003.982447627] [rss_monitor]: RSS STATS: checked 118 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032006.051489690] [rss_monitor]: RSS STATS: checked 119 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032009.859744398] [rss_monitor]: RSS STATS: checked 121 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032011.859745642] [rss_monitor]: RSS STATS: checked 123 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032013.875200639] [rss_monitor]: RSS STATS: checked 125 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032015.881706380] [rss_monitor]: RSS STATS: checked 126 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032017.885620899] [rss_monitor]: RSS STATS: checked 128 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032020.009339501] [rss_monitor]: RSS STATS: checked 130 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032022.018651517] [rss_monitor]: RSS STATS: checked 131 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032024.092693623] [rss_monitor]: RSS STATS: checked 133 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032026.132229902] [rss_monitor]: RSS STATS: checked 135 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032028.196806880] [rss_monitor]: RSS STATS: checked 137 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032030.184912662] [rss_monitor]: RSS STATS: checked 138 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032032.259831919] [rss_monitor]: RSS STATS: checked 140 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032034.280815387] [rss_monitor]: RSS STATS: checked 142 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032036.268061780] [rss_monitor]: RSS STATS: checked 143 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032039.983561647] [rss_monitor]: RSS STATS: checked 145 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032041.948237393] [rss_monitor]: RSS STATS: checked 147 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032043.938789157] [rss_monitor]: RSS STATS: checked 149 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032045.846902657] [rss_monitor]: RSS STATS: checked 150 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032047.786215935] [rss_monitor]: RSS STATS: checked 152 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032049.745722800] [rss_monitor]: RSS STATS: checked 154 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032051.722995327] [rss_monitor]: RSS STATS: checked 156 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032053.631740553] [rss_monitor]: RSS STATS: checked 157 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032055.558646948] [rss_monitor]: RSS STATS: checked 159 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032057.542529513] [rss_monitor]: RSS STATS: checked 161 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032059.453065642] [rss_monitor]: RSS STATS: checked 162 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032061.451598645] [rss_monitor]: RSS STATS: checked 164 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032063.394735561] [rss_monitor]: RSS STATS: checked 166 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032065.369149395] [rss_monitor]: RSS STATS: checked 168 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032067.389867529] [rss_monitor]: RSS STATS: checked 169 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032069.370551155] [rss_monitor]: RSS STATS: checked 171 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032071.310926265] [rss_monitor]: RSS STATS: checked 173 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032073.348489112] [rss_monitor]: RSS STATS: checked 174 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032075.394108423] [rss_monitor]: RSS STATS: checked 176 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032077.436603180] [rss_monitor]: RSS STATS: checked 178 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032079.380649461] [rss_monitor]: RSS STATS: checked 180 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032081.323120393] [rss_monitor]: RSS STATS: checked 181 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032083.310745765] [rss_monitor]: RSS STATS: checked 183 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032085.317142216] [rss_monitor]: RSS STATS: checked 185 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032087.343968978] [rss_monitor]: RSS STATS: checked 186 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032089.343187788] [rss_monitor]: RSS STATS: checked 188 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032091.341404269] [rss_monitor]: RSS STATS: checked 190 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032093.409695970] [rss_monitor]: RSS STATS: checked 192 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032095.415524954] [rss_monitor]: RSS STATS: checked 193 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032097.423473043] [rss_monitor]: RSS STATS: checked 195 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032101.227038788] [rss_monitor]: RSS STATS: checked 197 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032103.225466106] [rss_monitor]: RSS STATS: checked 199 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032105.205232296] [rss_monitor]: RSS STATS: checked 200 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032107.126741205] [rss_monitor]: RSS STATS: checked 202 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032109.113657438] [rss_monitor]: RSS STATS: checked 204 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032111.134016094] [rss_monitor]: RSS STATS: checked 206 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032113.089586035] [rss_monitor]: RSS STATS: checked 207 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032115.067971609] [rss_monitor]: RSS STATS: checked 209 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032117.087855260] [rss_monitor]: RSS STATS: checked 211 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032119.125357214] [rss_monitor]: RSS STATS: checked 212 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032121.082362303] [rss_monitor]: RSS STATS: checked 214 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032123.001587344] [rss_monitor]: RSS STATS: checked 216 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032124.925180929] [rss_monitor]: RSS STATS: checked 218 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032126.836193283] [rss_monitor]: RSS STATS: checked 219 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795032128.791246449] [rss_monitor]: RSS STATS: checked 221 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/rss_monitor.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'rss_monitor.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/rss_monitor.py", line 128, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

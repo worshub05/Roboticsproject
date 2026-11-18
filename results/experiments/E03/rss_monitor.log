@@ -1,0 +1,268 @@
+[INFO] [1795035141.439551105] [rss_monitor]: RSS monitor ready (monitoring only): rho 0.3 s, a_acc 0.4, b_min 1.0, b_max 1.5, b_correct 0.7 m/s2, lateral a 0.3 / b 0.6 m/s2, mu 0.05 m
+[INFO] [1795035143.211265186] [rss_monitor]: RSS STATS: checked 2 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035145.101984059] [rss_monitor]: RSS STATS: checked 3 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035147.043073849] [rss_monitor]: RSS STATS: checked 5 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035149.006595982] [rss_monitor]: RSS STATS: checked 7 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035150.951912835] [rss_monitor]: RSS STATS: checked 8 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035152.889472147] [rss_monitor]: RSS STATS: checked 10 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035154.850487784] [rss_monitor]: RSS STATS: checked 12 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035156.825806136] [rss_monitor]: RSS STATS: checked 14 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035158.801733016] [rss_monitor]: RSS STATS: checked 15 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035160.721210374] [rss_monitor]: RSS STATS: checked 17 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035162.718661370] [rss_monitor]: RSS STATS: checked 19 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035164.702991578] [rss_monitor]: RSS STATS: checked 20 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035166.670386612] [rss_monitor]: RSS STATS: checked 22 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035168.643046668] [rss_monitor]: RSS STATS: checked 24 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035170.626011107] [rss_monitor]: RSS STATS: checked 26 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035172.587953475] [rss_monitor]: RSS STATS: checked 27 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035174.565327001] [rss_monitor]: RSS STATS: checked 29 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035176.584952599] [rss_monitor]: RSS STATS: checked 31 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035178.557939422] [rss_monitor]: RSS STATS: checked 33 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035180.573656938] [rss_monitor]: RSS STATS: checked 34 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035182.546390463] [rss_monitor]: RSS STATS: checked 36 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035184.532258864] [rss_monitor]: RSS STATS: checked 38 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance n/a
+[INFO] [1795035186.608178495] [rss_monitor]: RSS STATS: checked 40 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 11.27 m
+[INFO] [1795035188.715918133] [rss_monitor]: RSS STATS: checked 41 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 10.63 m
+[INFO] [1795035193.140331832] [rss_monitor]: RSS STATS: checked 43 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 10.03 m
+[INFO] [1795035195.258601016] [rss_monitor]: RSS STATS: checked 45 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 9.43 m
+[INFO] [1795035197.328614301] [rss_monitor]: RSS STATS: checked 46 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 8.81 m
+[INFO] [1795035199.405249389] [rss_monitor]: RSS STATS: checked 48 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 8.21 m
+[INFO] [1795035201.440043569] [rss_monitor]: RSS STATS: checked 50 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 7.61 m
+[INFO] [1795035203.436307515] [rss_monitor]: RSS STATS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 7.00 m
+[INFO] [1795035205.537331410] [rss_monitor]: RSS STATS: checked 53 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 6.40 m
+[INFO] [1795035207.636170699] [rss_monitor]: RSS STATS: checked 55 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 5.79 m
+[INFO] [1795035209.732317932] [rss_monitor]: RSS STATS: checked 57 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 5.18 m
+[INFO] [1795035211.813250098] [rss_monitor]: RSS STATS: checked 58 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 4.56 m
+[INFO] [1795035213.884797511] [rss_monitor]: RSS STATS: checked 60 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 3.96 m
+[INFO] [1795035215.938749025] [rss_monitor]: RSS STATS: checked 62 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 3.35 m
+[INFO] [1795035218.027820908] [rss_monitor]: RSS STATS: checked 64 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 2.75 m
+[INFO] [1795035220.121394393] [rss_monitor]: RSS STATS: checked 65 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 2.13 m
+[INFO] [1795035222.120224185] [rss_monitor]: RSS STATS: checked 67 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 1.54 m
+[INFO] [1795035224.162969573] [rss_monitor]: RSS STATS: checked 69 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.94 m
+[INFO] [1795035226.124086004] [rss_monitor]: RSS STATS: checked 70 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.33 m
+[INFO] [1795035228.129580592] [rss_monitor]: RSS STATS: checked 72 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.1 s, smallest margin to a safe distance 0.03 m
+[INFO] [1795035230.112938012] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.08 m; our speed 0.27 m/s, limited to 0.19 m/s
+[INFO] [1795035230.136019371] [rss_monitor]: RSS STATS: checked 74 s, dangerous situations 1 (0.1 s, 0.1%), speed limited by RSS 0.8 s, smallest margin to a safe distance -0.01 m
+[INFO] [1795035231.311810071] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035232.098944671] [rss_monitor]: RSS STATS: checked 76 s, dangerous situations 1 (0.7 s, 0.9%), speed limited by RSS 1.5 s, smallest margin to a safe distance -0.06 m
+[INFO] [1795035232.570316202] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.20 m < 0.08 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035234.128089020] [rss_monitor]: RSS STATS: checked 77 s, dangerous situations 2 (2.1 s, 2.7%), speed limited by RSS 3.0 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035235.479505595] [rss_monitor]: RSS: ✅ safe again after 2.5 s
+[INFO] [1795035236.110279041] [rss_monitor]: RSS STATS: checked 79 s, dangerous situations 2 (3.0 s, 3.8%), speed limited by RSS 3.9 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035236.834101742] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.28 m and sideways -0.19 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035237.755563806] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035238.135578445] [rss_monitor]: RSS STATS: checked 81 s, dangerous situations 3 (3.5 s, 4.3%), speed limited by RSS 4.5 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035238.975961645] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.19 m < 0.09 m; our speed 0.31 m/s, limited to 0.20 m/s
+[INFO] [1795035239.551104012] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035240.133040914] [rss_monitor]: RSS STATS: checked 83 s, dangerous situations 4 (3.8 s, 4.6%), speed limited by RSS 4.9 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035240.619891922] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.20 m < 0.10 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035241.875397242] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035242.181911267] [rss_monitor]: RSS STATS: checked 84 s, dangerous situations 5 (4.6 s, 5.5%), speed limited by RSS 6.0 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035243.335277739] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035244.205904398] [rss_monitor]: RSS STATS: checked 86 s, dangerous situations 6 (5.3 s, 6.2%), speed limited by RSS 6.8 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035244.856928024] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035246.211873500] [rss_monitor]: RSS STATS: checked 88 s, dangerous situations 6 (5.6 s, 6.4%), speed limited by RSS 7.2 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035246.348877651] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035248.215002225] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035248.245419898] [rss_monitor]: RSS STATS: checked 90 s, dangerous situations 7 (6.9 s, 7.7%), speed limited by RSS 8.5 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035249.411270727] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035250.229607018] [rss_monitor]: RSS STATS: checked 91 s, dangerous situations 8 (7.5 s, 8.2%), speed limited by RSS 9.4 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035250.535222176] [rss_monitor]: RSS: ✅ safe again after 1.0 s
+[INFO] [1795035251.877962992] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.22 m/s
+[INFO] [1795035252.246978964] [rss_monitor]: RSS STATS: checked 93 s, dangerous situations 9 (7.8 s, 8.4%), speed limited by RSS 9.9 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035253.804457214] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035254.246072789] [rss_monitor]: RSS STATS: checked 95 s, dangerous situations 9 (8.8 s, 9.3%), speed limited by RSS 11.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035255.324494049] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035256.285907695] [rss_monitor]: RSS STATS: checked 96 s, dangerous situations 10 (9.6 s, 10.0%), speed limited by RSS 12.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035257.117814662] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035258.279059636] [rss_monitor]: RSS STATS: checked 98 s, dangerous situations 10 (9.9 s, 10.1%), speed limited by RSS 12.5 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035258.543048919] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035260.120906445] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035260.326338804] [rss_monitor]: RSS STATS: checked 100 s, dangerous situations 11 (10.9 s, 10.9%), speed limited by RSS 13.6 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035261.537188691] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035262.351812692] [rss_monitor]: RSS STATS: checked 102 s, dangerous situations 12 (11.6 s, 11.4%), speed limited by RSS 14.4 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035263.677095724] [rss_monitor]: RSS: ✅ safe again after 1.8 s
+[INFO] [1795035264.380777855] [rss_monitor]: RSS STATS: checked 103 s, dangerous situations 12 (12.3 s, 11.9%), speed limited by RSS 15.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035264.836279808] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.19 m/s
+[INFO] [1795035265.870558707] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035266.430848555] [rss_monitor]: RSS STATS: checked 105 s, dangerous situations 13 (12.8 s, 12.2%), speed limited by RSS 15.9 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035267.073335634] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035268.424449767] [rss_monitor]: RSS STATS: checked 107 s, dangerous situations 14 (13.7 s, 12.8%), speed limited by RSS 17.0 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035268.532515569] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035269.869753922] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035270.449227481] [rss_monitor]: RSS STATS: checked 109 s, dangerous situations 15 (14.2 s, 13.1%), speed limited by RSS 17.7 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035271.004497736] [rss_monitor]: RSS: ✅ safe again after 1.0 s
+[INFO] [1795035272.341988706] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035272.449323804] [rss_monitor]: RSS STATS: checked 110 s, dangerous situations 16 (14.4 s, 13.1%), speed limited by RSS 18.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035273.935167139] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035274.419589124] [rss_monitor]: RSS STATS: checked 112 s, dangerous situations 16 (15.2 s, 13.6%), speed limited by RSS 19.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035275.212104116] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035276.270263413] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035276.468302192] [rss_monitor]: RSS STATS: checked 114 s, dangerous situations 17 (15.8 s, 13.9%), speed limited by RSS 19.8 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035277.435014718] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035278.452981672] [rss_monitor]: RSS STATS: checked 115 s, dangerous situations 18 (16.8 s, 14.6%), speed limited by RSS 20.9 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035281.599917513] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035282.871041505] [rss_monitor]: RSS STATS: checked 117 s, dangerous situations 18 (17.2 s, 14.7%), speed limited by RSS 21.4 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035283.171189954] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035284.220615806] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035284.898276878] [rss_monitor]: RSS STATS: checked 119 s, dangerous situations 19 (17.8 s, 15.0%), speed limited by RSS 22.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035285.598970611] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.22 m/s
+[INFO] [1795035286.828984273] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035286.896758285] [rss_monitor]: RSS STATS: checked 121 s, dangerous situations 20 (18.6 s, 15.4%), speed limited by RSS 23.2 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035288.322317388] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035288.884657329] [rss_monitor]: RSS STATS: checked 122 s, dangerous situations 21 (19.0 s, 15.5%), speed limited by RSS 23.8 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035289.119793756] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035290.459069235] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035290.902856393] [rss_monitor]: RSS STATS: checked 124 s, dangerous situations 22 (19.4 s, 15.6%), speed limited by RSS 24.4 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035292.354415735] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035292.862367019] [rss_monitor]: RSS STATS: checked 126 s, dangerous situations 22 (20.3 s, 16.1%), speed limited by RSS 25.5 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035293.877889389] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035294.854686208] [rss_monitor]: RSS STATS: checked 127 s, dangerous situations 23 (21.0 s, 16.5%), speed limited by RSS 26.4 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035294.901583363] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035296.345428046] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035296.938553724] [rss_monitor]: RSS STATS: checked 129 s, dangerous situations 24 (21.6 s, 16.7%), speed limited by RSS 27.1 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035297.974130506] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035298.938369800] [rss_monitor]: RSS STATS: checked 131 s, dangerous situations 24 (22.1 s, 16.9%), speed limited by RSS 27.8 s, smallest margin to a safe distance -0.09 m
+[INFO] [1795035299.524141094] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035300.938008129] [rss_monitor]: RSS STATS: checked 133 s, dangerous situations 25 (23.2 s, 17.5%), speed limited by RSS 29.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035301.121313435] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035302.503757866] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035302.895704279] [rss_monitor]: RSS STATS: checked 134 s, dangerous situations 26 (23.5 s, 17.5%), speed limited by RSS 29.4 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035303.045523612] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035304.121319132] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035304.916810225] [rss_monitor]: RSS STATS: checked 136 s, dangerous situations 27 (24.0 s, 17.6%), speed limited by RSS 30.0 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035305.137492221] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035306.360858434] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035306.875199029] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035306.877618638] [rss_monitor]: RSS STATS: checked 138 s, dangerous situations 28 (24.1 s, 17.5%), speed limited by RSS 30.3 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035307.714892131] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.22 m/s
+[INFO] [1795035308.411885867] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035310.585265229] [rss_monitor]: RSS STATS: checked 140 s, dangerous situations 29 (24.4 s, 17.5%), speed limited by RSS 30.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035311.939584273] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035313.359244889] [rss_monitor]: RSS STATS: checked 141 s, dangerous situations 30 (25.5 s, 18.1%), speed limited by RSS 32.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035313.556329885] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035315.160634057] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.21 m/s
+[INFO] [1795035315.379374602] [rss_monitor]: RSS STATS: checked 143 s, dangerous situations 31 (25.6 s, 17.9%), speed limited by RSS 32.3 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035315.571283108] [rss_monitor]: RSS: ✅ safe again after 0.4 s
+[INFO] [1795035316.581146600] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035317.481800638] [rss_monitor]: RSS STATS: checked 145 s, dangerous situations 32 (26.4 s, 18.3%), speed limited by RSS 33.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035318.343887917] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035319.479195316] [rss_monitor]: RSS STATS: checked 146 s, dangerous situations 32 (26.8 s, 18.3%), speed limited by RSS 33.6 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035319.895521090] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035320.682938570] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035321.487531553] [rss_monitor]: RSS STATS: checked 148 s, dangerous situations 33 (27.2 s, 18.4%), speed limited by RSS 34.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035321.983539254] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035323.519336676] [rss_monitor]: RSS STATS: checked 150 s, dangerous situations 34 (28.5 s, 19.0%), speed limited by RSS 35.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035323.735547505] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035325.292596261] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035325.561055381] [rss_monitor]: RSS STATS: checked 152 s, dangerous situations 35 (28.7 s, 18.9%), speed limited by RSS 36.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035325.983473776] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035326.832608320] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035327.555461336] [rss_monitor]: RSS STATS: checked 153 s, dangerous situations 36 (29.4 s, 19.2%), speed limited by RSS 37.0 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035328.540762878] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035329.596696004] [rss_monitor]: RSS STATS: checked 155 s, dangerous situations 36 (29.9 s, 19.3%), speed limited by RSS 37.6 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035330.087058977] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035330.773556288] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035331.632231769] [rss_monitor]: RSS STATS: checked 157 s, dangerous situations 37 (30.2 s, 19.3%), speed limited by RSS 38.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035331.962633801] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035333.672177633] [rss_monitor]: RSS STATS: checked 158 s, dangerous situations 38 (31.5 s, 19.9%), speed limited by RSS 39.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035333.839736150] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035335.350782176] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035335.714511464] [rss_monitor]: RSS STATS: checked 160 s, dangerous situations 39 (31.9 s, 19.9%), speed limited by RSS 40.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035337.237005222] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035337.716285252] [rss_monitor]: RSS STATS: checked 162 s, dangerous situations 39 (32.8 s, 20.3%), speed limited by RSS 41.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035340.389601797] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.21 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035341.831044101] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035342.272655881] [rss_monitor]: RSS STATS: checked 164 s, dangerous situations 40 (33.1 s, 20.2%), speed limited by RSS 41.8 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035342.938392662] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035343.873070275] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035344.320135019] [rss_monitor]: RSS STATS: checked 165 s, dangerous situations 41 (33.7 s, 20.4%), speed limited by RSS 42.5 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035345.210566081] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.21 m/s
+[INFO] [1795035346.124289635] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035346.338996586] [rss_monitor]: RSS STATS: checked 167 s, dangerous situations 42 (34.2 s, 20.5%), speed limited by RSS 43.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035347.554078328] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.23 m/s
+[INFO] [1795035348.339010987] [rss_monitor]: RSS STATS: checked 169 s, dangerous situations 43 (34.8 s, 20.6%), speed limited by RSS 43.8 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035348.559529028] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035349.857976360] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035350.409583292] [rss_monitor]: RSS STATS: checked 170 s, dangerous situations 44 (35.3 s, 20.7%), speed limited by RSS 44.4 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035351.449909903] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035352.391792355] [rss_monitor]: RSS STATS: checked 172 s, dangerous situations 44 (36.0 s, 20.9%), speed limited by RSS 45.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035352.914949346] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.20 m/s
+[INFO] [1795035354.402002914] [rss_monitor]: RSS STATS: checked 174 s, dangerous situations 45 (37.1 s, 21.3%), speed limited by RSS 46.5 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035354.530068234] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035356.051119972] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035356.425525784] [rss_monitor]: RSS STATS: checked 176 s, dangerous situations 46 (37.4 s, 21.3%), speed limited by RSS 47.0 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035357.842763390] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035358.549363025] [rss_monitor]: RSS STATS: checked 177 s, dangerous situations 46 (38.2 s, 21.5%), speed limited by RSS 47.9 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035359.115280026] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.19 m/s
+[INFO] [1795035360.611258045] [rss_monitor]: RSS STATS: checked 179 s, dangerous situations 47 (39.3 s, 21.9%), speed limited by RSS 49.4 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035360.886065667] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035362.715396147] [rss_monitor]: RSS STATS: checked 181 s, dangerous situations 47 (39.3 s, 21.7%), speed limited by RSS 49.4 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035363.354572786] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.30 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.24 m/s
+[INFO] [1795035364.801025484] [rss_monitor]: RSS STATS: checked 183 s, dangerous situations 48 (40.5 s, 22.2%), speed limited by RSS 51.0 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035365.019988660] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035366.609801565] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035366.804820521] [rss_monitor]: RSS STATS: checked 184 s, dangerous situations 49 (40.6 s, 22.0%), speed limited by RSS 51.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035367.878288800] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035368.823574255] [rss_monitor]: RSS STATS: checked 186 s, dangerous situations 49 (41.2 s, 22.1%), speed limited by RSS 52.0 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035369.325539251] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035370.824081940] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035370.867450157] [rss_monitor]: RSS STATS: checked 188 s, dangerous situations 50 (42.0 s, 22.4%), speed limited by RSS 53.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035372.138304977] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.21 m < 0.09 m; our speed 0.29 m/s, limited to 0.22 m/s
+[INFO] [1795035372.879518190] [rss_monitor]: RSS STATS: checked 190 s, dangerous situations 51 (42.4 s, 22.4%), speed limited by RSS 53.8 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035372.931038792] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035374.268576495] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035374.953044491] [rss_monitor]: RSS STATS: checked 191 s, dangerous situations 52 (43.1 s, 22.5%), speed limited by RSS 54.5 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035375.312572203] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035377.012623544] [rss_monitor]: RSS STATS: checked 193 s, dangerous situations 52 (43.1 s, 22.3%), speed limited by RSS 54.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035378.083795917] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.30 m < safe 0.31 m and sideways -0.21 m < 0.09 m; our speed 0.33 m/s, limited to 0.24 m/s
+[INFO] [1795035378.787157286] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035379.107315580] [rss_monitor]: RSS STATS: checked 195 s, dangerous situations 53 (43.4 s, 22.3%), speed limited by RSS 55.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035379.885288940] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.23 m/s
+[INFO] [1795035381.174133976] [rss_monitor]: RSS STATS: checked 196 s, dangerous situations 54 (44.5 s, 22.7%), speed limited by RSS 56.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035381.602789925] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035383.051236186] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035383.235629618] [rss_monitor]: RSS STATS: checked 198 s, dangerous situations 55 (44.7 s, 22.6%), speed limited by RSS 56.6 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035383.621397178] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035384.731026493] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035385.334920545] [rss_monitor]: RSS STATS: checked 200 s, dangerous situations 56 (45.2 s, 22.6%), speed limited by RSS 57.2 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035386.753178330] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035387.417603486] [rss_monitor]: RSS STATS: checked 202 s, dangerous situations 56 (46.0 s, 22.8%), speed limited by RSS 58.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035389.443154549] [rss_monitor]: RSS STATS: checked 203 s, dangerous situations 56 (46.0 s, 22.6%), speed limited by RSS 58.3 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035390.328472118] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.31 m < safe 0.31 m and sideways -0.20 m < 0.09 m; our speed 0.33 m/s, limited to 0.26 m/s
+[INFO] [1795035391.524940556] [rss_monitor]: RSS STATS: checked 205 s, dangerous situations 57 (46.9 s, 22.9%), speed limited by RSS 59.4 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035391.793002732] [rss_monitor]: RSS: ✅ safe again after 1.2 s
+[INFO] [1795035393.226877825] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.20 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035393.695571704] [rss_monitor]: RSS STATS: checked 207 s, dangerous situations 58 (46.9 s, 22.7%), speed limited by RSS 59.6 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035393.725112555] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035394.582904432] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.20 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035395.770144856] [rss_monitor]: RSS STATS: checked 208 s, dangerous situations 59 (47.9 s, 23.0%), speed limited by RSS 60.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035396.632738390] [rss_monitor]: RSS: ✅ safe again after 1.8 s
+[INFO] [1795035398.046038029] [rss_monitor]: RSS STATS: checked 210 s, dangerous situations 59 (48.3 s, 23.0%), speed limited by RSS 61.3 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035400.408544700] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.20 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035402.028248111] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035402.255934898] [rss_monitor]: RSS STATS: checked 212 s, dangerous situations 60 (49.3 s, 23.3%), speed limited by RSS 62.5 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035403.655103354] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.20 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035404.392380075] [rss_monitor]: RSS STATS: checked 214 s, dangerous situations 61 (49.8 s, 23.3%), speed limited by RSS 63.1 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035404.584384534] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035405.754984025] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035406.404475899] [rss_monitor]: RSS STATS: checked 215 s, dangerous situations 62 (50.3 s, 23.4%), speed limited by RSS 63.7 s, smallest margin to a safe distance -0.10 m
+[INFO] [1795035406.674306257] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035407.754007938] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.20 m < 0.08 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035408.524950559] [rss_monitor]: RSS STATS: checked 217 s, dangerous situations 63 (51.0 s, 23.5%), speed limited by RSS 64.5 s, smallest margin to a safe distance -0.10 m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/rss_monitor.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'rss_monitor.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/rss_monitor.py", line 128, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

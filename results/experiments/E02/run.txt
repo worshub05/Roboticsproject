@@ -1,0 +1,34 @@
+✅ stack running: scenario=overtake, oncoming=0.3 m/s, tracker=true, controller=tracker, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795030872.270027581] [aeb]: AEB: ⚠ WARNING: object 0.63 m ahead in our path, TTC 1.34 s, our speed 0.07 m/s
+[INFO] [1795030872.306865082] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.63 m)
+[INFO] [1795030886.721554673] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 3.3 m ahead at 0.13 m/s)
+[INFO] [1795030886.728626327] [overtake_planner]: BEHAVIOUR: waiting behind slow car: need 13.3 m clear but the LiDAR only reaches 9.5 m
+[INFO] [1795030889.228630120] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 8.5 m ahead at 0.29 m/s would meet us in 7.8 s (we need 10.0 s)
+[INFO] [1795030891.658907746] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 6.9 m ahead at 0.28 m/s would meet us in 6.3 s (we need 8.6 s)
+[INFO] [1795030894.200157854] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 5.7 m ahead at 0.27 m/s would meet us in 5.3 s (we need 7.9 s)
+[INFO] [1795030896.660542493] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 4.7 m ahead at 0.25 m/s would meet us in 4.5 s (we need 7.7 s)
+[INFO] [1795030899.116900065] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.8 m ahead at 0.39 m/s would meet us in 3.1 s (we need 7.6 s)
+[INFO] [1795030901.639034865] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.0 m ahead at 0.29 m/s would meet us in 2.7 s (we need 7.7 s)
+[INFO] [1795030904.099617350] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 2.2 m ahead at 0.21 m/s would meet us in 2.2 s (we need 7.7 s)
+[INFO] [1795030906.599537288] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 1.3 m ahead at 0.31 m/s would meet us in 1.2 s (we need 7.7 s)
+[INFO] [1795030909.060636086] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 0.5 m ahead at 0.30 m/s would meet us in 0.4 s (we need 7.7 s)
+[INFO] [1795030911.596464650] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.3 m ahead at 0.30 m/s would meet us in -0.3 s (we need 7.7 s)
+[INFO] [1795030915.971403842] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.8 m ahead in the other lane
+[INFO] [1795030916.918162653] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.1 m; measured oncoming traffic cannot reach us in 7.7 s)
+[INFO] [1795030920.266712150] [aeb]: AEB: ⚠ WARNING: object 0.88 m ahead in our path, TTC 1.30 s, our speed 0.49 m/s
+[INFO] [1795030920.323628113] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.88 m)
+[INFO] [1795030920.363897135] [aeb]: AEB: ⚠ WARNING: object 0.82 m ahead in our path, TTC 1.02 s, our speed 0.49 m/s
+[INFO] [1795030920.472934281] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.81 m)
+[INFO] [1795030920.546873403] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1795030923.541242015] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+[INFO] [1795030927.195541634] [overtake_planner]: BEHAVIOUR: ✅ overtake 1 complete [tracker: path error RMS 3.7 cm, max 14.5 cm, steering change RMS 0.60 rad/s2]
+[INFO] [1795030927.196358396] [overtake_planner]: BEHAVIOUR: CHANGE_RIGHT -> LANE_KEEP (back in our lane, CNN driving)
+Terminated
+
+stopping...
+overtakes completed: 1
+collisions: 0
+robot at s=36.4 m, 0.50 m/s, true gap to car ahead in our lane 9.20 m, closest approach to any car so far 0.10 m
+RSS: checked 95 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.08 m
+AEB: checked 95 s, warnings 3, partial brakes 0, full brakes 0, braking 0.0 s, smallest TTC 1.02 s, closing speed from V2V in 0% of scans
+ENERGY: distance 37.7 m in 95 s, traction 38.6 J (1.03 J/m), recovered by regen 0.4 J (1% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 38.6 J (1.03 J/m)

@@ -1,0 +1,62 @@
+[INFO] [1795033660.716370007] [road_driver]: Road driver ready: CNN steering + LiDAR adaptive cruise control (curved corridor)
+[INFO] [1795033663.880107396] [road_driver]: ROAD: target detected 1.90 m ahead (corridor curvature +0.000 1/m)
+[INFO] [1795033663.880857547] [road_driver]: ROAD: CRUISE -> STOP (gap 1.90 m)
+[INFO] [1795033664.682696888] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.70 m lead_speed=-0.80 m/s corridor curvature=+0.000 1/m
+[INFO] [1795033668.244533818] [road_driver]: ROAD: STOP v=0.00 m/s gap=0.75 m lead_speed=0.06 m/s corridor curvature=-0.023 1/m
+[INFO] [1795033669.101346543] [road_driver]: ROAD: STOP -> CACC (gap 0.97 m)
+[INFO] [1795033671.847658477] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.28 m lead_speed=0.47 m/s corridor curvature=+0.015 1/m
+[INFO] [1795033675.614008259] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.16 m lead_speed=0.42 m/s corridor curvature=+0.019 1/m
+[INFO] [1795033679.268429362] [road_driver]: ROAD: CACC v=0.50 m/s gap=1.02 m lead_speed=0.43 m/s corridor curvature=+0.028 1/m
+[INFO] [1795033683.042354148] [road_driver]: ROAD: CACC v=0.37 m/s gap=0.79 m lead_speed=0.34 m/s corridor curvature=+0.011 1/m
+[INFO] [1795033688.201535699] [road_driver]: ROAD: CACC v=0.19 m/s gap=0.55 m lead_speed=0.17 m/s corridor curvature=-0.059 1/m
+[INFO] [1795033692.443394331] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.53 m lead_speed=0.43 m/s corridor curvature=-0.101 1/m
+[INFO] [1795033696.084827519] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.124 1/m
+[INFO] [1795033699.778069434] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.42 m/s corridor curvature=-0.126 1/m
+[INFO] [1795033703.438949678] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.54 m lead_speed=0.46 m/s corridor curvature=-0.119 1/m
+[INFO] [1795033707.167015691] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.135 1/m
+[INFO] [1795033707.573390990] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.54 m)
+[INFO] [1795033707.807034689] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.54 m)
+[INFO] [1795033711.011535366] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.40 m/s corridor curvature=-0.132 1/m
+[INFO] [1795033712.161562795] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.54 m)
+[INFO] [1795033712.284404988] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.54 m)
+[INFO] [1795033714.814359558] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.45 m/s corridor curvature=-0.130 1/m
+[INFO] [1795033718.511116443] [road_driver]: ROAD: CACC v=0.18 m/s gap=0.48 m lead_speed=0.18 m/s corridor curvature=-0.141 1/m
+[INFO] [1795033720.197142258] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.49 m)
+[INFO] [1795033720.358976339] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.50 m)
+[INFO] [1795033720.363918190] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.52 m)
+[INFO] [1795033720.474585268] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.50 m)
+[INFO] [1795033720.839433317] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.51 m)
+[INFO] [1795033720.971454516] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.50 m)
+[INFO] [1795033722.194165684] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.49 m lead_speed=0.38 m/s corridor curvature=-0.139 1/m
+[INFO] [1795033725.919321020] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.52 m lead_speed=0.43 m/s corridor curvature=-0.075 1/m
+[INFO] [1795033727.536778823] [road_driver]: ROAD: CACC -> RSS_LIMIT (gap 0.53 m)
+[INFO] [1795033727.746057463] [road_driver]: ROAD: RSS_LIMIT -> CACC (gap 0.53 m)
+[INFO] [1795033729.634090783] [road_driver]: ROAD: CACC v=0.45 m/s gap=0.53 m lead_speed=0.44 m/s corridor curvature=+0.031 1/m
+[INFO] [1795033733.351924010] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.011 1/m
+[INFO] [1795033737.023026290] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.45 m/s corridor curvature=-0.013 1/m
+[INFO] [1795033740.667318551] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.46 m/s corridor curvature=-0.003 1/m
+[INFO] [1795033744.294724405] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.43 m/s corridor curvature=-0.001 1/m
+[INFO] [1795033747.936544922] [road_driver]: ROAD: CACC v=0.17 m/s gap=0.46 m lead_speed=0.21 m/s corridor curvature=-0.033 1/m
+[INFO] [1795033751.579894280] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.48 m lead_speed=0.32 m/s corridor curvature=-0.010 1/m
+[INFO] [1795033755.230107838] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.49 m lead_speed=0.44 m/s corridor curvature=-0.028 1/m
+[INFO] [1795033758.885913141] [road_driver]: ROAD: CACC v=0.43 m/s gap=0.49 m lead_speed=0.44 m/s corridor curvature=-0.019 1/m
+[INFO] [1795033762.455334340] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.50 m lead_speed=0.44 m/s corridor curvature=-0.019 1/m
+[INFO] [1795033766.103243576] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.49 m lead_speed=0.43 m/s corridor curvature=-0.019 1/m
+[INFO] [1795033769.597631148] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.48 m lead_speed=0.44 m/s corridor curvature=-0.043 1/m
+[INFO] [1795033773.108883436] [road_driver]: ROAD: CACC v=0.44 m/s gap=0.49 m lead_speed=0.45 m/s corridor curvature=-0.132 1/m
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/road_driver.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'road_driver.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/road_driver.py", line 265, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

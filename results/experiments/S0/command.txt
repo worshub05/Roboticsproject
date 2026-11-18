@@ -1,0 +1,1 @@
+PLATOON=cacc run_stack.sh platoon 0.3 true mpc   (30 s)   Smoke test

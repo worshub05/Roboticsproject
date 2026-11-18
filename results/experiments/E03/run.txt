@@ -1,0 +1,1169 @@
+✅ stack running: scenario=follow, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=off, acc=fault, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795035226.635031773] [aeb]: AEB: ⚠ WARNING: object 0.65 m ahead in our path, TTC 1.44 s, our speed 0.50 m/s
+[INFO] [1795035226.681964314] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.44 s, closest 0.65 m)
+[INFO] [1795035226.840550495] [aeb]: AEB: ⚠ WARNING: object 0.60 m ahead in our path, TTC 1.41 s, our speed 0.50 m/s
+[INFO] [1795035226.925094684] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.28 s, closest 0.58 m)
+[INFO] [1795035226.972433831] [aeb]: AEB: ⚠ WARNING: object 0.56 m ahead in our path, TTC 1.40 s, our speed 0.50 m/s
+[INFO] [1795035227.001457920] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.40 s, closest 0.56 m)
+[INFO] [1795035227.146066194] [aeb]: AEB: ⚠ WARNING: object 0.51 m ahead in our path, TTC 1.19 s, our speed 0.46 m/s
+[INFO] [1795035227.226501036] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.49 m)
+[INFO] [1795035227.317830222] [aeb]: AEB: ⚠ WARNING: object 0.48 m ahead in our path, TTC 1.48 s, our speed 0.44 m/s
+[INFO] [1795035227.391281472] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.24 s, closest 0.46 m)
+[INFO] [1795035227.425574759] [aeb]: AEB: ⚠ WARNING: object 0.45 m ahead in our path, TTC 1.22 s, our speed 0.41 m/s
+[INFO] [1795035227.488044801] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.22 s, closest 0.44 m)
+[INFO] [1795035227.527420330] [aeb]: AEB: ⚠ WARNING: object 0.41 m ahead in our path, TTC 1.00 s, our speed 0.39 m/s
+[INFO] [1795035227.559519481] [aeb]: AEB: ⚠ PARTIAL brake: object 0.40 m ahead, TTC 0.98 s, our speed 0.39 m/s
+[INFO] [1795035227.741686070] [aeb]: AEB: ⚠ FULL brake: object 0.34 m ahead, TTC 0.57 s, our speed 0.20 m/s
+[INFO] [1795035228.268004472] [aeb]: AEB: ✅ released after 0.6 s (worst: FULL, TTC 0.57 s, closest 0.33 m)
+[INFO] [1795035229.298497137] [aeb]: AEB: ⚠ WARNING: object 0.40 m ahead in our path, TTC 1.27 s, our speed 0.36 m/s
+[INFO] [1795035229.351715573] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.40 m)
+[INFO] [1795035229.382593444] [aeb]: AEB: ⚠ WARNING: object 0.39 m ahead in our path, TTC 1.47 s, our speed 0.35 m/s
+[INFO] [1795035229.465097807] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.22 s, closest 0.38 m)
+[INFO] [1795035229.644613157] [aeb]: AEB: ⚠ WARNING: object 0.35 m ahead in our path, TTC 1.45 s, our speed 0.34 m/s
+[INFO] [1795035229.703720908] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.35 m)
+[INFO] [1795035229.740647424] [aeb]: AEB: ⚠ WARNING: object 0.33 m ahead in our path, TTC 1.35 s, our speed 0.31 m/s
+[INFO] [1795035229.803788060] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.13 s, closest 0.32 m)
+[INFO] [1795035229.876005430] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.34 s, our speed 0.30 m/s
+[INFO] [1795035229.916356868] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.31 m)
+[INFO] [1795035230.001727891] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.33 s, our speed 0.29 m/s
+[INFO] [1795035230.065729220] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.30 m)
+[INFO] [1795035230.112938012] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.08 m; our speed 0.27 m/s, limited to 0.19 m/s
+[INFO] [1795035230.119605882] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.29 s, our speed 0.28 m/s
+[INFO] [1795035230.168787052] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.28 m)
+[INFO] [1795035230.222972302] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.29 s, our speed 0.27 m/s
+[INFO] [1795035230.260935931] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.27 m)
+[INFO] [1795035230.546795129] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.09 s, our speed 0.29 m/s
+[INFO] [1795035230.578543128] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.25 m)
+[INFO] [1795035230.654946278] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.03 s, our speed 0.27 m/s
+[INFO] [1795035230.692381658] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.23 m)
+[INFO] [1795035230.743450788] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.34 s, our speed 0.26 m/s
+[INFO] [1795035230.766736661] [aeb]: AEB: ⚠ PARTIAL brake: object 0.22 m ahead, TTC 0.93 s, our speed 0.25 m/s
+[INFO] [1795035230.847925252] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC 0.56 s, our speed 0.16 m/s
+[INFO] [1795035231.311810071] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035231.666940877] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.36 s, closest 0.17 m)
+[INFO] [1795035232.570316202] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.20 m < 0.08 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035232.599001267] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.46 s, our speed 0.30 m/s
+[INFO] [1795035232.638859821] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.46 s, closest 0.30 m)
+[INFO] [1795035232.763970805] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.24 s, our speed 0.29 m/s
+[INFO] [1795035232.811343001] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.28 m)
+[INFO] [1795035232.883872911] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.16 s, our speed 0.29 m/s
+[INFO] [1795035232.921484080] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.26 m)
+[INFO] [1795035232.963501788] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.50 s, our speed 0.28 m/s
+[INFO] [1795035233.033799286] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.25 m)
+[INFO] [1795035233.146630410] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.45 s, our speed 0.27 m/s
+[INFO] [1795035233.263654104] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.03 s, closest 0.23 m)
+[INFO] [1795035233.342137991] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.07 s, our speed 0.25 m/s
+[INFO] [1795035233.395274967] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.21 m)
+[INFO] [1795035233.453631330] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.08 s, our speed 0.24 m/s
+[INFO] [1795035233.487974762] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.20 m)
+[INFO] [1795035233.552420351] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.23 s, our speed 0.24 m/s
+[INFO] [1795035233.589271295] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.20 m)
+[INFO] [1795035233.697037800] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.10 s, our speed 0.23 m/s
+[INFO] [1795035233.752186055] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.19 m)
+[INFO] [1795035233.822990115] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.02 s, our speed 0.23 m/s
+[INFO] [1795035233.872264257] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.02 s, closest 0.18 m)
+[INFO] [1795035234.021374542] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.08 s, our speed 0.22 m/s
+[INFO] [1795035234.069611492] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.17 m)
+[INFO] [1795035234.248308385] [aeb]: AEB: ⚠ WARNING: object 0.16 m ahead in our path, TTC 1.34 s, our speed 0.17 m/s
+[INFO] [1795035234.272622233] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.16 m)
+[INFO] [1795035234.493566764] [aeb]: AEB: ⚠ WARNING: object 0.15 m ahead in our path, TTC 1.25 s, our speed 0.16 m/s
+[INFO] [1795035234.548956217] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.15 m)
+[INFO] [1795035234.823613446] [aeb]: AEB: ⚠ WARNING: object 0.15 m ahead in our path, TTC 1.13 s, our speed 0.17 m/s
+[INFO] [1795035234.868146722] [aeb]: AEB: ⚠ PARTIAL brake: object 0.14 m ahead, TTC 0.95 s, our speed 0.17 m/s
+[INFO] [1795035235.156165107] [aeb]: AEB: ⚠ FULL brake: object 0.16 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035235.479505595] [rss_monitor]: RSS: ✅ safe again after 2.5 s
+[INFO] [1795035236.026905368] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.95 s, closest 0.14 m)
+[INFO] [1795035236.834101742] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.28 m and sideways -0.19 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035236.925239990] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.43 s, our speed 0.28 m/s
+[INFO] [1795035236.972630324] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.28 m)
+[INFO] [1795035237.072123599] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035237.103893696] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.26 m)
+[INFO] [1795035237.129080840] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.38 s, our speed 0.30 m/s
+[INFO] [1795035237.171904020] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.26 m)
+[INFO] [1795035237.208681019] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.46 s, our speed 0.30 m/s
+[INFO] [1795035237.243950046] [aeb]: AEB: ⚠ PARTIAL brake: object 0.24 m ahead, TTC 0.99 s, our speed 0.30 m/s
+[INFO] [1795035237.593660973] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035237.755563806] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035238.053082884] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.97 s, closest 0.23 m)
+[INFO] [1795035238.975961645] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.19 m < 0.09 m; our speed 0.31 m/s, limited to 0.20 m/s
+[INFO] [1795035239.008585999] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.08 s, our speed 0.30 m/s
+[INFO] [1795035239.055671040] [aeb]: AEB: ⚠ PARTIAL brake: object 0.29 m ahead, TTC 0.99 s, our speed 0.30 m/s
+[INFO] [1795035239.236540688] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC 0.59 s, our speed 0.16 m/s
+[INFO] [1795035239.551104012] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035239.644517814] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.59 s, closest 0.25 m)
+[INFO] [1795035240.504752317] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.49 s, our speed 0.28 m/s
+[INFO] [1795035240.576814455] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.26 s, closest 0.31 m)
+[INFO] [1795035240.616327559] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.19 s, our speed 0.30 m/s
+[INFO] [1795035240.619891922] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.20 m < 0.10 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035240.680347420] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.19 s, closest 0.29 m)
+[INFO] [1795035240.784058874] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.30 s, our speed 0.29 m/s
+[INFO] [1795035240.821975060] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.28 m)
+[INFO] [1795035240.878532001] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.49 s, our speed 0.27 m/s
+[INFO] [1795035240.940554818] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.16 s, closest 0.26 m)
+[INFO] [1795035241.123023253] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.25 s, our speed 0.26 m/s
+[INFO] [1795035241.157392612] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.26 m)
+[INFO] [1795035241.249454862] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.05 s, our speed 0.26 m/s
+[INFO] [1795035241.313348171] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.24 m)
+[INFO] [1795035241.455672620] [aeb]: AEB: ⚠ PARTIAL: object 0.22 m ahead in our path, TTC 0.93 s, our speed 0.27 m/s
+[INFO] [1795035241.795362302] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035241.875397242] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035242.345553286] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.93 s, closest 0.22 m)
+[INFO] [1795035243.256018223] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.45 s, our speed 0.28 m/s
+[INFO] [1795035243.291515044] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.30 m)
+[INFO] [1795035243.335277739] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035243.360171905] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.30 m/s
+[INFO] [1795035243.402060551] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035243.501493450] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.24 s, our speed 0.29 m/s
+[INFO] [1795035243.555266898] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.27 m)
+[INFO] [1795035243.746748294] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.24 s, our speed 0.28 m/s
+[INFO] [1795035243.798457208] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.26 m)
+[INFO] [1795035243.832683444] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.48 s, our speed 0.28 m/s
+[INFO] [1795035243.913688662] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.05 s, closest 0.24 m)
+[INFO] [1795035244.031494017] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.11 s, our speed 0.27 m/s
+[INFO] [1795035244.055643919] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.23 m)
+[INFO] [1795035244.127323422] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.05 s, our speed 0.27 m/s
+[INFO] [1795035244.167548330] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.22 m)
+[INFO] [1795035244.200942239] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.32 s, our speed 0.27 m/s
+[INFO] [1795035244.237508999] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.21 m)
+[INFO] [1795035244.273734235] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.34 s, our speed 0.27 m/s
+[INFO] [1795035244.311030434] [aeb]: AEB: ⚠ PARTIAL brake: object 0.20 m ahead, TTC 0.95 s, our speed 0.27 m/s
+[INFO] [1795035244.648015567] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035244.856928024] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035245.408905025] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.95 s, closest 0.19 m)
+[INFO] [1795035246.348877651] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035246.409257381] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.42 s, our speed 0.32 m/s
+[INFO] [1795035246.452927749] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.42 s, closest 0.30 m)
+[INFO] [1795035246.483430925] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.22 s, our speed 0.31 m/s
+[INFO] [1795035246.555652516] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.01 s, closest 0.28 m)
+[INFO] [1795035246.637175035] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.38 s, our speed 0.30 m/s
+[INFO] [1795035246.681742875] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.27 m)
+[INFO] [1795035246.716177212] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.38 s, our speed 0.29 m/s
+[INFO] [1795035246.795549363] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.31 s, closest 0.25 m)
+[INFO] [1795035246.836874036] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.45 s, our speed 0.27 m/s
+[INFO] [1795035246.913637224] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.24 m)
+[INFO] [1795035246.985487994] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.27 s, our speed 0.26 m/s
+[INFO] [1795035247.017322036] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.22 m)
+[INFO] [1795035247.099677151] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.15 s, our speed 0.25 m/s
+[INFO] [1795035247.162135392] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.21 m)
+[INFO] [1795035247.335971827] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.14 s, our speed 0.25 m/s
+[INFO] [1795035247.372430065] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.20 m)
+[INFO] [1795035247.442247867] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.07 s, our speed 0.25 m/s
+[INFO] [1795035247.476945845] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.19 m)
+[INFO] [1795035247.527042964] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.42 s, our speed 0.23 m/s
+[INFO] [1795035247.559096154] [aeb]: AEB: ⚠ PARTIAL brake: object 0.18 m ahead, TTC 0.98 s, our speed 0.23 m/s
+[INFO] [1795035247.651454545] [aeb]: AEB: ⚠ FULL brake: object 0.17 m ahead, TTC 0.59 s, our speed 0.13 m/s
+[INFO] [1795035248.215002225] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035248.626630812] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.59 s, closest 0.17 m)
+[INFO] [1795035249.411270727] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035249.430852915] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.18 s, our speed 0.28 m/s
+[INFO] [1795035249.473939816] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.29 m)
+[INFO] [1795035249.585134409] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.45 s, our speed 0.30 m/s
+[INFO] [1795035249.624544332] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.27 m)
+[INFO] [1795035249.731190823] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.48 s, our speed 0.30 m/s
+[INFO] [1795035249.794814937] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.06 s, closest 0.25 m)
+[INFO] [1795035249.881383223] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.17 s, our speed 0.27 m/s
+[INFO] [1795035249.935349852] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.24 m)
+[INFO] [1795035249.997923507] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.26 s, our speed 0.26 m/s
+[INFO] [1795035250.025176187] [aeb]: AEB: ⚠ PARTIAL brake: object 0.22 m ahead, TTC 0.99 s, our speed 0.26 m/s
+[INFO] [1795035250.296249941] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035250.535222176] [rss_monitor]: RSS: ✅ safe again after 1.0 s
+[INFO] [1795035250.906367212] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.99 s, closest 0.22 m)
+[INFO] [1795035251.548550544] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.43 s, our speed 0.20 m/s
+[INFO] [1795035251.605067252] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.31 m)
+[INFO] [1795035251.877962992] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.22 m/s
+[INFO] [1795035251.908835460] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.29 m/s
+[INFO] [1795035251.950955938] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035252.018569626] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.22 s, our speed 0.28 m/s
+[INFO] [1795035252.070717203] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.22 s, closest 0.28 m)
+[INFO] [1795035252.174209351] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.36 s, our speed 0.28 m/s
+[INFO] [1795035252.205301609] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.27 m)
+[INFO] [1795035252.347609792] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.07 s, our speed 0.29 m/s
+[INFO] [1795035252.389306638] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.25 m)
+[INFO] [1795035252.488797275] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.11 s, our speed 0.27 m/s
+[INFO] [1795035252.542725368] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.23 m)
+[INFO] [1795035252.587339426] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.49 s, our speed 0.26 m/s
+[INFO] [1795035252.646426932] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.08 s, closest 0.22 m)
+[INFO] [1795035252.701846855] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.05 s, our speed 0.25 m/s
+[INFO] [1795035252.750525355] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.21 m)
+[INFO] [1795035252.821285744] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.17 s, our speed 0.24 m/s
+[INFO] [1795035252.872848781] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.20 m)
+[INFO] [1795035252.954946875] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.13 s, our speed 0.23 m/s
+[INFO] [1795035253.000949839] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.19 m)
+[INFO] [1795035253.147329109] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.13 s, our speed 0.22 m/s
+[INFO] [1795035253.188383625] [aeb]: AEB: ⚠ PARTIAL brake: object 0.17 m ahead, TTC 0.92 s, our speed 0.22 m/s
+[INFO] [1795035253.456437004] [aeb]: AEB: ⚠ FULL brake: object 0.19 m ahead, TTC inf s, our speed 0.05 m/s
+[INFO] [1795035253.804457214] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035254.354967947] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.92 s, closest 0.16 m)
+[INFO] [1795035255.276899315] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.03 s, our speed 0.28 m/s
+[INFO] [1795035255.322957109] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.30 m)
+[INFO] [1795035255.324494049] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035255.403609379] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.19 s, our speed 0.30 m/s
+[INFO] [1795035255.441784050] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.29 m)
+[INFO] [1795035255.518411547] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.20 s, our speed 0.29 m/s
+[INFO] [1795035255.560807159] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.27 m)
+[INFO] [1795035255.729506365] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.04 s, our speed 0.29 m/s
+[INFO] [1795035255.768681341] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.25 m)
+[INFO] [1795035255.853777781] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.18 s, our speed 0.27 m/s
+[INFO] [1795035255.892628308] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.24 m)
+[INFO] [1795035255.921705598] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.23 s, our speed 0.26 m/s
+[INFO] [1795035255.993095282] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.12 s, closest 0.22 m)
+[INFO] [1795035256.085596033] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.02 s, our speed 0.25 m/s
+[INFO] [1795035256.139082436] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.02 s, closest 0.21 m)
+[INFO] [1795035256.225373276] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.21 s, our speed 0.24 m/s
+[INFO] [1795035256.273714618] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.20 m)
+[INFO] [1795035256.337115994] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.12 s, our speed 0.24 m/s
+[INFO] [1795035256.369190170] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.20 m)
+[INFO] [1795035256.441403098] [aeb]: AEB: ⚠ PARTIAL: object 0.18 m ahead in our path, TTC 0.90 s, our speed 0.24 m/s
+[INFO] [1795035256.765387829] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035257.117814662] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035257.574100831] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.90 s, closest 0.18 m)
+[INFO] [1795035258.436679399] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.43 s, our speed 0.28 m/s
+[INFO] [1795035258.496041016] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.30 m)
+[INFO] [1795035258.543048919] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035258.564614791] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.35 s, our speed 0.29 m/s
+[INFO] [1795035258.612702298] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.29 m)
+[INFO] [1795035258.683579077] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.21 s, our speed 0.29 m/s
+[INFO] [1795035258.716525404] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.27 m)
+[INFO] [1795035258.806288387] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.26 s, our speed 0.27 m/s
+[INFO] [1795035258.856072211] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.26 s, closest 0.26 m)
+[INFO] [1795035259.021123046] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.42 s, our speed 0.28 m/s
+[INFO] [1795035259.059281575] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.42 s, closest 0.25 m)
+[INFO] [1795035259.092554616] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.17 s, our speed 0.28 m/s
+[INFO] [1795035259.187164279] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.17 s, closest 0.23 m)
+[INFO] [1795035259.385298538] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.14 s, our speed 0.26 m/s
+[INFO] [1795035259.417182696] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.21 m)
+[INFO] [1795035259.486342578] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.10 s, our speed 0.24 m/s
+[INFO] [1795035259.533531935] [aeb]: AEB: ⚠ FULL brake: object 0.19 m ahead, TTC 0.60 s, our speed 0.24 m/s
+[INFO] [1795035260.120906445] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035260.581058797] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.60 s, closest 0.19 m)
+[INFO] [1795035261.537188691] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035261.692508974] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.37 s, our speed 0.32 m/s
+[INFO] [1795035261.749260727] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.37 s, closest 0.29 m)
+[INFO] [1795035261.840965664] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.13 s, our speed 0.30 m/s
+[INFO] [1795035261.875667544] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.27 m)
+[INFO] [1795035261.917435060] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.48 s, our speed 0.29 m/s
+[INFO] [1795035261.977538905] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.11 s, closest 0.25 m)
+[INFO] [1795035262.014702360] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.27 s, our speed 0.28 m/s
+[INFO] [1795035262.091841440] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.24 m)
+[INFO] [1795035262.137026840] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.33 s, our speed 0.27 m/s
+[INFO] [1795035262.231314735] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.14 s, closest 0.22 m)
+[INFO] [1795035262.292614301] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.49 s, our speed 0.25 m/s
+[INFO] [1795035262.346581023] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.07 s, closest 0.21 m)
+[INFO] [1795035262.426753820] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.15 s, our speed 0.24 m/s
+[INFO] [1795035262.465744145] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.20 m)
+[INFO] [1795035262.538017100] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.04 s, our speed 0.24 m/s
+[INFO] [1795035262.576476192] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.19 m)
+[INFO] [1795035262.655254765] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.03 s, our speed 0.24 m/s
+[INFO] [1795035262.702474938] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.18 m)
+[INFO] [1795035262.748210863] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.45 s, our speed 0.24 m/s
+[INFO] [1795035262.790916833] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.18 m)
+[INFO] [1795035262.856121943] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.06 s, our speed 0.23 m/s
+[INFO] [1795035262.891266172] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.17 m)
+[INFO] [1795035262.945066971] [aeb]: AEB: ⚠ PARTIAL: object 0.17 m ahead in our path, TTC 0.82 s, our speed 0.20 m/s
+[INFO] [1795035263.092514028] [aeb]: AEB: ⚠ FULL brake: object 0.14 m ahead, TTC 0.41 s, our speed 0.10 m/s
+[INFO] [1795035263.677095724] [rss_monitor]: RSS: ✅ safe again after 1.8 s
+[INFO] [1795035264.052424164] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.41 s, closest 0.14 m)
+[INFO] [1795035264.836279808] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.19 m/s
+[INFO] [1795035264.883321701] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.35 s, our speed 0.28 m/s
+[INFO] [1795035264.934098718] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.28 m)
+[INFO] [1795035265.026984776] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035265.054823292] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.27 m)
+[INFO] [1795035265.117609023] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.07 s, our speed 0.28 m/s
+[INFO] [1795035265.174954938] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.25 m)
+[INFO] [1795035265.206335936] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.46 s, our speed 0.27 m/s
+[INFO] [1795035265.282936157] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.36 s, closest 0.24 m)
+[INFO] [1795035265.355971862] [aeb]: AEB: ⚠ PARTIAL: object 0.22 m ahead in our path, TTC 0.98 s, our speed 0.26 m/s
+[INFO] [1795035265.646945739] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035265.870558707] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035266.112473108] [aeb]: AEB: ✅ released after 0.6 s (worst: FULL, TTC 0.98 s, closest 0.22 m)
+[INFO] [1795035267.015464646] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.49 s, our speed 0.28 m/s
+[INFO] [1795035267.057580565] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.29 m)
+[INFO] [1795035267.073335634] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035267.121254559] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.27 s, our speed 0.29 m/s
+[INFO] [1795035267.163203386] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.28 m)
+[INFO] [1795035267.208798630] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.16 s, our speed 0.28 m/s
+[INFO] [1795035267.253424355] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.27 m)
+[INFO] [1795035267.396389132] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.47 s, our speed 0.27 m/s
+[INFO] [1795035267.429908135] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.47 s, closest 0.26 m)
+[INFO] [1795035267.552351703] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.06 s, our speed 0.31 m/s
+[INFO] [1795035267.592624837] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.24 m)
+[INFO] [1795035267.633465605] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.11 s, our speed 0.28 m/s
+[INFO] [1795035267.731947801] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.23 m)
+[INFO] [1795035267.788262361] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.44 s, our speed 0.26 m/s
+[INFO] [1795035267.866637468] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.01 s, closest 0.21 m)
+[INFO] [1795035267.934411647] [aeb]: AEB: ⚠ PARTIAL: object 0.20 m ahead in our path, TTC 1.00 s, our speed 0.25 m/s
+[INFO] [1795035268.272913521] [aeb]: AEB: ⚠ FULL brake: object 0.22 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035268.532515569] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035268.896744235] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.72 s, closest 0.18 m)
+[INFO] [1795035269.813534083] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.23 s, our speed 0.29 m/s
+[INFO] [1795035269.869753922] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035269.872214957] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.30 m)
+[INFO] [1795035270.048918058] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.28 s, our speed 0.31 m/s
+[INFO] [1795035270.079619610] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.28 m)
+[INFO] [1795035270.118500772] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.23 s, our speed 0.30 m/s
+[INFO] [1795035270.182570673] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.07 s, closest 0.26 m)
+[INFO] [1795035270.229382315] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.42 s, our speed 0.28 m/s
+[INFO] [1795035270.300196037] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.03 s, closest 0.24 m)
+[INFO] [1795035270.378329494] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.09 s, our speed 0.27 m/s
+[INFO] [1795035270.434327175] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.23 m)
+[INFO] [1795035270.483863887] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.15 s, our speed 0.25 m/s
+[INFO] [1795035270.530137899] [aeb]: AEB: ⚠ PARTIAL brake: object 0.21 m ahead, TTC 0.96 s, our speed 0.25 m/s
+[INFO] [1795035270.798179076] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035271.004497736] [rss_monitor]: RSS: ✅ safe again after 1.0 s
+[INFO] [1795035271.372677231] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.96 s, closest 0.21 m)
+[INFO] [1795035272.101928740] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.18 s, our speed 0.24 m/s
+[INFO] [1795035272.153112056] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.31 m)
+[INFO] [1795035272.341988706] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035272.363217605] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.30 m/s
+[INFO] [1795035272.408710311] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035272.474714538] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.25 s, our speed 0.29 m/s
+[INFO] [1795035272.512924781] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.28 m)
+[INFO] [1795035272.589774494] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.19 s, our speed 0.29 m/s
+[INFO] [1795035272.641485426] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.26 m)
+[INFO] [1795035272.721511888] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.11 s, our speed 0.28 m/s
+[INFO] [1795035272.745562675] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.25 m)
+[INFO] [1795035272.788346995] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.35 s, our speed 0.27 m/s
+[INFO] [1795035272.867328249] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.08 s, closest 0.24 m)
+[INFO] [1795035272.950303459] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.16 s, our speed 0.25 m/s
+[INFO] [1795035272.989354578] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.22 m)
+[INFO] [1795035273.063410582] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.14 s, our speed 0.24 m/s
+[INFO] [1795035273.120123375] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.21 m)
+[INFO] [1795035273.164908400] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.47 s, our speed 0.26 m/s
+[INFO] [1795035273.211131004] [aeb]: AEB: ⚠ PARTIAL brake: object 0.20 m ahead, TTC 1.00 s, our speed 0.26 m/s
+[INFO] [1795035273.596669516] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035273.935167139] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035274.289082804] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 1.00 s, closest 0.19 m)
+[INFO] [1795035274.869299282] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.45 s, our speed 0.20 m/s
+[INFO] [1795035274.965360631] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.45 s, closest 0.31 m)
+[INFO] [1795035275.212104116] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.22 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035275.245218501] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.16 s, our speed 0.29 m/s
+[INFO] [1795035275.281175191] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.28 m)
+[INFO] [1795035275.398929573] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.41 s, our speed 0.27 m/s
+[INFO] [1795035275.448108485] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.26 m)
+[INFO] [1795035275.614331765] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.26 s, our speed 0.29 m/s
+[INFO] [1795035275.653164929] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.26 s, closest 0.25 m)
+[INFO] [1795035275.730509989] [aeb]: AEB: ⚠ PARTIAL: object 0.23 m ahead in our path, TTC 0.85 s, our speed 0.28 m/s
+[INFO] [1795035276.069091378] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035276.270263413] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035276.503011577] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.85 s, closest 0.22 m)
+[INFO] [1795035277.435014718] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035277.513537901] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.25 s, our speed 0.31 m/s
+[INFO] [1795035277.558111357] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.29 m)
+[INFO] [1795035277.592960401] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.43 s, our speed 0.30 m/s
+[INFO] [1795035277.680969204] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.10 s, closest 0.27 m)
+[INFO] [1795035277.758498062] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.16 s, our speed 0.28 m/s
+[INFO] [1795035277.796807297] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.26 m)
+[INFO] [1795035277.959274398] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.10 s, our speed 0.28 m/s
+[INFO] [1795035277.991952945] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.24 m)
+[INFO] [1795035278.065016276] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.08 s, our speed 0.27 m/s
+[INFO] [1795035278.101170144] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.23 m)
+[INFO] [1795035278.165287850] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.12 s, our speed 0.25 m/s
+[INFO] [1795035278.207870403] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.21 m)
+[INFO] [1795035278.293567546] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.07 s, our speed 0.25 m/s
+[INFO] [1795035278.345665668] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.20 m)
+[INFO] [1795035278.418697548] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.18 s, our speed 0.24 m/s
+[INFO] [1795035278.452463319] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.20 m)
+[INFO] [1795035278.519329765] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.08 s, our speed 0.24 m/s
+[INFO] [1795035278.568217948] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.19 m)
+[INFO] [1795035278.636545958] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.07 s, our speed 0.23 m/s
+[INFO] [1795035278.669959858] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.18 m)
+[INFO] [1795035278.710181461] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.35 s, our speed 0.22 m/s
+[INFO] [1795035278.777307752] [aeb]: AEB: ⚠ PARTIAL brake: object 0.17 m ahead, TTC 0.91 s, our speed 0.22 m/s
+[INFO] [1795035279.360035975] [aeb]: AEB: ⚠ FULL brake: object 0.12 m ahead, TTC 0.26 s, our speed 0.08 m/s
+[INFO] [1795035281.599917513] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035282.243093258] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.26 s, closest 0.12 m)
+[INFO] [1795035282.519921037] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.22 s, our speed 0.08 m/s
+[INFO] [1795035282.551087848] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.22 s, closest 0.30 m)
+[INFO] [1795035282.827027522] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.14 s, our speed 0.16 m/s
+[INFO] [1795035282.860759294] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.31 m)
+[INFO] [1795035283.040843715] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.43 s, our speed 0.24 m/s
+[INFO] [1795035283.074751200] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.30 m)
+[INFO] [1795035283.171189954] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035283.269928174] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.14 s, our speed 0.32 m/s
+[INFO] [1795035283.318644763] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.28 m)
+[INFO] [1795035283.346393749] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.35 s, our speed 0.31 m/s
+[INFO] [1795035283.429681960] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.00 s, closest 0.27 m)
+[INFO] [1795035283.490679300] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.43 s, our speed 0.29 m/s
+[INFO] [1795035283.528661568] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.43 s, closest 0.25 m)
+[INFO] [1795035283.583686855] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.47 s, our speed 0.28 m/s
+[INFO] [1795035283.683635539] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.17 s, closest 0.24 m)
+[INFO] [1795035283.704766104] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.34 s, our speed 0.27 m/s
+[INFO] [1795035283.751849948] [aeb]: AEB: ⚠ PARTIAL brake: object 0.22 m ahead, TTC 0.96 s, our speed 0.27 m/s
+[INFO] [1795035284.054079928] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035284.220615806] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035284.616304779] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.96 s, closest 0.21 m)
+[INFO] [1795035285.123246989] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.25 s, our speed 0.16 m/s
+[INFO] [1795035285.156867972] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.32 m)
+[INFO] [1795035285.557632517] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.36 s, our speed 0.28 m/s
+[INFO] [1795035285.591792883] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.30 m)
+[INFO] [1795035285.598970611] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.22 m/s
+[INFO] [1795035285.733904343] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.35 s, our speed 0.30 m/s
+[INFO] [1795035285.769809659] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.28 m)
+[INFO] [1795035285.840349201] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.38 s, our speed 0.29 m/s
+[INFO] [1795035285.892168863] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.27 m)
+[INFO] [1795035285.981551263] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.14 s, our speed 0.29 m/s
+[INFO] [1795035286.034554034] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.25 m)
+[INFO] [1795035286.093489075] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.11 s, our speed 0.28 m/s
+[INFO] [1795035286.132557491] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.24 m)
+[INFO] [1795035286.173837107] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.42 s, our speed 0.27 m/s
+[INFO] [1795035286.245443513] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.04 s, closest 0.22 m)
+[INFO] [1795035286.289152349] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.37 s, our speed 0.26 m/s
+[INFO] [1795035286.340125017] [aeb]: AEB: ⚠ PARTIAL brake: object 0.21 m ahead, TTC 0.95 s, our speed 0.26 m/s
+[INFO] [1795035286.714567324] [aeb]: AEB: ⚠ FULL brake: object 0.22 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035286.828984273] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035287.410085205] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.95 s, closest 0.20 m)
+[INFO] [1795035287.871214402] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.21 s, our speed 0.16 m/s
+[INFO] [1795035287.912724805] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.32 m)
+[INFO] [1795035288.322317388] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035288.350427941] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.47 s, our speed 0.30 m/s
+[INFO] [1795035288.423771781] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.13 s, closest 0.29 m)
+[INFO] [1795035288.583763674] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.25 s, our speed 0.31 m/s
+[INFO] [1795035288.634273783] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.27 m)
+[INFO] [1795035288.681196536] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.28 s, our speed 0.30 m/s
+[INFO] [1795035288.724734289] [aeb]: AEB: ⚠ PARTIAL brake: object 0.25 m ahead, TTC 0.99 s, our speed 0.30 m/s
+[INFO] [1795035289.021084327] [aeb]: AEB: ⚠ FULL brake: object 0.26 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035289.119793756] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035289.457432786] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.67 s, closest 0.23 m)
+[INFO] [1795035290.453658658] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.44 s, our speed 0.31 m/s
+[INFO] [1795035290.459069235] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035290.542761480] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.15 s, closest 0.29 m)
+[INFO] [1795035290.611431968] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.31 s, our speed 0.29 m/s
+[INFO] [1795035290.641059271] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.28 m)
+[INFO] [1795035290.709772249] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.20 s, our speed 0.29 m/s
+[INFO] [1795035290.760148538] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.27 m)
+[INFO] [1795035290.800924464] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.48 s, our speed 0.28 m/s
+[INFO] [1795035290.896335399] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.25 m)
+[INFO] [1795035291.052928921] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.17 s, our speed 0.28 m/s
+[INFO] [1795035291.079533481] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.24 m)
+[INFO] [1795035291.123673704] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.42 s, our speed 0.26 m/s
+[INFO] [1795035291.207859487] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.01 s, closest 0.22 m)
+[INFO] [1795035291.303534798] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.06 s, our speed 0.25 m/s
+[INFO] [1795035291.346603628] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.21 m)
+[INFO] [1795035291.375932397] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.31 s, our speed 0.25 m/s
+[INFO] [1795035291.439254543] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.15 s, closest 0.20 m)
+[INFO] [1795035291.509366429] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.03 s, our speed 0.24 m/s
+[INFO] [1795035291.556075166] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.19 m)
+[INFO] [1795035291.620782618] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.07 s, our speed 0.23 m/s
+[INFO] [1795035291.657177704] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.18 m)
+[INFO] [1795035291.711648052] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.04 s, our speed 0.22 m/s
+[INFO] [1795035291.749338889] [aeb]: AEB: ⚠ PARTIAL brake: object 0.17 m ahead, TTC 0.93 s, our speed 0.22 m/s
+[INFO] [1795035292.015313083] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035292.354415735] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035292.937441380] [aeb]: AEB: ✅ released after 1.1 s (worst: FULL, TTC 0.68 s, closest 0.15 m)
+[INFO] [1795035293.877889389] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035293.899001728] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.44 s, our speed 0.30 m/s
+[INFO] [1795035293.970364012] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.29 m)
+[INFO] [1795035294.006751843] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.18 s, our speed 0.29 m/s
+[INFO] [1795035294.060728236] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.28 m)
+[INFO] [1795035294.199799821] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.08 s, our speed 0.28 m/s
+[INFO] [1795035294.244010105] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.26 m)
+[INFO] [1795035294.382514200] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.02 s, our speed 0.30 m/s
+[INFO] [1795035294.422340449] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.02 s, closest 0.25 m)
+[INFO] [1795035294.469770562] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.31 s, our speed 0.29 m/s
+[INFO] [1795035294.513109200] [aeb]: AEB: ⚠ PARTIAL brake: object 0.23 m ahead, TTC 0.98 s, our speed 0.29 m/s
+[INFO] [1795035294.817908118] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035294.901583363] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035295.380878873] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.98 s, closest 0.22 m)
+[INFO] [1795035296.345428046] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035296.408227034] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.09 s, our speed 0.32 m/s
+[INFO] [1795035296.456599669] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.29 m)
+[INFO] [1795035296.547856093] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.20 s, our speed 0.30 m/s
+[INFO] [1795035296.583875311] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.28 m)
+[INFO] [1795035296.609625643] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.44 s, our speed 0.29 m/s
+[INFO] [1795035296.673854440] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.10 s, closest 0.26 m)
+[INFO] [1795035296.715579616] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.47 s, our speed 0.29 m/s
+[INFO] [1795035296.813007492] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.05 s, closest 0.24 m)
+[INFO] [1795035296.907142911] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.13 s, our speed 0.28 m/s
+[INFO] [1795035296.944344600] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.23 m)
+[INFO] [1795035296.985451569] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.31 s, our speed 0.27 m/s
+[INFO] [1795035297.021158725] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.23 m)
+[INFO] [1795035297.095221726] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.10 s, our speed 0.27 m/s
+[INFO] [1795035297.136058248] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.21 m)
+[INFO] [1795035297.216706883] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.08 s, our speed 0.26 m/s
+[INFO] [1795035297.272814671] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.20 m)
+[INFO] [1795035297.335007583] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.06 s, our speed 0.25 m/s
+[INFO] [1795035297.380241908] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.19 m)
+[INFO] [1795035297.401864317] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.49 s, our speed 0.24 m/s
+[INFO] [1795035297.432760588] [aeb]: AEB: ⚠ PARTIAL brake: object 0.18 m ahead, TTC 1.00 s, our speed 0.24 m/s
+[INFO] [1795035297.672626657] [aeb]: AEB: ⚠ FULL brake: object 0.16 m ahead, TTC 0.40 s, our speed 0.06 m/s
+[INFO] [1795035297.974130506] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035298.536181102] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.40 s, closest 0.16 m)
+[INFO] [1795035299.403014800] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.45 s, our speed 0.28 m/s
+[INFO] [1795035299.440481658] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.45 s, closest 0.30 m)
+[INFO] [1795035299.524141094] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035299.581146018] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.19 s, our speed 0.31 m/s
+[INFO] [1795035299.625713434] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.28 m)
+[INFO] [1795035299.691665973] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.26 s, our speed 0.30 m/s
+[INFO] [1795035299.719414504] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.26 s, closest 0.27 m)
+[INFO] [1795035299.804637939] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.28 s, our speed 0.29 m/s
+[INFO] [1795035299.839119297] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.26 m)
+[INFO] [1795035299.924966494] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.13 s, our speed 0.28 m/s
+[INFO] [1795035299.968299754] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.25 m)
+[INFO] [1795035300.066544267] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.15 s, our speed 0.27 m/s
+[INFO] [1795035300.113000155] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.23 m)
+[INFO] [1795035300.149053943] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.48 s, our speed 0.26 m/s
+[INFO] [1795035300.214480511] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.08 s, closest 0.22 m)
+[INFO] [1795035300.288915228] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.12 s, our speed 0.25 m/s
+[INFO] [1795035300.334056174] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.21 m)
+[INFO] [1795035300.468922378] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.48 s, our speed 0.27 m/s
+[INFO] [1795035300.501216001] [aeb]: AEB: ⚠ PARTIAL brake: object 0.19 m ahead, TTC 0.95 s, our speed 0.27 m/s
+[INFO] [1795035300.799867141] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035301.121313435] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035301.595407511] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.95 s, closest 0.18 m)
+[INFO] [1795035301.993447650] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.28 s, our speed 0.12 m/s
+[INFO] [1795035302.027143714] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.32 m)
+[INFO] [1795035302.456980785] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.19 s, our speed 0.28 m/s
+[INFO] [1795035302.503757866] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035302.504580088] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.30 m)
+[INFO] [1795035302.663004532] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.10 s, our speed 0.30 m/s
+[INFO] [1795035302.697024604] [aeb]: AEB: ⚠ PARTIAL brake: object 0.27 m ahead, TTC 0.97 s, our speed 0.30 m/s
+[INFO] [1795035302.966116948] [aeb]: AEB: ⚠ FULL brake: object 0.29 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035303.045523612] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035303.173397386] [aeb]: AEB: ✅ released after 0.4 s (worst: FULL, TTC 0.97 s, closest 0.26 m)
+[INFO] [1795035304.121319132] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035304.190710777] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.26 s, our speed 0.31 m/s
+[INFO] [1795035304.223500387] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.26 s, closest 0.30 m)
+[INFO] [1795035304.302581906] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.12 s, our speed 0.32 m/s
+[INFO] [1795035304.341268643] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.28 m)
+[INFO] [1795035304.399134274] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.41 s, our speed 0.32 m/s
+[INFO] [1795035304.430896542] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.27 m)
+[INFO] [1795035304.537604063] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.05 s, our speed 0.31 m/s
+[INFO] [1795035304.570085319] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.25 m)
+[INFO] [1795035304.601666128] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.32 s, our speed 0.29 m/s
+[INFO] [1795035304.636485546] [aeb]: AEB: ⚠ PARTIAL brake: object 0.24 m ahead, TTC 1.00 s, our speed 0.29 m/s
+[INFO] [1795035304.940807012] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035305.137492221] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035305.430528782] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 1.00 s, closest 0.23 m)
+[INFO] [1795035306.319288162] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.30 s, our speed 0.28 m/s
+[INFO] [1795035306.346337339] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.30 m)
+[INFO] [1795035306.360858434] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035306.420456097] [aeb]: AEB: ⚠ PARTIAL: object 0.28 m ahead in our path, TTC 0.91 s, our speed 0.30 m/s
+[INFO] [1795035306.714525200] [aeb]: AEB: ⚠ FULL brake: object 0.30 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035306.793141229] [aeb]: AEB: ✅ released after 0.3 s (worst: FULL, TTC 0.91 s, closest 0.28 m)
+[INFO] [1795035306.875199029] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035307.714892131] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.22 m/s
+[INFO] [1795035307.847870866] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.08 s, our speed 0.30 m/s
+[INFO] [1795035307.880656332] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.28 m)
+[INFO] [1795035307.939450520] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.27 s, our speed 0.29 m/s
+[INFO] [1795035307.990112486] [aeb]: AEB: ⚠ PARTIAL brake: object 0.26 m ahead, TTC 0.90 s, our speed 0.29 m/s
+[INFO] [1795035308.304758170] [aeb]: AEB: ⚠ FULL brake: object 0.28 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035308.411885867] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035308.533525652] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.90 s, closest 0.25 m)
+[INFO] [1795035311.936419832] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.35 s, our speed 0.31 m/s
+[INFO] [1795035311.939584273] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035312.027282641] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035312.100924483] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.29 s, our speed 0.30 m/s
+[INFO] [1795035312.152868575] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.28 m)
+[INFO] [1795035312.224320164] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035312.263404128] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.26 m)
+[INFO] [1795035312.343645028] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.13 s, our speed 0.28 m/s
+[INFO] [1795035312.376880002] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.25 m)
+[INFO] [1795035312.446257400] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.14 s, our speed 0.26 m/s
+[INFO] [1795035312.494812602] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.23 m)
+[INFO] [1795035312.557456870] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.40 s, our speed 0.26 m/s
+[INFO] [1795035312.645055730] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.03 s, closest 0.22 m)
+[INFO] [1795035312.711478718] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.12 s, our speed 0.24 m/s
+[INFO] [1795035312.759973205] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.21 m)
+[INFO] [1795035312.820021715] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.16 s, our speed 0.24 m/s
+[INFO] [1795035312.862139342] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.20 m)
+[INFO] [1795035313.023855298] [aeb]: AEB: ⚠ PARTIAL: object 0.19 m ahead in our path, TTC 0.98 s, our speed 0.25 m/s
+[INFO] [1795035313.347531353] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035313.556329885] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035314.173238217] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.98 s, closest 0.18 m)
+[INFO] [1795035315.160634057] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.21 m/s
+[INFO] [1795035315.183420694] [aeb]: AEB: ⚠ PARTIAL: object 0.29 m ahead in our path, TTC 0.84 s, our speed 0.32 m/s
+[INFO] [1795035315.499415796] [aeb]: AEB: ⚠ FULL brake: object 0.30 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035315.571283108] [rss_monitor]: RSS: ✅ safe again after 0.4 s
+[INFO] [1795035315.671762901] [aeb]: AEB: ✅ released after 0.4 s (worst: FULL, TTC 0.84 s, closest 0.28 m)
+[INFO] [1795035316.581146600] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035316.635515964] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.19 s, our speed 0.31 m/s
+[INFO] [1795035316.677202875] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.29 m)
+[INFO] [1795035316.753543119] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.26 s, our speed 0.30 m/s
+[INFO] [1795035316.805960385] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.26 s, closest 0.28 m)
+[INFO] [1795035316.863258235] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.48 s, our speed 0.29 m/s
+[INFO] [1795035316.943606122] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.26 m)
+[INFO] [1795035317.030074960] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.10 s, our speed 0.28 m/s
+[INFO] [1795035317.072801866] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.25 m)
+[INFO] [1795035317.139599331] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.11 s, our speed 0.26 m/s
+[INFO] [1795035317.178217007] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.24 m)
+[INFO] [1795035317.253571974] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.18 s, our speed 0.25 m/s
+[INFO] [1795035317.292162105] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.22 m)
+[INFO] [1795035317.475374662] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.06 s, our speed 0.27 m/s
+[INFO] [1795035317.498106528] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.21 m)
+[INFO] [1795035317.569300725] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.09 s, our speed 0.25 m/s
+[INFO] [1795035317.620999843] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.20 m)
+[INFO] [1795035317.688323332] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.13 s, our speed 0.23 m/s
+[INFO] [1795035317.731922094] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.19 m)
+[INFO] [1795035317.779648288] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.25 s, our speed 0.22 m/s
+[INFO] [1795035317.829332324] [aeb]: AEB: ⚠ PARTIAL brake: object 0.18 m ahead, TTC 0.92 s, our speed 0.22 m/s
+[INFO] [1795035317.993471791] [aeb]: AEB: ⚠ FULL brake: object 0.16 m ahead, TTC 0.49 s, our speed 0.09 m/s
+[INFO] [1795035318.343887917] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035318.901865305] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.49 s, closest 0.16 m)
+[INFO] [1795035319.820043416] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.36 s, our speed 0.28 m/s
+[INFO] [1795035319.848420513] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.30 m)
+[INFO] [1795035319.895521090] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035320.039025932] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.15 s, our speed 0.30 m/s
+[INFO] [1795035320.075059423] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.28 m)
+[INFO] [1795035320.164106442] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.29 s, our speed 0.29 m/s
+[INFO] [1795035320.207290221] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.26 m)
+[INFO] [1795035320.253407497] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.39 s, our speed 0.29 m/s
+[INFO] [1795035320.289800452] [aeb]: AEB: ⚠ PARTIAL brake: object 0.25 m ahead, TTC 0.93 s, our speed 0.29 m/s
+[INFO] [1795035320.583492849] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035320.682938570] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035321.021117632] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.93 s, closest 0.24 m)
+[INFO] [1795035321.938429199] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.49 s, our speed 0.28 m/s
+[INFO] [1795035321.975246555] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.31 m)
+[INFO] [1795035321.983539254] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.23 m/s
+[INFO] [1795035322.056301322] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.31 m/s
+[INFO] [1795035322.098373536] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035322.178490922] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.20 s, our speed 0.30 m/s
+[INFO] [1795035322.213125173] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.28 m)
+[INFO] [1795035322.283884639] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.16 s, our speed 0.29 m/s
+[INFO] [1795035322.326429998] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.27 m)
+[INFO] [1795035322.364779888] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.37 s, our speed 0.28 m/s
+[INFO] [1795035322.444653033] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.07 s, closest 0.25 m)
+[INFO] [1795035322.481141719] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.40 s, our speed 0.28 m/s
+[INFO] [1795035322.528538699] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.40 s, closest 0.24 m)
+[INFO] [1795035322.623532923] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.12 s, our speed 0.27 m/s
+[INFO] [1795035322.665944694] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.23 m)
+[INFO] [1795035322.729046975] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.11 s, our speed 0.25 m/s
+[INFO] [1795035322.768157695] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.22 m)
+[INFO] [1795035322.840241387] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.23 s, our speed 0.24 m/s
+[INFO] [1795035322.879747849] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.21 m)
+[INFO] [1795035322.959856758] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.05 s, our speed 0.24 m/s
+[INFO] [1795035323.005750628] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.20 m)
+[INFO] [1795035323.109166695] [aeb]: AEB: ⚠ PARTIAL: object 0.19 m ahead in our path, TTC 1.00 s, our speed 0.23 m/s
+[INFO] [1795035323.517669586] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035323.735547505] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035324.285760526] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 1.00 s, closest 0.18 m)
+[INFO] [1795035324.995419581] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.16 s, our speed 0.20 m/s
+[INFO] [1795035325.026923646] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.31 m)
+[INFO] [1795035325.215110137] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.28 m/s
+[INFO] [1795035325.285912690] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035325.292596261] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035325.329310960] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.15 s, our speed 0.30 m/s
+[INFO] [1795035325.357274871] [aeb]: AEB: ⚠ PARTIAL brake: object 0.27 m ahead, TTC 0.92 s, our speed 0.30 m/s
+[INFO] [1795035325.784115198] [aeb]: AEB: ⚠ FULL brake: object 0.29 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035325.900069324] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.92 s, closest 0.26 m)
+[INFO] [1795035325.983473776] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035326.647944947] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.27 s, our speed 0.24 m/s
+[INFO] [1795035326.720531662] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.30 m)
+[INFO] [1795035326.832608320] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035326.876462437] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.23 s, our speed 0.30 m/s
+[INFO] [1795035326.898958802] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.28 m)
+[INFO] [1795035327.078841965] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035327.119781866] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.26 m)
+[INFO] [1795035327.183938233] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.13 s, our speed 0.28 m/s
+[INFO] [1795035327.259387023] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.25 m)
+[INFO] [1795035327.295585540] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.49 s, our speed 0.27 m/s
+[INFO] [1795035327.369540420] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.08 s, closest 0.23 m)
+[INFO] [1795035327.431052198] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.13 s, our speed 0.26 m/s
+[INFO] [1795035327.480806151] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.22 m)
+[INFO] [1795035327.541364220] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.08 s, our speed 0.25 m/s
+[INFO] [1795035327.591395299] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.21 m)
+[INFO] [1795035327.693471348] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.11 s, our speed 0.25 m/s
+[INFO] [1795035327.732227282] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.20 m)
+[INFO] [1795035327.880984967] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.20 s, our speed 0.24 m/s
+[INFO] [1795035327.920651235] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.19 m)
+[INFO] [1795035327.958996618] [aeb]: AEB: ⚠ PARTIAL: object 0.18 m ahead in our path, TTC 0.97 s, our speed 0.22 m/s
+[INFO] [1795035328.300813158] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035328.540762878] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035329.143613866] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.85 s, closest 0.17 m)
+[INFO] [1795035330.087058977] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035330.109202576] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.44 s, our speed 0.30 m/s
+[INFO] [1795035330.147601087] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.44 s, closest 0.29 m)
+[INFO] [1795035330.224908205] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.28 s, our speed 0.31 m/s
+[INFO] [1795035330.269392340] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.28 m)
+[INFO] [1795035330.319682973] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.31 s, our speed 0.30 m/s
+[INFO] [1795035330.360680441] [aeb]: AEB: ⚠ PARTIAL brake: object 0.26 m ahead, TTC 0.97 s, our speed 0.30 m/s
+[INFO] [1795035330.631305019] [aeb]: AEB: ⚠ FULL brake: object 0.27 m ahead, TTC inf s, our speed 0.05 m/s
+[INFO] [1795035330.773556288] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035331.013027158] [aeb]: AEB: ✅ released after 0.6 s (worst: FULL, TTC 0.97 s, closest 0.25 m)
+[INFO] [1795035331.962633801] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035332.040352667] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.17 s, our speed 0.30 m/s
+[INFO] [1795035332.080486743] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.29 m)
+[INFO] [1795035332.182109868] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.24 s, our speed 0.29 m/s
+[INFO] [1795035332.243323184] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.28 m)
+[INFO] [1795035332.298687687] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.29 s, our speed 0.29 m/s
+[INFO] [1795035332.326353794] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.27 m)
+[INFO] [1795035332.354337293] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.48 s, our speed 0.28 m/s
+[INFO] [1795035332.431834463] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.13 s, closest 0.25 m)
+[INFO] [1795035332.503756578] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.13 s, our speed 0.27 m/s
+[INFO] [1795035332.542024404] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.24 m)
+[INFO] [1795035332.737505580] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.10 s, our speed 0.26 m/s
+[INFO] [1795035332.770357899] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.22 m)
+[INFO] [1795035332.839053721] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.15 s, our speed 0.25 m/s
+[INFO] [1795035332.868746463] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.21 m)
+[INFO] [1795035332.940776591] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.14 s, our speed 0.25 m/s
+[INFO] [1795035332.980090318] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.20 m)
+[INFO] [1795035333.060133192] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.10 s, our speed 0.24 m/s
+[INFO] [1795035333.113482958] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.19 m)
+[INFO] [1795035333.206979136] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.03 s, our speed 0.22 m/s
+[INFO] [1795035333.248004088] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.18 m)
+[INFO] [1795035333.284431148] [aeb]: AEB: ⚠ PARTIAL: object 0.17 m ahead in our path, TTC 0.90 s, our speed 0.21 m/s
+[INFO] [1795035333.615185886] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035333.839736150] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035334.427601361] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.75 s, closest 0.17 m)
+[INFO] [1795035335.107607670] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.18 s, our speed 0.20 m/s
+[INFO] [1795035335.136772911] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.30 m)
+[INFO] [1795035335.300952957] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.22 s, our speed 0.28 m/s
+[INFO] [1795035335.337379548] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.22 s, closest 0.29 m)
+[INFO] [1795035335.350782176] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.29 m and sideways -0.22 m < 0.09 m; our speed 0.30 m/s, limited to 0.20 m/s
+[INFO] [1795035335.419789089] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.21 s, our speed 0.30 m/s
+[INFO] [1795035335.493815939] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.27 m)
+[INFO] [1795035335.670201284] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.14 s, our speed 0.30 m/s
+[INFO] [1795035335.708281147] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.26 m)
+[INFO] [1795035335.742333813] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.40 s, our speed 0.29 m/s
+[INFO] [1795035335.819890858] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.04 s, closest 0.24 m)
+[INFO] [1795035335.903080891] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.12 s, our speed 0.28 m/s
+[INFO] [1795035335.958429464] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.23 m)
+[INFO] [1795035336.038602536] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.06 s, our speed 0.26 m/s
+[INFO] [1795035336.063866951] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.22 m)
+[INFO] [1795035336.139002436] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.13 s, our speed 0.25 m/s
+[INFO] [1795035336.173007237] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.21 m)
+[INFO] [1795035336.252553217] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.08 s, our speed 0.25 m/s
+[INFO] [1795035336.308508023] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.20 m)
+[INFO] [1795035336.400263428] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.09 s, our speed 0.23 m/s
+[INFO] [1795035336.447248651] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.19 m)
+[INFO] [1795035336.612827099] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.01 s, our speed 0.21 m/s
+[INFO] [1795035336.652408882] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.01 s, closest 0.18 m)
+[INFO] [1795035336.681422765] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.08 s, our speed 0.20 m/s
+[INFO] [1795035336.710750005] [aeb]: AEB: ⚠ PARTIAL brake: object 0.16 m ahead, TTC 0.92 s, our speed 0.20 m/s
+[INFO] [1795035336.813214855] [aeb]: AEB: ⚠ FULL brake: object 0.15 m ahead, TTC 0.58 s, our speed 0.11 m/s
+[INFO] [1795035337.237005222] [rss_monitor]: RSS: ✅ safe again after 1.6 s
+[INFO] [1795035337.664153625] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.58 s, closest 0.15 m)
+[INFO] [1795035340.389601797] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.21 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035340.628108781] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.38 s, our speed 0.28 m/s
+[INFO] [1795035340.818712759] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.29 m)
+[INFO] [1795035340.949930876] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.36 s, our speed 0.30 m/s
+[INFO] [1795035341.063657214] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.28 m)
+[INFO] [1795035341.227241647] [aeb]: AEB: ⚠ PARTIAL: object 0.26 m ahead in our path, TTC 0.96 s, our speed 0.31 m/s
+[INFO] [1795035341.632135915] [aeb]: AEB: ⚠ FULL brake: object 0.27 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035341.831044101] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035341.945700465] [aeb]: AEB: ✅ released after 0.6 s (worst: FULL, TTC 0.96 s, closest 0.25 m)
+[INFO] [1795035342.848041791] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.12 s, our speed 0.28 m/s
+[INFO] [1795035342.933849509] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.04 s, closest 0.29 m)
+[INFO] [1795035342.938392662] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035343.018100833] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.30 s, our speed 0.31 m/s
+[INFO] [1795035343.071802536] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.29 m)
+[INFO] [1795035343.264929029] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.02 s, our speed 0.29 m/s
+[INFO] [1795035343.304287011] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.02 s, closest 0.26 m)
+[INFO] [1795035343.378501340] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.17 s, our speed 0.28 m/s
+[INFO] [1795035343.421874875] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.25 m)
+[INFO] [1795035343.465172604] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.49 s, our speed 0.27 m/s
+[INFO] [1795035343.503286674] [aeb]: AEB: ⚠ PARTIAL brake: object 0.23 m ahead, TTC 0.82 s, our speed 0.27 m/s
+[INFO] [1795035343.780336971] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035343.873070275] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035344.242512590] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.82 s, closest 0.23 m)
+[INFO] [1795035345.170580323] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.39 s, our speed 0.28 m/s
+[INFO] [1795035345.209487515] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.39 s, closest 0.30 m)
+[INFO] [1795035345.210566081] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.21 m/s
+[INFO] [1795035345.317902182] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.45 s, our speed 0.32 m/s
+[INFO] [1795035345.411381357] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.07 s, closest 0.27 m)
+[INFO] [1795035345.510774426] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.25 s, our speed 0.30 m/s
+[INFO] [1795035345.555895757] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.26 m)
+[INFO] [1795035345.623165150] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.12 s, our speed 0.30 m/s
+[INFO] [1795035345.671973785] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.25 m)
+[INFO] [1795035345.705174806] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.35 s, our speed 0.29 m/s
+[INFO] [1795035345.734770624] [aeb]: AEB: ⚠ PARTIAL brake: object 0.23 m ahead, TTC 0.99 s, our speed 0.29 m/s
+[INFO] [1795035346.088592153] [aeb]: AEB: ⚠ FULL brake: object 0.24 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035346.124289635] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035346.560292610] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.99 s, closest 0.22 m)
+[INFO] [1795035347.554078328] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.23 m/s
+[INFO] [1795035347.585414065] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.29 s, our speed 0.32 m/s
+[INFO] [1795035347.624397172] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.29 s, closest 0.30 m)
+[INFO] [1795035347.702904244] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.15 s, our speed 0.31 m/s
+[INFO] [1795035347.740333428] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.28 m)
+[INFO] [1795035347.781751452] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.29 s, our speed 0.30 m/s
+[INFO] [1795035347.868949919] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.12 s, closest 0.27 m)
+[INFO] [1795035347.947606290] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.36 s, our speed 0.29 m/s
+[INFO] [1795035347.990537077] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.25 m)
+[INFO] [1795035348.052139469] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.15 s, our speed 0.27 m/s
+[INFO] [1795035348.099712336] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.24 m)
+[INFO] [1795035348.138791221] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.40 s, our speed 0.26 m/s
+[INFO] [1795035348.175476946] [aeb]: AEB: ⚠ PARTIAL brake: object 0.22 m ahead, TTC 1.00 s, our speed 0.26 m/s
+[INFO] [1795035348.472727526] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035348.559529028] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035348.911137430] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 1.00 s, closest 0.22 m)
+[INFO] [1795035349.857976360] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035349.934889277] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.11 s, our speed 0.31 m/s
+[INFO] [1795035349.967944958] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.29 m)
+[INFO] [1795035350.040309619] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.25 s, our speed 0.30 m/s
+[INFO] [1795035350.081823386] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.25 s, closest 0.27 m)
+[INFO] [1795035350.148561030] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.12 s, our speed 0.28 m/s
+[INFO] [1795035350.193294675] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.26 m)
+[INFO] [1795035350.280753348] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.12 s, our speed 0.27 m/s
+[INFO] [1795035350.333986918] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.24 m)
+[INFO] [1795035350.429079553] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.15 s, our speed 0.25 m/s
+[INFO] [1795035350.464216377] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.23 m)
+[INFO] [1795035350.607752887] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.36 s, our speed 0.26 m/s
+[INFO] [1795035350.646822426] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.22 m)
+[INFO] [1795035350.682102862] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.44 s, our speed 0.25 m/s
+[INFO] [1795035350.799961836] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.04 s, closest 0.20 m)
+[INFO] [1795035350.880125450] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.05 s, our speed 0.24 m/s
+[INFO] [1795035350.921881630] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.20 m)
+[INFO] [1795035350.977203327] [aeb]: AEB: ⚠ PARTIAL: object 0.19 m ahead in our path, TTC 1.00 s, our speed 0.24 m/s
+[INFO] [1795035351.041032560] [aeb]: AEB: ⚠ FULL brake: object 0.17 m ahead, TTC 0.55 s, our speed 0.12 m/s
+[INFO] [1795035351.449909903] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035351.954195643] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.27 s, closest 0.13 m)
+[INFO] [1795035352.653412152] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.40 s, our speed 0.21 m/s
+[INFO] [1795035352.693015910] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.40 s, closest 0.31 m)
+[INFO] [1795035352.914949346] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.20 m/s
+[INFO] [1795035353.195965440] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035353.232936999] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.26 m)
+[INFO] [1795035353.305352958] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.08 s, our speed 0.29 m/s
+[INFO] [1795035353.337589633] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.24 m)
+[INFO] [1795035353.413860429] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.08 s, our speed 0.27 m/s
+[INFO] [1795035353.454124790] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.23 m)
+[INFO] [1795035353.501434299] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.50 s, our speed 0.26 m/s
+[INFO] [1795035353.595144521] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.05 s, closest 0.22 m)
+[INFO] [1795035353.643697869] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.44 s, our speed 0.25 m/s
+[INFO] [1795035353.734420918] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.06 s, closest 0.20 m)
+[INFO] [1795035353.862037647] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.06 s, our speed 0.25 m/s
+[INFO] [1795035353.901822067] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.19 m)
+[INFO] [1795035353.941466310] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.39 s, our speed 0.24 m/s
+[INFO] [1795035353.998502582] [aeb]: AEB: ⚠ PARTIAL brake: object 0.18 m ahead, TTC 0.97 s, our speed 0.24 m/s
+[INFO] [1795035354.287070196] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035354.530068234] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035355.215071461] [aeb]: AEB: ✅ released after 1.1 s (worst: FULL, TTC 0.79 s, closest 0.17 m)
+[INFO] [1795035355.935933945] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.37 s, our speed 0.26 m/s
+[INFO] [1795035355.971017399] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.37 s, closest 0.30 m)
+[INFO] [1795035356.051119972] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035356.130067900] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.22 s, our speed 0.31 m/s
+[INFO] [1795035356.173089718] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.22 s, closest 0.28 m)
+[INFO] [1795035356.211126310] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.39 s, our speed 0.29 m/s
+[INFO] [1795035356.298972902] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.09 s, closest 0.26 m)
+[INFO] [1795035356.387112496] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.15 s, our speed 0.28 m/s
+[INFO] [1795035356.415117767] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.25 m)
+[INFO] [1795035356.551631217] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.46 s, our speed 0.28 m/s
+[INFO] [1795035356.641569780] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.07 s, closest 0.23 m)
+[INFO] [1795035356.731152691] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.08 s, our speed 0.26 m/s
+[INFO] [1795035356.769056894] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.22 m)
+[INFO] [1795035356.849421574] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.19 s, our speed 0.25 m/s
+[INFO] [1795035356.881995303] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.21 m)
+[INFO] [1795035356.967673925] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.21 s, our speed 0.24 m/s
+[INFO] [1795035357.036288756] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.20 m)
+[INFO] [1795035357.098889466] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.03 s, our speed 0.24 m/s
+[INFO] [1795035357.143872301] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.19 m)
+[INFO] [1795035357.222479760] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.10 s, our speed 0.22 m/s
+[INFO] [1795035357.292095124] [aeb]: AEB: ⚠ PARTIAL brake: object 0.17 m ahead, TTC 0.73 s, our speed 0.21 m/s
+[INFO] [1795035357.321004882] [aeb]: AEB: ⚠ FULL brake: object 0.15 m ahead, TTC 0.47 s, our speed 0.21 m/s
+[INFO] [1795035357.842763390] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035358.220652404] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.27 s, closest 0.12 m)
+[INFO] [1795035359.115280026] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.22 m < 0.09 m; our speed 0.28 m/s, limited to 0.19 m/s
+[INFO] [1795035359.152414350] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.41 s, our speed 0.28 m/s
+[INFO] [1795035359.190233663] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.28 m)
+[INFO] [1795035359.269713750] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.28 s, our speed 0.29 m/s
+[INFO] [1795035359.307502999] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.27 m)
+[INFO] [1795035359.398075626] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.14 s, our speed 0.28 m/s
+[INFO] [1795035359.460501831] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.25 m)
+[INFO] [1795035359.521011500] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.17 s, our speed 0.27 m/s
+[INFO] [1795035359.556356975] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.24 m)
+[INFO] [1795035359.622053682] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.19 s, our speed 0.26 m/s
+[INFO] [1795035359.666469243] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.19 s, closest 0.23 m)
+[INFO] [1795035359.865269278] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.32 s, our speed 0.26 m/s
+[INFO] [1795035359.906339739] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.22 m)
+[INFO] [1795035359.944020867] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.46 s, our speed 0.26 m/s
+[INFO] [1795035360.008523047] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.20 m)
+[INFO] [1795035360.042841138] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.40 s, our speed 0.24 m/s
+[INFO] [1795035360.117790686] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.01 s, closest 0.19 m)
+[INFO] [1795035360.201613236] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.28 s, our speed 0.22 m/s
+[INFO] [1795035360.266052008] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.28 s, closest 0.18 m)
+[INFO] [1795035360.321899565] [aeb]: AEB: ⚠ PARTIAL: object 0.18 m ahead in our path, TTC 0.86 s, our speed 0.20 m/s
+[INFO] [1795035360.652685433] [aeb]: AEB: ⚠ FULL brake: object 0.20 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035360.886065667] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035361.494888547] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.83 s, closest 0.16 m)
+[INFO] [1795035361.733905645] [aeb]: AEB: ⚠ FULL: object 0.27 m ahead in our path, TTC 0.56 s, our speed 0.07 m/s
+[INFO] [1795035362.143797036] [aeb]: AEB: ✅ released after 0.3 s (worst: FULL, TTC 0.56 s, closest 0.27 m)
+[INFO] [1795035363.114441196] [aeb]: AEB: ⚠ WARNING: object 0.35 m ahead in our path, TTC 1.34 s, our speed 0.32 m/s
+[INFO] [1795035363.157913795] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.35 m)
+[INFO] [1795035363.225035192] [aeb]: AEB: ⚠ WARNING: object 0.33 m ahead in our path, TTC 1.41 s, our speed 0.33 m/s
+[INFO] [1795035363.262693109] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.33 m)
+[INFO] [1795035363.345863138] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.16 s, our speed 0.31 m/s
+[INFO] [1795035363.354572786] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.30 m < safe 0.30 m and sideways -0.22 m < 0.09 m; our speed 0.31 m/s, limited to 0.24 m/s
+[INFO] [1795035363.404686322] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.31 m)
+[INFO] [1795035363.452407080] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.36 s, our speed 0.30 m/s
+[INFO] [1795035363.525144797] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.36 s, closest 0.30 m)
+[INFO] [1795035363.715318355] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.21 s, our speed 0.28 m/s
+[INFO] [1795035363.748530162] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.27 m)
+[INFO] [1795035363.817060064] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.36 s, our speed 0.27 m/s
+[INFO] [1795035363.861003674] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.26 m)
+[INFO] [1795035364.031202292] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.15 s, our speed 0.29 m/s
+[INFO] [1795035364.078412899] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.24 m)
+[INFO] [1795035364.112524450] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.41 s, our speed 0.27 m/s
+[INFO] [1795035364.185931312] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.02 s, closest 0.22 m)
+[INFO] [1795035364.232058892] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.49 s, our speed 0.26 m/s
+[INFO] [1795035364.337242872] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.03 s, closest 0.21 m)
+[INFO] [1795035364.412026151] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.07 s, our speed 0.25 m/s
+[INFO] [1795035364.446320329] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.07 s, closest 0.20 m)
+[INFO] [1795035364.479709173] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.48 s, our speed 0.25 m/s
+[INFO] [1795035364.526896199] [aeb]: AEB: ⚠ PARTIAL brake: object 0.19 m ahead, TTC 0.98 s, our speed 0.25 m/s
+[INFO] [1795035364.840852133] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035365.019988660] [rss_monitor]: RSS: ✅ safe again after 1.5 s
+[INFO] [1795035365.610354029] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.98 s, closest 0.18 m)
+[INFO] [1795035366.558059238] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.49 s, our speed 0.28 m/s
+[INFO] [1795035366.602169085] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.49 s, closest 0.31 m)
+[INFO] [1795035366.609801565] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035366.683252340] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.27 s, our speed 0.31 m/s
+[INFO] [1795035366.719124196] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.29 m)
+[INFO] [1795035366.802242333] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.14 s, our speed 0.30 m/s
+[INFO] [1795035366.838914648] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.28 m)
+[INFO] [1795035366.933444367] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.18 s, our speed 0.29 m/s
+[INFO] [1795035366.984045510] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.26 m)
+[INFO] [1795035367.016358065] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.35 s, our speed 0.28 m/s
+[INFO] [1795035367.123753424] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.27 s, closest 0.25 m)
+[INFO] [1795035367.144931710] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.46 s, our speed 0.29 m/s
+[INFO] [1795035367.184845136] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.46 s, closest 0.24 m)
+[INFO] [1795035367.262138248] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.03 s, our speed 0.29 m/s
+[INFO] [1795035367.296853192] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.23 m)
+[INFO] [1795035367.343324979] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.15 s, our speed 0.27 m/s
+[INFO] [1795035367.379868561] [aeb]: AEB: ⚠ PARTIAL brake: object 0.21 m ahead, TTC 0.86 s, our speed 0.27 m/s
+[INFO] [1795035367.670974756] [aeb]: AEB: ⚠ FULL brake: object 0.23 m ahead, TTC inf s, our speed 0.05 m/s
+[INFO] [1795035367.878288800] [rss_monitor]: RSS: ✅ safe again after 1.1 s
+[INFO] [1795035368.349025133] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.86 s, closest 0.21 m)
+[INFO] [1795035368.855996638] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.35 s, our speed 0.16 m/s
+[INFO] [1795035368.891400684] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.32 m)
+[INFO] [1795035369.325539251] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035369.349578688] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.14 s, our speed 0.31 m/s
+[INFO] [1795035369.383426728] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.29 m)
+[INFO] [1795035369.460567014] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.27 s, our speed 0.30 m/s
+[INFO] [1795035369.505707017] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.28 m)
+[INFO] [1795035369.586825870] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.18 s, our speed 0.29 m/s
+[INFO] [1795035369.635646884] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.27 m)
+[INFO] [1795035369.717701511] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.31 s, our speed 0.28 m/s
+[INFO] [1795035369.748705225] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 0.25 m)
+[INFO] [1795035369.826191682] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.15 s, our speed 0.28 m/s
+[INFO] [1795035369.875328315] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.24 m)
+[INFO] [1795035369.917314613] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.48 s, our speed 0.27 m/s
+[INFO] [1795035370.016436237] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.06 s, closest 0.23 m)
+[INFO] [1795035370.063595124] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.38 s, our speed 0.26 m/s
+[INFO] [1795035370.083639575] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.22 m)
+[INFO] [1795035370.163619963] [aeb]: AEB: ⚠ PARTIAL: object 0.21 m ahead in our path, TTC 0.96 s, our speed 0.26 m/s
+[INFO] [1795035370.490749115] [aeb]: AEB: ⚠ FULL brake: object 0.22 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035370.824081940] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035371.195048064] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.96 s, closest 0.21 m)
+[INFO] [1795035371.974567272] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.46 s, our speed 0.24 m/s
+[INFO] [1795035372.020080317] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.46 s, closest 0.32 m)
+[INFO] [1795035372.097926727] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.32 s, our speed 0.28 m/s
+[INFO] [1795035372.131436367] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.32 s, closest 0.30 m)
+[INFO] [1795035372.138304977] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.21 m < 0.09 m; our speed 0.29 m/s, limited to 0.22 m/s
+[INFO] [1795035372.175332739] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.34 s, our speed 0.29 m/s
+[INFO] [1795035372.203462819] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.34 s, closest 0.30 m)
+[INFO] [1795035372.316852673] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.33 s, our speed 0.29 m/s
+[INFO] [1795035372.358532318] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.28 m)
+[INFO] [1795035372.547310779] [aeb]: AEB: ⚠ PARTIAL: object 0.25 m ahead in our path, TTC 0.97 s, our speed 0.30 m/s
+[INFO] [1795035372.840058330] [aeb]: AEB: ⚠ FULL brake: object 0.26 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035372.931038792] [rss_monitor]: RSS: ✅ safe again after 0.7 s
+[INFO] [1795035373.289487924] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.97 s, closest 0.24 m)
+[INFO] [1795035373.993312220] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.41 s, our speed 0.20 m/s
+[INFO] [1795035374.053216244] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.41 s, closest 0.32 m)
+[INFO] [1795035374.268576495] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035374.319408644] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.16 s, our speed 0.31 m/s
+[INFO] [1795035374.361513354] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.29 m)
+[INFO] [1795035374.466487803] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.35 s, our speed 0.29 m/s
+[INFO] [1795035374.519738133] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.28 m)
+[INFO] [1795035374.582986130] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.20 s, our speed 0.29 m/s
+[INFO] [1795035374.617908563] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.27 m)
+[INFO] [1795035374.678765244] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.11 s, our speed 0.28 m/s
+[INFO] [1795035374.712421571] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.25 m)
+[INFO] [1795035374.846251051] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.33 s, our speed 0.28 m/s
+[INFO] [1795035374.894702051] [aeb]: AEB: ⚠ PARTIAL brake: object 0.23 m ahead, TTC 0.98 s, our speed 0.28 m/s
+[INFO] [1795035375.221073162] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035375.312572203] [rss_monitor]: RSS: ✅ safe again after 0.9 s
+[INFO] [1795035375.665466667] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.98 s, closest 0.22 m)
+[INFO] [1795035376.443699696] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.21 s, our speed 0.24 m/s
+[INFO] [1795035376.501869043] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.30 m)
+[INFO] [1795035376.578442575] [aeb]: AEB: ⚠ PARTIAL: object 0.29 m ahead in our path, TTC 0.90 s, our speed 0.28 m/s
+[INFO] [1795035377.068732284] [aeb]: AEB: ✅ released after 0.4 s (worst: PARTIAL, TTC 0.90 s, closest 0.27 m)
+[INFO] [1795035378.013734061] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.33 s, our speed 0.29 m/s
+[INFO] [1795035378.065641041] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.32 m)
+[INFO] [1795035378.083795917] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.30 m < safe 0.31 m and sideways -0.21 m < 0.09 m; our speed 0.33 m/s, limited to 0.24 m/s
+[INFO] [1795035378.105658857] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.03 s, our speed 0.33 m/s
+[INFO] [1795035378.156986240] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.31 m)
+[INFO] [1795035378.350726765] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.30 s, our speed 0.31 m/s
+[INFO] [1795035378.384581916] [aeb]: AEB: ⚠ PARTIAL brake: object 0.28 m ahead, TTC 0.80 s, our speed 0.31 m/s
+[INFO] [1795035378.712195085] [aeb]: AEB: ⚠ FULL brake: object 0.29 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035378.787157286] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+[INFO] [1795035378.892245405] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.80 s, closest 0.27 m)
+[INFO] [1795035379.826943807] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.42 s, our speed 0.28 m/s
+[INFO] [1795035379.870928091] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.42 s, closest 0.31 m)
+[INFO] [1795035379.885288940] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.30 m and sideways -0.21 m < 0.09 m; our speed 0.32 m/s, limited to 0.23 m/s
+[INFO] [1795035379.942459291] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.37 s, our speed 0.32 m/s
+[INFO] [1795035379.988192058] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.37 s, closest 0.30 m)
+[INFO] [1795035380.071978300] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.18 s, our speed 0.31 m/s
+[INFO] [1795035380.121632212] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.18 s, closest 0.28 m)
+[INFO] [1795035380.158150523] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.47 s, our speed 0.29 m/s
+[INFO] [1795035380.264280831] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.13 s, closest 0.27 m)
+[INFO] [1795035380.330305570] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.23 s, our speed 0.28 m/s
+[INFO] [1795035380.366639884] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.23 s, closest 0.26 m)
+[INFO] [1795035380.432775160] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.13 s, our speed 0.28 m/s
+[INFO] [1795035380.488644574] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.24 m)
+[INFO] [1795035380.564948979] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.08 s, our speed 0.27 m/s
+[INFO] [1795035380.606760750] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.23 m)
+[INFO] [1795035380.661894315] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.44 s, our speed 0.28 m/s
+[INFO] [1795035380.695946060] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.44 s, closest 0.22 m)
+[INFO] [1795035380.775278399] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.03 s, our speed 0.28 m/s
+[INFO] [1795035380.818783635] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.03 s, closest 0.21 m)
+[INFO] [1795035380.897609660] [aeb]: AEB: ⚠ PARTIAL: object 0.20 m ahead in our path, TTC 0.99 s, our speed 0.27 m/s
+[INFO] [1795035381.251349990] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035381.602789925] [rss_monitor]: RSS: ✅ safe again after 1.4 s
+[INFO] [1795035382.111752441] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.62 s, closest 0.18 m)
+[INFO] [1795035383.051236186] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035383.119614625] [aeb]: AEB: ⚠ PARTIAL: object 0.29 m ahead in our path, TTC 0.95 s, our speed 0.31 m/s
+[INFO] [1795035383.529661578] [aeb]: AEB: ⚠ FULL brake: object 0.29 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035383.621397178] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035383.737407254] [aeb]: AEB: ✅ released after 0.5 s (worst: FULL, TTC 0.94 s, closest 0.27 m)
+[INFO] [1795035384.156607731] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.24 s, our speed 0.12 m/s
+[INFO] [1795035384.187397049] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.32 m)
+[INFO] [1795035384.731026493] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.22 m/s
+[INFO] [1795035384.769120686] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.36 s, our speed 0.30 m/s
+[INFO] [1795035384.817298305] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.36 s, closest 0.30 m)
+[INFO] [1795035384.922326805] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.38 s, our speed 0.30 m/s
+[INFO] [1795035384.973817284] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.38 s, closest 0.29 m)
+[INFO] [1795035385.037605852] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.14 s, our speed 0.29 m/s
+[INFO] [1795035385.081569916] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.27 m)
+[INFO] [1795035385.147788841] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.15 s, our speed 0.28 m/s
+[INFO] [1795035385.187924026] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.15 s, closest 0.26 m)
+[INFO] [1795035385.268537586] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.06 s, our speed 0.28 m/s
+[INFO] [1795035385.327032672] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.06 s, closest 0.24 m)
+[INFO] [1795035385.420652397] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.13 s, our speed 0.27 m/s
+[INFO] [1795035385.467805904] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.23 m)
+[INFO] [1795035385.498472480] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.48 s, our speed 0.26 m/s
+[INFO] [1795035385.563531940] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.06 s, closest 0.22 m)
+[INFO] [1795035385.638664699] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.09 s, our speed 0.25 m/s
+[INFO] [1795035385.685116443] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.21 m)
+[INFO] [1795035385.782402525] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.09 s, our speed 0.24 m/s
+[INFO] [1795035385.845955713] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.20 m)
+[INFO] [1795035386.019725311] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.08 s, our speed 0.23 m/s
+[INFO] [1795035386.060893666] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.08 s, closest 0.18 m)
+[INFO] [1795035386.123535050] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.11 s, our speed 0.21 m/s
+[INFO] [1795035386.157799389] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.18 m)
+[INFO] [1795035386.207639955] [aeb]: AEB: ⚠ FULL: object 0.16 m ahead in our path, TTC 0.55 s, our speed 0.20 m/s
+[INFO] [1795035386.753178330] [rss_monitor]: RSS: ✅ safe again after 1.7 s
+[INFO] [1795035387.159517176] [aeb]: AEB: ✅ released after 0.8 s (worst: FULL, TTC 0.33 s, closest 0.13 m)
+[INFO] [1795035387.399745424] [aeb]: AEB: ⚠ FULL: object 0.26 m ahead in our path, TTC 0.54 s, our speed 0.08 m/s
+[INFO] [1795035387.797366840] [aeb]: AEB: ✅ released after 0.3 s (worst: FULL, TTC 0.54 s, closest 0.26 m)
+[INFO] [1795035388.755806908] [aeb]: AEB: ⚠ PARTIAL: object 0.32 m ahead in our path, TTC 0.98 s, our speed 0.32 m/s
+[INFO] [1795035389.230829319] [aeb]: AEB: ✅ released after 0.4 s (worst: PARTIAL, TTC 0.98 s, closest 0.32 m)
+[INFO] [1795035390.310426603] [aeb]: AEB: ⚠ WARNING: object 0.33 m ahead in our path, TTC 1.27 s, our speed 0.33 m/s
+[INFO] [1795035390.328472118] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.31 m < safe 0.31 m and sideways -0.20 m < 0.09 m; our speed 0.33 m/s, limited to 0.26 m/s
+[INFO] [1795035390.351403533] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.33 m)
+[INFO] [1795035390.509704529] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.13 s, our speed 0.34 m/s
+[INFO] [1795035390.546146917] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.30 m)
+[INFO] [1795035390.583527258] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.49 s, our speed 0.31 m/s
+[INFO] [1795035390.695878768] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.11 s, closest 0.28 m)
+[INFO] [1795035390.779735299] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.16 s, our speed 0.29 m/s
+[INFO] [1795035390.829874476] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.16 s, closest 0.27 m)
+[INFO] [1795035390.866212906] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.40 s, our speed 0.30 m/s
+[INFO] [1795035390.894537525] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.40 s, closest 0.26 m)
+[INFO] [1795035390.986164033] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.03 s, our speed 0.33 m/s
+[INFO] [1795035391.040518362] [aeb]: AEB: ⚠ PARTIAL brake: object 0.23 m ahead, TTC 0.81 s, our speed 0.33 m/s
+[INFO] [1795035391.444374353] [aeb]: AEB: ⚠ FULL brake: object 0.23 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035391.793002732] [rss_monitor]: RSS: ✅ safe again after 1.2 s
+[INFO] [1795035392.160359286] [aeb]: AEB: ✅ released after 0.9 s (worst: FULL, TTC 0.81 s, closest 0.21 m)
+[INFO] [1795035393.221595094] [aeb]: AEB: ⚠ PARTIAL: object 0.29 m ahead in our path, TTC 0.93 s, our speed 0.29 m/s
+[INFO] [1795035393.226877825] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.28 m and sideways -0.20 m < 0.09 m; our speed 0.29 m/s, limited to 0.21 m/s
+[INFO] [1795035393.648742453] [aeb]: AEB: ✅ released after 0.3 s (worst: PARTIAL, TTC 0.93 s, closest 0.28 m)
+[INFO] [1795035393.725112555] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795035394.298913142] [aeb]: AEB: ⚠ WARNING: object 0.32 m ahead in our path, TTC 1.17 s, our speed 0.22 m/s
+[INFO] [1795035394.358082130] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.17 s, closest 0.32 m)
+[INFO] [1795035394.580030507] [aeb]: AEB: ⚠ WARNING: object 0.31 m ahead in our path, TTC 1.39 s, our speed 0.30 m/s
+[INFO] [1795035394.582904432] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.29 m < safe 0.29 m and sideways -0.20 m < 0.09 m; our speed 0.30 m/s, limited to 0.22 m/s
+[INFO] [1795035394.623074965] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.39 s, closest 0.31 m)
+[INFO] [1795035394.697952524] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.24 s, our speed 0.31 m/s
+[INFO] [1795035394.726288797] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.24 s, closest 0.29 m)
+[INFO] [1795035394.796036641] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.14 s, our speed 0.30 m/s
+[INFO] [1795035394.840481895] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.14 s, closest 0.27 m)
+[INFO] [1795035394.906102635] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.32 s, our speed 0.30 m/s
+[INFO] [1795035394.998791443] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.05 s, closest 0.25 m)
+[INFO] [1795035395.073553632] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.05 s, our speed 0.28 m/s
+[INFO] [1795035395.111322864] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.24 m)
+[INFO] [1795035395.190333977] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.09 s, our speed 0.27 m/s
+[INFO] [1795035395.225933947] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.23 m)
+[INFO] [1795035395.295445004] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.13 s, our speed 0.25 m/s
+[INFO] [1795035395.342534089] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.13 s, closest 0.22 m)
+[INFO] [1795035395.536278969] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.27 s, our speed 0.26 m/s
+[INFO] [1795035395.574407747] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.27 s, closest 0.20 m)
+[INFO] [1795035395.653004548] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.02 s, our speed 0.26 m/s
+[INFO] [1795035395.682890196] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.02 s, closest 0.19 m)
+[INFO] [1795035395.766451924] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.05 s, our speed 0.24 m/s
+[INFO] [1795035395.803556463] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.18 m)
+[INFO] [1795035395.881117042] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.01 s, our speed 0.22 m/s
+[INFO] [1795035395.934821338] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.01 s, closest 0.17 m)
+[INFO] [1795035396.029608915] [aeb]: AEB: ⚠ WARNING: object 0.17 m ahead in our path, TTC 1.11 s, our speed 0.20 m/s
+[INFO] [1795035396.078811801] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.17 m)
+[INFO] [1795035396.120230338] [aeb]: AEB: ⚠ PARTIAL: object 0.16 m ahead in our path, TTC 0.79 s, our speed 0.20 m/s
+[INFO] [1795035396.358901564] [aeb]: AEB: ⚠ FULL brake: object 0.17 m ahead, TTC inf s, our speed 0.05 m/s
+[INFO] [1795035396.632738390] [rss_monitor]: RSS: ✅ safe again after 1.8 s
+[INFO] [1795035397.266396452] [aeb]: AEB: ✅ released after 1.0 s (worst: FULL, TTC 0.78 s, closest 0.14 m)
+[INFO] [1795035400.040739583] [aeb]: AEB: ⚠ WARNING: object 0.30 m ahead in our path, TTC 1.30 s, our speed 0.24 m/s
+[INFO] [1795035400.189888196] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.30 s, closest 0.30 m)
+[INFO] [1795035400.402400519] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.21 s, our speed 0.28 m/s
+[INFO] [1795035400.408544700] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.27 m < safe 0.27 m and sideways -0.20 m < 0.09 m; our speed 0.28 m/s, limited to 0.20 m/s
+[INFO] [1795035400.481876787] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.21 s, closest 0.29 m)
+[INFO] [1795035400.591909043] [aeb]: AEB: ⚠ WARNING: object 0.28 m ahead in our path, TTC 1.35 s, our speed 0.30 m/s
+[INFO] [1795035400.647230862] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 0.28 m)
+[INFO] [1795035400.753957850] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.05 s, our speed 0.29 m/s
+[INFO] [1795035400.815665922] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.05 s, closest 0.26 m)
+[INFO] [1795035400.889527145] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.04 s, our speed 0.28 m/s
+[INFO] [1795035400.924986175] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.25 m)
+[INFO] [1795035401.000494327] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.12 s, our speed 0.27 m/s
+[INFO] [1795035401.060285413] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.24 m)
+[INFO] [1795035401.098674131] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.35 s, our speed 0.26 m/s
+[INFO] [1795035401.176423821] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.06 s, closest 0.22 m)
+[INFO] [1795035401.274958984] [aeb]: AEB: ⚠ PARTIAL: object 0.21 m ahead in our path, TTC 0.95 s, our speed 0.25 m/s
+[INFO] [1795035401.796401485] [aeb]: AEB: ⚠ FULL brake: object 0.21 m ahead, TTC inf s, our speed 0.04 m/s
+[INFO] [1795035402.028248111] [rss_monitor]: RSS: ✅ safe again after 1.3 s
+[INFO] [1795035402.632770936] [aeb]: AEB: ✅ released after 1.1 s (worst: FULL, TTC 0.95 s, closest 0.18 m)
+[INFO] [1795035403.655103354] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.20 m < 0.09 m; our speed 0.30 m/s, limited to 0.21 m/s
+[INFO] [1795035403.796814441] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.47 s, our speed 0.31 m/s
+[INFO] [1795035403.838238651] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.47 s, closest 0.29 m)
+[INFO] [1795035403.919457031] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.11 s, our speed 0.30 m/s
+[INFO] [1795035403.951696132] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.27 m)
+[INFO] [1795035403.988780601] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.25 s, our speed 0.30 m/s
+[INFO] [1795035404.035096771] [aeb]: AEB: ⚠ PARTIAL brake: object 0.25 m ahead, TTC 0.98 s, our speed 0.30 m/s
+[INFO] [1795035404.419585822] [aeb]: AEB: ⚠ FULL brake: object 0.25 m ahead, TTC inf s, our speed 0.05 m/s
+[INFO] [1795035404.584384534] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035404.846302935] [aeb]: AEB: ✅ released after 0.7 s (worst: FULL, TTC 0.98 s, closest 0.24 m)
+[INFO] [1795035405.754984025] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.29 m and sideways -0.21 m < 0.09 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035405.790935145] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.22 s, our speed 0.31 m/s
+[INFO] [1795035405.833080884] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.22 s, closest 0.29 m)
+[INFO] [1795035405.931657759] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.10 s, our speed 0.30 m/s
+[INFO] [1795035405.979618431] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.10 s, closest 0.27 m)
+[INFO] [1795035406.059715724] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.20 s, our speed 0.28 m/s
+[INFO] [1795035406.100352939] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.20 s, closest 0.26 m)
+[INFO] [1795035406.136270048] [aeb]: AEB: ⚠ WARNING: object 0.25 m ahead in our path, TTC 1.40 s, our speed 0.27 m/s
+[INFO] [1795035406.170617365] [aeb]: AEB: ⚠ PARTIAL brake: object 0.24 m ahead, TTC 0.99 s, our speed 0.27 m/s
+[INFO] [1795035406.472496536] [aeb]: AEB: ⚠ FULL brake: object 0.26 m ahead, TTC inf s, our speed 0.03 m/s
+[INFO] [1795035406.674306257] [rss_monitor]: RSS: ✅ safe again after 0.8 s
+[INFO] [1795035406.798058767] [aeb]: AEB: ✅ released after 0.6 s (worst: FULL, TTC 0.99 s, closest 0.24 m)
+[INFO] [1795035407.754007938] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #1 (same direction): gap along the road 0.28 m < safe 0.30 m and sideways -0.20 m < 0.08 m; our speed 0.31 m/s, limited to 0.21 m/s
+[INFO] [1795035407.819932444] [aeb]: AEB: ⚠ WARNING: object 0.29 m ahead in our path, TTC 1.09 s, our speed 0.32 m/s
+[INFO] [1795035407.880242778] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.29 m)
+[INFO] [1795035407.971428173] [aeb]: AEB: ⚠ WARNING: object 0.27 m ahead in our path, TTC 1.11 s, our speed 0.30 m/s
+[INFO] [1795035408.012299650] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.11 s, closest 0.27 m)
+[INFO] [1795035408.056983717] [aeb]: AEB: ⚠ WARNING: object 0.26 m ahead in our path, TTC 1.42 s, our speed 0.29 m/s
+[INFO] [1795035408.149976939] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.08 s, closest 0.25 m)
+[INFO] [1795035408.210838232] [aeb]: AEB: ⚠ WARNING: object 0.24 m ahead in our path, TTC 1.12 s, our speed 0.27 m/s
+[INFO] [1795035408.257078676] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.24 m)
+[INFO] [1795035408.330101922] [aeb]: AEB: ⚠ WARNING: object 0.23 m ahead in our path, TTC 1.09 s, our speed 0.26 m/s
+[INFO] [1795035408.404310889] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.09 s, closest 0.23 m)
+[INFO] [1795035408.464989819] [aeb]: AEB: ⚠ WARNING: object 0.22 m ahead in our path, TTC 1.45 s, our speed 0.25 m/s
+[INFO] [1795035408.549309952] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.00 s, closest 0.21 m)
+[INFO] [1795035408.577421964] [aeb]: AEB: ⚠ WARNING: object 0.21 m ahead in our path, TTC 1.48 s, our speed 0.26 m/s
+[INFO] [1795035408.619372371] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.48 s, closest 0.21 m)
+[INFO] [1795035408.687247139] [aeb]: AEB: ⚠ WARNING: object 0.20 m ahead in our path, TTC 1.04 s, our speed 0.26 m/s
+[INFO] [1795035408.722586787] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.04 s, closest 0.20 m)
+[INFO] [1795035408.808784818] [aeb]: AEB: ⚠ WARNING: object 0.19 m ahead in our path, TTC 1.12 s, our speed 0.25 m/s
+[INFO] [1795035408.846959073] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.12 s, closest 0.19 m)
+[INFO] [1795035408.908019348] [aeb]: AEB: ⚠ WARNING: object 0.18 m ahead in our path, TTC 1.08 s, our speed 0.25 m/s
+[INFO] [1795035408.993102232] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.03 s, closest 0.18 m)
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=55.6 m, 0.24 m/s, true gap to car ahead in our lane 0.35 m, closest approach to any car so far 0.15 m
+RSS: checked 217 s, dangerous situations 63 (51.0 s, 23.5%), speed limited by RSS 64.5 s, smallest margin to a safe distance -0.10 m
+AEB: checked 215 s, warnings 430, partial brakes 63, full brakes 64, braking 49.6 s, smallest TTC 0.26 s, closing speed from V2V in 0% of scans
+ENERGY: distance 55.3 m in 214 s, traction 62.0 J (1.12 J/m), recovered by regen 2.8 J (4% of the drive energy), lost in friction brakes 0.6 J, total incl. computer 62.0 J (1.12 J/m)

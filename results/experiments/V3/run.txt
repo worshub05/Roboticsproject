@@ -1,0 +1,30 @@
+✅ stack running: scenario=cutin, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=fault, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795034305.907217167] [aeb]: AEB: ⚠ WARNING: object 1.09 m ahead in our path, TTC 1.28 s, our speed 0.46 m/s
+[INFO] [1795034306.062082398] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.28 s, closest 1.07 m)
+[INFO] [1795034306.176401519] [aeb]: AEB: ⚠ WARNING: object 1.08 m ahead in our path, TTC 1.35 s, our speed 0.40 m/s
+[INFO] [1795034306.214999443] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.35 s, closest 1.08 m)
+[INFO] [1795034306.471938885] [aeb]: AEB: ⚠ WARNING: object 1.00 m ahead in our path, TTC 1.31 s, our speed 0.39 m/s
+[INFO] [1795034306.531100377] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.31 s, closest 1.00 m)
+[INFO] [1795034306.748705633] [aeb]: AEB: ⚠ WARNING: object 0.91 m ahead in our path, TTC 1.33 s, our speed 0.39 m/s
+[INFO] [1795034306.787020280] [aeb]: AEB: ✅ released after 0.0 s (worst: WARNING, TTC 1.33 s, closest 0.91 m)
+[INFO] [1795034307.779202639] [aeb]: AEB: ⚠ WARNING: object 0.46 m ahead in our path, TTC 1.09 s, our speed 0.42 m/s
+[INFO] [1795034307.915560894] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #2 (same direction): gap along the road 0.38 m < safe 0.38 m and sideways 0.13 m < 0.16 m; our speed 0.43 m/s, limited to 0.36 m/s
+[INFO] [1795034307.934673836] [aeb]: AEB: ⚠ PARTIAL brake: object 0.41 m ahead, TTC 0.98 s, our speed 0.39 m/s
+[INFO] [1795034308.463750920] [rss_monitor]: RSS: ✅ safe again after 0.5 s
+[INFO] [1795034308.607222902] [aeb]: AEB: ⚠ FULL brake: object 0.23 m ahead, TTC 0.44 s, our speed 0.22 m/s
+[INFO] [1795034315.539812892] [track_traffic]: TRAFFIC: cut-in 1: car cut in 0.44 m ahead while we drove 0.39 m/s, then braked hard; closest approach 0.24 m, ✅ no collision (events so far 1, collisions 0)
+[INFO] [1795034315.558903630] [aeb]: AEB: ✅ released after 4.5 s (worst: FULL, TTC 0.44 s, closest 0.23 m)
+[INFO] [1795034340.192331656] [aeb]: AEB: ⚠ PARTIAL: object 0.39 m ahead in our path, TTC 0.78 s, our speed 0.50 m/s
+[INFO] [1795034340.285044053] [rss_monitor]: RSS: ⚠ DANGEROUS situation with car #4 (same direction): gap along the road 0.33 m < safe 0.46 m and sideways -0.27 m < 0.09 m; our speed 0.50 m/s, limited to 0.28 m/s
+[INFO] [1795034340.874121896] [aeb]: AEB: ⚠ FULL brake: object 0.26 m ahead, TTC 5.90 s, our speed 0.05 m/s
+[INFO] [1795034340.924886945] [rss_monitor]: RSS: ✅ safe again after 0.6 s
+Terminated
+
+stopping...
+overtakes completed: 0
+collisions: 0
+robot at s=13.3 m, 0.00 m/s, true gap to car ahead in our lane 0.24 m, closest approach to any car so far 0.23 m
+RSS: checked 45 s, dangerous situations 2 (0.4 s, 0.9%), speed limited by RSS 1.3 s, smallest margin to a safe distance -0.13 m
+AEB: checked 45 s, warnings 5, partial brakes 2, full brakes 2, braking 6.5 s, smallest TTC 0.44 s, closing speed from V2V in 0% of scans
+ENERGY: distance 12.0 m in 41 s, traction 13.4 J (1.11 J/m), recovered by regen 0.3 J (2% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 13.4 J (1.11 J/m)
+cut-in 1: car cut in 0.44 m ahead while we drove 0.39 m/s, then braked hard; closest approach 0.24 m, ✅ no collision (events so far 1, collisions 0)

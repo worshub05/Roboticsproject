@@ -1,0 +1,27 @@
+=== E03: Broken ACC, RSS off
+     run_stack.sh follow 0.3 true mpc off fault   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=55.6 m, 0.24 m/s, true gap to car ahead in our lane 0.35 m, closest approach to any car so far 0.15 m
+RSS: checked 217 s, dangerous situations 63 (51.0 s, 23.5%), speed limited by RSS 64.5 s, smallest margin to a safe distance -0.10 m
+AEB: checked 215 s, warnings 430, partial brakes 63, full brakes 64, braking 49.6 s, smallest TTC 0.26 s, closing speed from V2V in 0% of scans
+ENERGY: distance 55.3 m in 214 s, traction 62.0 J (1.12 J/m), recovered by regen 2.8 J (4% of the drive energy), lost in friction brakes 0.6 J, total incl. computer 62.0 J (1.12 J/m)
+
+=== E04: Broken ACC, RSS on
+     run_stack.sh follow 0.3 true mpc on fault   (300 s)
+overtakes completed: 0
+collisions: 0
+robot at s=55.7 m, 0.15 m/s, true gap to car ahead in our lane 0.29 m, closest approach to any car so far 0.25 m
+RSS: checked 217 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 80.8 s, smallest margin to a safe distance 0.03 m
+AEB: checked 217 s, warnings 48, partial brakes 5, full brakes 2, braking 2.2 s, smallest TTC 0.55 s, closing speed from V2V in 0% of scans
+ENERGY: distance 55.0 m in 213 s, traction 54.7 J (0.99 J/m), recovered by regen 0.2 J (0% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 54.7 J (0.99 J/m)
+
+=== V2: RSS keeps a safe distance (broken ACC)
+     run_stack.sh follow 0.3 true mpc on fault   (200 s)
+overtakes completed: 0
+collisions: 0
+robot at s=43.7 m, 0.16 m/s, true gap to car ahead in our lane 0.29 m, closest approach to any car so far 0.25 m
+RSS: checked 138 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 34.1 s, smallest margin to a safe distance 0.02 m
+AEB: checked 138 s, warnings 39, partial brakes 7, full brakes 3, braking 2.9 s, smallest TTC 0.77 s, closing speed from V2V in 0% of scans
+ENERGY: distance 44.1 m in 139 s, traction 44.5 J (1.01 J/m), recovered by regen 0.4 J (1% of the drive energy), lost in friction brakes 0.1 J, total incl. computer 44.5 J (1.01 J/m)
+

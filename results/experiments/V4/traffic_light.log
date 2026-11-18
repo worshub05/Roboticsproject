@@ -1,0 +1,32 @@
+[INFO] [1795034377.776803013] [traffic_light]: Traffic lights at s = 12.0 m, 47.7 m (green 10.0 s, amber 3.0 s, red 12.0 s); V2I link: loss 0%, delay 0.0 s
+[INFO] [1795034383.407508741] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 50, lost 0; speed at the line 0.00 m/s, braking energy 1 mJ/kg (1 per light)
+[INFO] [1795034389.441967891] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 100, lost 0; speed at the line 0.00 m/s, braking energy 16 mJ/kg (16 per light)
+[INFO] [1795034395.344757216] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 150, lost 0; speed at the line 0.00 m/s, braking energy 143 mJ/kg (143 per light)
+[INFO] [1795034401.489415930] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 200, lost 0; speed at the line 0.00 m/s, braking energy 159 mJ/kg (159 per light)
+[INFO] [1795034409.885197471] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 250, lost 0; speed at the line 0.00 m/s, braking energy 169 mJ/kg (169 per light)
+[INFO] [1795034416.031487949] [traffic_light]: V2I STATS: crossings green 0, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 300, lost 0; speed at the line 0.00 m/s, braking energy 184 mJ/kg (184 per light)
+[INFO] [1795034416.165815926] [traffic_light]: LIGHT: ✅ crossed light 1 on green at 0.50 m/s
+[INFO] [1795034422.208276458] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 350, lost 0; speed at the line 0.50 m/s, braking energy 312 mJ/kg (312 per light)
+[INFO] [1795034428.563001484] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 400, lost 0; speed at the line 0.50 m/s, braking energy 329 mJ/kg (329 per light)
+[INFO] [1795034437.123653484] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 450, lost 0; speed at the line 0.50 m/s, braking energy 345 mJ/kg (345 per light)
+[INFO] [1795034443.320705884] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 500, lost 0; speed at the line 0.50 m/s, braking energy 361 mJ/kg (361 per light)
+[INFO] [1795034449.478829672] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 550, lost 0; speed at the line 0.50 m/s, braking energy 371 mJ/kg (371 per light)
+[INFO] [1795034455.765290939] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 600, lost 0; speed at the line 0.50 m/s, braking energy 385 mJ/kg (385 per light)
+[INFO] [1795034464.349414573] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 650, lost 0; speed at the line 0.50 m/s, braking energy 400 mJ/kg (400 per light)
+[INFO] [1795034470.449695719] [traffic_light]: V2I STATS: crossings green 1, amber 0, RED 0; stops 0, gap to the line n/a, mean wait n/a; messages sent 700, lost 0; speed at the line 0.50 m/s, braking energy 411 mJ/kg (411 per light)
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/traffic_light.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'traffic_light.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/traffic_light.py", line 213, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

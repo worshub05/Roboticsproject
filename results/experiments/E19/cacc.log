@@ -1,0 +1,38 @@
+[INFO] [1795033948.960077057] [cacc_controller]: CACC ready: gap = 0.4 m + 0.3 s x speed, gains k_a 0.8, k_p 0.6, k_d 2.0; following V2V car 1, falls back to ACC after 2.0 s without V2V
+[INFO] [1795033948.965285436] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+[INFO] [1795033952.328861777] [cacc_controller]: CACC: ✅ active (V2V + LiDAR gap)
+[INFO] [1795033954.408939925] [cacc_controller]: CACC: gap 0.61 m (want 0.40), speed 0.00 m/s, car in front 0.00 m/s
+[INFO] [1795033954.409597500] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033962.671045592] [cacc_controller]: CACC: gap 0.65 m (want 0.55), speed 0.50 m/s, car in front 0.46 m/s
+[INFO] [1795033962.671713227] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033968.558086751] [cacc_controller]: CACC: gap 0.52 m (want 0.53), speed 0.45 m/s, car in front 0.46 m/s
+[INFO] [1795033968.558614415] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033974.473782987] [cacc_controller]: CACC: gap 0.49 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1795033974.474427173] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033980.447723184] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.43 m/s, car in front 0.44 m/s
+[INFO] [1795033980.448360652] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033986.269262290] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1795033986.273463234] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033992.179504452] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1795033992.180021407] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795033998.116402311] [cacc_controller]: CACC: gap 0.53 m (want 0.53), speed 0.45 m/s, car in front 0.45 m/s
+[INFO] [1795033998.117187876] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795034004.162390117] [cacc_controller]: CACC: gap 0.48 m (want 0.45), speed 0.18 m/s, car in front 0.17 m/s
+[INFO] [1795034004.163208208] [cacc_controller]: CACC STATS: V2V message age 0.10 s, degradation now 0% (mean 0%), time gap now 0.30 s (largest 0.30 s)
+[INFO] [1795034007.813174500] [cacc_controller]: CACC: ⚠ off (no V2V) - road driver ACC (1.0 s time gap) takes over
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/cacc_controller.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'cacc_controller.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/cacc_controller.py", line 95, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

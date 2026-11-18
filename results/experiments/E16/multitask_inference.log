@@ -1,0 +1,45 @@
+[INFO] [1795033520.056315901] [multitask_inference_node]: Loaded multi-task CNN /home/shub_2605/ros2_ws/models/lane_mt_v1.pt (10 dropout passes)
+[INFO] [1795033523.742435439] [multitask_inference_node]: LANE: OK offset +0.5 cm, heading -0.8 deg, curvature -0.020 1/m, uncertainty 0.029, brightness 0.34, contrast 0.249, noise 0.023, 84 ms/frame
+[INFO] [1795033527.257401573] [multitask_inference_node]: LANE: OK offset +4.2 cm, heading -3.5 deg, curvature -0.036 1/m, uncertainty 0.032, brightness 0.34, contrast 0.252, noise 0.024, 77 ms/frame
+[INFO] [1795033530.817984470] [multitask_inference_node]: LANE: OK offset +3.2 cm, heading -3.8 deg, curvature -0.068 1/m, uncertainty 0.032, brightness 0.33, contrast 0.245, noise 0.024, 80 ms/frame
+[INFO] [1795033534.456931507] [multitask_inference_node]: LANE: OK offset +6.9 cm, heading -4.9 deg, curvature -0.102 1/m, uncertainty 0.037, brightness 0.33, contrast 0.247, noise 0.023, 78 ms/frame
+[INFO] [1795033540.246751753] [multitask_inference_node]: LANE: OK offset -6.1 cm, heading -4.8 deg, curvature -0.147 1/m, uncertainty 0.041, brightness 0.30, contrast 0.233, noise 0.016, 71 ms/frame
+[INFO] [1795033543.756262329] [multitask_inference_node]: LANE: OK offset +4.2 cm, heading -1.2 deg, curvature -0.132 1/m, uncertainty 0.038, brightness 0.30, contrast 0.225, noise 0.014, 76 ms/frame
+[INFO] [1795033547.308205921] [multitask_inference_node]: LANE: OK offset +13.6 cm, heading -8.9 deg, curvature -0.123 1/m, uncertainty 0.040, brightness 0.33, contrast 0.246, noise 0.018, 87 ms/frame
+[INFO] [1795033550.821993754] [multitask_inference_node]: LANE: OK offset +13.6 cm, heading -7.0 deg, curvature -0.115 1/m, uncertainty 0.037, brightness 0.31, contrast 0.222, noise 0.015, 74 ms/frame
+[INFO] [1795033554.309951992] [multitask_inference_node]: LANE: OK offset +10.6 cm, heading -6.8 deg, curvature -0.119 1/m, uncertainty 0.043, brightness 0.32, contrast 0.240, noise 0.018, 71 ms/frame
+[INFO] [1795033557.956721895] [multitask_inference_node]: LANE: OK offset +9.8 cm, heading -6.3 deg, curvature -0.121 1/m, uncertainty 0.041, brightness 0.32, contrast 0.239, noise 0.016, 86 ms/frame
+[INFO] [1795033561.623531143] [multitask_inference_node]: LANE: OK offset +12.5 cm, heading -5.2 deg, curvature -0.114 1/m, uncertainty 0.037, brightness 0.30, contrast 0.218, noise 0.014, 89 ms/frame
+[INFO] [1795033565.279684151] [multitask_inference_node]: LANE: OK offset +10.1 cm, heading -7.6 deg, curvature -0.129 1/m, uncertainty 0.045, brightness 0.33, contrast 0.248, noise 0.019, 88 ms/frame
+[INFO] [1795033571.164556687] [multitask_inference_node]: LANE: OK offset +6.6 cm, heading -6.5 deg, curvature -0.135 1/m, uncertainty 0.043, brightness 0.31, contrast 0.241, noise 0.015, 74 ms/frame
+[INFO] [1795033574.715359382] [multitask_inference_node]: LANE: OK offset -19.7 cm, heading -1.5 deg, curvature -0.174 1/m, uncertainty 0.041, brightness 0.28, contrast 0.216, noise 0.011, 79 ms/frame
+[INFO] [1795033578.287627028] [multitask_inference_node]: LANE: OK offset +17.2 cm, heading -8.3 deg, curvature -0.119 1/m, uncertainty 0.036, brightness 0.32, contrast 0.231, noise 0.016, 76 ms/frame
+[INFO] [1795033581.924342576] [multitask_inference_node]: LANE: OK offset +10.1 cm, heading -5.2 deg, curvature -0.008 1/m, uncertainty 0.039, brightness 0.32, contrast 0.244, noise 0.021, 81 ms/frame
+[INFO] [1795033585.474300582] [multitask_inference_node]: LANE: OK offset +14.7 cm, heading -9.3 deg, curvature -0.014 1/m, uncertainty 0.043, brightness 0.30, contrast 0.219, noise 0.015, 82 ms/frame
+[INFO] [1795033589.150571907] [multitask_inference_node]: LANE: OK offset +12.6 cm, heading -11.5 deg, curvature -0.003 1/m, uncertainty 0.045, brightness 0.32, contrast 0.249, noise 0.019, 97 ms/frame
+[INFO] [1795033592.715178300] [multitask_inference_node]: LANE: OK offset +13.2 cm, heading -9.6 deg, curvature -0.009 1/m, uncertainty 0.043, brightness 0.31, contrast 0.241, noise 0.018, 80 ms/frame
+[INFO] [1795033596.401929521] [multitask_inference_node]: LANE: OK offset +10.7 cm, heading -9.5 deg, curvature -0.004 1/m, uncertainty 0.043, brightness 0.30, contrast 0.223, noise 0.016, 91 ms/frame
+[INFO] [1795033602.241226843] [multitask_inference_node]: LANE: OK offset +10.8 cm, heading -10.1 deg, curvature +0.017 1/m, uncertainty 0.045, brightness 0.33, contrast 0.251, noise 0.020, 67 ms/frame
+[INFO] [1795033605.755649271] [multitask_inference_node]: LANE: OK offset -18.8 cm, heading -5.0 deg, curvature -0.105 1/m, uncertainty 0.051, brightness 0.28, contrast 0.221, noise 0.016, 76 ms/frame
+[INFO] [1795033609.471118108] [multitask_inference_node]: LANE: OK offset +19.9 cm, heading -8.7 deg, curvature -0.009 1/m, uncertainty 0.044, brightness 0.30, contrast 0.216, noise 0.015, 87 ms/frame
+[INFO] [1795033612.869555337] [multitask_inference_node]: LANE: OK offset +15.6 cm, heading -10.7 deg, curvature -0.025 1/m, uncertainty 0.045, brightness 0.33, contrast 0.246, noise 0.019, 75 ms/frame
+[INFO] [1795033616.499290126] [multitask_inference_node]: LANE: OK offset +14.7 cm, heading -12.8 deg, curvature -0.024 1/m, uncertainty 0.049, brightness 0.33, contrast 0.240, noise 0.018, 75 ms/frame
+[INFO] [1795033620.166079966] [multitask_inference_node]: LANE: OK offset +13.6 cm, heading -10.2 deg, curvature -0.003 1/m, uncertainty 0.044, brightness 0.32, contrast 0.224, noise 0.017, 84 ms/frame
+[INFO] [1795033623.547404457] [multitask_inference_node]: LANE: OK offset +13.7 cm, heading -12.8 deg, curvature -0.032 1/m, uncertainty 0.046, brightness 0.34, contrast 0.248, noise 0.023, 74 ms/frame
+[INFO] [1795033627.946745984] [multitask_inference_node]: LANE: OK offset +19.5 cm, heading -15.7 deg, curvature -0.104 1/m, uncertainty 0.041, brightness 0.33, contrast 0.233, noise 0.019, 71 ms/frame
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/multitask_inference_node.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'multitask_inference_node.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/multitask_inference_node.py", line 234, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

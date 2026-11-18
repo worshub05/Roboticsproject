@@ -1,0 +1,35 @@
+✅ stack running: scenario=overtake, oncoming=0.3 m/s, tracker=true, controller=mpc, rss=on, acc=normal, aeb=on, v2i=on, glosa=on, platoon=cacc. Logs in /home/shub_2605/ros2_ws/logs. Ctrl+C to stop.
+[INFO] [1795034117.905208448] [overtake_planner]: BEHAVIOUR: LANE_KEEP -> PEEK (slow car 3.3 m ahead at 0.11 m/s)
+[INFO] [1795034117.927242455] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 9.1 m ahead at 0.29 m/s would meet us in 8.4 s (we need 11.4 s)
+[INFO] [1795034120.434447102] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 7.5 m ahead at 0.31 m/s would meet us in 6.6 s (we need 10.1 s)
+[INFO] [1795034123.020823600] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 5.8 m ahead at 0.29 m/s would meet us in 5.3 s (we need 8.7 s)
+[INFO] [1795034125.630732538] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 4.6 m ahead at 0.24 m/s would meet us in 4.5 s (we need 7.8 s)
+[INFO] [1795034128.222121855] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 3.6 m ahead at 0.42 m/s would meet us in 2.9 s (we need 7.8 s)
+[INFO] [1795034130.741947585] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 2.8 m ahead at 0.28 m/s would meet us in 2.6 s (we need 7.7 s)
+[INFO] [1795034133.317284161] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 2.1 m ahead at 0.21 m/s would meet us in 2.1 s (we need 7.6 s)
+[INFO] [1795034138.230634012] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 1.2 m ahead at 0.30 m/s would meet us in 1.1 s (we need 7.5 s)
+[INFO] [1795034140.725043330] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car 0.4 m ahead at 0.30 m/s would meet us in 0.3 s (we need 7.6 s)
+[INFO] [1795034143.282729817] [overtake_planner]: BEHAVIOUR: waiting behind slow car: oncoming car -0.5 m ahead at 0.30 m/s would meet us in -0.4 s (we need 7.5 s)
+[INFO] [1795034146.483215927] [overtake_planner]: BEHAVIOUR: PEEK -> CHANGE_LEFT (other lane seen clear for 9.0 m; measured oncoming traffic cannot reach us in 7.6 s)
+[INFO] [1795034148.984482326] [aeb]: AEB: ⚠ WARNING: object 1.03 m ahead in our path, TTC 1.16 s, our speed 0.49 m/s
+[INFO] [1795034149.266912963] [aeb]: AEB: ⚠ PARTIAL brake: object 0.85 m ahead, TTC 0.96 s, our speed 0.49 m/s
+[INFO] [1795034150.248001164] [aeb]: AEB: ✅ released after 1.0 s (worst: PARTIAL, TTC 0.96 s, closest 0.64 m)
+[INFO] [1795034150.639560077] [aeb]: AEB: ⚠ WARNING: object 0.73 m ahead in our path, TTC 1.40 s, our speed 0.12 m/s
+[INFO] [1795034150.751748078] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.19 s, closest 0.67 m)
+[INFO] [1795034150.832555965] [aeb]: AEB: ⚠ WARNING: object 0.70 m ahead in our path, TTC 1.17 s, our speed 0.20 m/s
+[INFO] [1795034150.924560707] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.15 s, closest 0.69 m)
+[INFO] [1795034150.993341845] [aeb]: AEB: ⚠ WARNING: object 0.65 m ahead in our path, TTC 1.14 s, our speed 0.24 m/s
+[INFO] [1795034151.085525623] [aeb]: AEB: ✅ released after 0.1 s (worst: WARNING, TTC 1.14 s, closest 0.64 m)
+[INFO] [1795034151.622215081] [overtake_planner]: BEHAVIOUR: CHANGE_LEFT -> PASS (in the other lane)
+[INFO] [1795034155.120392769] [overtake_planner]: BEHAVIOUR: PASS -> CHANGE_RIGHT (passed the slow car, our lane is clear)
+[INFO] [1795034158.555640383] [overtake_planner]: BEHAVIOUR: ✅ overtake 1 complete [mpc: path error RMS 0.8 cm, max 3.1 cm, steering change RMS 0.75 rad/s2, MPC solve median 9.2 ms, max 35.2 ms, budget hits 0, fallbacks 0]
+[INFO] [1795034158.556206299] [overtake_planner]: BEHAVIOUR: CHANGE_RIGHT -> LANE_KEEP (back in our lane, CNN driving)
+Terminated
+
+stopping...
+overtakes completed: 1
+collisions: 0
+robot at s=15.8 m, 0.50 m/s, true gap to car ahead in our lane 29.80 m, closest approach to any car so far 0.10 m
+RSS: checked 52 s, dangerous situations 0 (0.0 s, 0.0%), speed limited by RSS 0.0 s, smallest margin to a safe distance 0.18 m
+AEB: checked 54 s, warnings 4, partial brakes 1, full brakes 0, braking 0.8 s, smallest TTC 0.96 s, closing speed from V2V in 0% of scans
+ENERGY: distance 16.2 m in 53 s, traction 18.2 J (1.13 J/m), recovered by regen 0.7 J (4% of the drive energy), lost in friction brakes 0.0 J, total incl. computer 18.2 J (1.13 J/m)

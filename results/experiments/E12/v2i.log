@@ -1,0 +1,29 @@
+[INFO] [1795032463.341103841] [v2i_controller]: V2I controller ready: comfortable braking 0.5 m/s2, at most 1.0 m/s2 for amber, stop 0.1 m before the line, fail-safe after 1.0 s without messages; GLOSA on
+[INFO] [1795032463.967850065] [v2i_controller]: V2I: receiving light 1 (stop line at s=12.0 m), light 2 (stop line at s=47.7 m)
+[INFO] [1795032464.066440529] [v2i_controller]: V2I: ✅ messages arriving
+[INFO] [1795032464.067998867] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.46 m/s to arrive just after it turns green (11.85 m ahead)
+[INFO] [1795032466.898511768] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 11.85 m ahead)
+[INFO] [1795032480.740874255] [v2i_controller]: V2I: light 1 RED 5.99 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032494.784143383] [v2i_controller]: V2I: light 1 GREEN 0.79 m ahead -> go
+[INFO] [1795032570.308832285] [v2i_controller]: V2I: light 2 RED 5.97 m ahead at 0.50 m/s -> stop (braking 0.02 m/s2)
+[INFO] [1795032575.803350960] [v2i_controller]: V2I: light 2 GREEN 3.47 m ahead -> go
+[INFO] [1795032648.602361935] [v2i_controller]: V2I: GLOSA light 1: GREEN now, would arrive on red/amber -> slow to 0.37 m/s to arrive just after it turns green (9.68 m ahead)
+[INFO] [1795032659.635900178] [v2i_controller]: V2I: light 1 AMBER 5.97 m ahead at 0.37 m/s -> stop (braking 0.01 m/s2)
+[INFO] [1795032676.508817366] [v2i_controller]: V2I: GLOSA light 1: advice ended (GREEN, 0.37 m ahead)
+[INFO] [1795032676.509542917] [v2i_controller]: V2I: light 1 GREEN 0.37 m ahead -> go
+Traceback (most recent call last):
+  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/v2i_controller.py", line 33, in <module>
+    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'v2i_controller.py')())
+  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/v2i_controller.py", line 78, in main
+    rclpy.spin(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
