@@ -12,6 +12,9 @@
 | lane_mt_d2.pt | other | none | 73.5 m | 0.93 cm | 3.5 cm | 0.0 | 0 % | 0.0113 rad/s |
 | lane_mt_d2.pt | ours | 0.3 rad/s | 73.4 m | 13.93 cm | 29.2 cm | 12.26 | 20 % | 0.0218 rad/s |
 | expert (beta 1) | ours | 0.3 rad/s | 73.4 m | 14.13 cm | 30.2 cm | 10.9 | 19 % | 0.0204 rad/s |
+| lane_mt_d3.pt | ours | none | 73.6 m | 1.27 cm | 2.8 cm | 0.0 | 0 % | 0.0125 rad/s |
+| lane_mt_d3.pt | other | none | 73.5 m | 1.26 cm | 3.7 cm | 0.0 | 0 % | 0.0121 rad/s |
+| lane_mt_d3.pt | ours | 0.3 rad/s | 73.4 m | 13.91 cm | 30.5 cm | 10.9 | 20 % | 0.0179 rad/s |
 
 ## Data collection rounds
 
@@ -21,3 +24,5 @@
 | round1_other | lane_mt_v1.pt | 0.5 | other | 1000 | 0 | 0.46 cm |
 | round2_ours | lane_mt_d1.pt | 0.0 | ours | 1000 | 0 | 1.64 cm |
 | round2_other | lane_mt_d1.pt | 0.0 | other | 1000 | 0 | 1.05 cm |
+| round3_ours | lane_mt_d2.pt | 0.0 | ours | 1000 | 5 | 13.88 cm |
+| round3_other | lane_mt_d2.pt | 0.0 | other | 1000 | 5 | 14.43 cm |

@@ -101,3 +101,18 @@
 15:36:18 ✔ eval_expert_push: 150 s, 73.4 m, lane offset RMS 14.1 cm (max 30.2 cm), interventions 8 (10.9 per 100 m), network vs expert 0.020 rad/s, images saved 0
 15:36:18 ▶ round3_ours: collect 1000 images, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
 15:37:47 interrupted
+02:54:24 DAgger round 3: collect with steering pushes (0.3 rad/s), train d3, evaluate
+02:54:24 skip eval_expert_push (done)
+02:54:24 ▶ round3_ours: collect 1000 images, lane_mt_d2.pt, lane ours, beta 0.0, push 0.3
+02:56:42 ✔ round3_ours: 94 s, 45.3 m, lane offset RMS 13.9 cm (max 30.5 cm), interventions 5 (11.0 per 100 m), network vs expert 0.021 rad/s, images saved 1000
+02:56:42 ▶ round3_other: collect 1000 images, lane_mt_d2.pt, lane other, beta 0.0, push 0.3
+02:59:07 ✔ round3_other: 93 s, 45.0 m, lane offset RMS 14.4 cm (max 31.9 cm), interventions 5 (11.1 per 100 m), network vs expert 0.021 rad/s, images saved 1000
+02:59:07 ▶ training lane_mt_d3.pt from lane_mt_d2.pt on: /home/shub_2605/ros2_ws/track_data_mt /home/shub_2605/ros2_ws/dagger/round1 /home/shub_2605/ros2_ws/dagger/round2 /home/shub_2605/ros2_ws/dagger/round3
+03:04:00 ✔ ✅ saved /home/shub_2605/ros2_ws/models/lane_mt_d3.pt.tmp (val loss 0.0237 -> 0.0237)
+03:04:00 ▶ eval_d3_ours: evaluate 150 s, lane_mt_d3.pt, lane ours, beta 0.0, push 0.0
+03:07:14 ✔ eval_d3_ours: 150 s, 73.6 m, lane offset RMS 1.3 cm (max 2.8 cm), interventions 0 (0.0 per 100 m), network vs expert 0.013 rad/s, images saved 0
+03:07:14 ▶ eval_d3_other: evaluate 150 s, lane_mt_d3.pt, lane other, beta 0.0, push 0.0
+03:10:32 ✔ eval_d3_other: 150 s, 73.5 m, lane offset RMS 1.3 cm (max 3.7 cm), interventions 0 (0.0 per 100 m), network vs expert 0.012 rad/s, images saved 0
+03:10:32 ▶ eval_d3_push: evaluate 150 s, lane_mt_d3.pt, lane ours, beta 0.0, push 0.3
+03:13:59 ✔ eval_d3_push: 150 s, 73.4 m, lane offset RMS 13.9 cm (max 30.5 cm), interventions 8 (10.9 per 100 m), network vs expert 0.018 rad/s, images saved 0
+03:13:59 🏁 DAgger round 3 finished. Table in /home/shub_2605/ros2_ws/dagger/dagger_results.md

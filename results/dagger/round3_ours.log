@@ -1,30 +1,26 @@
-[INFO] [1795045000.364983369] [dagger]: DAGGER: collect 1000 images, model lane_mt_d2.pt, lane ours, beta 0.0, noise 0.3 rad/s, takeover at 0.25 m
-[INFO] [1795045007.046154790] [dagger]: DAGGER STATS: 6 s, 1.7 m, lane offset RMS 10.2 cm (max 17.4 cm), interventions 0 (0.0 per 100 m), network vs expert 0.026 rad/s, images saved 50
-[INFO] [1795045015.197996860] [dagger]: DAGGER STATS: 12 s, 4.3 m, lane offset RMS 11.2 cm (max 18.7 cm), interventions 0 (0.0 per 100 m), network vs expert 0.024 rad/s, images saved 100
-[INFO] [1795045024.091210274] [dagger]: DAGGER STATS: 18 s, 7.7 m, lane offset RMS 11.2 cm (max 22.4 cm), interventions 0 (0.0 per 100 m), network vs expert 0.022 rad/s, images saved 150
-[INFO] [1795045030.144373377] [dagger]: DAGGER STATS: 24 s, 10.6 m, lane offset RMS 13.3 cm (max 27.4 cm), interventions 1 (9.4 per 100 m), network vs expert 0.022 rad/s, images saved 200
-[INFO] [1795045035.535747140] [dagger]: DAGGER: saved 250/1000 (offset +0.08 m, interventions 1)
-[INFO] [1795045035.536940683] [dagger]: DAGGER STATS: 30 s, 13.2 m, lane offset RMS 12.4 cm (max 27.4 cm), interventions 1 (7.6 per 100 m), network vs expert 0.021 rad/s, images saved 250
-[INFO] [1795045042.977251458] [dagger]: DAGGER STATS: 34 s, 15.5 m, lane offset RMS 11.6 cm (max 27.4 cm), interventions 1 (6.4 per 100 m), network vs expert 0.020 rad/s, images saved 300
-[INFO] [1795045047.682709685] [dagger]: DAGGER STATS: 39 s, 17.8 m, lane offset RMS 11.2 cm (max 27.4 cm), interventions 1 (5.6 per 100 m), network vs expert 0.020 rad/s, images saved 350
-[INFO] [1795045052.583663428] [dagger]: DAGGER STATS: 43 s, 20.0 m, lane offset RMS 11.0 cm (max 27.4 cm), interventions 1 (5.0 per 100 m), network vs expert 0.021 rad/s, images saved 400
-[INFO] [1795045057.694125050] [dagger]: DAGGER STATS: 48 s, 22.4 m, lane offset RMS 11.6 cm (max 27.4 cm), interventions 1 (4.5 per 100 m), network vs expert 0.020 rad/s, images saved 450
-[INFO] [1795045061.983806797] [dagger]: DAGGER: saved 500/1000 (offset -0.31 m, interventions 2)
-[INFO] [1795045061.984987392] [dagger]: DAGGER STATS: 52 s, 24.4 m, lane offset RMS 12.2 cm (max 30.8 cm), interventions 2 (8.2 per 100 m), network vs expert 0.021 rad/s, images saved 500
-[INFO] [1795045066.876575182] [dagger]: DAGGER STATS: 57 s, 26.7 m, lane offset RMS 13.1 cm (max 30.8 cm), interventions 2 (7.5 per 100 m), network vs expert 0.020 rad/s, images saved 550
-Traceback (most recent call last):
-  File "/home/shub_2605/ros2_ws/install/lane_follower_perception/lib/lane_follower_perception/dagger.py", line 33, in <module>
-    sys.exit(load_entry_point('lane-follower-perception', 'console_scripts', 'dagger.py')())
-  File "/home/shub_2605/ros2_ws/build/lane_follower_perception/lane_follower_perception/dagger.py", line 206, in main
-    rclpy.spin_once(node, timeout_sec=0.1)
-  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 208, in spin_once
-    executor.spin_once(timeout_sec=timeout_sec)
-  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
-    self._spin_once_impl(timeout_sec)
-  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
-    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
-  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
-    return next(self._cb_iter)
-  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
-    raise ExternalShutdownException()
-rclpy.executors.ExternalShutdownException
+[INFO] [1795085698.703986870] [dagger]: DAGGER: collect 1000 images, model lane_mt_d2.pt, lane ours, beta 0.0, noise 0.3 rad/s, takeover at 0.25 m
+[INFO] [1795085704.236899003] [dagger]: DAGGER STATS: 6 s, 1.4 m, lane offset RMS 11.2 cm (max 18.6 cm), interventions 0 (0.0 per 100 m), network vs expert 0.031 rad/s, images saved 50
+[INFO] [1795085710.264157069] [dagger]: DAGGER STATS: 11 s, 3.8 m, lane offset RMS 14.9 cm (max 21.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.023 rad/s, images saved 100
+[INFO] [1795085715.754571094] [dagger]: DAGGER STATS: 16 s, 6.5 m, lane offset RMS 13.5 cm (max 21.3 cm), interventions 0 (0.0 per 100 m), network vs expert 0.019 rad/s, images saved 150
+[INFO] [1795085722.812593197] [dagger]: DAGGER STATS: 22 s, 9.7 m, lane offset RMS 15.2 cm (max 28.2 cm), interventions 1 (10.3 per 100 m), network vs expert 0.018 rad/s, images saved 200
+[INFO] [1795085727.718586435] [dagger]: DAGGER: saved 250/1000 (offset +0.11 m, interventions 1)
+[INFO] [1795085727.719118731] [dagger]: DAGGER STATS: 27 s, 12.1 m, lane offset RMS 13.7 cm (max 28.2 cm), interventions 1 (8.2 per 100 m), network vs expert 0.018 rad/s, images saved 250
+[INFO] [1795085732.402708527] [dagger]: DAGGER STATS: 32 s, 14.3 m, lane offset RMS 12.6 cm (max 28.2 cm), interventions 1 (7.0 per 100 m), network vs expert 0.017 rad/s, images saved 300
+[INFO] [1795085736.037307089] [dagger]: DAGGER STATS: 36 s, 16.2 m, lane offset RMS 12.2 cm (max 28.2 cm), interventions 1 (6.2 per 100 m), network vs expert 0.018 rad/s, images saved 350
+[INFO] [1795085740.965037400] [dagger]: DAGGER STATS: 39 s, 18.1 m, lane offset RMS 11.7 cm (max 28.2 cm), interventions 1 (5.5 per 100 m), network vs expert 0.020 rad/s, images saved 400
+[INFO] [1795085745.129787198] [dagger]: DAGGER STATS: 43 s, 20.1 m, lane offset RMS 11.9 cm (max 28.2 cm), interventions 1 (5.0 per 100 m), network vs expert 0.020 rad/s, images saved 450
+[INFO] [1795085749.151467326] [dagger]: DAGGER: saved 500/1000 (offset -0.23 m, interventions 1)
+[INFO] [1795085749.152412481] [dagger]: DAGGER STATS: 47 s, 22.0 m, lane offset RMS 11.9 cm (max 28.2 cm), interventions 1 (4.5 per 100 m), network vs expert 0.020 rad/s, images saved 500
+[INFO] [1795085753.190286134] [dagger]: DAGGER STATS: 51 s, 23.9 m, lane offset RMS 13.4 cm (max 30.5 cm), interventions 2 (8.4 per 100 m), network vs expert 0.020 rad/s, images saved 550
+[INFO] [1795085757.179266650] [dagger]: DAGGER STATS: 55 s, 25.8 m, lane offset RMS 13.2 cm (max 30.5 cm), interventions 2 (7.8 per 100 m), network vs expert 0.020 rad/s, images saved 600
+[INFO] [1795085760.989471495] [dagger]: DAGGER STATS: 58 s, 27.5 m, lane offset RMS 13.1 cm (max 30.5 cm), interventions 2 (7.3 per 100 m), network vs expert 0.020 rad/s, images saved 650
+[INFO] [1795085765.029142500] [dagger]: DAGGER STATS: 62 s, 29.4 m, lane offset RMS 12.8 cm (max 30.5 cm), interventions 2 (6.8 per 100 m), network vs expert 0.020 rad/s, images saved 700
+[INFO] [1795085769.451542035] [dagger]: DAGGER: saved 750/1000 (offset +0.19 m, interventions 3)
+[INFO] [1795085769.452182656] [dagger]: DAGGER STATS: 66 s, 31.6 m, lane offset RMS 13.5 cm (max 30.5 cm), interventions 3 (9.5 per 100 m), network vs expert 0.021 rad/s, images saved 750
+[INFO] [1795085776.031890846] [dagger]: DAGGER STATS: 72 s, 34.7 m, lane offset RMS 13.2 cm (max 30.5 cm), interventions 3 (8.7 per 100 m), network vs expert 0.021 rad/s, images saved 800
+[INFO] [1795085782.394696358] [dagger]: DAGGER STATS: 79 s, 37.7 m, lane offset RMS 13.4 cm (max 30.5 cm), interventions 3 (8.0 per 100 m), network vs expert 0.021 rad/s, images saved 850
+[INFO] [1795085787.907208012] [dagger]: DAGGER STATS: 84 s, 40.4 m, lane offset RMS 13.8 cm (max 30.5 cm), interventions 4 (9.9 per 100 m), network vs expert 0.021 rad/s, images saved 900
+[INFO] [1795085793.330504498] [dagger]: DAGGER STATS: 89 s, 43.0 m, lane offset RMS 13.7 cm (max 30.5 cm), interventions 4 (9.3 per 100 m), network vs expert 0.021 rad/s, images saved 950
+[INFO] [1795085798.132575380] [dagger]: DAGGER: saved 1000/1000 (offset -0.26 m, interventions 5)
+[INFO] [1795085798.133181424] [dagger]: DAGGER STATS: 94 s, 45.3 m, lane offset RMS 13.9 cm (max 30.5 cm), interventions 5 (11.0 per 100 m), network vs expert 0.021 rad/s, images saved 1000
+[INFO] [1795085798.134392966] [dagger]: DAGGER RESULT: 94 s, 45.3 m, lane offset RMS 13.9 cm (max 30.5 cm), interventions 5 (11.0 per 100 m), network vs expert 0.021 rad/s, images saved 1000
