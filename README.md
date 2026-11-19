@@ -122,3 +122,5 @@ See [LICENSE](LICENSE).
 | ![glosa](gifs/4_v2i_glosa_lights.gif) | ![cacc](gifs/5_cacc_platoon.gif) |
 
 Full results of the final experiments: [results/experiments_final.md](results/experiments_final.md)
+
+Demo video (1 min): [media/autonomous_driving_demo.mp4](media/autonomous_driving_demo.mp4)

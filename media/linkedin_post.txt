@@ -1,0 +1,14 @@
+LinkedIn post (Shubham Worlikar), Nov 2026, posted with media/autonomous_driving_demo.mp4
+
+I built a complete autonomous driving stack for a 1:10-scale car, and tested it until it broke.
+- Lane following with a multi-task neural network (PyTorch), LiDAR tracking of the other cars
+- Overtaking with Model Predictive Control: about 1 cm path error
+- RSS safety distances: with a broken cruise control, dangerous driving time 51 s -> 0
+- Emergency braking on raw LiDAR: 0 collisions when cars cut in and brake hard
+- V2I traffic lights with GLOSA speed advice: 0 red lights, 0 stops
+- CACC platooning over V2V: stable at a 0.3 s time gap, 5% less energy than ACC
+Testing: 27 scenario tests, falsification (5 weaknesses found and fixed, 1 minor case documented),
+GitHub Actions on every push, 24 final Gazebo runs with 0 collisions.
+Lessons: automatic failure search finds what hand-written tests miss; scale matters (a stop costs
+0.6 m of driving on the model, about 400 m on a real EV at 50 km/h); DAgger brought no gain because
+the network already matched its expert.
